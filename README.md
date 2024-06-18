@@ -13,7 +13,10 @@
   
 ## Dependencias:
 *yarn add @fortawesome/fontawesome-free*
+
 *Importación en el Navbar para el funcionamiento de los iconos desplegables y el menú hamburguesa import '@fortawesome/fontawesome-free/css/all.min.css';*
+
+*yarn add prop-types*
 
 
 ## Funcionalidad:
