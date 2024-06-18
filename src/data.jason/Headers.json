@@ -1,0 +1,35 @@
+{
+  "headers": [
+    {
+      "id": "home",
+      "imageSrc": "src/assets/image/Header-inicio.webp",
+      "title": "Conectá con la alegría de estar protegido.",
+      "subtitle": "Elegí, cotizá y viví seguro,",
+      "tercerTitulo":"en unos simples pasos",
+      "options": [
+        { "value": "seguro-auto", "label": "Seguro de Auto" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" }
+      ]
+    },
+    {
+      "id": "autos",
+      "imageSrc": "src/assets/image/logoYujuAzul.png",
+      "title": "Protección para tu auto.",
+      "subtitle": "Encuentra el seguro perfecto para tu auto",
+      "options": [
+        { "value": "seguro-auto", "label": "Seguro de Auto" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" }
+      ]
+    },
+    {
+      "id": "Motos",
+      "imageSrc": "/assets/images/header-motos.png",
+      "title": "Protección para tu moto.",
+      "subtitle": "Encuentra el seguro perfecto para tu moto",
+      "options": [
+        { "value": "seguro-auto", "label": "Seguro de Auto" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" }
+      ]
+    }
+  ]
+}

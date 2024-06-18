@@ -1,0 +1,5 @@
+@media (max-width: 1024px){
+    .containerHeader > img{
+        margin-top: -10px;
+    }
+}

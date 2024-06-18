@@ -5,6 +5,7 @@
     align-items: center;
     background-color: #ffffff;
     padding: 10px 20px;
+    z-index: 1;
   }
   
   .navbar-logo img {
@@ -106,10 +107,11 @@
       align-items: center;
       background-color: #ffffff;
       padding: 10px 20px;
+      z-index: 1;
     }
     
     .navbar-logo img {
-      height: 55px;
+      height: 45px;
       margin-top: 10px;
     }
     
@@ -212,6 +214,7 @@
       align-items:flex-start;
       background-color: #ffffff;
       padding: 10px 20px;
+      z-index: 1;
     }
 
     .navbar-links {
@@ -227,6 +230,7 @@
         align-items: center;
         right: 20px;
         top: 55px;
+        z-index: 1;
     }
   
     .navbar-links a, .dropdown .dropbtn {

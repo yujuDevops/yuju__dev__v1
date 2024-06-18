@@ -1,0 +1,51 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 110px;
+    left: 50px;
+  }
+  
+  .header h1 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-family: inter;
+    inline-size: 45.4rem;
+    line-height: 42.49px;
+  }
+  
+  .header h2 {
+    font-size: 35px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: aquamarine;
+    inline-size: fit-content;
+    font-weight: 400;
+    padding: 10px;
+  }
+  
+  .header h3 {
+    font-size: 35px;
+    font-family: inter;
+    font-weight: 400;
+  }
+
+  .header-select {
+    padding: 14px;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 500;
+    margin-top: 60px;
+    width: 25vw;
+    border: 1.5px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  

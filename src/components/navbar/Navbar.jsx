@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from '/Users/nimbu/yuju-v1/src/assets/image/logoYujuAzul.png';
-import instagram from '/Users/nimbu/yuju-v1/src/assets/image/web_Icono-instagram.png';
-import facebook from '/Users/nimbu/yuju-v1/src/assets/image/web_Icono-facebook.png';
+import logo from '/Users/54344/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
+import instagram from '/Users/54344/yuju__dev__v1/src/assets/image/web_Icono-instagram.png';
+import facebook from '/Users/54344/yuju__dev__v1/src/assets/image/web_Icono-facebook.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
