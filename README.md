@@ -18,10 +18,14 @@
 
 *yarn add prop-types*
 
+
 ## Dependencias de test:
+
 *yarn add --dev jest*
 
 *yarn add --dev @types/jest*
+
+*yarn add --dev babel-jest @babel/core @babel/preset-env*
 
 
 
