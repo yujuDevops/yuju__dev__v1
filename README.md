@@ -18,6 +18,11 @@
 
 *yarn add prop-types*
 
+## Dependencias de test:
+*yarn add --dev jest*
+*yarn add -D @types/jest*
+
+
 
 ## Funcionalidad:
  
