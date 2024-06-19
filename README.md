@@ -20,7 +20,8 @@
 
 ## Dependencias de test:
 *yarn add --dev jest*
-*yarn add -D @types/jest*
+
+*yarn add --dev @types/jest*
 
 
 
