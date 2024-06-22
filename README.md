@@ -12,6 +12,7 @@
  
   
 ## Dependencias:
+npm install -g yarn
 *yarn add @fortawesome/fontawesome-free*
 
 *Importación en el Navbar para el funcionamiento de los iconos desplegables y el menú hamburguesa import '@fortawesome/fontawesome-free/css/all.min.css';*
@@ -26,6 +27,8 @@
 *yarn add --dev @types/jest*
 
 *yarn add --dev babel-jest @babel/core @babel/preset-env*
+
+yarn add -D whatwg-fetch
 
 
 
