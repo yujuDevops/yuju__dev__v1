@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoHeader from "/Users/54344/yuju__dev__v1/src/assets/image/Header-inicio.webp";
+import LogoHeader from "/Users/nimbu/yuju__dev__v1/src/assets/image//Header-inicio.webp";
 
 const Home = () => {
   return (

@@ -43,9 +43,10 @@
     font-family: 'Inter';
     font-weight: 500;
     margin-top: 60px;
-    width: 25vw;
+    width: 28vw;
     border: 1.5px solid white;
     border-radius: 12px;
     cursor: pointer;
+    color: #8D8B8E;
   }
   

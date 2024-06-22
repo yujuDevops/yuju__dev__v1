@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Header = ({ imageSrc, title, subtitle, tercerTitulo, options }) => {
     return (
-        <div className="header" style={{ backgroundImage: `url(${imageSrc})`, height: '85vh' }}>
+        <div className="header" style={{ backgroundImage: `url(${imageSrc})`, height: '88vh' }}>
         <div className="header-content">
           <h1>{title}</h1>
           <h2>{subtitle}</h2>

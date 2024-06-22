@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from '/Users/54344/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
-import instagram from '/Users/54344/yuju__dev__v1/src/assets/image/web_Icono-instagram.png';
-import facebook from '/Users/54344/yuju__dev__v1/src/assets/image/web_Icono-facebook.png';
+import logo from '/Users/nimbu/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
+import instagram from '/Users/nimbu/yuju__dev__v1/src/assets/image/web_Icono-instagram.png';
+import facebook from '/Users/nimbu/yuju__dev__v1/src/assets/image/web_Icono-facebook.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -62,11 +62,11 @@ const Navbar = () => {
                 <a href="/contacto">Contacto</a>
             </div>
             <div className="navbar-social">
-                    <a href="#">
-                    <img src={instagram} alt="instagram" /></a>
-                    <a href="#">
-                        <img src={facebook} alt="facebook" />
+            <a href="#">
+                        <img className='img__2' src={facebook} alt="facebook" />
                     </a>
+                    <a href="#">
+                    <img className='img__1' src={instagram} alt="instagram" /></a>
                 </div>
             <button className="hamburger" onClick={toggleMenu}>
                 <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>

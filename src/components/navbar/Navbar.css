@@ -9,8 +9,11 @@
   }
   
   .navbar-logo img {
-    height: 55px;
-    margin-top: 10px;
+        height: 45px;
+        object-fit: contain;
+        margin-top: 6px;
+        vertical-align: -webkit-baseline-middle;
+        margin-left: 30px;
   }
   
   .navbar-links {
@@ -19,7 +22,7 @@
   }
   
   .navbar-links a, .dropdown .dropbtn {
-    margin: 0px 20px;
+    margin: 0px 10px;
     text-decoration: none;
     color: #8D8B8E;
     font-weight: 500;
@@ -98,6 +101,21 @@
     cursor: pointer;
   }
   
+.img__1 {
+  display: flex;
+  margin: 0px 0px 0px -30px;
+}
+
+.img__2 {
+  display: flex;
+    margin: 0px 0px 0px -65px;
+}
+
+.fa-solid{
+  font-size: 10px;
+}
+
+
 
   @media (max-width: 1024px) {
 
@@ -111,8 +129,10 @@
     }
     
     .navbar-logo img {
-      height: 45px;
-      margin-top: 10px;
+      height: 38px;
+        object-fit: contain;
+        margin-top: 6px;
+        vertical-align: -webkit-baseline-middle;
     }
     
     .navbar-links {
