@@ -28,6 +28,8 @@ npm install -g yarn
 
 *yarn add --dev babel-jest @babel/core @babel/preset-env*
 
+yarn add -D whatwg-fetch
+
 
 
 ## Funcionalidad:
