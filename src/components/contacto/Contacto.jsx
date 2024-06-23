@@ -1,7 +1,12 @@
-import React from 'react'
+import propTypes, { string } from "prop-types"
 
-export const Contacto = () => {
+export const Contacto = ({title}) => {
   return (
-    <div>Contacto</div>
+    <div>{title}</div>
   )
+}
+
+Contacto.propTypes = { 
+  title : propTypes.string.isRequired
+
 }

@@ -1,8 +1,7 @@
-import React from 'react';
 import './Header.css';
 import PropTypes from 'prop-types';
 
-const Header = ({ imageSrc, title, subtitle, tercerTitulo, options }) => {
+export const Header = ({ imageSrc, title, subtitle, tercerTitulo, options }) => {
     return (
         <div className="header" style={{ backgroundImage: `url(${imageSrc})`, height: '88vh' }}>
         <div className="header-content">
@@ -21,14 +20,14 @@ const Header = ({ imageSrc, title, subtitle, tercerTitulo, options }) => {
   };
   
   Header.propTypes = {
-    imageSrc: PropTypes.string.isRequired,
+    imageSrc: PropTypes.string,
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-    tercerTitulo: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    tercerTitulo: PropTypes.string,
     options: PropTypes.arrayOf(
       PropTypes.shape({
-        value: PropTypes.string.isRequired,
-        label: PropTypes.string.isRequired
+        value: PropTypes.string,
+        label: PropTypes.string
       })
     ).isRequired
   };
