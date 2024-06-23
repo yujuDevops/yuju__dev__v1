@@ -32,6 +32,11 @@ npm install -g yarn
 
 *yarn add --dev @testing-library/react* -libreria de test de react
 
+* yarn add -D @testing-library/dom * 
+
+*yarn add -D @babel/preset-react *
+
+*yarn add -D jest-environment-jsdom *
 
 
 ## Funcionalidad:
