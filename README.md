@@ -9,7 +9,7 @@
  4. yarn
  5. React
  6. Vite
- 
+ 7. React Router Dom
   
 ## Dependencias:
 npm install -g yarn
@@ -19,6 +19,7 @@ npm install -g yarn
 
 *yarn add prop-types*
 
+yarn add react-router@6 
 
 ## Dependencias de test:
 
@@ -37,6 +38,7 @@ npm install -g yarn
 *yarn add -D @babel/preset-react *
 
 *yarn add -D jest-environment-jsdom *
+
 
 
 ## Funcionalidad:
