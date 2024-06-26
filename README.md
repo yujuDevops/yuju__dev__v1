@@ -18,7 +18,8 @@ npm install -g yarn
 *Importación en el Navbar para el funcionamiento de los iconos desplegables y el menú hamburguesa import '@fortawesome/fontawesome-free/css/all.min.css';*
 
 *yarn add prop-types*
- 
+
+ yarn add react-router-dom
 
 ## Dependencias de test:
 
