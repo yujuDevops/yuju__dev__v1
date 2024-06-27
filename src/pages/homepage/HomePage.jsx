@@ -3,10 +3,6 @@ import Header from '../../components/header/Header';
 import data from '../../data.jason/Headers.json';
 import logo from '/Users/nimbu/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
 import "./HomePage.css"
-
-
-
-
 import libra from '/Users/nimbu/yuju__dev__v1/src/assets/image/Libra-bn.png';
 
 const HomePage = ({ pageId }) => {

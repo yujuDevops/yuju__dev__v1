@@ -101,6 +101,12 @@
     cursor: pointer;
   }
   
+
+  .navbar-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .img__1 {
   display: flex;
   margin: 0px 0px 0px -30px;

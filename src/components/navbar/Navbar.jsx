@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./Navbar.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from '/Users/nimbu/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
-import instagram from '/Users/nimbu/yuju__dev__v1/src/assets/image/web_Icono-instagram.png';
-import facebook from '/Users/nimbu/yuju__dev__v1/src/assets/image/web_Icono-facebook.png';
+import logo from '../../assets/image/logoYujuAzul.png';
+import instagram from '../../assets/image/web_Icono-instagram.png';
+import facebook from '../../assets/image/web_Icono-facebook.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState({ seguros: false, aseguradoras: false });
+    const [activePage, setActivePage] = useState('home');
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -20,15 +22,26 @@ const Navbar = () => {
         }));
     };
 
+    const handlePageChange = (page) => {
+        setActivePage(page);
+        setIsOpen(false);  // Cierra el menú al hacer clic en un enlace
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <a href="#">
-                <img src={logo} alt="Yuju Logo" />
+                <a href="/home" onClick={() => handlePageChange('home')}>
+                    <img src={logo} alt="Yuju Logo" />
                 </a>
             </div>
             <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-                <a href="/">Home</a>
+            <Link 
+            to="/home" 
+            className={activePage === 'home' ? 'active' : ''} 
+            onClick={() => handlePageChange('home')}
+            >
+            Home
+            </Link>
                 <div className="dropdown">
                     <button className="dropbtn" onClick={() => toggleDropdown('seguros')}>
                         Seguros 
@@ -36,10 +49,34 @@ const Navbar = () => {
                     </button>
                     {isDropdownOpen.seguros && (
                         <div className="dropdown-content">
-                            <a href="/auto">Auto</a>
-                            <a href="/moto">Moto</a>
-                            <a href="/bici">Bici</a>
-                            <a href="/hogar">Hogar</a>
+                        <Link 
+                        to="/auto" 
+                        className={activePage === 'auto' ? 'active' : ''} 
+                        onClick={() => handlePageChange('auto')}
+                        >
+                        Auto
+                        </Link>
+                            <Link 
+                            to="/moto" 
+                            className={activePage === 'moto' ? 'active' : ''} 
+                            onClick={() => handlePageChange('moto')}
+                        >
+                            Moto
+                        </Link>
+                        <Link 
+                            to="/bici" 
+                            className={activePage === 'bici' ? 'active' : ''} 
+                            onClick={() => handlePageChange('bici')}
+                        >
+                            Bici
+                        </Link>
+                        <Link 
+                            to="/hogar" 
+                            className={activePage === 'hogar' ? 'active' : ''} 
+                            onClick={() => handlePageChange('hogar')}
+                        >
+                            Hogar
+                        </Link>
                         </div>
                     )}
                 </div>
@@ -50,24 +87,67 @@ const Navbar = () => {
                     </button>
                     {isDropdownOpen.aseguradoras && (
                         <div className="dropdown-content">
-                            <a href="/rus">RUS</a>
-                            <a href="/experta">Experta</a>
-                            <a href="/san-cristobal">San Cristobal</a>
+                           <Link 
+        to="/rus" 
+        className={activePage === 'rus' ? 'active' : ''} 
+        onClick={() => handlePageChange('rus')}
+    >
+        RUS
+    </Link>
+            <Link 
+                to="/experta" 
+                className={activePage === 'experta' ? 'active' : ''} 
+                onClick={() => handlePageChange('experta')}
+            >
+                Experta
+            </Link>
+            <Link 
+                to="/san-cristobal" 
+                className={activePage === 'san-cristobal' ? 'active' : ''} 
+                onClick={() => handlePageChange('san-cristobal')}
+            >
+                San Cristobal
+            </Link>
                         </div>
                     )}
                 </div>
-                <a href="/institucional">Institucional</a>
-                <a href="/siniestros">Siniestros</a>
-                <a href="/club-yuju">Club Yuju</a>
-                <a href="/contacto">Contacto</a>
+                <Link 
+        to="/institucional" 
+        className={activePage === 'institucional' ? 'active' : ''} 
+        onClick={() => handlePageChange('institucional')}
+    >
+        Institucional
+    </Link>
+    <Link 
+        to="/siniestros" 
+        className={activePage === 'siniestros' ? 'active' : ''} 
+        onClick={() => handlePageChange('siniestros')}
+    >
+        Siniestros
+    </Link>
+    <Link 
+        to="/club-yuju" 
+        className={activePage === 'club-yuju' ? 'active' : ''} 
+        onClick={() => handlePageChange('club-yuju')}
+    >
+        Club Yuju
+    </Link>
+    <Link 
+        to="/contacto" 
+        className={activePage === 'contacto' ? 'active' : ''} 
+        onClick={() => handlePageChange('contacto')}
+    >
+        Contacto
+    </Link>
             </div>
             <div className="navbar-social">
-            <a href="#">
-                        <img className='img__2' src={facebook} alt="facebook" />
-                    </a>
-                    <a href="#">
-                    <img className='img__1' src={instagram} alt="instagram" /></a>
-                </div>
+                <a href="#">
+                    <img src={instagram} alt="instagram" />
+                </a>
+                <a href="#">
+                    <img src={facebook} alt="facebook" />
+                </a>
+            </div>
             <button className="hamburger" onClick={toggleMenu}>
                 <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
             </button>
