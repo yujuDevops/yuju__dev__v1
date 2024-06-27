@@ -13,6 +13,7 @@
   
 ## Dependencias:
 npm install -g yarn
+
 *yarn add @fortawesome/fontawesome-free*
 
 *Importación en el Navbar para el funcionamiento de los iconos desplegables y el menú hamburguesa import '@fortawesome/fontawesome-free/css/all.min.css';*
