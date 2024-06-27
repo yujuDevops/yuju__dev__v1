@@ -13,12 +13,14 @@
   
 ## Dependencias:
 npm install -g yarn
+
 *yarn add @fortawesome/fontawesome-free*
 
 *Importación en el Navbar para el funcionamiento de los iconos desplegables y el menú hamburguesa import '@fortawesome/fontawesome-free/css/all.min.css';*
 
 *yarn add prop-types*
- 
+
+ yarn add react-router-dom
 
 ## Dependencias de test:
 
@@ -32,11 +34,11 @@ npm install -g yarn
 
 *yarn add --dev @testing-library/react* -libreria de test de react
 
-* yarn add -D @testing-library/dom * 
+ yarn add -D @testing-library/dom 
 
-*yarn add -D @babel/preset-react *
+ yarn add -D @babel/preset-react 
 
-*yarn add -D jest-environment-jsdom *
+ yarn add -D jest-environment-jsdom 
 
 
 
