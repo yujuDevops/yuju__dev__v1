@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Header from '../../components/header/Header';
 import data from '../../data.jason/Headers.json';
-import logo from '/Users/nimbu/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
+import logo from '../../assets/image/logoYujuAzul.png';
 import "./HomePage.css"
-import libra from '/Users/nimbu/yuju__dev__v1/src/assets/image/Libra-bn.png';
+import libra from '../../assets/image/Libra-bn.png';
 
 const HomePage = ({ pageId }) => {
     const [headerData, setHeaderData] = useState(null);
@@ -75,7 +75,7 @@ const HomePage = ({ pageId }) => {
       <img src={libra} alt="Imagen 15" className="grid-image" />
     </div>
       </section>
-    </div>
+</div>
       </main>
       </>
     );

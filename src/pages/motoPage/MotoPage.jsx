@@ -1,8 +1,13 @@
-import React from 'react'
+import { HeaderMotos } from "./motoPageComponents/components/HeaderMotos"
+
+
+
 
 const MotoPage = () => {
   return (
-    <div>MotoPage</div>
+  <>
+<HeaderMotos/>
+  </>
   )
 }
 

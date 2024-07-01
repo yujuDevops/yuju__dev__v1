@@ -1,0 +1,47 @@
+.header-motos img{
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  z-index: -1;
+ 
+}
+.container-motos{
+  position: relative;
+  z-index: 1;
+  top: 120px;
+  left:50px
+}
+
+
+
+h1 {
+z-index: 1;
+color: white;
+font-size: 35px;
+margin-left: -10px;
+font-family: inter;
+background-color: aquamarine;
+inline-size: fit-content;
+font-weight: 900;
+padding: 10px;
+top: 40px;
+} 
+
+.h2-motos{
+  margin-top: 10px;
+color: white;
+font-size: 24px;
+font-family: inter;
+font-weight: 700;
+}
+
+.h3-motos{
+  margin-top: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: inter;
+  font-weight: 400;
+}
+
+
+  
