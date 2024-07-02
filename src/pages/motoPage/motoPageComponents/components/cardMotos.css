@@ -1,0 +1,82 @@
+.card-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.divCardMotos {
+    border: 0px ;
+    border-radius: 10px;
+    padding: 16px;
+    width: 300px;
+    margin: 16px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 10px  10px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave para sombra */
+}
+
+.h2CardMotos {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+    font-family: Inter;
+}
+
+.ulCardMotos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.liCardMotos {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+.liCardMotos.no::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('/src/assets/image/web_Icono-cruz.svg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+}
+
+.liCardMotos.yes::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('/src/assets/image/web_Icono-Check.svg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+}
+
+.buttonCardMotos {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-family: Inter;
+    
+
+}
+
+.buttonCardMotos:hover {
+    background-color: #0056b3;
+}
