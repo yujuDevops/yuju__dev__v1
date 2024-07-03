@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 80px;
     padding: 20px;
 }
+
 
 .divCardMotos {
     border: 0px ;
@@ -18,12 +19,36 @@
     box-shadow: 10px  10px 10px 10px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: box-shadow 0.3s ease; /* Transición suave para sombra */
 }
+.h2CardMotos{
+    
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: -20px;
+        margin-left: 5%;
+        color: #3369FF;
+        
 
-.h2CardMotos {
+}
+
+.h3CardMotos {
     color: #007bff;
     font-size: 1.5em;
     margin-bottom: 16px;
     font-family: Inter;
+}
+
+.h4CardMotos{
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 5%;
+    color: #8D8B8E;
+    
+
 }
 
 .ulCardMotos {
