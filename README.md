@@ -22,10 +22,8 @@ npm install -g yarn
 
  yarn add react-router-dom
 
-## Dependencias de test:
 
-
-# Instalación y configuracion de Jest + React Testing Library
+## Instalación y configuracion de Jest + React Testing Library
 ## En proyectos de React + Vite
 
 1. Instalaciones:
