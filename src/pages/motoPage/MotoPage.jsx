@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-
-const MotoPage = () => {
-  return (
-    <>
-    </>
-    
-=======
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { HeaderMotos } from "./motoPageComponents/components/HeaderMotos"
 import fotoMoto from "../../assets/image/Moto.png"
@@ -38,7 +30,6 @@ const MotoPage = () => {
 
 
   </>
->>>>>>> 6644de417b1ad20a0b20a427a07c779304f06883
   )
 }
 

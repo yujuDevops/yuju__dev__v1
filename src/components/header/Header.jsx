@@ -10,8 +10,8 @@ export const Header = ({ imageSrc, title, subtitle, tercerTitulo, options }) => 
           <h3>{tercerTitulo}</h3>
           <select className="header-select">
             <option value="">Elegí el seguro</option>
-            {options.map((option) => (
-              <option key={option.id} value={option.value}>{option.label}</option>
+            {options.map((option, index) => (
+              <option key={index} value={option.value}>{option.label}</option>
             ))}
           </select>
         </div>
