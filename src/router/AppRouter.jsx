@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+=======
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+>>>>>>> 6644de417b1ad20a0b20a427a07c779304f06883
 import Navbar from '../components/navbar/Navbar';
 
 

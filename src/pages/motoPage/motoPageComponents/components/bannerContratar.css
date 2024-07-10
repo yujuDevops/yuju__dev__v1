@@ -1,0 +1,27 @@
+
+
+.imgBannerContratar {
+    margin-top: 40px;
+    position: absolute;
+    z-index: 0;
+    
+}
+.vidBanner{
+    position: relative;
+   top: 130px;
+   left: 30px;
+}
+
+.h2Banner{
+    position: relative;
+    top: 130px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    left: 30px;
+    color: #31EEC3;
+}
+.spanBanner {
+
+    font-weight: 300; 
+}

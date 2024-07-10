@@ -1,0 +1,54 @@
+.div-cotizaAhora {
+    margin-top: 300px;
+}
+.vertical-dotted-separator {
+  border-left: 2px dotted #007bff;
+  height: 40px; /* Ajusta la altura según tus necesidades */
+  margin: 0 10px;
+  display: flex;
+}
+
+.moto-insurance-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 30px;
+    width: 90%;
+    border: 0px solid;
+    box-shadow: 10px 5px 10px 20px rgba(5, 5, 5, 0.1);
+  }
+  
+  .moto-texto {
+    color: #a0a0a0;
+    font-size: Inter;
+  }
+  
+  .moto-presio {
+    color: #007bff;
+    font-weight: bold;
+    font-size: Inter;
+  }
+  
+  .moto-icon {
+    width: 50px;
+    height: 50px;
+    
+    background-size: cover;
+  }
+  
+  .moto-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: Inter;
+  }
+  
+  .moto-button:hover {
+    background-color: #0056b3;
+  }

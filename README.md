@@ -22,23 +22,54 @@ npm install -g yarn
 
  yarn add react-router-dom
 
-## Dependencias de test:
 
-*yarn add --dev jest*
+## Instalación y configuracion de Jest + React Testing Library
+## En proyectos de React + Vite
 
-*yarn add --dev @types/jest*
+1. Instalaciones:
+```
+yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react 
+yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
+```
 
-*yarn add --dev babel-jest @babel/core @babel/preset-env*
+2. Opcional: Si usamos Fetch API en el proyecto:
+```
+yarn add --dev whatwg-fetch
+```
 
-*yarn add -D whatwg-fetch*
+3. Actualizar los scripts del __package.json__
+```
+"scripts: {
+  ...
+  "test": "jest --watchAll"
+```
 
-*yarn add --dev @testing-library/react* -libreria de test de react
+4. Crear la configuración de babel __babel.config.js__
+```
+module.exports = {
+    presets: [
+        [ '@babel/preset-env', { targets: { esmodules: true } } ],
+        [ '@babel/preset-react', { runtime: 'automatic' } ],
+    ],
+};
+```
 
- yarn add -D @testing-library/dom 
+5. Opcional, pero eventualmente necesario, crear Jest config y setup:
 
- yarn add -D @babel/preset-react 
+__jest.config.js__
+```
+module.exports = {
+    testEnvironment: 'jest-environment-jsdom',
+    setupFiles: ['./jest.setup.js']
+}
+```
 
- yarn add -D jest-environment-jsdom 
+__jest.setup.js__
+```
+// En caso de necesitar la implementación del FetchAPI
+import 'whatwg-fetch'; // <-- yarn add whatwg-fetch
+```
+
 
 
 

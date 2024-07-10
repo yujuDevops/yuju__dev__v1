@@ -1,10 +1,14 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import TestimonialCards from './componentsHome/TestimonialCards.jsx';
+=======
+import  { useState, useEffect } from 'react';
+>>>>>>> 6644de417b1ad20a0b20a427a07c779304f06883
 import Header from '../../components/header/Header';
 import data from '../../data.jason/Headers.json';
-import logo from '/Users/nimbu/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
+import logo from '../../assets/image/logoYujuAzul.png';
 import "./HomePage.css"
-import libra from '/Users/nimbu/yuju__dev__v1/src/assets/image/Libra-bn.png';
+import libra from '../../assets/image/Libra-bn.png';
 
 
 import inovacion from "./img/web_Icono-innovacion.svg";
@@ -85,10 +89,14 @@ const HomePage = ({ pageId }) => {
       <img src={libra} alt="Imagen 15" className="grid-image" />
     </div>
       </section>
+<<<<<<< HEAD
     </div>
 
         <Carrousel/>
 
+=======
+</div>
+>>>>>>> 6644de417b1ad20a0b20a427a07c779304f06883
       </main>
 
       <div className='containerMarca'>

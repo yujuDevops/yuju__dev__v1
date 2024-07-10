@@ -1,0 +1,21 @@
+.button-moto {
+    background: #33FFCC;
+    color: #3369FF;
+    width: 250px;
+    height: 41px;
+    margin-top: 75px;
+    border: 0px solid;
+    border-radius: 6px;
+    padding: 12px 18px 12px 18px;
+    font-family: inter;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición para el efecto hover */
+    
+   
+}
+
+.button-moto:hover {
+    background: #01d6a4;; /* Color de fondo al pasar el cursor */
+  }
