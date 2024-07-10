@@ -1,10 +1,15 @@
+
+@media 
+(min-width: 600px) and (max-width: 1400px) {
+
+
 .semisphere-container {
     position: relative;
     width: 100%;
     padding: 40px 20px;
     background-color: #fFfFfF; /* Fondo gris claro */
     overflow: hidden;
-    height: 1000px;
+    height: 750px;
   }
   
   .semisphere {
@@ -15,7 +20,6 @@
     height: 650px;
     background: radial-gradient(ellipse, rgba(51, 255, 204, 1) 1%, rgba(235, 254, 249, 0) 67%);
     border-bottom-right-radius: 345px;
-    /* background: radial-gradient(circle, rgba(0, 128, 0, 0.5) 0%, rgba(0, 128, 0, 0) 238%); */
     transform: translate(-65%, -48%);
   }
   
@@ -30,14 +34,14 @@
     font-weight: 800;
     color: #3369FF;
     display: flex;
-    margin: 20px 30px;
+    margin: 20px 20px;
 }
 
 .containerCard__1{
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 23px;
   padding: 20px;
 
 }
@@ -90,4 +94,92 @@
     margin-bottom: 30px;
     position: relative;
     z-index: 1;
+}
+
+.containerMarca{
+  margin: 100px 50px;
+}
+
+.containerMarca h3 {
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3369FF;
+  margin-bottom: 15px;
+}
+
+.containerMarca p {
+  font-family: inter;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8D8B8E;
+  inline-size: 900px;
+}
+
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -50px 50px 100px;
+  gap: 20px;
+}
+
+.card-con {
+  border: 1.5px solid #3369FF;
+    width: 300px;
+    align-items: center;
+    border-radius: 26px;
+    background-color: #ffffff;
+    z-index: 21;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 16px;
+}
+
+.card-br {
+  border: 1.5px solid #3369FF;
+  border-radius: 16px;
+  position: relative;
+  top: -6px;
+  left: -6px;
+  background-color: #ffffff;
+  padding-bottom: 10px;
+}
+
+
+.card-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-c img {
+  width: 100px;
+}
+
+.card-br h3 {
+  font-family: inter; 
+  font-size: 700;
+  color: #3369FF;
+  font-size: 16px;
+}
+
+
+.background-semisphere {
+  position: absolute;
+  top: 2130px;
+  left: 1550px;
+  width: 926px;
+  height: 650px;
+  background: radial-gradient(ellipse, rgb(214, 225, 255) 30%, rgba(235, 254, 249, 0) 67%);
+  border-bottom-right-radius: 345px;
+  transform: translate(-65%, -48%);
+}
+
+.content__child {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  text-align: center;
+}
+
 }

@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import TestimonialCards from './componentsHome/TestimonialCards.jsx';
 import Header from '../../components/header/Header';
 import data from '../../data.jason/Headers.json';
 import logo from '/Users/nimbu/yuju__dev__v1/src/assets/image/logoYujuAzul.png';
 import "./HomePage.css"
 import libra from '/Users/nimbu/yuju__dev__v1/src/assets/image/Libra-bn.png';
+
+
+import inovacion from "./img/web_Icono-innovacion.svg";
+import mision from "./img/web_Icono-mision.svg";
+import objetivos from "./img/web_Icono-objetivos.svg";
+
+
+import { Carrousel } from '../../components/carrousel/Carrousel';
+
 
 const HomePage = ({ pageId }) => {
     const [headerData, setHeaderData] = useState(null);
@@ -76,7 +86,51 @@ const HomePage = ({ pageId }) => {
     </div>
       </section>
     </div>
+
+        <Carrousel/>
+
       </main>
+
+      <div className='containerMarca'>
+        <h3>Información de la marca</h3>
+        <p>Somos una empresa <strong>joven, dinámica y comprometida</strong> con la <strong>innovación y la sostenibilidad.</strong> Nacimos de la mano de Nimbus Bróker de Seguros, una empresa con más de 15 años de experiencia y trayectoria en el sector.</p>
+      </div>
+
+
+      <div className="card-wrap">
+      <div className="card-con">
+        <div className="card-br">
+          <div className="card-c">
+            <img src={inovacion} alt="Visión icon" className="card-icon" />
+            <h3 className="card-title">Visión</h3>
+          </div>
+        </div>
+      </div>
+      <div className="card-con">
+        <div className="card-br">
+          <div className="card-c">
+            <img src={mision} alt="Misión icon" className="card-icon" />
+            <h3 className="card-title">Misión</h3>
+          </div>
+        </div>
+      </div>
+      <div className="card-con">
+        <div className="card-br">
+          <div className="card-c">
+            <img src={objetivos} alt="Objetivo icon" className="card-icon" />
+            <h3 className="card-title">Objetivo</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+    <div className="background-semisphere"></div>
+      <div className="content">
+        <TestimonialCards />
+      </div>
+       
+
       </>
     );
   };

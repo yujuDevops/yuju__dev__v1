@@ -1,0 +1,108 @@
+.footer {
+     /* Cambiar este color si es necesario */
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    inline-size: 129px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  .footer-middle-item > a {
+    color: #333;
+  }
+  
+  .footer-top,
+  .footer-middle,
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  .footer-middle-item {
+    flex: 1;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .footer-middle-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #333; /* Color de las barras verticales */
+    display: flex;
+  }
+  
+
+  .footer-top {
+    background-image: url("https://i.ibb.co/B6Jk70Y/Footer.png");
+    height: 250px;
+    object-fit: cover;
+    padding: 0px 60px;
+  }
+  
+#logo__yuju img{
+    width: 100px !important;
+}
+
+  .footer-logo img,
+  .footer-nimbus-logo img,
+  .footer-middle img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-middle {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Aseguramos que los items tengan la misma altura */
+    text-align: center;
+    width: 100%;
+    padding: -1%;
+  }
+  
+  .footer-middle-item {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-bottom-left,
+  .footer-bottom-right {
+    padding: 10px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
