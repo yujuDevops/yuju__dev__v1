@@ -1,3 +1,7 @@
+.padreDiv{
+  margin-bottom: 90px;
+}
+
 .h2Acordeon {
 
     font-family: Inter;
@@ -5,7 +9,7 @@
     font-size: 25px;
     margin-top: 100px;
     margin-bottom: 40px;
-    margin-left: 5%;
+    margin-left: 4%;
     color: #3369FF;
 }
 
@@ -15,7 +19,7 @@
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 60px;
-    margin-left: 5%;
+    margin-left: 4%;
     color: #8D8B8E;
 }
 .divAcordeonComp div{
@@ -73,3 +77,4 @@
     padding: 10px;
     font-size: 14px;
   }
+

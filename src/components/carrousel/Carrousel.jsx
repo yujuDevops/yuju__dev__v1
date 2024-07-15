@@ -50,6 +50,7 @@ export const Carrousel = () => {
        {seguros.map((even)=> {
 
         return (
+          <>
             <div className="ContenedorPadreCard">
             <div className="card">
             <div className="card-content">
@@ -61,6 +62,7 @@ export const Carrousel = () => {
             </a>
             </div>
             </div>
+            </>
         )
        }
     )}

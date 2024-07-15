@@ -8,7 +8,7 @@ font-weight: 800;
 font-size: 25px;
 margin-top: 300px;
 margin-bottom: 40px;
-margin-left: 5%;
+margin-left: 4%;
 color: #3369FF;
 }
 
@@ -17,6 +17,7 @@ color: #3369FF;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 10px; /* Ajusta el valor del gap según tus necesidades */
+margin-left: 2%;
 }
 
 .EmpresasgridImage {

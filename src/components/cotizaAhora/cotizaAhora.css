@@ -14,22 +14,23 @@
     justify-content: space-between;
     border: 1px solid #e0e0e0;
     padding: 10px;
-    margin-left: 100px;
+    margin-left: 4%;
     border-radius: 30px;
-    width: 90%;
+    width: 92%;
     border: 0px solid;
     box-shadow: 10px 5px 10px 20px rgba(5, 5, 5, 0.1);
   }
   
   .moto-texto {
     color: #a0a0a0;
-    font-size: Inter;
+    font-family: Inter;
   }
   
-  .moto-presio {
+   .moto-presio {
     color: #007bff;
     font-weight: bold;
-    font-size: Inter;
+    font-family: Inter;
+   
   }
   
   .moto-icon {
@@ -40,13 +41,14 @@
   }
   
   .moto-button {
-    background-color: #007bff;
+    background-color:  #0F2BA1;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: Inter;
+    font-family: Inter;
+    width: 255px;
   }
   
   .moto-button:hover {

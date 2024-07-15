@@ -6,7 +6,7 @@ import { CardInfo } from "./motoPageComponents/components/CardInfo"
 import { BannerContratar } from "./motoPageComponents/components/BannerContratar"
 import { ImgEmpresas } from "./motoPageComponents/components/ImgEmpresas"
 import { AcordeonMotos } from "./motoPageComponents/components/AcordeonMotos"
-
+import { Carrousel } from "../../components/carrousel/Carrousel"
 
 
 
@@ -26,6 +26,7 @@ const MotoPage = () => {
 <BannerContratar/>
 <ImgEmpresas/>
 <AcordeonMotos/>
+<Carrousel/>
 
 
 

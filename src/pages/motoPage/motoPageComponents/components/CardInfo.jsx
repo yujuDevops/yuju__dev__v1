@@ -13,8 +13,8 @@ export const CardInfo = () => {
 return(
     <div className='cards__1' key={data.numero}>
   <img src={data.imagen} alt="" />
-    <h3 >{data.numero}</h3>
-    <p>{data.titulo}</p>
+    <h3 className="h3CardInfo" >{data.numero}</h3>
+    <p className="pCardInfo">{data.titulo}</p>
   </div>
     
 )

@@ -20,7 +20,7 @@ const alternar = ()=>{
               <div className={`divHijoAcordeon ${isOpen ? 'show' : ''}`}>
                 <p>{content}</p>
               </div>
-          { id===18 ? null : <hr/>}
+          { id===18? null : <hr/>}
             </div> 
      
 )}

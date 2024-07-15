@@ -12,7 +12,7 @@
     font-size: 14px;
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     transition: background-color 0.3s; /* Transición para el efecto hover */
-    
+    margin-left: 0%;
    
 }
 

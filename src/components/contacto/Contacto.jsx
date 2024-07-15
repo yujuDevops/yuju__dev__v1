@@ -1,4 +1,4 @@
-import propTypes, { string } from "prop-types"
+import propTypes from "prop-types"
 
 export const Contacto = ({title}) => {
   return (
