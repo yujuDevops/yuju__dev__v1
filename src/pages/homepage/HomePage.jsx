@@ -1,15 +1,14 @@
 import  { useState, useEffect } from 'react';
 import Header from '../../components/header/Header';
 import data from '../../data.jason/Headers.json';
-import logo from '../../assets/image/logoYujuAzul.png';
 import "./HomePage.css"
 import libra from '../../assets/image/Libra-bn.png';
-
+import logo from "../../assets/image/logoYujuAzul.png"
 import inovacion from "./img/web_Icono-innovacion.svg";
 import mision from "./img/web_Icono-mision.svg";
 import objetivos from "./img/web_Icono-objetivos.svg";
 import { Carrousel } from '../../components/carrousel/Carrousel';
-
+import TestimonialCards from './componentsHome/TestimonialCards';
 
 
 
@@ -21,7 +20,8 @@ const HomePage = ({ pageId }) => {
       const header = data.headers.find(header => header.id === pageId);
       setHeaderData(header);
     }, [pageId]);
-  
+
+    
     return (
       <>
       <div className="HomePage">
@@ -40,6 +40,9 @@ const HomePage = ({ pageId }) => {
       <div className="semisphere"></div>
       <div className="content">
         {/* Aquí van los componentes que quieres mostrar encima */}
+
+          {/* COMIENZAN LAS CARDS*/}
+      
         <h2 className='h2__comp'>¿Cómo funciona?</h2>
         <div className='containerCard__1'>
         <div className='cards__1'>
@@ -60,6 +63,9 @@ const HomePage = ({ pageId }) => {
         <p>Yuju! Ya estás asegurado</p>
         </div>
         </div>
+
+        {/* TERMINAN */}
+
       </div>
       <section className='containerCompañies'>
         <h3 className='h3__comp'>
@@ -119,10 +125,13 @@ const HomePage = ({ pageId }) => {
       </div>
     </div>
 
+        <Carrousel/>
         
     <div className="background-semisphere"></div>
-      <div className="content">
+      <div className="content__shemispere">
  
+        <TestimonialCards/>
+
       </div>
        
 

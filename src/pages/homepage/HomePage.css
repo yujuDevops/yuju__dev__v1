@@ -9,7 +9,7 @@
     padding: 40px 20px;
     background-color: #fFfFfF; /* Fondo gris claro */
     overflow: hidden;
-    height: 750px;
+    height: 650px;
   }
   
   .semisphere {
@@ -28,40 +28,42 @@
     z-index: 1;
 }
 
+
 .h2__comp{
-    font-size: 16px;
-    font-family: 'Inter';
-    font-weight: 800;
-    color: #3369FF;
-    display: flex;
-    margin: 20px 20px;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 800;
+  color: #3369FF;
+  display: flex;
+  margin: 20px 20px;
 }
 
 .containerCard__1{
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 23px;
-  padding: 20px;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 23px!important;
+padding: 20px;
 
 }
 
 .cards__1 {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #8d8b8e40;
-    width: 100%;
-    max-width: 275px;
-    padding: 20px;
-    text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #8d8b8e40;
+  width: 100%;
+  max-width: 275px;
+  padding: 20px;
+  text-align: center;
 }
 
 .cards__1 p {
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 400;
-    color: #8D8B8E;
+  font-size: 12px;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #8D8B8E;
 }
+
 
 .containerCompañies {
     z-index: 1;
@@ -152,6 +154,11 @@
   justify-content: center;
 }
 
+.card-c:hover .card-text-split
+.card-c:hover .card-icon {
+  opacity: 0;
+}
+
 .card-c img {
   width: 100px;
 }
@@ -174,6 +181,11 @@
   border-bottom-right-radius: 345px;
   transform: translate(-65%, -48%);
 }
+
+.content__shemispere {
+  margin-top: 100px;
+}
+
 
 .content__child {
   position: relative;

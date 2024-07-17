@@ -23,6 +23,12 @@
     box-shadow: 0 0 10px #8d8b8e40;
     padding-bottom: 20px;
   }
+
+
+  .card:hover {
+    background-color: #3369FF;
+  }
+
   
   .card-content {
     display: flex;
@@ -38,6 +44,10 @@
     color: #3369ff;
     font-family: inter;
     font-weight: 700;
+  }
+
+  .card:hover .card-content h2 {
+    color: #FFFFFF;
   }
   
   .card-image {
@@ -59,5 +69,9 @@
 
 }
 
+.card:hover .card-button button {
+  background-color: #33FFCC;
+  color:#3369FF;
+}
 
 }
