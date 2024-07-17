@@ -2,7 +2,7 @@ import './Footer.css';
 import yujuBlaco from "../../assets/image/webBlanco.png";
 import nimbusBlaco from "../../assets/image/logoBLANCO.png"
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
