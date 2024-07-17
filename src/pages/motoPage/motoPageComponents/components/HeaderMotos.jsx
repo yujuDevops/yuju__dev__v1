@@ -13,7 +13,7 @@ export const HeaderMotos = () => {
   <h2 className='h2-motos'>Cotizá, compará y ahorrá en tu seguro de auto.</h2>
   <h3 className='h3-motos'>Tenemos las mejores coberturas pensadas para vos, para que<br/> puedas encontrar
      la que más se adapte a tu necesidad y a tu bolsillo.</h3>
-    <Button text="Cotiza" url="https://wa.me/5491156307246"/>
+    <Button className="ButtonHeaderMotos" text="Cotiza" url="https://wa.me/5491156307246"/>
 
   </div>
 

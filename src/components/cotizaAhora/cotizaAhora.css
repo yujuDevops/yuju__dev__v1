@@ -18,7 +18,7 @@
     border-radius: 30px;
     width: 92%;
     border: 0px solid;
-    box-shadow: 10px 5px 10px 20px rgba(5, 5, 5, 0.1);
+    box-shadow: 0 0 10px #8d8b8e40;
   }
   
   .moto-texto {
@@ -27,7 +27,7 @@
   }
   
    .moto-presio {
-    color: #007bff;
+    color: #3369FF;
     font-weight: bold;
     font-family: Inter;
    
@@ -54,3 +54,16 @@
   .moto-button:hover {
     background-color: #0056b3;
   }
+
+  @media 
+(min-width: 600px) and (max-width: 1400px) {
+  .div-cotizaAhora {
+    margin-top: 180px;
+    
+}
+
+.moto-insurance-container {
+  box-shadow: 0 0 10px #8d8b8e40;
+}
+
+}

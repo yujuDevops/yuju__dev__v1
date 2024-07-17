@@ -106,3 +106,22 @@
 .buttonCardMotos:hover {
     background-color: #0056b3;
 }
+
+@media 
+(min-width: 600px) and (max-width: 1400px) {
+
+    .card-container {
+       
+        gap: 0px;
+        
+    }
+
+    .divCardMotos {
+        width: 22%;
+        box-shadow: 0 0 10px #8d8b8e40;
+    }
+    .liCardMotos {
+        padding: 4px 0px;
+    }
+
+}
