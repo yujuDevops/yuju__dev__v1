@@ -23,3 +23,20 @@
 
     font-weight: 300; 
 }
+
+@media 
+(min-width: 600px) and (max-width: 1400px) {
+
+    .h2Banner{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .vidBanner{
+        top: 90px;
+    margin-bottom: -100px;
+    }
+    .imgBannerContratar{
+        margin-top: 90px;
+    }
+}

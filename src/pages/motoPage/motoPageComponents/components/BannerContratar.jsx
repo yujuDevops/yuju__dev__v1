@@ -13,7 +13,7 @@ export const BannerContratar = () => {
 
 </h2>
 <div className="vidBanner">
-<Button  text="Escribinos" url="https://wa.me/5491156307246"/>
+<Button className="buttonBannerContratar" text="Escribinos" url="https://wa.me/5491156307246"/>
 </div>
     </div>
   )

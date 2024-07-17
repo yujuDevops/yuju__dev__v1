@@ -1,6 +1,11 @@
 .padreDiv{
   margin-bottom: 90px;
+  
 }
+hr{
+  margin-right: 100px;
+}
+
 
 .h2Acordeon {
 
@@ -24,6 +29,7 @@
 }
 .divAcordeonComp div{
  margin-right: 140px;
+ margin-left: 4%;
 }
 
 .divPadreAcordeon {
@@ -49,9 +55,11 @@
     line-height: 14.52px;
   ;
   }
+
+
   
   .divHijoAcordeon::after {
-    content: '\25BC';
+    
     float: right;
     font-size: 12px;
     margin-top: 4px;
