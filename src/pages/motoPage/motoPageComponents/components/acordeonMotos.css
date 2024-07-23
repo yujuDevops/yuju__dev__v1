@@ -86,3 +86,19 @@ hr{
     font-size: 14px;
   }
 
+  @media 
+(min-width: 0px) and (max-width: 699px) {
+
+  hr{
+    margin-right: 0px;
+  }
+
+  .bottonAcordeon{
+
+    font-size: 9px;
+  }
+  .h3Acordeon{
+    font-size: 10px;
+  }
+}
+

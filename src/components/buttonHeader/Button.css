@@ -3,7 +3,7 @@
     color: #3369FF;
     width: 250px;
     height: 41px;
-    margin-top: 75px;
+    margin-top: 45px;
     border: 0px solid;
     border-radius: 6px;
     padding: 12px 18px 12px 18px;
@@ -19,3 +19,30 @@
 .button-moto:hover {
     background: #01d6a4;; /* Color de fondo al pasar el cursor */
   }
+
+  @media 
+(min-width: 1400px) and (max-width: 1600px) {
+
+    .button-moto{
+        margin-top: 65px;
+    }
+}
+
+  /*Notebook*/
+@media 
+(min-width: 1151px) and (max-width: 1400px) {
+
+    .button-moto {
+       margin-top: 65px;
+        
+            }
+}
+
+@media 
+(min-width: 900px) and (max-width: 1150px) {
+    .button-moto {
+width: 210px;
+height: 40px;
+
+    }
+}

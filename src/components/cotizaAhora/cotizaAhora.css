@@ -67,3 +67,62 @@
 }
 
 }
+
+@media 
+(min-width:1030px) and (max-width: 1400px) {
+  .moto-button {
+    width: 16%;
+    height: 10%;
+  }
+
+
+
+}
+
+@media 
+(min-width:500px) and (max-width: 1029px) {
+
+  .moto-button {
+    width: 24%;
+    height: 10%;
+    font-size: 60%;
+  }
+
+  .moto-presio {
+    height: 10%;
+    width: 15%;
+    font-size: 80%;
+  }
+
+  .moto-texto {
+    width: 15%;
+    margin-left: 5px;
+  font-size: 80%;
+  }
+}
+
+@media 
+(min-width:300px) and (max-width: 499px) {
+
+  .moto-button {
+    width: 25%;
+    height: 30px;
+    text-align: center;
+    font-size: 5.7px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .moto-presio {
+    height: 10%;
+    width: 17%;
+    font-size: 60%;
+  }
+
+  .moto-texto {
+    width: 16%;
+    margin-left: 6px;
+  font-size: 60%;
+  }
+
+}
