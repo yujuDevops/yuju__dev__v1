@@ -2,7 +2,7 @@
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 150px;
+  gap: 210px;
   padding: 20px;
 
 }
@@ -48,10 +48,45 @@ color: #3369FF;
 }
 
 @media 
-(min-width: 600px) and (max-width: 1400px) {
+(min-width: 700px) and (max-width: 1400px) {
     .containerCard__1{
         gap: 25px;
     }
+
+}
+
+@media 
+(min-width: 400px) and (max-width: 699px) {
+    .containerCard__1{
+        gap: 30px;
+        width: 100%;
+        margin-left: -4%;
+    }
+
+    
+.cards__1  {
+    
+    font-size: 10px;
+ max-width: 150px;   
+}
+
+}
+
+
+@media 
+(min-width: 300px) and (max-width: 399px) {
+    .containerCard__1{
+        gap: 10px;
+        width: 100%;
+        margin-left: -4%;
+    }
+
+    
+.cards__1  {
+    
+    font-size: 10px;
+ max-width: 150px;   
+}
 
 }
 

@@ -10,9 +10,8 @@ export const HeaderMotos = () => {
   <img src={fotoMotos} alt="" />
   <div className='container-motos'>
   <h1 className='h1-motos'>SEGURO DE MOTO</h1>
-  <h2 className='h2-motos'>Cotizá, compará y ahorrá en tu seguro de auto.</h2>
-  <h3 className='h3-motos'>Tenemos las mejores coberturas pensadas para vos, para que<br/> puedas encontrar
-     la que más se adapte a tu necesidad y a tu bolsillo.</h3>
+  <h2 className='h2-motos'>Viví una aventura sin límites. Cotizá y contratá  tu seguro online<br/> en un instante.</h2>
+  <h3 className='h3-motos'>En Yuju te ofrecemos protección que va a tu ritmo. Asegurá tu moto de <br/> forma fácil, rápida y a un precio justo.</h3>
     <Button className="ButtonHeaderMotos" text="Cotiza" url="https://wa.me/5491156307246"/>
 
   </div>

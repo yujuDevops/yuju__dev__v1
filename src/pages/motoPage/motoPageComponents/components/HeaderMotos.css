@@ -47,6 +47,20 @@ font-weight: 700;
   .container-motos{
    
     top: 70px;
+    
+  }
+
+  .h2-motos{
+    font-weight: 700;
+    font-size: 130%;
+  }
+
+  .h3-motos{
+
+    margin-bottom: -40px;
+    font-size: 100%;
+    font-weight: 400;
+    
   }
 
 
@@ -55,7 +69,7 @@ font-weight: 700;
 /* ///////////////Notebook////////////*/
 
 @media 
-(min-width: 600px) and (max-width: 1400px) {
+(min-width: 1151px) and (max-width: 1400px) {
 
   .container-motos{
     
@@ -80,9 +94,39 @@ font-weight: 700;
   margin-bottom: -40px;
   font-size: 16px;
 }
-
-
   
+}
+
+@media 
+(min-width: 900px) and (max-width: 1150px) {
+
+
+  .container-motos{
+    
+    top: 50px;
+   
+  }
+
+.h1-motos{
+ 
+  font-weight: 500;
+  font-size: 120%;
+}
+
+.h2-motos{
+  font-weight: 500;
+  font-size: 100%;
+}
+
+
+ 
+.h3-motos{
+
+  margin-bottom: -40px;
+  font-size: 80%;
+}
+
+
 }
 
 
