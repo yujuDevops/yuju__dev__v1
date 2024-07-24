@@ -2,14 +2,27 @@ import  { useState, useEffect } from 'react';
 import Header from '../../components/header/Header';
 import data from '../../data.jason/Headers.json';
 import "./HomePage.css"
-import libra from '../../assets/image/Libra-bn.png';
-import logo from "../../assets/image/logoYujuAzul.png"
+import libra from '../../assets/image/Logo-San-Cristobal.png';
+
+
+
+import logo1 from "./img/Home-comofunciona-1-azul.svg";
+import logo2 from "./img/Home-comofunciona-2-azul.svg";
+import logo3 from "./img/Home-comofunciona-3-azul.svg";
+import logo4 from "./img/Home-comofunciona-4-azul.svg";
+
+import logo1_hover from "./img/Home-comofunciona-1-verde.svg";
+import logo2_hover from "./img/Home-comofunciona-2-verde.svg";
+import logo3_hover from "./img/Home-comofunciona-3-verde.svg";
+import logo4_hover from "./img/Home-comofunciona-4-verde.svg";
+
+
 import inovacion from "./img/web_Icono-innovacion.svg";
 import mision from "./img/web_Icono-mision.svg";
 import objetivos from "./img/web_Icono-objetivos.svg";
 import { Carrousel } from '../../components/carrousel/Carrousel';
 import TestimonialCards from './componentsHome/TestimonialCards';
-
+import EmailInput from './componentsHome/EmailInput';
 
 
 const HomePage = ({ pageId }) => {
@@ -46,25 +59,29 @@ const HomePage = ({ pageId }) => {
         <h2 className='h2__comp'>¿Cómo funciona?</h2>
         <div className='containerCard__1'>
         <div className='cards__1'>
-          <img src={logo} alt="" />
+        <img src={logo1} alt="" />
+        <img src={logo1_hover} alt="" className='hover-image' />
           <p>Seleccioná tu seguro</p>
         </div>
         <div className='cards__1'>
-        <img src={logo} alt="" />
+        <img src={logo2} alt="" />
+        <img src={logo2_hover} alt="" className='hover-image' />
         <p>Completá el cotizador
         o la ficha de consulta</p>
         </div>
         <div className='cards__1'>
-        <img src={logo} alt="" />
+        <img src={logo3} alt="" />
+        <img src={logo3_hover} alt="" className='hover-image' />
         <p>Cargá tus datos de pago</p>
         </div>
         <div className='cards__1'>
-        <img src={logo} alt="" />
+        <img src={logo4} alt="" />
+        <img src={logo4_hover} alt="" className='hover-image' />
         <p>Yuju! Ya estás asegurado</p>
         </div>
         </div>
 
-        {/* TERMINAN */}
+        {/* TERMINAN LAS CARDS */}
 
       </div>
       <section className='containerCompañies'>
@@ -104,6 +121,7 @@ const HomePage = ({ pageId }) => {
           <div className="card-c">
             <img src={inovacion} alt="Visión icon" className="card-icon" />
             <h3 className="card-title">Visión</h3>
+            <p></p>
           </div>
         </div>
       </div>
@@ -127,13 +145,25 @@ const HomePage = ({ pageId }) => {
 
         <Carrousel/>
         
-    <div className="background-semisphere"></div>
+      <div className="background-semisphere"></div>
       <div className="content__shemispere">
- 
         <TestimonialCards/>
-
       </div>
        
+       <div className='containerNewsletter'>
+        <h3 className='newsletter__h3'>¡Información y descuentos!</h3>
+        <p className='newsletter__p'>¿Querés ser el primero en obtener ofertas? Recibí toda la información en tu casilla de mail, dejanos tu correo y nos contectaremos a la brevedad.</p>
+        <div className="newsletter__input">
+        <EmailInput />
+        </div>
+       </div>
+
+       <div className="semisphere-container">
+      <div className="semisphere"></div>
+      <div className="content">
+
+      </div>
+      </div>
 
       </>
     );

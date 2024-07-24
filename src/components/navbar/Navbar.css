@@ -119,6 +119,7 @@
 
 .fa-solid{
   font-size: 10px;
+  color: #8D8B8E!important;
 }
 
 
@@ -163,7 +164,11 @@
       content: '';
   }
     
-    
+  .fa-solid{
+    font-size: 10px;
+    color: #8D8B8E!important;
+  }  
+
     .dropdown .dropbtn:hover {
       font-weight: 800;
       transform: scale(1.05);

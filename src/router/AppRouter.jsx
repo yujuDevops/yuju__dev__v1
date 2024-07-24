@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
-
+import Footer from "../components/footer/Footer"
 
 import HomePage from '../pages/homepage/HomePage';
 import AutoPage from '../pages/autoPage/AutoPage';
@@ -15,6 +15,7 @@ import SanCristobalPage from '../pages/sanCristobalPage/SanCristobalPage';
 import SiniestrosPage from '../pages/siniestrosPage/SiniestrosPage';
 import ClubYujuPage from '../pages/clubYujuPage/ClubYujuPage';
 import ContactPage from '../pages/contactoPage/ContactPage';
+
 
 const AppRouter = () => {
   return (
@@ -38,6 +39,7 @@ const AppRouter = () => {
 
                 <Route path="/" element={<Navigate to={"/Home"}/>} />
             </Routes>
+            <Footer/>
         </Router>
 
     </>
