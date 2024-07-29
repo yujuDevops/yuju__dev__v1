@@ -1,5 +1,5 @@
 import './TestimonialCards.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import corazon from "../img/web_corazon.svg"
 
 const testimonials = [
   {
@@ -31,7 +31,7 @@ const TestimonialCards = () => {
       <div className="cards_test_container">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="card__test">
-            <div className="icon__heart"><i class="fa-solid fa-heart"></i></div>
+            <div><img className="icon__heart" src={corazon} alt="" /></div>
             <h3>{testimonial.name}</h3>
             <p className="date__test">{testimonial.date}</p>
             <span className='text__test'>{testimonial.text}</span>

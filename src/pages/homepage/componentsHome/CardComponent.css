@@ -1,0 +1,75 @@
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -50px 50px 100px;
+    gap: 20px;
+  }
+  
+  .card-con {
+    border: 1.5px solid #3369FF;
+    width: 300px;
+    height: 150px; /* Fija la altura de la tarjeta */
+    align-items: center;
+    border-radius: 26px;
+    background-color: #ffffff;
+    z-index: 21;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-br {
+    border: 1.5px solid #3369FF;
+    border-radius: 16px;
+    position: relative;
+    top: -6px;
+    left: -6px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%; /* Asegúrate de que el contenedor interno tome toda la altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Asegúrate de que el contenedor interno tome toda la altura */
+  }
+  
+  .card-c:hover .card-text,
+  .card-c:hover .card-icon {
+    opacity: 100;
+  }
+  
+  .card-c img {
+    width: 100px;
+  }
+  
+  .card-br h3 {
+    font-family: Inter;
+    font-weight: 700;
+    color: #3369FF;
+    font-size: 16px;
+  }
+  
+  .card-text {
+    padding: 0px 5px 0px 5px;
+    font-family: inter;
+    color: #3369FF;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Limita el número de líneas de texto */
+    -webkit-box-orient: vertical;
+    line-clamp: 6; /* Agrega la propiedad estándar */
+  }

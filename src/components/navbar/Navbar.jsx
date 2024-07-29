@@ -80,37 +80,7 @@ const Navbar = () => {
                         </div>
                     )}
                 </div>
-                <div className="dropdown">
-                    <button className="dropbtn" onClick={() => toggleDropdown('aseguradoras')}>
-                        Aseguradoras
-                        <i className={`fa-solid ${isDropdownOpen.aseguradoras ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
-                    </button>
-                    {isDropdownOpen.aseguradoras && (
-                        <div className="dropdown-content">
-                           <Link 
-        to="/rus" 
-        className={activePage === 'rus' ? 'active' : ''} 
-        onClick={() => handlePageChange('rus')}
-    >
-        RUS
-    </Link>
-            <Link 
-                to="/experta" 
-                className={activePage === 'experta' ? 'active' : ''} 
-                onClick={() => handlePageChange('experta')}
-            >
-                Experta
-            </Link>
-            <Link 
-                to="/san-cristobal" 
-                className={activePage === 'san-cristobal' ? 'active' : ''} 
-                onClick={() => handlePageChange('san-cristobal')}
-            >
-                San Cristobal
-            </Link>
-                        </div>
-                    )}
-                </div>
+
                 <Link 
         to="/institucional" 
         className={activePage === 'institucional' ? 'active' : ''} 
