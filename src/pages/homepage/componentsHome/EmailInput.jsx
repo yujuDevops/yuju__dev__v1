@@ -4,14 +4,24 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const EmailInput = () => {
   const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
 
   const handleChange = (event) => {
     setEmail(event.target.value);
+    if (event.target.value.includes('@')) {
+      setError('');
+    } else {
+      setError('Debes utilizar "@" en este campo');
+    }
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Email submitted: ${email}`);
+    if (email.includes('@')) {
+      alert(`Email submitted: ${email}`);
+    } else {
+      setError('Debes utilizar "@" en este campo');
+    }
   };
 
   return (
@@ -23,11 +33,12 @@ const EmailInput = () => {
         value={email}
         onChange={handleChange}
         placeholder="Escriba su mail"
-        className="email-input"
+        className={`email-input ${error ? 'input-error' : ''}`}
         required
       />
+      {error && <p className="error-message">{error}</p>}
       <button type="submit" className="submit-button">
-      <i class="fa-solid fa-angle-right"></i>
+        <i className="fa-solid fa-angle-right"></i>
       </button>
     </form>
   );
