@@ -1,4 +1,4 @@
-.containerCard__1{
+.CardInfoContainerCard__1{
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -17,7 +17,7 @@ color: #3369FF;
 }
 
 
-.cards__1 {
+.CardInfoCards__1 {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 10px #8d8b8e40;
@@ -25,7 +25,10 @@ color: #3369FF;
     max-width: 275px;
     padding: 20px;
     text-align: center;
+
 }
+
+
 
 .h3CardInfo{
     color: #8D8B8E;
@@ -49,19 +52,44 @@ color: #3369FF;
 
 @media 
 (min-width: 700px) and (max-width: 1400px) {
-    .containerCard__1{
-        gap: 25px;
+    .CardInfoContainerCard__1{
+        gap: 25px;  
     }
+    
+    .CardInfoContainerCard__1 img{
+        height: 50%;
+    }
+
 
 }
 
 @media 
 (min-width: 400px) and (max-width: 699px) {
-    .containerCard__1{
+    .CardInfoContainerCard__1{
         gap: 30px;
         width: 100%;
         margin-left: -4%;
+      
     }
+    .CardInfoContainerCard__1 img{
+        height: 50%;
+    }
+
+    .CardInfoCards__1{
+        width: 30%;
+    }
+
+    .pCardInfo{
+        color: #8D8B8E;
+        font-family: Inter;
+        font-size: 70%;
+    }
+    
+    .h3CardInfo{
+    font-size: 90%;    
+    }
+
+
 
     
 .cards__1  {
@@ -75,11 +103,31 @@ color: #3369FF;
 
 @media 
 (min-width: 300px) and (max-width: 399px) {
-    .containerCard__1{
-        gap: 10px;
-        width: 100%;
-        margin-left: -4%;
+
+    .CardInfoContainerCard__1 {
+        gap: 30px;
+        width: 118%;
+        margin-left: -15%;
     }
+    .CardInfoContainerCard__1 img{
+        height: 50%;
+    }
+
+    .CardInfoCards__1{
+        width: 34%;
+    }
+
+    .pCardInfo{
+        color: #8D8B8E;
+        font-family: Inter;
+        font-size: 70%;
+    }
+    
+    .h3CardInfo{
+    font-size: 90%;    
+    }
+
+
 
     
 .cards__1  {
