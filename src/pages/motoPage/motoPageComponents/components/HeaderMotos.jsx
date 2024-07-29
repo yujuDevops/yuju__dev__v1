@@ -1,4 +1,5 @@
 import fotoMotos from '../../../../assets/image/Header-seguro-moto.png'
+import fotoMotoTablet from '../../../../assets/image/Header-Moto-tablet.jpg'
 import { Button } from '../../../../components/buttonHeader/Button'
 
 import "../components/HeaderMotos.css"
@@ -7,7 +8,8 @@ export const HeaderMotos = () => {
   return (
    <>
    <header className='header-motos'>
-  <img src={fotoMotos} alt="" />
+  <img src={fotoMotos} alt=""  className='imgPorDefectoMotos' />
+  <img  src={fotoMotoTablet} alt="" className='imgRemplazoMotos'  />
   <div className='container-motos'>
   <h1 className='h1-motos'>SEGURO DE MOTO</h1>
   <h2 className='h2-motos'>Viví una aventura sin límites. Cotizá y contratá  tu seguro online<br/> en un instante.</h2>
