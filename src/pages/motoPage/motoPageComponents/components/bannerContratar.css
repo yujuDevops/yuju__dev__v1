@@ -1,3 +1,15 @@
+div .imgBannerContratar{
+    display: block;
+}
+
+div .imgBannerMotosCelular{
+    display: none;
+}
+div .imgBannerMotosTablet{
+    display: none;
+}
+
+
 .imgBannerContratar {
     margin-top: 40px;
     position: absolute;
@@ -25,10 +37,11 @@
 }
 
 @media 
-(min-width: 600px) and (max-width: 1400px) {
+(min-width: 1000px) and (max-width: 1400px) {
 
     .h2Banner{
-        margin-top: 10px;
+        font-size: 100%;
+        margin-top: 9px;
         margin-bottom: 10px;
     }
 
@@ -39,4 +52,84 @@
     .imgBannerContratar{
         margin-top: 90px;
     }
+}
+
+
+@media 
+(min-width: 500px) and (max-width: 999px) {
+
+    .h2Banner{
+        font-size: 85%;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .vidBanner{
+        top: 85px;
+    margin-bottom: -100px;
+    }
+    .imgBannerContratar{
+        margin-top: 100px;
+    }
+
+    div .button-moto{
+        
+        width: 191px;
+        height: 37px;
+    }   
+
+
+
+    div .imgBannerContratar{
+        display: none;
+    }
+    
+    div .imgBannerMotosCelular{
+        display: none;
+        margin-top: 40px;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 50%;
+       
+    }
+
+    div .imgBannerMotosTablet{
+        display: block;
+        margin-top: 100px;
+        position: absolute;
+    }
+}
+@media 
+(min-width: 300px) and (max-width: 499px) {
+    div .imgBannerContratar{
+        display: none;
+    }
+    
+    div .imgBannerMotosCelular{
+        position: absolute;
+        display: block;
+        margin-top: 125px;
+    }
+    div .imgBannerMotosTablet{
+        display: none;
+
+    }
+    .h2Banner{
+        font-size: 35%;}
+
+        .button-moto{
+           font-size: 50%; 
+           width: 100px;
+           height: 10px;
+           margin-top: 9px;
+
+        }
+
+        a{
+            margin-top: -10px;
+        }
+    
+
+
 }

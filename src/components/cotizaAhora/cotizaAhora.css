@@ -103,6 +103,10 @@
 
 @media 
 (min-width:300px) and (max-width: 499px) {
+  .div-cotizaAhora {
+    margin-top: 110%;
+    
+}
 
   .moto-button {
     width: 25%;

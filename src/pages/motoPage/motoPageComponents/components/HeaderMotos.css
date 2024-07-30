@@ -5,6 +5,9 @@
 .header-motos .imgRemplazoMotos{
   display: none;
 }
+.header-motos .imgFotoCelular{
+  display: none;
+}
 
 .header-motos img{
   position: absolute;
@@ -150,6 +153,53 @@ font-weight: 700;
 
 }
 
+@media 
+(min-width: 300px) and (max-width: 499px) {
+
+  .container-motos{
+    
+    top: 60px;
+
+   
+  }
+
+.h1-motos{
+ 
+  margin-left: 0.1%;
+  font-weight: 500;
+  font-size: 110%;
+  padding: 4PX;
+}
+
+.h2-motos{
+  font-weight: 500;
+  font-size: 80%;
+}
+
+
+ 
+.h3-motos{
+
+ 
+  font-size: 60%;
+}
+
+div .ButtonHeaderMotos{
+ display: none;
+}
+
+  .header-motos .imgPorDefectoMotos{
+    display: none;
+  }
+  
+  .header-motos .imgRemplazoMotos{
+    display: none;
+  }
+  .header-motos .imgFotoCelular{
+    display: block;
+  }
+
+}
 
 
   
