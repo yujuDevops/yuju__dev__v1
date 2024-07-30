@@ -103,11 +103,14 @@ color: #3369FF;
 
 @media 
 (min-width: 300px) and (max-width: 399px) {
+    .h2-cardInfo{
+        font-size: 14px;
+    }
 
     .CardInfoContainerCard__1 {
         gap: 30px;
         width: 118%;
-        margin-left: -15%;
+        margin-left: -12%;
     }
     .CardInfoContainerCard__1 img{
         height: 50%;

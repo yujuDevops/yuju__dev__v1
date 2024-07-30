@@ -30,3 +30,19 @@ margin-left: 2%;
 .EmpresasgridImage:hover {
     filter: none;
 }
+
+@media 
+(min-width: 300px) and (max-width: 499px) {
+
+    .h2ImgEmpresas{
+        font-size: 12px;
+    }
+    .divImgEmpresas {
+        margin-top: -72px;
+        
+    }
+
+    .EmpresasgridImage{
+        height: 120%;
+    }
+}

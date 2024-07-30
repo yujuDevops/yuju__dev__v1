@@ -88,6 +88,9 @@ hr{
 
   @media 
 (min-width: 0px) and (max-width: 699px) {
+  .h2Acordeon{
+    font-size: 12px;
+  }
 
   hr{
     margin-right: 0px;
