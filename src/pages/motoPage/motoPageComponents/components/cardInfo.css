@@ -103,6 +103,8 @@ color: #3369FF;
 
 @media 
 (min-width: 300px) and (max-width: 399px) {
+
+
     .h2-cardInfo{
         font-size: 14px;
     }

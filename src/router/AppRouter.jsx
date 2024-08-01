@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import {  Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
 
@@ -21,7 +21,7 @@ const AppRouter = () => {
   return (
     <>
 
-<Router>
+
             <Navbar />
             <Routes>
                 <Route path="/home" element={<HomePage pageId="home"/>} />
@@ -40,7 +40,7 @@ const AppRouter = () => {
                 <Route path="/" element={<Navigate to={"/Home"}/>} />
             </Routes>
             <Footer/>
-        </Router>
+     
 
     </>
   )
