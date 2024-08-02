@@ -15,7 +15,7 @@
     border: 1px solid #e0e0e0;
     padding: 10px;
     margin-left: 4%;
-    border-radius: 30px;
+    border-radius: 15px;
     width: 92%;
     border: 0px solid;
     box-shadow: 0 0 10px #8d8b8e40;
@@ -73,6 +73,10 @@
   .moto-button {
     width: 16%;
     height: 10%;
+    margin-right: 20px;
+  }
+  .moto-texto{
+    margin-left: 20px;
   }
 
 
@@ -96,7 +100,7 @@
 
   .moto-texto {
     width: 15%;
-    margin-left: 5px;
+    margin-left: 20px;
   font-size: 80%;
   }
 }
