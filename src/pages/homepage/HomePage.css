@@ -14,13 +14,13 @@
   
   .semisphere {
     position: absolute;
-        top: 225px;
-        left: -35px;
-        width: 818px;
-        height: 701px;
-        background: radial-gradient(ellipse, rgba(51, 255, 204, 1) 1%, rgba(235, 254, 249, 0) 67%);
-        border-bottom-right-radius: 345px;
-        transform: translate(-65%, -48%);
+    top: 323px;
+    left: 1px;
+    width: 818px;
+    height: 597px;
+    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) 1%, rgba(235, 254, 249, 0) 67%);
+    border-bottom-right-radius: 345px;
+    transform: translate(-65%, -48%);
   }
   
 .content {
@@ -239,7 +239,7 @@ padding: 20px;
   .semisphere-two{
     position: absolute;
     top: 225px;
-    left: -35px;
+    left: 80px;
     width: 818px;
     height: 701px;
     background: radial-gradient(ellipse, rgba(51, 255, 204, 1) 1%, rgba(235, 254, 249, 0) 67%);
@@ -248,4 +248,3 @@ padding: 20px;
 }
   }
 
-}

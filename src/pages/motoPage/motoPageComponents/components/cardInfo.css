@@ -21,11 +21,11 @@ color: #3369FF;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 10px #8d8b8e40;
-    width: 100%;
-    max-width: 275px;
-    padding: 20px;
+    width: 142%;
+    max-width: 260px;
+    padding: 20px 45px;
     text-align: center;
-
+    max-height: 210px;
 }
 
 
@@ -33,11 +33,15 @@ color: #3369FF;
 .h3CardInfo{
     color: #8D8B8E;
     font-family: Inter;
+    font-size: 12px;
+    font-weight: 800;
 }
 
 .pCardInfo{
     color: #8D8B8E;
     font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -53,11 +57,16 @@ color: #3369FF;
 @media 
 (min-width: 700px) and (max-width: 1400px) {
     .CardInfoContainerCard__1{
-        gap: 25px;  
+        gap: 40px;
+        /* width: 94vw; */
+        /* max-height: 202px; */
+        margin: 0 auto; 
     }
     
     .CardInfoContainerCard__1 img{
-        height: 50%;
+        width: 58%;
+        object-fit: none;
+    }
     }
 
 
