@@ -32,14 +32,14 @@ export const Footer = () => {
         <div className="footer-middle-item">
           <p>Departamento de Orientación y Asistencia al Asegurado</p>
         </div>
-        <div className="footer-middle-item">
+        <div className="footer-middle-item footer-middle-item-two">
           <a href="tel:08006668400">0800-666-8400</a>
         </div>
-        <div className="footer-middle-item">
+        <div className="footer-middle-item footer-middle-item-two">
           <a target='_blank' href="https://www.argentina.gob.ar/ssn"><link rel="stylesheet" href="" />www.argentina.gob.ar/ssn</a>
         </div>
         <div className="footer-middle-item">
-          <img src="path/to/ssn-logo.png" alt="SSN Logo" />
+          <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722608965/SSN_afnmvf.png" alt="SSN Logo" />
         </div>
       </div>
       <div className="footer-bottom">
@@ -50,17 +50,19 @@ export const Footer = () => {
             reclamos que presenten los tomadores de seguros, asegurados, beneficiarios y/o derechohabientes. En caso de que existiera 
             un reclamo ante la entidad aseguradora y que el mismo no haya sido resuelto o haya sido desestimado, total o parcialmente, 
             o que haya sido denegada su admisión, podrá comunicarse con la Superintendencia de Seguros de la Nación por teléfono al 
-            0800-666-8400, correo electrónico a <a href="mailto:consultas@ssn.gob.ar">consultas@ssn.gob.ar</a> o formulario disponible 
-            en la página <a href="https://www.argentina.gob.ar/ssn">argentina.gob.ar/ssn</a>.
+            0800-666-8400, correo electrónico a <a href="mailto:consultas@ssn.gob.ar"><strong>consultas@ssn.gob.ar</strong></a> o formulario disponible 
+            en la página <a href="https://www.argentina.gob.ar/ssn"><strong>argentina.gob.ar/ssn</strong></a>.
           </p>
         </div>
-        <div className="footer-bottom-right">
-          <p>
+        <div className="footer-bottom-right ">
+          <p className='footer-bottom-right-two'>
             El Servicio de Atención al Asegurado está integrado por: <br />
-            Responsable: Felipe Ricardo Luis Perdomo <br />
-            Teléfono: <a href="tel:+543442571384">+54 9 3442 57-1384</a> <br />
-            Suplente: Guillermo Jose Joannas <br />
-            Teléfono: <a href="tel:+543442461715">+54 9 3442 46-1715</a>
+            Responsable: <strong>Felipe Ricardo Luis Perdomo</strong><br />
+            Teléfono: <a><strong>+54 9 3442 57-1384</strong></a> 
+            <br />
+            <br />
+            Suplente: <strong>Guillermo Jose Joannas</strong><br />
+            Teléfono: <a href="tel:+543442461715"><strong>+54 9 3442 46-1715</strong></a>
           </p>
         </div>
         </div>

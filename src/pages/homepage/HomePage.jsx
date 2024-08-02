@@ -5,6 +5,7 @@ import { Carrousel } from '../../components/carrousel/Carrousel';
 import TestimonialCards from './componentsHome/TestimonialCards';
 import EmailInput from './componentsHome/EmailInput';
 import CardComponent from './componentsHome/CardComponent';
+import FormComponent from "./componentsHome/FormComponent";
 import "./HomePage.css"
 
 
@@ -142,10 +143,11 @@ const HomePage = ({ pageId }) => {
         </div>
        </div>
 
-       <div className="semisphere-container">
-      <div className="semisphere"></div>
+       <div className="semisphere-container-two">
+      <div className="semisphere-two"></div>
       <div className="content">
-
+      <div className='container__form__p'><p>Contacto</p></div>
+      <FormComponent></FormComponent>
       </div>
       </div>
 
