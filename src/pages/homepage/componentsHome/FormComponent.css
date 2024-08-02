@@ -37,6 +37,7 @@
     outline: none;
     border: 1px solid rgba(51, 105, 255, 1); /* Change border color on focus if needed */
   }
+
   
   .error-text {
     color: red;
