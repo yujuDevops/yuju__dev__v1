@@ -13,7 +13,7 @@ const Navbar = () => {
         handlePageChange,
         isOpen,
         isDropdownOpen,
-    activePage } = customHooks()
+        activePage } = customHooks()
 
     return (
         <nav className="navbar">

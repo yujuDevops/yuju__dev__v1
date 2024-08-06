@@ -1,4 +1,4 @@
-import banerContratar from "../../../../assets/image/Banner-contratar.jpg"
+import banerContratar from "../../../../assets/image/imgMotos/Banner-contratar.jpg"
 import banerMotosCelular from "../../../../assets/image/imgMotos/Banner-contratar-celular.jpg"
 import banerMotosTablet from "../../../../assets/image/imgMotos/Banner-CTA-tablet.jpg"
 import { Button } from "../../../../components/buttonHeader/Button"
