@@ -52,6 +52,20 @@ const Navbar = () => {
                                 Moto
                             </Link>
                             <Link 
+                                to="/moto" 
+                                className={activePage === 'moto' ? 'active' : ''} 
+                                onClick={() => handlePageChange('moto')}
+                            >
+                                Moto
+                            </Link>
+                            <Link 
+                                to="/moto" 
+                                className={activePage === 'moto' ? 'active' : ''} 
+                                onClick={() => handlePageChange('moto')}
+                            >
+                                Moto
+                            </Link>
+                            <Link 
                                 to="/bici" 
                                 className={activePage === 'bici' ? 'active' : ''} 
                                 onClick={() => handlePageChange('bici')}

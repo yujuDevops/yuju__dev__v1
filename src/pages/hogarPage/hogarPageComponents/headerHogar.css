@@ -1,0 +1,200 @@
+
+  
+  .headerHogar img{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    z-index: -1;
+   
+  }
+  .containerHogar{
+    position: relative;
+    z-index: 1;
+    top: 120px;
+    left:4%
+  }
+  
+  
+  
+  
+  .h1Hogar {
+  z-index: 1;
+  color: white;
+  font-size: 35px;
+  margin-left: -10px;
+  font-family: inter;
+  background-color: aquamarine;
+  inline-size: fit-content;
+  font-weight: 900;
+  padding: 10px;
+  top: 40px;
+  } 
+  
+  .h2Hogar{
+    margin-top: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: inter;
+  font-weight: 700;
+  }
+  
+  .h3Hogar{
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
+    font-family: inter;
+    font-weight: 400;
+  }
+  
+  @media 
+  (min-width: 1400px) and (max-width: 1600px) {
+    .containerHogar{
+     
+      top: 70px;
+      
+    }
+  
+    .h2Hogar{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3Hogar{
+  
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+  
+  
+  }
+  
+  /* ///////////////Notebook////////////*/
+  
+  @media 
+  (min-width: 1151px) and (max-width: 1400px) {
+
+    .headerHogar{
+        margin-bottom: 300px ;
+    }
+  
+    .containerHogar{
+      
+      top: 50px;
+     
+    }
+  
+  .h1Hogar{
+    font-weight: 500;
+    
+  }
+  
+  .h2Hogar{
+    font-weight: 500;
+    font-size: 70%;
+  }
+  
+  
+   
+  .h3Hogar{
+  
+    margin-bottom: -40px;
+    font-size: 100%;
+  }
+    
+  }
+  
+  @media 
+  (min-width: 500px) and (max-width: 1150px) {
+  
+  
+    .containerHogar{
+      
+      top: 96px;
+     
+    }
+  
+  .h1Hogar{
+   
+    font-weight: 500;
+    font-size: 120%;
+  }
+  
+  .h2Hogar{
+    font-weight: 500;
+    font-size: 100%;
+  }
+  
+  
+   
+  .h3-motos{
+  
+    margin-bottom: -40px;
+    font-size: 80%;
+  }
+  
+  .header-motos .imgPorDefectoMotos{
+   
+    display: none;
+  }
+  
+  .header-motos .imgRemplazoMotos{
+    height: 37%;
+    display: block;
+    width: 100%;
+  }
+  
+  
+  }
+  
+  @media 
+  (min-width: 300px) and (max-width: 499px) {
+  
+    .container-motos{
+      
+      top: 60px;
+  
+     
+    }
+  
+  .h1-motos{
+   
+    margin-left: 0.1%;
+    font-weight: 500;
+    font-size: 110%;
+    padding: 4PX;
+  }
+  
+  .h2-motos{
+    font-weight: 500;
+    font-size: 80%;
+  }
+  
+  
+   
+  .h3-motos{
+  
+   
+    font-size: 60%;
+  }
+  
+  div .ButtonHeaderMotos{
+   display: none;
+  }
+  
+    .header-motos .imgPorDefectoMotos{
+      display: none;
+    }
+    
+    .header-motos .imgRemplazoMotos{
+      display: none;
+    }
+    .header-motos .imgFotoCelular{
+      display: block;
+    }
+  
+  }
+  
+  
+    
