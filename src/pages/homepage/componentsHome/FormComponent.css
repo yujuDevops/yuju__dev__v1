@@ -18,27 +18,38 @@
   }
   
   .form-input {
+    font-size: 12px;
+    font-family: inter;
+    color: rgb(41, 40, 41);
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
     margin-bottom: 5px;
     border-radius: 6px;
-    border: 1px solid rgba(217, 217, 217, 1)
+    border: 1px solid rgba(217, 217, 217, 1);
   }
 
-  .form-input::placeholder{
-    color: rgba(255, 166, 0, 1);
-    font-size: 12px;
+
+.form-input::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+  font-size: 10px!important;
     font-family: inter;
-    font-weight: 400;
-  }
+    font-weight: 300!important;
+}
+
+.placeholder-error::placeholder {
+  color: red;
+  font-size: 10px!important;
+    font-family: inter;
+    font-weight: 400!important;
+}
+
 
   .form-input:focus {
     outline: none;
     border: 1px solid rgba(51, 105, 255, 1); /* Change border color on focus if needed */
   }
 
-  
   .error-text {
     color: red;
     font-size: 12px;
@@ -61,4 +72,98 @@
   
   .submit__button__form:hover {
     background-color: #0056b3;
+  }
+
+  textarea {
+    overflow-y: hidden;
+    resize: none; /* Deshabilita la opción de redimensionar el textarea */
+    width: 66%!important;
+    height: 80px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 15px 13px 0px 10px;
+      position: relative;
+    }
+    
+    .form-group {
+      flex: 1 1 30%;
+      margin: 10px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 12px;
+      color: rgba(141, 139, 142, 1);
+      font-family: inter;
+      font-weight: 400;
+    }
+    
+    .form-input {
+      font-size: 12px;
+      font-family: inter;
+      color: rgb(41, 40, 41);
+      width: 100%!important;
+      padding: 8px;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+      border-radius: 6px;
+      border: 1px solid rgba(217, 217, 217, 1);
+    }
+  
+  
+  .form-input::placeholder {
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 10px!important;
+      font-family: inter;
+      font-weight: 300!important;
+  }
+  
+  .placeholder-error::placeholder {
+    color: red;
+    font-size: 10px!important;
+      font-family: inter;
+      font-weight: 400!important;
+  }
+  
+  
+    .form-input:focus {
+      outline: none;
+      border: 1px solid rgba(51, 105, 255, 1); /* Change border color on focus if needed */
+    }
+  
+    .error-text {
+      color: red;
+      font-size: 12px;
+    }
+  
+    .submit__button__form {
+      background-color: rgba(51, 105, 255, 1);
+        color: white;
+        padding: 9px 45px 9px 45px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        bottom: -38px;
+        /* top: 130px; */
+        border-radius: 6px;
+        font-family: 'Inter';
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .submit__button__form:hover {
+      background-color: #0056b3;
+    }
+  
+    textarea {
+      overflow-y: hidden;
+      resize: none; /* Deshabilita la opción de redimensionar el textarea */
+      width: 66%!important;
+      height: 80px;
+    }
   }

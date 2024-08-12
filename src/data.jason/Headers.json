@@ -3,6 +3,7 @@
     {
       "id": "home",
       "imageSrc": "src/assets/image/Header-inicio.webp",
+      "imageSrcMobile":"src/assets/image/Mobile-home.jpg",
       "title": "Conectá con la alegría de estar protegido.",
       "subtitle": "Elegí, cotizá y viví seguro,",
       "tercerTitulo":"en unos simples pasos",

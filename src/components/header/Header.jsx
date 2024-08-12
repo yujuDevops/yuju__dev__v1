@@ -1,9 +1,10 @@
 import './Header.css';
 import PropTypes from 'prop-types';
 
-export const Header = ({ imageSrc, title, subtitle, tercerTitulo, options }) => {
+export const Header = ({ imageSrcMobile,imageSrc, title, subtitle, tercerTitulo, options }) => {
     return (
         <div className="header" style={{ backgroundImage: `url(${imageSrc})`, height: '88vh' }}>
+        <div className="background-image-mobile" style={{ backgroundImage: `url(${imageSrcMobile})` }}></div>
         <div className="header-content">
           <h1>{title}</h1>
           <h2>{subtitle}</h2>

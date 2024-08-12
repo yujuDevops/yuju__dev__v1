@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import "./Navbar.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import logo from '../../assets/image/logoYujuAzul.png';
+import logoMobile from "../../assets/image/webBlanco.png"
 import instagram from '../../assets/image/web_Icono-instagram.png';
 import facebook from '../../assets/image/web_Icono-facebook.png';
 import { customHooks } from './customHooks';
@@ -19,7 +20,8 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-logo">
                 <a href="/home" onClick={() => handlePageChange('home')}>
-                    <img src={logo} alt="Yuju Logo" />
+                    <img src={logo} alt="Yuju Logo" className="logo-desktop" />
+                    <img src={logoMobile} alt="Yuju Logo" className="logo-mobile" />
                 </a>
             </div>
             <div className={`navbar-links ${isOpen ? 'open' : ''}`}>

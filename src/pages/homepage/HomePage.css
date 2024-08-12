@@ -95,6 +95,10 @@ padding: 20px;
 
 
 
+/* EMPIEZA EL COMPONENTE DE EMPRESAS */
+
+
+
 .containerCompañies {
     z-index: 1;
     margin: 5px 30px 0px 30px;
@@ -134,6 +138,11 @@ padding: 20px;
     position: relative;
     z-index: 1;
 }
+
+
+
+/* TERMINA EL COMPONENTE DE EMPRESAS */
+
 
 .containerMarca{
   margin: 30px 50px 90PX 50PX;
@@ -233,7 +242,8 @@ padding: 20px;
     padding: 40px 20px;
     background-color: #fFfFfF;
     overflow: hidden;
-    height: 460px;
+    height: 480px;
+    margin-bottom: -65px;
   }
 
   .semisphere-two{
@@ -242,9 +252,200 @@ padding: 20px;
     left: 80px;
     width: 818px;
     height: 701px;
-    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) 1%, rgba(235, 254, 249, 0) 67%);
+    background: radial-gradient(ellipse, rgba(51, 255, 204, 10) -10%, rgba(235, 254, 249, 0) 67%);
     border-bottom-right-radius: 345px;
-    transform: translate(-65%, -48%);
+    transform: translate(-65%, -50%);
 }
   }
 
+
+
+
+  @media only screen and (max-width: 600px){
+
+    .h2__comp{
+      font-size: 16px;
+      font-family: 'Inter';
+      font-weight: 800;
+      color: #3369FF;
+      display: flex;
+      margin: 20px 20px;
+    }
+    
+    .containerCard__1{
+      display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 10px!important;
+    padding: 20px;
+    
+    
+    }
+    
+    .cards__1 {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #8d8b8e40;
+      width: 80%;
+      max-width: 270px;
+      padding: 10px 20px 20px 20px;
+      text-align: center;
+      flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    }
+    
+    .cards__1 p {
+      font-size: 12px;
+      font-family: 'Inter';
+      font-weight: 400;
+      color: #8D8B8E;
+      padding: 20px 0px 0px 0px;
+    }
+    
+    
+    .cards__1:hover {
+      cursor: pointer;
+      background-color: #3369FF;
+    }
+    
+    .cards__1:hover p{
+      color: #fff;
+    }
+    
+    .cards__1 img {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+    }
+    
+    .cards__1 .hover-image {
+      display: none;
+    }
+    
+    .cards__1:hover img {
+      display: none;
+    }
+    
+    .cards__1:hover .hover-image {
+      display: block;
+    }
+    
+
+    
+
+
+/* EMPIEZA EL COMPONENTE DE EMPRESAS */
+
+
+
+.containerCompañies {
+  z-index: 1;
+  margin: 5px 30px 0px 30px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+}
+
+
+.grid-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; 
+  position: relative;
+  z-index: 1;
+  filter: grayscale(100%); /* convertir imágenes en escala de grises */
+}
+
+.grid-image:hover {
+  filter: none; /* revertir efecto de grises cuando se pasa el mouse */
+  cursor: pointer;
+}
+
+
+.h3__comp{
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 800;
+  color: #3369FF;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* TERMINA EL COMPONENTE DE EMPRESAS */
+
+
+.containerMarca{
+  margin: 30px 0px 90PX 30PX;
+}
+
+.containerMarca h3 {
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3369FF;
+  margin-bottom: 15px;
+}
+
+.containerMarca p {
+  font-family: inter;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8D8B8E;
+  inline-size: 332px;
+}
+
+.containerNewsletter {
+  background-color: #3369FF;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.newsletter__h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 30px 0px;
+  font-size: 16px;
+  font-family: 'Inter';
+  color: #fff;
+  font-weight: 800;
+}
+
+.newsletter__p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: -20px;
+  font-family: 'Inter';
+  color: #fff;
+  font-weight: 400;
+}
+
+.newsletter__input {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.container__form__p p{
+  margin: 23px 7px 10px 20px !important;
+        font-size: 16px;
+        font-family: inter;
+        font-weight: 800;
+        color: rgba(51, 105, 255, 1);
+}
+
+}

@@ -6,35 +6,8 @@ import TestimonialCards from './componentsHome/TestimonialCards';
 import EmailInput from './componentsHome/EmailInput';
 import CardComponent from './componentsHome/CardComponent';
 import FormComponent from "./componentsHome/FormComponent";
-import "./HomePage.css"
+import "./HomePage.css";
 
-
-
-import logo1 from "./img/Home-comofunciona-1-azul.svg";
-import logo2 from "./img/Home-comofunciona-2-azul.svg";
-import logo3 from "./img/Home-comofunciona-3-azul.svg";
-import logo4 from "./img/Home-comofunciona-4-azul.svg";
-
-import logo1_hover from "./img/Home-comofunciona-1-verde.svg";
-import logo2_hover from "./img/Home-comofunciona-2-verde.svg";
-import logo3_hover from "./img/Home-comofunciona-3-verde.svg";
-import logo4_hover from "./img/Home-comofunciona-4-verde.svg";
-
-import rus from "./img/empresas/RUS.png"
-import sanCristobal from "./img/empresas/SANCRISTOBAL.png"
-import fedP from "./img/empresas/FEDPA.png"
-import experta from "./img/empresas/EXPERTA.png"
-import ma from "./img/empresas/MERCANTIL.png"
-import mapfre from "./img/empresas/MAPFRE.png"
-import integrity from "./img/empresas/INTEGRITY.png"
-import atm from "./img/empresas/ATM.png"
-import asociart from "./img/empresas/ASOCIART.png"
-import hdo from "./img/empresas/HDI.png"
-import libra from "./img/empresas/LIBRA.png"
-import parana from "./img/empresas/PARANA-color-2.png"
-import omint from "./img/empresas/OMINT.png"
-import zurich from "./img/empresas/Zurich.png"
-import sanPatricio from "./img/empresas/SANPATRICIO-color-2.png"
 
 
 const HomePage = ({ pageId }) => {
@@ -71,24 +44,24 @@ const HomePage = ({ pageId }) => {
         <h2 className='h2__comp'>¿Cómo funciona?</h2>
         <div className='containerCard__1'>
         <div className='cards__1'>
-        <img src={logo1} alt="" />
-        <img src={logo1_hover} alt="" className='hover-image' />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-1-azul_iroyga.svg" alt="" />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-1-verde_why77p.svg" alt="" className='hover-image' />
           <p>Seleccioná tu seguro</p>
         </div>
         <div className='cards__1'>
-        <img src={logo2} alt="" />
-        <img src={logo2_hover} alt="" className='hover-image' />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987981/Home-comofunciona-2-azul_sjq8fd.svg" alt="" />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987980/Home-comofunciona-2-verde_cua3q1.svg" alt="" className='hover-image' />
         <p>Completá el cotizador
         o la ficha de consulta</p>
         </div>
         <div className='cards__1'>
-        <img src={logo3} alt="" />
-        <img src={logo3_hover} alt="" className='hover-image' />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-3-azul_r79yun.svg" alt="" />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987981/Home-comofunciona-3-verde_bnwqfc.svg" alt="" className='hover-image' />
         <p>Cargá tus datos de pago</p>
         </div>
         <div className='cards__1'>
-        <img src={logo4} alt="" />
-        <img src={logo4_hover} alt="" className='hover-image' />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-4-azul_t0ftvr.svg" alt="" />
+        <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-4-verde_bgt8ug.svg" alt="" className='hover-image' />
         <p>Yuju! Ya estás asegurado</p>
         </div>
         </div>
@@ -101,25 +74,30 @@ const HomePage = ({ pageId }) => {
         Trabajamos con
         </h3>
         <div className="image-grid">
-      <img src={rus} alt="Imagen 1" className="grid-image" />
-      <img src={sanCristobal} alt="Imagen 2" className="grid-image" />
-      <img src={fedP} alt="Imagen 3" className="grid-image" />
-      <img src={experta} alt="Imagen 4" className="grid-image" />
-      <img src={ma} alt="Imagen 5" className="grid-image" />
-      <img src={mapfre} alt="Imagen 6" className="grid-image" />
-      <img src={integrity} alt="Imagen 7" className="grid-image" />
-      <img src={atm} alt="Imagen 8" className="grid-image" />
-      <img src={asociart} alt="Imagen 9" className="grid-image" />
-      <img src={hdo} alt="Imagen 10" className="grid-image" />
-      <img src={libra} alt="Imagen 11" className="grid-image" />
-      <img src={parana} alt="Imagen 12" className="grid-image" />
-      <img src={omint} alt="Imagen 13" className="grid-image" />
-      <img src={zurich} alt="Imagen 14" className="grid-image" />
-      <img src={sanPatricio} alt="Imagen 15" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988252/RUS_mqiqvz.png" alt="Imagen 1" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988252/SANCRISTOBAL_kazpdd.png" alt="Imagen 2" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988247/FEDPA_eq1khi.png" alt="Imagen 3" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988245/EXPERTA_n9hhnn.png" alt="Imagen 4" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988250/MERCANTIL_x2mdnw.png" alt="Imagen 5" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988250/MAPFRE_bxhq37.png" alt="Imagen 6" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988249/INTEGRITY_gjydc4.png" alt="Imagen 7" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988244/ATM_frtz71.png" alt="Imagen 8" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988244/ASOCIART_gsnalp.png" alt="Imagen 9" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988248/HDI_iadq0b.png" alt="Imagen 10" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988249/LIBRA_dg0lfz.png" alt="Imagen 11" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988251/PARANA-color-2_wgtwqb.png" alt="Imagen 12" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988251/OMINT_kh1gb7.png" alt="Imagen 13" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988564/Zurich_yiy98n.png" alt="Imagen 14" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988253/SANPATRICIO-color-2_ta1ozc.png" alt="Imagen 15" className="grid-image" />
     </div>
       </section>
 </div>
       </main>
+
+
+      <Carrousel/>
+
+
 
       <div className='containerMarca'>
         <h3>Información de la marca</h3>
@@ -127,8 +105,7 @@ const HomePage = ({ pageId }) => {
       </div>
 
         <CardComponent/>
-      
-        <Carrousel/>
+    
         
       <div className="background-semisphere"></div>
       <div className="content__shemispere">
