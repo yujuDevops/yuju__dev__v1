@@ -30,35 +30,30 @@ export const Carrousel = () => {
             breakpoint: 600,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
+              slidesToScroll: 4,
+              initialSlide: 2,
+              dots: true
             }
           },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
+      
         ]
       };
   return (
 
     <>
         <Slider {...settings}>
-       {seguros.map((even)=> {
+       {seguros.map((e)=> {
 
         return (
           <>
             <div className="ContenedorPadreCard">
             <div className="card">
             <div className="card-content">
-              <h2> {even.titulo} </h2>
-              <img src={even.foto} alt="" className="card-image" />
+              <h2> {e.titulo} </h2>
+              <img src={e.foto} alt="" className="card-image" />
             </div>
-            <a href={even.href} className="card-button">
-              <button>{even.boton}</button>
+            <a href={e.href} className="card-button">
+              <button>{e.boton}</button>
             </a>
             </div>
             </div>
