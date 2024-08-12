@@ -1,4 +1,4 @@
-import { Button } from "../../../components/buttonHeader/Button"
+import { Button } from "../../../../components/buttonHeader/Button"
 import "./headerHogar.css"
 
 export const HeaderHogar = () => {
