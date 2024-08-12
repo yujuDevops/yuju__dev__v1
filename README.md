@@ -70,6 +70,9 @@ __jest.setup.js__
 import 'whatwg-fetch'; // <-- yarn add whatwg-fetch
 ```
 
+6. Instalacion de modal: 
+
+npm install react-modal
 
 
 
