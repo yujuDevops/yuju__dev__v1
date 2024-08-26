@@ -1,0 +1,6 @@
+export * from "./AcordeonHogar"
+export * from "./BannerHogarPage"
+export * from "./CardHogar"
+export * from "./HeaderHogar"
+export * from "./ImgHogar"
+export * from "./PlanesHogar"

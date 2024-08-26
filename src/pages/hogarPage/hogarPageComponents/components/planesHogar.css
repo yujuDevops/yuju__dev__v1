@@ -1,3 +1,13 @@
+.h1TituloHogar{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.42;
+    font-family: inter;
+    color:  #3369FF;
+    margin-left: 4%;
+    margin-bottom: -200px;
+}
+
 .divPadreHogar{
     margin-top: 10%;
     margin-bottom: 15%;

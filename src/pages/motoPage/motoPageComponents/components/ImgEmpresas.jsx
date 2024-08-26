@@ -14,16 +14,10 @@ Trabajamos con
     {dataImag.map((resp) => {
 return(
     <img key={resp.id} src={resp.foto}  className="EmpresasgridImage" />
-   
-
-)
-
-    })}
-
+   )
+})}
 </div>
-
 </div>
-
-    </div>
+</div>
   )
 }
