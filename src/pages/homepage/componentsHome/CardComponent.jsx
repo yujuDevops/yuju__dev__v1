@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./CardComponent.css"; // Asegúrate de crear y enlazar el archivo CSS
+import "./CardComponent.css"; 
 
 import visionIcon from "../img/web_Icono-innovacion.svg";
 import misionIcon from "../img/web_Icono-mision.svg";
@@ -15,6 +15,7 @@ const CardComponent = () => {
   ];
 
   return (
+    <div className="contenedor__main__card">
     <div className="card-wrap">
       {cards.map(card => (
         <div
@@ -38,6 +39,9 @@ const CardComponent = () => {
         </div>
       ))}
     </div>
+    </div>
+
+    
   );
 };
 

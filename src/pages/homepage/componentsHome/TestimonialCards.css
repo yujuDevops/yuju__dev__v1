@@ -101,11 +101,12 @@
     font-weight: 800;
     font-family: Inter, sans-serif;
     color: #3369FF;
+    margin-top: 30px;
   }
 
   .cards_test_container {
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
         gap: 9px;
         justify-items: center;
         position: relative;
@@ -115,9 +116,9 @@
     background-color: white;
         border-radius: 10px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
+        padding: 10px;
         margin: 1rem;
-        width: calc(90% - 0px);
+        width: calc(99% - 0px);
         max-width: 100%;
         box-sizing: border-box;
         position: relative;
@@ -160,5 +161,7 @@
   font-weight: 400;
   font-family: Inter, sans-serif;
 }
+
+
 
 }

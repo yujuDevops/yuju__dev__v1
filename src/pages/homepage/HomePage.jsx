@@ -7,6 +7,7 @@ import EmailInput from './componentsHome/EmailInput';
 import CardComponent from './componentsHome/CardComponent';
 import FormComponent from "./componentsHome/FormComponent";
 import "./HomePage.css";
+import CardMobile from './componentsHome/CardMobile';
 
 
 
@@ -104,8 +105,10 @@ const HomePage = ({ pageId }) => {
         <p>Somos una empresa <strong>joven, dinámica y comprometida</strong> con la <strong>innovación y la sostenibilidad.</strong> Nacimos de la mano de Nimbus Bróker de Seguros, una empresa con más de 15 años de experiencia y trayectoria en el sector.</p>
       </div>
 
+
+
         <CardComponent/>
-    
+        <CardMobile/>
         
       <div className="background-semisphere"></div>
       <div className="content__shemispere">

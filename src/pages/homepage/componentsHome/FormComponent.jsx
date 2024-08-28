@@ -25,17 +25,6 @@ export const ContactForm = () => {
         />
       </div>
       <div className="form-group">
-        <label>Apellido *</label>
-        <input
-          type="text"
-          name="apellido"
-          value={formData.apellido}
-          onChange={handleChange}
-          className={`form-input ${getPlaceholderClass(errors.apellido)}`}
-          placeholder={errors.apellido ? 'El apellido es requerido' : 'Ingresa tu apellido'}
-        />
-      </div>
-      <div className="form-group">
         <label>Correo *</label>
         <input
           type="email"
@@ -46,41 +35,11 @@ export const ContactForm = () => {
           placeholder={errors.correo ? 'El correo es requerido' : 'Ingresa tu correo'}
         />
       </div>
+     
+     
+     
       <div className="form-group">
-        <label>Número de teléfono *</label>
-        <input
-          type="text"
-          name="telefono"
-          value={formData.telefono}
-          onChange={handleChange}
-          className={`form-input ${getPlaceholderClass(errors.telefono)}`}
-          placeholder={errors.telefono ? 'El teléfono es requerido' : 'Ingresa tu teléfono'}
-        />
-      </div>
-      <div className="form-group">
-        <label>Dirección *</label>
-        <input
-          type="text"
-          name="direccion"
-          value={formData.direccion}
-          onChange={handleChange}
-          className={`form-input ${getPlaceholderClass(errors.direccion)}`}
-          placeholder={errors.direccion ? 'La dirección es requerida' : 'Ingresa tu dirección'}
-        />
-      </div>
-      <div className="form-group">
-        <label>Código postal *</label>
-        <input
-          type="text"
-          name="codigoPostal"
-          value={formData.codigoPostal}
-          onChange={handleChange}
-          className={`form-input ${getPlaceholderClass(errors.codigoPostal)}`}
-          placeholder={errors.codigoPostal ? 'El código postal es requerido' : 'Ingresa tu código postal'}
-        />
-      </div>
-      <div className="form-group">
-        <label>Mensaje *</label>
+        <label>Mensaje</label>
         <textarea
           name="mensaje"
           value={formData.mensaje}
@@ -90,7 +49,7 @@ export const ContactForm = () => {
       </div>
       <div className="button__form__env"> 
 
-      <button id="myTextarea" maxlength="300" type="submit" className="submit__button__form">Enviar</button>
+      <button id="myTextarea" maxlength="1000" type="submit" className="submit__button__form">Enviar</button>
       </div>
       
     </form>

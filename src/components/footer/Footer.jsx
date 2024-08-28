@@ -1,6 +1,8 @@
 import './Footer.css';
 import yujuBlaco from "../../assets/image/webBlanco.png";
 import nimbusBlaco from "../../assets/image/logoBLANCO.png"
+import instagram from "../../assets/image/instagramLogo.png";
+import facebook from "../../assets/image/facebookLogo.png";
 
 export const Footer = () => {
   return (
@@ -10,6 +12,20 @@ export const Footer = () => {
           <a href="">
           <img id='logo__yuju' src={yujuBlaco} alt="Yuju Logo" />
           </a>
+        </div>
+        <div className='logos__insta__face__mobil'>
+          <a href="">
+            <img src={facebook} alt="" />
+          </a>
+          <a href="">
+            <img src={instagram} alt="" />
+          </a>
+          <div className='term__condiciones_mobile'>
+            <a href="">
+            <p>Términos y condiciones Política de privacidad</p>
+            </a>
+            
+          </div>
         </div>
         <div className="footer-links">
           <a href="#">

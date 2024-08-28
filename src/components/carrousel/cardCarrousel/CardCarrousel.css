@@ -51,7 +51,7 @@
   }
   
   .card-image {
-    width: 100px;
+    width: 90px;
     height: auto;
     border-top-right-radius: 12px;
   }
@@ -127,7 +127,7 @@
   }
   
   .card-image {
-    width: 12vw;
+    width: 14vw;
     height: auto;
     border-top-right-radius: 12px;
   }
@@ -137,11 +137,15 @@
     color: #fff;
     border: none;
     border-radius: 6px;
-    padding: 6px 50px 6px 50px;
+    padding: 4px 40px 4px 40px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Inter';
-    margin-top: 16px;
+    margin-top: 18px;
+
+
+
+    
 
 }
 

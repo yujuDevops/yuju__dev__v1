@@ -38,6 +38,7 @@ width: 5056px;
 
 .slick-dots {
     left: 41px;
+    top: 222px;
 }
 
 .slick-dots li button:before {
@@ -62,7 +63,8 @@ width: 5056px;
 @media only screen and (max-width: 600px) {
    
     .ContenedorPadreCard > div {
-        width: 45vw!important;
+        width: 38vw !important;
+        margin-left: 10px;
     }
     
     .slick-track {
@@ -72,7 +74,7 @@ width: 5056px;
     }
     
     .slick-slider{
-        width: 100%!important;
+        width: 97%!important;
     
     }
     
@@ -84,7 +86,7 @@ width: 5056px;
     .slick-list {
         margin: 0px 10px 0px 0px;
         height: 250px;
-        margin: 0px ;
+        margin: 12px;
         left: 0px;
         margin-top: -50px;
     }
@@ -100,7 +102,7 @@ width: 5056px;
     
     
     .slick-dots {
-        left: 0px;
+        left: 6px;
         top: 200px;
 
     }

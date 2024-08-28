@@ -1,6 +1,8 @@
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
+import CardMobile from "../homepage/componentsHome/CardMobile"
 import { HeaderHogar } from './hogarPageComponents/components/HeaderHogar'
 import { PlanesHogar } from './hogarPageComponents/components/PlanesHogar'
+
 
 const HogarPage = () => {
   return (
@@ -12,6 +14,7 @@ const HogarPage = () => {
  button="¡Cotizá ahora!"
  />
     <PlanesHogar/>
+    <CardMobile></CardMobile>
     </>
   )
 }
