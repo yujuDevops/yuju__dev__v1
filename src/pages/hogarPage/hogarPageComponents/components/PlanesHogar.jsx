@@ -14,6 +14,11 @@ export const PlanesHogar = () => {
 
 
   return (
+    <div>
+      <div className='tituloHogar'>
+        <h1 className='h1TituloHogar'>Conocé nuestras coberturas para tu hogar</h1>
+      </div>
+
     <div className='divPadreHogar' >
       <div className="imagesHogar">
         <img 
@@ -22,7 +27,7 @@ export const PlanesHogar = () => {
           alt="RUS"
           onClick={() => handleImageClick('plan1')}
           style={{ cursor: 'pointer' }}
-        />
+          />
 
         <img 
           className='imgHogar'
@@ -30,12 +35,13 @@ export const PlanesHogar = () => {
           alt="San Cristobal"
           onClick={() => handleImageClick('plan2')}
           style={{ cursor: 'pointer' }}
-        />
+          />
         
       </div>
       <CardHogar plan={plan} planData={planData} />
       
     </div>
+          </div>
   );
 };
 

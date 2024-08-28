@@ -1,7 +1,6 @@
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { HeaderMotos,CardMotos,CardInfo,BannerContratar,ImgEmpresas,AcordeonMotos } from "./motoPageComponents"
 import fotoMoto from "../../assets/image/Moto.png"
-
 import { Carrousel } from "../../components/carrousel/Carrousel"
 
 
