@@ -1,9 +1,8 @@
 import React from 'react'
 
-const RusPage = () => {
+export const RusPage = () => {
   return (
     <div>RusPage</div>
   )
 }
 
-export default RusPage

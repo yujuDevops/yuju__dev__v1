@@ -1,0 +1,13 @@
+export * from './autoPage'
+export * from './biciPage'
+export * from './clubYujuPage'
+export *from './contactoPage'
+export * from './expertaPage'
+export * from './hogarPage'
+export * from './homepage'
+export * from './institucionalPage'
+export * from './motoPage'
+export * from './rusPage.jsx'
+export * from './sanCristobalPage'
+export * from './siniestrosPage'
+

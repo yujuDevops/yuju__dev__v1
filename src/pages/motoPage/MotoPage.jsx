@@ -6,7 +6,7 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 
 
 
-const MotoPage = () => {
+export const MotoPage = () => {
   return (
   <>
   
@@ -31,4 +31,3 @@ const MotoPage = () => {
   )
 }
 
-export default MotoPage

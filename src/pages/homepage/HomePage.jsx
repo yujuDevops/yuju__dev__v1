@@ -11,7 +11,7 @@ import CardMobile from './componentsHome/CardMobile';
 
 
 
-const HomePage = ({ pageId }) => {
+export const HomePage = ({ pageId }) => {
     const [headerData, setHeaderData] = useState(null);
   
     useEffect(() => {
@@ -135,4 +135,4 @@ const HomePage = ({ pageId }) => {
     );
   };
   
-  export default HomePage;
+ 
