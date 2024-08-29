@@ -4,7 +4,7 @@ import { AcordeonHogar,PlanesHogar,ImgHogar,HeaderHogar,BannerHogarPage } from "
 
 
 
-const HogarPage = () => {
+export const HogarPage = () => {
   return (
     <>
     <HeaderHogar/>
@@ -24,4 +24,3 @@ const HogarPage = () => {
   )
 }
 
-export default HogarPage

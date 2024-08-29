@@ -1,28 +1,14 @@
-
 import {  Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
+import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage} from '../pages';
 
-import HomePage from '../pages/homepage/HomePage';
-import AutoPage from '../pages/autoPage/AutoPage';
-import MotoPage from '../pages/motoPage/MotoPage';
-import BiciPage from '../pages/biciPage/BiciPage';
-import HogarPage from '../pages/hogarPage/HogarPage';
-import RusPage from '../pages/rusPage.jsx/RusPage';
-import ExpertaPage from '../pages/expertaPage/ExpertaPage';
-import InstitucionalPage from '../pages/institucionalPage/InstitucionalPage';
-import SanCristobalPage from '../pages/sanCristobalPage/SanCristobalPage';
-import SiniestrosPage from '../pages/siniestrosPage/SiniestrosPage';
-import ClubYujuPage from '../pages/clubYujuPage/ClubYujuPage';
-import ContactPage from '../pages/contactoPage/ContactPage';
 
 
 const AppRouter = () => {
   return (
     <>
-
-
-            <Navbar />
+     <Navbar />
             <Routes>
                 <Route path="/home" element={<HomePage pageId="home"/>} />
                 <Route path="/auto" element={<AutoPage />} />
@@ -37,7 +23,7 @@ const AppRouter = () => {
                 <Route path="/club-yuju" element={<ClubYujuPage/>} />
                 <Route path="/contacto" element={<ContactPage/>} />
 
-                <Route path="/" element={<Navigate to={"/Home"}/>} />
+                <Route path="/*" element={<Navigate to={"/Home"}/>} />
             </Routes>
             <Footer/>
      

@@ -1,0 +1,1 @@
+export {customHooksCard} from './customHooksCard'

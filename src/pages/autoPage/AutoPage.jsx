@@ -1,6 +1,6 @@
 
 
-const AutoPage = () => {
+export const AutoPage = () => {
   return (
     <div></div>
   )

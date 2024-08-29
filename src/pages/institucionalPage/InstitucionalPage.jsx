@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InstitucionalPage = () => {
+export const InstitucionalPage = () => {
   return (
     <>
 
@@ -8,4 +8,3 @@ const InstitucionalPage = () => {
   )
 }
 
-export default InstitucionalPage

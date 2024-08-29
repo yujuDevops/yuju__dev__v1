@@ -1,9 +1,8 @@
 import React from 'react'
 
-const SanCristobalPage = () => {
+export const SanCristobalPage = () => {
   return (
     <div>SanCristobalPage</div>
   )
 }
 
-export default SanCristobalPage
