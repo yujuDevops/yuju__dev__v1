@@ -10,3 +10,4 @@ export * from './motoPage'
 export * from './rusPage.jsx'
 export * from './sanCristobalPage'
 export * from './siniestrosPage'
+
