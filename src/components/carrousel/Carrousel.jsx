@@ -13,7 +13,7 @@ export const Carrousel = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 6, // Para pantallas de más de 1400px
+    slidesToShow: 6, 
     slidesToScroll: 6,
     initialSlide: 0,
     responsive: [
@@ -32,6 +32,15 @@ export const Carrousel = () => {
           slidesToShow: 4,
           slidesToScroll: 4,
           infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 2,
           dots: true,
         },
       },

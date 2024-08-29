@@ -23,6 +23,7 @@ export const PlanesHogar = () => {
       <div className="imagesHogar">
         <img 
           className='imgHogar'
+          tabindex="0"
           src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840071/RUS_wfx021.png" 
           alt="RUS"
           onClick={() => handleImageClick('plan1')}
@@ -31,6 +32,7 @@ export const PlanesHogar = () => {
 
         <img 
           className='imgHogar'
+          tabindex="0"
           src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840134/SANCRISTOBAL_cfn89k.png" 
           alt="San Cristobal"
           onClick={() => handleImageClick('plan2')}

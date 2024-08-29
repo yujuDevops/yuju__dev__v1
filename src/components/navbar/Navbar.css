@@ -30,7 +30,7 @@
     font-size: 14px;
     font-family: inter;
     border: 0px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     display: inline-block;
     transition: transform 0.1s ease, font-weight 0.1s ease;
     white-space: nowrap;
@@ -107,6 +107,8 @@
   .navbar-links a.active {
     font-weight: bold;
     text-decoration: underline;
+    text-underline-offset: 2px;
+    z-index: 9999;
 }
 
 .img__1 {

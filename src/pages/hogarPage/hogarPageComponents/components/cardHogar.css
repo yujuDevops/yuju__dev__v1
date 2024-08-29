@@ -1,15 +1,21 @@
 .modal{
     background-color:white;
+    border-radius: 22px;
+    z-index: 10;
+    
 }
 
-.ReactModal__Overlay ReactModal__Overlay--after-open{ 
-    background-color: #000000;
+.ReactModal__Overlay--after-open{ 
+    background-color: rgba(104, 104, 104, 0.9)!important;
+    padding: 15px 30px;
 }
 
 .divModalHogar h3{
     color: #8D8B8E;
     font-family: inter;
-    font-size: 60%;
+    font-size: 12px;
+    position: absolute;
+    top: 75px;
 }
 .cardsHogar {
     display: flex;
@@ -17,8 +23,8 @@
     align-items: center;
     padding: 20px;
     background-color: #f2f7fa;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
     width: 100%;
   }
   
@@ -27,14 +33,26 @@
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     width: 30%;
-  
+    position: relative;
   }
   
+
+  div.cardHogar:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 0.3px;
+    height: 100%;
+    background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
+    display: flex;
+  }
+  
+
+  
   .h3CardHogar{
-    color: #0070f3;
+    color: rgba(51, 105, 255, 1);
     font-weight: 800;
     line-height: 18.15px;
     text-align: center;
@@ -44,9 +62,19 @@
   }
   
   .pCardHogar {
+    font-size: 12px;
+    margin: 15px 0;
+    color: rgba(141, 139, 142, 1);
+    font-family: inter;
+    font-weight: 400;
+    inline-size: 100%;
+  }
+
+
+  .pCardHogar__price {
     font-size: 1em;
     margin: 15px 0;
-    color: #8D8B8E;
+    color: rgba(51, 105, 255, 1);
     font-family: inter;
   }
   
@@ -61,7 +89,6 @@
     border-radius: 6px;
     padding: 12px, 18px, 12px, 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
   }
   
   .cardHogar button:hover {
@@ -69,23 +96,20 @@
    
   }
   
-  .cardHogar:hover {
-    transform: scale(1.05);
-  }
-  
+
 
   .divModalHogar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgba(247, 247, 247, 0.123);
-    padding: 40px;
+    padding: 140px 0px 30px 45px;
     border-radius: 20px;
     max-width: 1300px;
-   margin: auto;
-   margin-top: 100px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
+    margin: 60px 30px;
+    z-index: 9;
+
   }
   
   .divModalHogar h2 {
@@ -93,22 +117,31 @@
     margin-bottom: 10px;
     font-size: 24px;
     font-family: inter;
+    position: absolute;
+    top: 50px;
   }
   
   .divModalHogar p {
     font-family: inter;
-    color: #4a4a4a;
+    color: rgba(51, 105, 255, 1);
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .divModalHogar span {
+    font-family: inter;
+    color: rgba(58, 72, 89, 1);
+    font-size: 12px;
+    font-weight: 400;
   }
   
   .divModalHogar .xButton {
-
     position: absolute;
-    top: 5px;
-    left: 20px;
+    top: 18px;
+    left: -9px;
     background-color: #ff5f5f;
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -122,7 +155,6 @@
   }
   
   .divModalHogar .plan-details p {
-  
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
@@ -133,12 +165,16 @@
     font-family: inter;
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     padding-left: 40px;
   }
 
  
+  .modalInputs {
+    margin-bottom: 105px;
+  }
+
   
   .modalInputs form {
     display: flex;
@@ -147,10 +183,11 @@
   }
   
   .modalInputs input {
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    margin-bottom: 10px;
   }
   
   .modalInputs button {
@@ -158,8 +195,8 @@
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 15px;
-    font-size: 16px;
+    padding: 12px 41px;
+    font-size: 12px;
     cursor: pointer;
     margin-top: 20px;
   }

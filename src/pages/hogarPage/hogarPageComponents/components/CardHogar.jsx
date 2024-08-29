@@ -17,12 +17,12 @@ const PlanModal = ({ isOpen, onRequestClose, planDetails, handleClick, datos ,ha
     <div className="plan-details">
       <h2>{planDetails.title}</h2>
       <h3 className='h3Hogar'>{planDetails.description}</h3>
-      <p>Incendio edificio: <span>${planDetails.incendioEdificio}</span></p>
-      <p>Cristales: <span>${planDetails.cristales}</span></p>
-      <p>Incendio contenido: <span>${planDetails.incendioContenido}</span></p>
-      <p>Robo y/o Hurto Contenido: <span>${planDetails.roboContenido}</span></p>
-      <p>Electrodomésticos: <span>${planDetails.electrodomesticos}</span></p>
-      <p>Tecnología: <span>${planDetails.tecnologia}</span></p>
+      <p>Incendio edificio <span>${planDetails.incendioEdificio}</span></p>
+      <p>Cristales <span>${planDetails.cristales}</span></p>
+      <p>Incendio contenido <span>${planDetails.incendioContenido}</span></p>
+      <p>Robo y/o Hurto Contenido <span>${planDetails.roboContenido}</span></p>
+      <p>Electrodomésticos <span>${planDetails.electrodomesticos}</span></p>
+      <p>Tecnología <span>${planDetails.tecnologia}</span></p>
     </div>
     
     <div className="divider"></div>
@@ -109,19 +109,19 @@ const plan750Details = {
       <div className="cardHogar">
         <h3 className='h3CardHogar'>{planData[plan].pack300.title}</h3>
         <p className=" pCardHogar">{planData[plan].pack300.description}</p>
-        <p className=" pCardHogar">{planData[plan].pack300.price}</p>
+        <p className=" pCardHogar__price"><strong>{planData[plan].pack300.price}</strong>/ mes</p>
         <button className='buttonCardHogar' onClick={() => openModal(plan300Details)}>Contratar</button>
       </div>
       <div className="cardHogar">
         <h3 className='h3CardHogar'>{planData[plan].pack500.title}</h3> 
         <p className=" pCardHogar">{planData[plan].pack500.description}</p>
-        <p className=" pCardHogar">{planData[plan].pack500.price}</p>
+        <p className=" pCardHogar__price"><strong>{planData[plan].pack500.price}</strong>/ mes</p>
         <button className='buttonCardHogar' onClick={() => openModal(plan500Details)}>Contratar</button>
       </div>
       <div className="cardHogar">
         <h3 className='h3CardHogar'>{planData[plan].pack750.title}</h3>
         <p className=" pCardHogar">{planData[plan].pack750.description}</p>
-        <p className=" pCardHogar">{planData[plan].pack750.price}</p>
+        <p className=" pCardHogar__price"><strong>{planData[plan].pack750.price}</strong>/ mes</p>
         <button  className='buttonCardHogar' onClick={() => openModal(plan750Details)}>Contratar</button>
       </div>
 
