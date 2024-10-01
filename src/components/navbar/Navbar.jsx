@@ -39,6 +39,7 @@ const Navbar = () => {
                     </button>
                     {isDropdownOpen.seguros && (
                         <div className="dropdown-content">
+<<<<<<< HEAD
                             <div className="dropdown-content">
           <div className="dropdown-column">
             <Link to="/auto" onClick={() => handlePageChange('auto')}>Auto</Link>
@@ -62,6 +63,44 @@ const Navbar = () => {
           </div>
           </div>
           </div>
+=======
+                            <Link 
+                                to="/auto" 
+                                className={activePage === 'auto' ? 'active' : ''} 
+                                onClick={() => handlePageChange('auto')}
+                            >
+                                Auto
+                            </Link>
+                            <Link 
+                                to="/moto" 
+                                className={activePage === 'moto' ? 'active' : ''} 
+                                onClick={() => handlePageChange('moto')}
+                            >
+                                Moto
+                            </Link>
+                            <Link 
+                                to="/bici" 
+                                className={activePage === 'bici' ? 'active' : ''} 
+                                onClick={() => handlePageChange('bici')}
+                            >
+                                Bici
+                            </Link>
+                            <Link 
+                                to="/hogar" 
+                                className={activePage === 'hogar' ? 'active' : ''} 
+                                onClick={() => handlePageChange('hogar')}
+                            >
+                                Hogar
+                            </Link>
+                            <Link 
+                                to="/vida" 
+                                className={activePage === 'vida' ? 'active' : ''} 
+                                onClick={() => handlePageChange('vida')}
+                            >
+                              Vida
+                            </Link>
+                        </div>
+>>>>>>> fcaea93cc4cdb6fc851ed393a128230681ee6eb2
                     )}
                 </div>
                 <Link 

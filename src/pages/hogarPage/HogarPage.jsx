@@ -19,6 +19,7 @@ export const HogarPage = () => {
     <ImgHogar/>
     <AcordeonHogar/>
     <Carrousel/>
+    
 
     </>
   )
