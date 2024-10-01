@@ -49,7 +49,9 @@
   
 
   .footer-top {
-    background-image: url("https://res.cloudinary.com/dewcgbpvp/image/upload/v1723500641/Fondo-legales_mndgyw.webp");
+    background-image: url("https://res.cloudinary.com/dewcgbpvp/image/upload/c_thumb,e_improve,g_face:auto,h_600,q_auto:best,w_3001/v1727794097/Fondo-azul_wqlyby.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 250px;
     object-fit: cover;
     padding: 0px 60px;

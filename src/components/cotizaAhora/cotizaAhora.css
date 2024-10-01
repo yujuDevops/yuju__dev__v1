@@ -11,7 +11,7 @@
 .moto-insurance-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border: 1px solid #e0e0e0;
     padding: 10px;
     margin-left: 4%;
@@ -19,7 +19,7 @@
     width: 92%;
     border: 0px solid;
     box-shadow: 0 0 10px #8d8b8e40;
-    margin: -80px 50px;
+    margin: -20px 50px;
   }
   
   .moto-texto {

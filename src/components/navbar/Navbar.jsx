@@ -39,35 +39,29 @@ const Navbar = () => {
                     </button>
                     {isDropdownOpen.seguros && (
                         <div className="dropdown-content">
-                            <Link 
-                                to="/auto" 
-                                className={activePage === 'auto' ? 'active' : ''} 
-                                onClick={() => handlePageChange('auto')}
-                            >
-                                Auto
-                            </Link>
-                            <Link 
-                                to="/moto" 
-                                className={activePage === 'moto' ? 'active' : ''} 
-                                onClick={() => handlePageChange('moto')}
-                            >
-                                Moto
-                            </Link>
-                            <Link 
-                                to="/bici" 
-                                className={activePage === 'bici' ? 'active' : ''} 
-                                onClick={() => handlePageChange('bici')}
-                            >
-                                Bici
-                            </Link>
-                            <Link 
-                                to="/hogar" 
-                                className={activePage === 'hogar' ? 'active' : ''} 
-                                onClick={() => handlePageChange('hogar')}
-                            >
-                                Hogar
-                            </Link>
-                        </div>
+                            <div className="dropdown-content">
+          <div className="dropdown-column">
+            <Link to="/auto" onClick={() => handlePageChange('auto')}>Auto</Link>
+            <Link to="/moto" onClick={() => handlePageChange('moto')}>Moto</Link>
+            <Link to="/bici" onClick={() => handlePageChange('bici')}>Bici</Link>
+            <Link to="/hogar" onClick={() => handlePageChange('hogar')}>Hogar</Link>
+            <Link to="/vida" onClick={() => handlePageChange('vida')}>Vida</Link>
+            <Link to="/salud" onClick={() => handlePageChange('salud')}>Salud</Link>
+            <Link to="/accidentespersonales" onClick={() => handlePageChange('accidentespersonales')}>Accidentes p.</Link>
+          </div>
+          <div className="dropdown-separator"></div>
+          <div className="dropdown-column">
+            <Link to="/industria" onClick={() => handlePageChange('industria')}>Industria</Link>
+            <Link to="/embarcaciones" onClick={() => handlePageChange('embarcaciones')}>Embarcaciones</Link>
+            <Link to="/celular" onClick={() => handlePageChange('celular')}>Celular</Link>
+            <Link to="/notebook" onClick={() => handlePageChange('notebook')}>Notebook</Link>
+            <Link to="/pcgamer" onClick={() => handlePageChange('pcgamer')}>PC Gamer</Link>
+            <Link to="/consola" onClick={() => handlePageChange('consola')}>Consola</Link>
+            <Link to="/tablet" onClick={() => handlePageChange('tablet')}>Tablet</Link>
+            <Link to="/retiro" onClick={() => handlePageChange('retiro')}>Retiro</Link>
+          </div>
+          </div>
+          </div>
                     )}
                 </div>
                 <Link 
