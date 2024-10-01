@@ -67,6 +67,13 @@ const Navbar = () => {
                             >
                                 Hogar
                             </Link>
+                            <Link 
+                                to="/vida" 
+                                className={activePage === 'vida' ? 'active' : ''} 
+                                onClick={() => handlePageChange('vida')}
+                            >
+                              Vida
+                            </Link>
                         </div>
                     )}
                 </div>
