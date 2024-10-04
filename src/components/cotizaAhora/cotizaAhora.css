@@ -1,11 +1,13 @@
 .div-cotizaAhora {
     margin-top: 300px;
+   
 }
 .vertical-dotted-separator {
   border-left: 2px dotted #007bff;
   height: 40px; /* Ajusta la altura según tus necesidades */
   margin: 0 10px;
   display: flex;
+
 }
 
 .moto-insurance-container {
@@ -20,6 +22,7 @@
     border: 0px solid;
     box-shadow: 0 0 10px #8d8b8e40;
     margin: -20px 50px;
+    background-color: white;
   }
   
   .moto-texto {
@@ -50,6 +53,7 @@
     cursor: pointer;
     font-family: Inter;
     width: 255px;
+    font-size: 12px;
   }
   
   .moto-button:hover {
@@ -60,11 +64,12 @@
 (min-width: 600px) and (max-width: 1400px) {
   .div-cotizaAhora {
     margin-top: 180px;
-    
+     z-index: 12;
 }
 
 .moto-insurance-container {
   box-shadow: 0 0 10px #8d8b8e40;
+  z-index: 12!important;
 }
 
 }
@@ -72,7 +77,7 @@
 @media 
 (min-width:1030px) and (max-width: 1400px) {
   .moto-button {
-    width: 16%;
+    width: 25%;
     height: 10%;
     margin-right: 20px;
   }
@@ -80,7 +85,17 @@
     margin-left: 20px;
   }
 
-
+  .moto-button {
+    background-color:  #0F2BA1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Inter;
+    width: 255px;
+    font-size: 12px;
+  }
 
 }
 

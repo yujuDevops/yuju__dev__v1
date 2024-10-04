@@ -510,4 +510,8 @@
   .dropbtn i {
     margin-left: 5px;
   }
+
+  .dropdown{
+    display: none;
+  }
   }

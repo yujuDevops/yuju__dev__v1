@@ -8,7 +8,6 @@
 }
 
 .semisphere {
-  display: none;
   position: absolute;
   top: 323px;
   left: 1px;
@@ -246,7 +245,7 @@ text-align: center;
     width: 100%;
     padding: 40px 20px;
     background-color: #fFfFfF; /* Fondo gris claro */
-    overflow: hidden;
+    overflow:hidden;
     height: 680px;
   }
   
@@ -256,7 +255,7 @@ text-align: center;
     left: 1px;
     width: 818px;
     height: 597px;
-    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
+    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%)!important;
     border-bottom-right-radius: 345px;
     transform: translate(-65%, -48%);
   }
