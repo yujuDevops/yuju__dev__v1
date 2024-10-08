@@ -20,3 +20,12 @@ img, video, svg {height: auto; max-width: 100%;}
     transition: none !important;
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+  }
+
+
+}

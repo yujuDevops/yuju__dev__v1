@@ -1,7 +1,6 @@
 import banerContratar from "../../../../assets/image/imgMotos/Banner-contratar.jpg"
 import banerMotosCelular from "../../../../assets/image/imgMotos/Banner-contratar-celular.jpg"
 import banerMotosTablet from "../../../../assets/image/imgMotos/Banner-CTA-tablet.jpg"
-import { Button } from "../../../../components/buttonHeader/Button"
 import "./bannerContratar.css"
 
 export const BannerContratar = () => {
@@ -17,8 +16,10 @@ export const BannerContratar = () => {
 <span className="spanBanner"> ¿Querés una cotización?</span>
 
 </h2>
-<div className="vidBanner">
-<Button className="buttonBannerContratar" text="Escribinos" url="https://wa.me/5491156307246"/>
+<div className="buttonMotoBanner">
+  <a href="">
+  <button>Escribinos</button>
+  </a>
 </div>
     </div>
   )

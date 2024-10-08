@@ -1,5 +1,4 @@
 
-import { Button } from '../../../components/buttonHeader/Button';
 import './headerBici.css';
 
 export const HeaderBici = () => {

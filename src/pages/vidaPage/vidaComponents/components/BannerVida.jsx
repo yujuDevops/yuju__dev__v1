@@ -1,5 +1,3 @@
-import { Button } from "../../../../components/buttonHeader/Button"
-
 
 
 export const BannerVida = () => {
