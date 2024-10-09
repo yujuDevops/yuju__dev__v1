@@ -15,7 +15,7 @@ export const BannerVida = () => {
     
     </h2>
     <div className="vidBanner">
-    <Button className="buttonBannerContratar" text="Te asesoramos" url="https://wa.me/5491156307246"/>
+ 
     </div>
         </div>
   )

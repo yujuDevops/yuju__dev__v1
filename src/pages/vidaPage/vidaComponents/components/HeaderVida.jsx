@@ -12,7 +12,7 @@ export const HeaderVida = () => {
    <h1 className='h1-motos'>SEGURO DE MOTO</h1>
    <h2 className='h2-motos'>Viví una aventura sin límites. Cotizá y contratá tu seguro online<br/> tu familia con el mejor seguro de vida.</h2>
    <h3 className='h3-motos'>Construí un futuro seguro para vos y tu familia. Elegí la cobertura que se <br/> ajuste a tu vida y disfrutá el presente con tranquilidad.</h3>
-    <div className='ButtonHeaderMotos'><Button  text="Cotiza" url="https://wa.me/5491156307246" /></div> 
+
    </div>
  
    </header>

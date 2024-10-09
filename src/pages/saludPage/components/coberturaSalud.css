@@ -1,0 +1,30 @@
+/* Estructura general del contenedor */
+.coberturas-container {
+    width: 100%;
+    margin-top: 100px;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .coberturas-container h2 { 
+    color:#3369FF;
+    text-align: left;
+    margin-left: 2%;
+    font-family: inter;
+    margin-top: 50px;
+
+}
+ 
+
+ .atencion{
+        height: 100%;
+        width: 100%;
+        font-family: inter;
+        color: #8D8B8E;
+        margin-top: 20px;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 33px;
+    }

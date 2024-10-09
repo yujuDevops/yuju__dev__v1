@@ -3,6 +3,7 @@ import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
 import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage} from '../pages';
 import { VidaPage } from '../pages/vidaPage/VidaPage';
+import { SaludPage } from '../pages/saludPage/SaludPage';
 
 
 
@@ -24,6 +25,7 @@ const AppRouter = () => {
                 <Route path="/club-yuju" element={<ClubYujuPage/>} />
                 <Route path="/contacto" element={<ContactPage/>} />
                 <Route path="/vida" element={<VidaPage/>} />
+                <Route path="/salud" element={<SaludPage/>} />
 
                 <Route path="/*" element={<Navigate to={"/Home"}/>} />
             </Routes>
