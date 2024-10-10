@@ -1,9 +1,9 @@
 import { dataImgEmpresasBici } from "../data"
-
+import "./ImgBiciEmpresas.css"
 
 export const ImgBiciEmpresas = () => {
     return (
-        <div className="divImgEmpresas">
+        <div className="divImgEmpresasBici">
         <h2 className="h2ImgEmpresas">
         Trabajamos con
         </h2>

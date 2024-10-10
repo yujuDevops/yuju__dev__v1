@@ -1,5 +1,5 @@
 .div-cotizaAhora {
-    margin-top: 300px;
+    margin-top: 450px;
    
 }
 .vertical-dotted-separator {
@@ -61,66 +61,81 @@
   }
 
   @media 
-(min-width: 600px) and (max-width: 1400px) {
-  .div-cotizaAhora {
-    margin-top: 270px;
-     z-index: 12;
-}
-
-.moto-insurance-container {
-  box-shadow: 0 0 10px #8d8b8e40;
-  z-index: 12!important;
-}
-
-}
-
-@media 
-(min-width:1030px) and (max-width: 1400px) {
-  .moto-button {
-    width: 25%;
-    height: 10%;
-    margin-right: 20px;
+  (min-width: 1200px) and (max-width: 1600px) {
+    .div-cotizaAhora {
+      margin-top: 280px;
+     
   }
-  .moto-texto{
-    margin-left: 20px;
+  .vertical-dotted-separator {
+    border-left: 2px dotted #007bff;
+    height: 40px; /* Ajusta la altura según tus necesidades */
+    margin: 0 10px;
+    display: flex;
+  
+  }
+  
+  .moto-insurance-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border: 1px solid #e0e0e0;
+      padding: 10px;
+      margin-left: 4%;
+      border-radius: 15px;
+      width: 92%;
+      border: 0px solid;
+      box-shadow: 0 0 10px #8d8b8e40;
+      margin: -20px 50px;
+      background-color: white;
+    }
+    
+    .moto-texto {
+      color: #a0a0a0;
+      font-family: Inter;
+    }
+    
+     .moto-presio {
+      color: #3369FF;
+      font-weight: bold;
+      font-family: Inter;
+     
+    }
+    
+    .moto-icon {
+      width: 50px;
+      height: 50px;
+      
+      background-size: cover;
+    }
+    
+    .moto-button {
+      background-color:  #0F2BA1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Inter;
+      width: 255px;
+      font-size: 12px;
+    }
+    
+    .moto-button:hover {
+      background-color: #0056b3;
+    }
+
+
+  }
+  
+
+
+  @media (min-width: 601px) and (max-width: 900px) {
+
+
+
   }
 
-  .moto-button {
-    background-color:  #0F2BA1;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Inter;
-    width: 255px;
-    font-size: 12px;
-  }
 
-}
-
-@media 
-(min-width:500px) and (max-width: 1029px) {
-
-
-  .moto-button {
-    width: 24%;
-    height: 10%;
-    font-size: 60%;
-  }
-
-  .moto-presio {
-    height: 10%;
-    width: 15%;
-    font-size: 80%;
-  }
-
-  .moto-texto {
-    width: 15%;
-    margin-left: 20px;
-  font-size: 80%;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   .div-cotizaAhora {

@@ -1,5 +1,5 @@
-.divImgEmpresas{
-    margin-top: 425px;
+.divImgEmpresasBici{
+    margin-top: 500px;
 }
 
 .h2ImgEmpresas {
@@ -16,7 +16,7 @@ color: #3369FF;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
-    gap: 10px; /* Ajusta el valor del gap según tus necesidades */
+    gap: 10px; 
 margin-left: 2%;
 }
 
@@ -24,7 +24,17 @@ margin-left: 2%;
     width: 100%;
     height:100%;
     object-fit: cover; 
-    filter: grayscale(100%); /* convertir imágenes en escala de grises */
+    filter: grayscale(100%); 
+}
+
+.h2ImgEmpresas {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: -90px;
+    margin-bottom: 40px;
+    margin-left: 4%;
+    color: #3369FF;
 }
 
 .EmpresasgridImage:hover {
@@ -34,12 +44,11 @@ margin-left: 2%;
 
 
 
-@media 
+  @media 
   (min-width: 1200px) and (max-width: 1600px) {
-   
-
-    .divImgEmpresas{
-        margin-top: 425px;
+    
+    .divImgEmpresasBici{
+        margin-top: 500px;
     }
     
     .h2ImgEmpresas {
@@ -67,6 +76,16 @@ margin-left: 2%;
         filter: grayscale(100%); /* convertir imágenes en escala de grises */
     }
     
+    .h2ImgEmpresas {
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 25px;
+        margin-top: -90px;
+        margin-bottom: 40px;
+        margin-left: 4%;
+        color: #3369FF;
+    }
+    
     .EmpresasgridImage:hover {
         filter: none;
     }
@@ -83,19 +102,13 @@ margin-left: 2%;
   }
 
 
+
 @media only screen and (max-width: 600px) {
-
-    .h2ImgEmpresas {
-        font-family: Inter;
-    font-weight: 800;
-    font-size: 12px!important;
-    margin-top: -60px;
-    margin-bottom: 40px!important;
-    margin-left: 4%;
-    color: #3369FF;
+  
+    .h2ImgEmpresas{
+        font-size: 12px;
     }
-
-    .divImgEmpresas {
+    .divImgEmpresasBici {
         margin-top: 230px;
         
     }
@@ -103,4 +116,5 @@ margin-left: 2%;
     .EmpresasgridImage{
         height: 120%;
     }
+
 }

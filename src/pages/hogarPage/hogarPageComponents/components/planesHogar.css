@@ -8,9 +8,13 @@
     margin-bottom: -226px;
 }
 
+.h1TituloHogar h1 {
+    margin-bottom: -226px;
+}
+
 .divPadreHogar{
     margin-top: 10%;
-    margin-bottom: 15%;
+    margin-bottom: 1%;
 }
 
 .cardsHogar {
@@ -61,3 +65,93 @@
 
 }
 
+
+
+
+@media 
+  (min-width: 1200px) and (max-width: 1600px) {
+   
+
+    
+    .tituloHogar h1{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 17.42;
+        font-family: inter;
+        color: #3369FF;
+        margin-left: 50px;
+        margin: -77px 0px 0px 50px;
+    }
+    
+    .divPadreHogar{
+        margin-top: -9%;
+        margin-bottom: 0%;
+    }
+    
+    .cardsHogar {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 92vw;
+        background: white;
+    }
+    .cardHogar {
+        border: 0px solid #ccc;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+    }
+      
+    
+    .cardHogar h3 {
+        margin-top: 0;
+    }
+    .imgHogar {
+        margin-left: 4%;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .imgHogar:focus {
+        filter: grayscale(0%);
+    }
+    
+    .imgHogar:hover {
+        filter: grayscale(0%);
+    }
+    
+    .imgHogar:focus:hover {
+        filter: grayscale(0%);
+        outline: none;
+    }
+      
+    .imgHogar:active {
+        filter: grayscale();
+    }
+    
+    .imagesHogar img {
+        cursor: pointer;
+        width: 250px;
+    
+    }
+    
+
+
+  }
+  
+
+
+  @media (min-width: 601px) and (max-width: 900px) {
+
+
+
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  
+
+}

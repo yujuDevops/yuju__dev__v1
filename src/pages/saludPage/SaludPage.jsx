@@ -19,8 +19,8 @@ export const SaludPage = () => {
   <CoberturaSalud/>
    {/* Bannervida los estilos depende de BannerBici */}
   <BannerVida/>
-  <ImgEmpresaSalud/>
   {/* Acordeon salud depende de otros estilos de css, creo que de AcordeonBici */}
+  <ImgEmpresaSalud/>
   <AcordeonSalud/>
   <Carrousel/>
 

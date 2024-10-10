@@ -1,3 +1,4 @@
+import "./HogarPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonHogar,PlanesHogar,ImgHogar,HeaderHogar,BannerHogarPage } from "./hogarPageComponents"
@@ -7,6 +8,10 @@ import { AcordeonHogar,PlanesHogar,ImgHogar,HeaderHogar,BannerHogarPage } from "
 export const HogarPage = () => {
   return (
     <>
+    <div className="semisphere-container-hogar">
+      <div className="semisphere-hogar"></div>
+      <div className="semisphere-hogar2"></div>
+      <div className="content-hogar">
     <HeaderHogar/>
     <CotizaAhora 
  titulo="Seguro de motos"
@@ -19,8 +24,8 @@ export const HogarPage = () => {
     <ImgHogar/>
     <AcordeonHogar/>
     <Carrousel/>
-    
-
+    </div>
+    </div>
     </>
   )
 }

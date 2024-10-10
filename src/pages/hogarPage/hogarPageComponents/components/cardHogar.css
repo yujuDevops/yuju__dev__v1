@@ -8,6 +8,7 @@
 .ReactModal__Overlay--after-open{ 
     background-color: rgba(104, 104, 104, 0.9)!important;
     padding: 15px 30px;
+    z-index: 1!important;
 }
 
 .divModalHogar h3{
