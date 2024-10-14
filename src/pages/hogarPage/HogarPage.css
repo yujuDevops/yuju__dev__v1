@@ -26,7 +26,7 @@
         border-bottom-right-radius: 345px;
         transform: translate(-65%, -48%);
         pointer-events: none; /* Permite clics a través de la semiesfera */
-        z-index: 0; /* Aseguramos que esté detrás de los botones y contenido */
+        z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
       }
       
       .semisphere-hogar2 {
@@ -39,7 +39,7 @@
           border-bottom-right-radius: 345px;
           transform: translate(-65%, -48%);
           pointer-events: none;
-          z-index: 0;
+          z-index: -1;
       }
       
 
