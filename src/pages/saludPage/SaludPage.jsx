@@ -1,3 +1,4 @@
+import "./SaludPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonSalud, BannerVida, CoberturaSalud, HeaderSalud, ImgEmpresaSalud } from "./components"
@@ -7,6 +8,9 @@ export const SaludPage = () => {
   return (
   <>
   {/* HeaderSalud tiene los css de biciPage; */}
+  <div className="semisphere-container-salud">
+      <div className="semisphere-salud"></div>
+      <div className="content-salud">
   <HeaderSalud/>  
   <CotizaAhora
   titulo="Seguro de salud"
@@ -23,8 +27,8 @@ export const SaludPage = () => {
   <ImgEmpresaSalud/>
   <AcordeonSalud/>
   <Carrousel/>
-
-
+  </div>
+  </div>
   </>
   )
 }

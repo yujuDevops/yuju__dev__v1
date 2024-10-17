@@ -1,10 +1,11 @@
+import "./AseguradorasVida.css"
 import { dataVida } from "../../data/dataVida"
 
 
 
 export const AseguradorasVida = () => {
   return (
-    <div className="divImgEmpresas">
+    <div className="divImgEmpresas-vida">
     <h2 className="h2ImgEmpresas">
     Trabajamos con
     </h2>

@@ -1,3 +1,4 @@
+import "./VidaPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import {  Coberturas ,CoberturasAdicionales,HeaderVida,BannerVida, AseguradorasVida,  AcordeonVida} from "./vidaComponents/components"
@@ -7,7 +8,9 @@ import {  Coberturas ,CoberturasAdicionales,HeaderVida,BannerVida, AseguradorasV
 
 export const VidaPage = () => {
   return (
-    <>
+    <><div className="semisphere-container-vida">
+    <div className="semisphere-vida"></div>
+    <div className="content-vida">
    <HeaderVida/>
    <CotizaAhora 
     titulo="Seguro de motos"
@@ -21,7 +24,8 @@ export const VidaPage = () => {
    <AseguradorasVida/>
    <AcordeonVida/>
    <Carrousel/>
-
+    </div>
+    </div>
     </>
   )
 }

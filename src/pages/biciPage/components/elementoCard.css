@@ -1,0 +1,66 @@
+.card-motos-wf2 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 21px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .card-title-motos-wf2 {
+    color:#3369FF;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-weight: 800;
+    cursor: default;
+  }
+  
+  .card-features-motos-wf2 {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .card-feature-motos-wf2 {
+    font-size: 12px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px !important;
+    font-family: inter;
+    cursor: default;
+  }
+  
+  .card-feature-motos-wf2.feature.available span {
+    color: #3369FF;
+  }
+  
+  .card-features-motos-wf2.unavailable {
+    color: orange;
+  }
+  
+ 
+  .card-button-motos-wf2 {
+    background-color: #3369FF;
+    color: white;
+    border: none;
+    padding: 6px 75px 6px 75px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: inter;
+    cursor: pointer;
+  }
+  
+
+  /* Estilos para organizar las cards en fila */
+  .cards-container-motos-wf2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  

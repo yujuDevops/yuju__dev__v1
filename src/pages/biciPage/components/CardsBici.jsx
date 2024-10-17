@@ -10,8 +10,6 @@ export const CardsBici = () => {
 </div>
 <CardOption/>
 
-
-
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import "./BiciPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonBici, BannerBici, CardsBici, DataBiciCard, HeaderBici, ImgBiciEmpresas } from "./components"
@@ -7,6 +8,9 @@ import { AcordeonBici, BannerBici, CardsBici, DataBiciCard, HeaderBici, ImgBiciE
 export const BiciPage = () => {
   return (
     <div>
+      <div className="semisphere-container-bici">
+      <div className="semisphere-bici"></div>
+      <div className="content-bici">
  <HeaderBici/>
  <CotizaAhora
   titulo="Seguro de bicicleta"
@@ -23,8 +27,9 @@ export const BiciPage = () => {
  <AcordeonBici/>
  <Carrousel/>
 
-
-    </div>
+ </div>
+ </div>
+  </div>
   )
 }
 

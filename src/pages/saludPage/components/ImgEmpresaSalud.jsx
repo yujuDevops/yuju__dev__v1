@@ -1,9 +1,10 @@
+import "./ImgEmpresaSalud.css"
 import { dataImgEmpresasVida } from "../data"
 
 
 export const ImgEmpresaSalud = () => {
     return (
-        <div className="divImgEmpresas">
+        <div className="divImgEmpresas-salud">
         <h2 className="h2ImgEmpresas">
         Trabajamos con
         </h2>

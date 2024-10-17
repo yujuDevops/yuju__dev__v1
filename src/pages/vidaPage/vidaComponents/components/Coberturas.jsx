@@ -8,7 +8,7 @@ export const Coberturas = () => {
           <img 
             src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1727793979/cobertura_basica_mvj8th.png" 
             alt="Icono de cobertura" 
-            className="icon-image"
+            className="icon-image-gtd"
           />
         </div>
         <div className="cobertura-text">

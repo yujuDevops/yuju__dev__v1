@@ -4,6 +4,7 @@ import Footer from "../components/footer/Footer"
 import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage} from '../pages';
 import { VidaPage } from '../pages/vidaPage/VidaPage';
 import { SaludPage } from '../pages/saludPage/SaludPage';
+import {AccidentesPersonales} from '../pages/accidentesPersonales/AccidentesPersonales';
 
 
 
@@ -26,7 +27,7 @@ const AppRouter = () => {
                 <Route path="/contacto" element={<ContactPage/>} />
                 <Route path="/vida" element={<VidaPage/>} />
                 <Route path="/salud" element={<SaludPage/>} />
-
+                <Route path="/accidentespersonales" element={<AccidentesPersonales/>} />
                 <Route path="/*" element={<Navigate to={"/Home"}/>} />
             </Routes>
             <Footer/>

@@ -1,20 +1,17 @@
 /* Estructura general del contenedor */
 .coberturas-container {
     width: 100%;
-    margin-top: 100px;
     padding: 40px 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
   }
 
   .coberturas-container h2 { 
     color:#3369FF;
     text-align: left;
-    margin-left: 2%;
+    margin-left: 35px;
     font-family: inter;
     margin-top: 50px;
-
+    font-size: 16px;
+    font-weight: 700;
 }
  
 
@@ -27,4 +24,33 @@
         font-size: 12px;
         text-align: left;
         margin-left: 33px;
+        font-weight: 700;
+    }
+
+
+    .cobertura-item {
+      position: relative;
+    }
+
+    .cobertura-text{
+      position: absolute;
+      left: 145px;
+      top: 47px;
+      width: 85%;
+}
+    
+
+    .cobertura-text h3 {
+      color: #8D8B8E;
+      font-size: 16px;
+      font-family: inter;
+      font-weight: 700;
+    }
+
+
+    .cobertura-text p {
+      color: #8D8B8E;
+      font-size: 14px;
+      font-family: inter;
+      font-weight: 400;
     }

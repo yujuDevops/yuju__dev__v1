@@ -1,18 +1,23 @@
 import "./elementoCard.css"
 
-export const ElementoCard = ({title,features,buttonText}) => {
+export const ElementoCard = ({title,features,buttonText,image}) => {
 
   return (
-    <div className="card">
-    <h3 className="card-title">{title}</h3>
-    <ul className="card-features">
+    <>
+    <div className="card-motos-wf2">
+    <h3 className="card-title-motos-wf2">{title}</h3>
+    <ul className="card-features-motos-wf2">
       {features.map((feature, index) => (
-        <li key={index} className={`card-feature ${feature.available ? 'available' : 'unavailable'}`}>
+        <li key={index} className={`card-feature-motos-wf2 ${feature.available ? 'available' : 'unavailable'}`}>
           {feature.name} <span>{feature.available ? '✔️' : '❌'}</span>
+          
         </li>
+      
       ))}
     </ul>
-    <button className="card-button">{buttonText}</button>
+    <button className="card-button-motos-wf2">{buttonText}</button>
+    
   </div>
+  </>
   )
 }
