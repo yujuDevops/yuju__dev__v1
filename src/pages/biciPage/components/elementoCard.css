@@ -1,3 +1,4 @@
+@media (min-width: 1200px) and (max-width: 1600px) {
 .card-motos-wf2 {
     background-color: white;
     border-radius: 10px;
@@ -32,17 +33,20 @@
     gap: 50px !important;
     font-family: inter;
     cursor: default;
+    color: #8D8B8E;
   }
   
-  .card-feature-motos-wf2.feature.available span {
-    color: #3369FF;
-  }
-  
-  .card-features-motos-wf2.unavailable {
-    color: orange;
-  }
-  
- 
+
+.icon-check {
+  width: 20px; /* Cambia el tamaño según lo que necesites */
+  height: 20px;
+}
+
+.icon-cross {
+  width: 20px; /* Cambia el tamaño según lo que necesites */
+  height: 20px;
+}
+
   .card-button-motos-wf2 {
     background-color: #3369FF;
     color: white;
@@ -63,4 +67,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .card-imagen-wf2-4taimg img{
+    position: absolute;
+  }
   
+}

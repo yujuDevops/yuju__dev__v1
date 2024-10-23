@@ -21,6 +21,9 @@ export const BiciPage = () => {
  {/* esta ordenado en cascada amigo, los css estan creados en su mayoria pero no le puse nada estan para que vos lo retoques menos el de
  DataBiciCard,BannerBici, ImgBiciEmpresas dependen del css de Moto, si se lo queres cambiar ahi esta el padre  */}
   <CardsBici/>
+  <div className="card-imagen-wf2-4taimg">
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1728930612/ilustracion-bici_kwr0fb.svg" alt="" />
+    </div>  
  <DataBiciCard/>
  <BannerBici/>
  <ImgBiciEmpresas/>

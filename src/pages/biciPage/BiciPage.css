@@ -41,6 +41,16 @@
       z-index: 4; /* Asegura que los botones estén completamente por encima */
       position: relative; /* Asegura que los botones se mantengan en el flujo y sean interactivos */
     }
+
+    .card-imagen-wf2-4taimg{
+      position: relative;
+      z-index: 120;
+      top: -371px;
+      left: 884px;
+      width: 409px;
+      background-color: transparent;
+  }
+    
   }
   
 
