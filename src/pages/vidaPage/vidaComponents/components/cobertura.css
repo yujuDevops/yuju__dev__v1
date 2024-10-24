@@ -110,12 +110,12 @@
 }
 
 /* Sección del texto */
-.cobertura-text {
+.cobertura-text-vida {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 85%;
   position: absolute;
-  left: 190px;
+  left: 180px;
   top: 47px;
 }
 

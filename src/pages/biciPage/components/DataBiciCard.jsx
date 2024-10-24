@@ -1,4 +1,5 @@
-import { dataCardBici } from "../data"
+import { dataCardBici } from "../data";
+import "./DataBiciCard.css";
 
 export const DataBiciCard = () => {
   return (

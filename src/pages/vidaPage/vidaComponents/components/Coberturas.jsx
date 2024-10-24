@@ -11,7 +11,7 @@ export const Coberturas = () => {
             className="icon-image-gtd"
           />
         </div>
-        <div className="cobertura-text">
+        <div className="cobertura-text-vida">
           <h2 className="cobertura-title">Cobertura básica</h2>
           <p className="cobertura-description">
             El seguro de vida te cubre por fallecimiento por cualquier causa, ya sea por enfermedad o por accidente. 

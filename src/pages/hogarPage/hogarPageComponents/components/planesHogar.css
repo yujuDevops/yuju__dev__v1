@@ -1,3 +1,5 @@
+
+
 .h1TituloHogar{
     font-weight: 700;
     font-size: 20px;
@@ -75,7 +77,7 @@
     
     .tituloHogar h1{
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 17.42;
         font-family: inter;
         color: #3369FF;

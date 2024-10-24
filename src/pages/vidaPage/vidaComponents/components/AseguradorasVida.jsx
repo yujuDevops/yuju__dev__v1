@@ -6,7 +6,7 @@ import { dataVida } from "../../data/dataVida"
 export const AseguradorasVida = () => {
   return (
     <div className="divImgEmpresas-vida">
-    <h2 className="h2ImgEmpresas">
+    <h2 className="h2ImgEmpresas-vida">
     Trabajamos con
     </h2>
     <div>

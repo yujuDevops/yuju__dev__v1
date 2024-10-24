@@ -22,7 +22,7 @@ export const BiciPage = () => {
  DataBiciCard,BannerBici, ImgBiciEmpresas dependen del css de Moto, si se lo queres cambiar ahi esta el padre  */}
   <CardsBici/>
   <div className="card-imagen-wf2-4taimg">
-      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1728930612/ilustracion-bici_kwr0fb.svg" alt="" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1729689717/foto-bici-2_h83oru.svg" alt="" />
     </div>  
  <DataBiciCard/>
  <BannerBici/>

@@ -9,6 +9,17 @@
       "tercerTitulo":"en unos simples pasos",
       "options": [
         { "value": "seguro-auto", "label": "Seguro de Auto" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
+        { "value": "seguro-hogar", "label": "Seguro de Hogar" },
         { "value": "seguro-hogar", "label": "Seguro de Hogar" }
       ]
     }

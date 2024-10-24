@@ -1,5 +1,5 @@
 .DivPadreCadrBici{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .tituloBici{
@@ -13,5 +13,7 @@
 
   .h2Bici{
     color: #3369FF;
-
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
   }

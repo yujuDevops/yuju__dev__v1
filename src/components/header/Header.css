@@ -68,22 +68,21 @@
 
 
 
-
 @media (min-width: 1200px) and (max-width: 1600px) {
-.header {
+  .header {
     background-size: cover;
     background-position: center;
     padding: 20px;
     color: rgb(255, 255, 255);
     position: relative;
   }
-  
+
   .header-content {
     position: absolute;
     top: 110px;
     left: 50px;
   }
-  
+
   .header h1 {
     font-size: 35px;
     font-weight: 900;
@@ -92,7 +91,7 @@
     inline-size: 45.4rem;
     line-height: 42.49px;
   }
-  
+
   .header h2 {
     font-size: 35px;
     margin-left: -10px;
@@ -102,7 +101,7 @@
     font-weight: 400;
     padding: 10px;
   }
-  
+
   .header h3 {
     font-size: 35px;
     font-family: inter;
@@ -120,7 +119,13 @@
     border-radius: 12px;
     cursor: pointer;
     color: #8D8B8E;
+    position: relative;
+  }
 
+  .header-select select {
+    width: 100%;
+    max-height: 15px; /* Limita la altura máxima del desplegable */
+    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
   }
 
   .header-select::after {
@@ -134,11 +139,10 @@
     pointer-events: none;
   }
 
-  .header-select select:focus{
+  .header-select select:focus {
     color: #8D8B8E;
   }
 }
-
 
 
 @media (min-width: 601px) and (max-width: 900px) {

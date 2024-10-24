@@ -4,7 +4,7 @@ import "./imgHogar.css"
 export const ImgHogar = () => {
     return (
         <div className="divImgEmpresas-hogar">
-        <h2 className="h2ImgEmpresas">
+        <h2 className="h2ImgEmpresas-hogar">
         Trabajamos con
         </h2>
         <div>
