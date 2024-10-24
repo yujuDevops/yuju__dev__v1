@@ -1,7 +1,34 @@
-import React from 'react'
+import { Carrousel } from "../../components/carrousel/Carrousel"
+import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
+import { AcordeonAccidentesPersonales, BannerAccidentesPersonales, CoberturasAccidentesPersonales, HeaderAccidentesPersonales, ImgEmpresasAccidentesPersonales } from "./components"
+
+import { CardsAccidentesPersonales } from "./components/CardsAccidentesPersonales"
+
 
 export const AccidentesPersonales = () => {
   return (
-    <div>AccidentesPersonales</div>
+    <>
+   {/* //depende de los estilos de motoPage. */}
+<HeaderAccidentesPersonales/>
+
+<CotizaAhora
+titulo="Seguro de accidentes personales"
+presio="Desde $677,75/mes"
+button="¡Cotizá ahora!"
+src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux.png"
+/>
+
+{/* estilos aproximados con chatGpt */}
+<CardsAccidentesPersonales/>
+
+<CoberturasAccidentesPersonales/>
+<BannerAccidentesPersonales/>
+
+{/* los estilos dependen de salud */}
+<ImgEmpresasAccidentesPersonales/>
+
+<AcordeonAccidentesPersonales/>
+<Carrousel/>
+</>
   )
 }
