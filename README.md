@@ -22,6 +22,7 @@ npm install -g yarn
 
  yarn add react-router-dom
 
+ yarn add react-select
 
 ## Instalación y configuracion de Jest + React Testing Library
 ## En proyectos de React + Vite
