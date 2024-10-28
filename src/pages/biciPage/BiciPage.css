@@ -1,3 +1,13 @@
+.card-imagen-wf2-4taimg{
+  position: relative;
+  z-index: 120;
+  top: -371px;
+  left: 884px;
+  width: 409px;
+  background-color: transparent;
+}
+
+
 @media (min-width: 1200px) and (max-width: 1600px) {
     .semisphere-container-bici {
       position: relative;
