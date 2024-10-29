@@ -1,5 +1,6 @@
+import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo } from "./components"
+import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo } from "./components"
 
 
 export const IndustrialPage = () => {
@@ -17,6 +18,8 @@ export const IndustrialPage = () => {
 
 <BannerIndustrial/>
 <ImgEmpresasIndustrial/>
+<AcordeonIndustrila/>
+<Carrousel/>
  </>  
   )
 }
