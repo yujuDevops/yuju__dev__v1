@@ -1,7 +1,7 @@
 import {  Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
-import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage} from '../pages';
+import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage, IndustrialPage} from '../pages';
 import { VidaPage } from '../pages/vidaPage/VidaPage';
 import { SaludPage } from '../pages/saludPage/SaludPage';
 import {AccidentesPersonales} from '../pages/accidentesPersonales/AccidentesPersonales';
@@ -18,6 +18,7 @@ const AppRouter = () => {
                 <Route path="/moto" element={<MotoPage />} />
                 <Route path="/bici" element={<BiciPage />} />
                 <Route path="/hogar" element={<HogarPage />} />
+                <Route path="/industria" element={< IndustrialPage/>} />
                 <Route path="/rus" element={<RusPage />} />
                 <Route path="/experta" element={<ExpertaPage />} />
                 <Route path="/san-cristobal" element={<SanCristobalPage />} />
