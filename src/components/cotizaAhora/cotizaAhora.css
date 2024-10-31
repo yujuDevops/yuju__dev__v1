@@ -60,8 +60,8 @@
     background-color: #0056b3;
   }
 
-  @media 
-  (min-width: 1200px) and (max-width: 1600px) {
+
+  @media (min-width: 1200px) and (max-width: 1600px) {
     .div-cotizaAhora {
       margin-top: 280px;
      
@@ -87,6 +87,8 @@
       box-shadow: 0 0 10px #8d8b8e40;
       margin: -20px 50px;
       background-color: white;
+      position: relative;
+      z-index: 1;
     }
     
     .moto-texto {
@@ -135,11 +137,9 @@
 
   }
 
-
-
 @media only screen and (max-width: 600px) {
   .div-cotizaAhora {
-    margin-top: 110%;
+    margin-top: 90%;
     
 }
 
@@ -151,11 +151,13 @@
   padding: 10px;
   margin-left: 4%;
   border-radius: 15px;
-  width: 92%;
+  width: 90%;
   border: 0px solid;
   box-shadow: 0 0 10px #8d8b8e40;
-  margin:-95px 0px -76px 15px;
+  margin: -20px 20px;
   background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 

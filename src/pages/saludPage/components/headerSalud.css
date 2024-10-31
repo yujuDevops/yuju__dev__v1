@@ -4,7 +4,23 @@
 @media 
 (min-width: 1200px) and (max-width: 1600px) {
 
-    
+    .buttonSaludHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonSaludHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+
   
 }
 

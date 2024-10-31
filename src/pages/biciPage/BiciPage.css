@@ -15,7 +15,7 @@
       padding: 0px 0px;
       background-color: #ffffff; 
       overflow: hidden;
-      height: 2600px;
+      height: 2620px;
       z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
     }
     
@@ -70,5 +70,13 @@
       overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
     }
 
+    .card-imagen-wf2-4taimg{
+      position: relative;
+        z-index: 120;
+        top: -268px;
+        left: 197px;
+        width: 240px;
+        background-color: transparent;
+  }
 
   }

@@ -1,15 +1,15 @@
 @media (min-width: 1200px) and (max-width: 1600px) {
-    .semisphere-container-moto {
+    .semisphere-container-acc-per {
       position: relative;
       width: 100%;
       padding: 0px 0px;
       background-color: #ffffff; 
       overflow: hidden;
-      height: 3370px;
+      height: 3170px;
       z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
     }
     
-    .semisphere-moto {
+    .semisphere-acc-per {
       position: absolute;
       top: 385px;
       right: -877px;
@@ -22,12 +22,12 @@
       z-index: 0; /* Aseguramos que esté detrás de los botones y contenido */
     }
     
-    .content-moto {
+    .content-acc-per {
       position: relative;
       z-index: 2; /* Aseguramos que el contenido esté por encima de la semiesfera */
     }
   
-    .card-motos {
+    .card-acc-pers {
       position: relative; /* Cambiado de absolute a relative para mantener el flujo del documento */
       z-index: 3; /* Asegura que esté por encima del contenedor y semiesfera */
       margin-top: 50px; /* Ajusta el espaciado según sea necesario */
@@ -37,7 +37,7 @@
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade algo de profundidad */
     }
   
-    .card-motos button {
+    .card-acc-pers button {
       z-index: 4; /* Asegura que los botones estén completamente por encima */
       position: relative; /* Asegura que los botones se mantengan en el flujo y sean interactivos */
     }

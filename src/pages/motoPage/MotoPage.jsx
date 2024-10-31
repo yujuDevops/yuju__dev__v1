@@ -22,6 +22,7 @@ export const MotoPage = () => {
  src={fotoMoto}
 />
 
+
       <CardMotos />
 
 <CardInfo/>

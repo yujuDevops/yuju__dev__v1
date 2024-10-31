@@ -3,3 +3,14 @@
     flex-wrap: wrap;
     margin-left: 40px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .DivBiciOption {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        margin-left: 4px;
+    }
+    
+}

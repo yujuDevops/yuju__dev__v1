@@ -1,4 +1,4 @@
-import './cobertura.css';
+import './Coberturas.css';
 
 export const Coberturas = () => {
   return (

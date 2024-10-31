@@ -34,8 +34,7 @@ color: #3369FF;
 
 
 
-@media 
-  (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
    
 
     .divImgEmpresas{
@@ -83,9 +82,9 @@ color: #3369FF;
   }
 
 
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
 
-    .h2ImgEmpresas {
+    .h2ImgEmpresas-vida {
         font-family: Inter;
     font-weight: 800;
     font-size: 12px!important;
@@ -95,8 +94,8 @@ color: #3369FF;
     color: #3369FF;
     }
 
-    .divImgEmpresas {
-        margin-top: 230px;
+    .divImgEmpresas-vida {
+        margin-top: 250px;
         
     }
 

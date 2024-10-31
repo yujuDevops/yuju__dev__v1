@@ -11,14 +11,14 @@ export const seguros = [
       titulo: "Motos",
       foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1723258522/Card-moto_eughca.png",
       boton: "Ver más",
-      href: "/motos"
+      href: "/moto"
     },
     {
       uid: "3",
       titulo: "Bicicleta",
       foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1723258523/Card-bicicleta_pmyygl.png",
       boton: "Ver más",
-      href: "/bicicleta"
+      href: "/bici"
     },
     {
       uid: "4",
@@ -46,7 +46,7 @@ export const seguros = [
       titulo: "Accidentes Personales",
       foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1723258522/Card-accidentes_idimtd.png",
       boton: "Ver más",
-      href: "/accidentes-personales"
+      href: "/accidentespersonales"
     },
     {
       uid: "8",
