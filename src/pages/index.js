@@ -11,4 +11,4 @@ export * from './rusPage.jsx'
 export * from './sanCristobalPage'
 export * from './siniestrosPage'
 export * from "./industrialPage"
-
+export * from "./embarcacionesPage"
