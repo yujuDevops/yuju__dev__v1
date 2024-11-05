@@ -1,3 +1,4 @@
+import "./AcordeonAccidentesPersonales.css"
 import { acordeonAccidentesPersonales } from "../data"
 import { AcordeonCompAccidentesPersonales } from "./AcordeonCompAccidentesPersonales"
 
@@ -5,9 +6,9 @@ import { AcordeonCompAccidentesPersonales } from "./AcordeonCompAccidentesPerson
 export const AcordeonAccidentesPersonales = () => {
     
         return (
-          <div className="padreDiv">
-          <h2 className="h2Acordeon">¿Tenés dudas sobre el seguro para bicicleta?</h2>
-          <h3 className="h3Acordeon">En Yuju Seguros nos gusta que estés bien informado, por eso te dejamos algunas respuestas a las preguntas más frecuentes:</h3>
+          <div className="padreDiv-acc">
+          <h2 className="h2Acordeon-acc">¿Tenés dudas sobre el seguro para bicicleta?</h2>
+          <h3 className="h3Acordeon-acc">En Yuju Seguros nos gusta que estés bien informado, por eso te dejamos algunas respuestas a las preguntas más frecuentes:</h3>
           
           {acordeonAccidentesPersonales.map((resp)=> {
                   return(

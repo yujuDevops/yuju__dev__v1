@@ -1,4 +1,4 @@
-import "./bannerAccidentesPersonales.css"
+import "./BannerAccidentesPersonales.css"
 
 export const BannerAccidentesPersonales = () => {
     return (
