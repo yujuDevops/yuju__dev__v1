@@ -5,30 +5,25 @@ export const CoberturasAccidentesPersonales = () => {
 
   <>
 
-<div className="coberturas-container">
-          <h2>Conocé nuestras coberturas</h2>
+<div className="coberturas-container-acc">
     
           <div className="cobertura-item">
-            <img className="imgCoberturas" src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1729693409/AP-invalidez_1_dflp4d.png" alt="Indemnización" />
-            <div className="cobertura-text">
-              <h3>Indemnización</h3>
+            <img className="imgCoberturas-acc" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730767771/AP-invalidez-acc_ylrcua.png" alt="Indemnización" />
+            <div className="cobertura-text-acc">
+              <h3>Muerte e invalidez</h3>
               <p>
-                Recibís el total de la suma asegurada que hayas contratado si te diagnostican alguna enfermedad o necesitaras algún trasplante, con solo presentar la documentación necesaria. Podés usar ese dinero para lo que vos quieras. <strong>Vos elegís cómo cuidar tu salud, nosotros te apoyamos.</strong>
+              Esta cobertura respalda al asegurado en caso de que sufra un accidente que le cause la muerte o una incapacidad permanente, ya sea total o parcial.
               </p>
             </div>
           </div>
- </div>
 
-
- <div className="coberturas-container">
-          <h2>Conocé nuestras coberturas</h2>
     
           <div className="cobertura-item">
-            <img className="imgCoberturas"  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1729693409/AP-invalidez_1_dflp4d.png" alt="Indemnización" />
-            <div className="cobertura-text">
-              <h3>Indemnización</h3>
+            <img className="imgCoberturas-acc"  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730767771/AP-farmaceutica-acc_ro30cn.png" alt="Indemnización" />
+            <div className="cobertura-text-acc">
+              <h3>Asistencia médico farmacéutica</h3>
               <p>
-                Recibís el total de la suma asegurada que hayas contratado si te diagnostican alguna enfermedad o necesitaras algún trasplante, con solo presentar la documentación necesaria. Podés usar ese dinero para lo que vos quieras. <strong>Vos elegís cómo cuidar tu salud, nosotros te apoyamos.</strong>
+              Esta cobertura reembolsa al asegurado los gastos médicos y de farmacia que incurra por un accidente cubierto por el seguro.
               </p>
             </div>
           </div>
