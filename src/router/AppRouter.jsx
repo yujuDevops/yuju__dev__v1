@@ -5,6 +5,7 @@ import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,Contac
 import { VidaPage } from '../pages/vidaPage/VidaPage';
 import { SaludPage } from '../pages/saludPage/SaludPage';
 import {AccidentesPersonales} from '../pages/accidentesPersonales/AccidentesPersonales';
+import { CelularPage } from '../pages/celularPage';
 
 
 
@@ -18,6 +19,7 @@ const AppRouter = () => {
                 <Route path="/embarcaciones" element={<Embarcaciones />} />
                 <Route path="/moto" element={<MotoPage />} />
                 <Route path="/bici" element={<BiciPage />} />
+                <Route path="/celular" element={<CelularPage />} />
                 <Route path="/hogar" element={<HogarPage />} />
                 <Route path="/industria" element={< IndustrialPage/>} />
                 <Route path="/rus" element={<RusPage />} />

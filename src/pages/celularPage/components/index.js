@@ -1,0 +1,7 @@
+export * from "./HeaderCelulares"
+export * from "./CardSeguroCelular"
+export * from "./TodoRiesgoCelular"
+export * from "./BannerCelulares"
+export * from "./ImgEmpresasCelulares"
+export * from "./AcordeonCompCelulares"
+export * from "./AcordeonCompCelulares"

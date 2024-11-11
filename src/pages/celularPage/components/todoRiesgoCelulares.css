@@ -1,0 +1,35 @@
+
+  
+  .todoRiesgoContainer {
+    margin-top: 100px;
+
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .todoRiesgoTitle {
+    color: var(--todo-riesgo-color-primary);
+    font-size: 1.2em;
+    margin-bottom: var(--todo-riesgo-spacing);
+  }
+  
+  .todoRiesgoItems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .todoRiesgoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--todo-riesgo-text-color);
+  }
+  
+  .todoRiesgoIcon {
+    width: var(--todo-riesgo-icon-size);
+    height: var(--todo-riesgo-icon-size);
+    margin-bottom: 8px;
+  }
+  
