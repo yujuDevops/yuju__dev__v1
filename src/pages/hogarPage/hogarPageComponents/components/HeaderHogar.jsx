@@ -1,4 +1,4 @@
-import "./HeaderHogar.css"
+import "./headerHogar.css"
 
 export const HeaderHogar = () => {
   return (
