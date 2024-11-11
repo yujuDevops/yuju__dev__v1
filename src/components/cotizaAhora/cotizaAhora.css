@@ -138,10 +138,10 @@
   }
 
 @media only screen and (max-width: 600px) {
-  .div-cotizaAhora {
+  /* .div-cotizaAhora {
     margin-top: 90%;
     
-}
+} */
 
 .moto-insurance-container {
   display: flex;
@@ -154,7 +154,7 @@
   width: 90%;
   border: 0px solid;
   box-shadow: 0 0 10px #8d8b8e40;
-  margin: -20px 20px;
+  margin: 0px 20px;
   background-color: white;
   position: relative;
   z-index: 1;
