@@ -1,5 +1,7 @@
+import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones } from "./components"
+import { AcordeonEmbarcaciones, BannerEmbarcaciones, CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones, ImgEmpresasEmbarcaciones } from "./components"
+
 
 
 export const Embarcaciones = () => {
@@ -20,6 +22,12 @@ export const Embarcaciones = () => {
     </div>  
    
    <DataEmbarcaciones/>
+   <BannerEmbarcaciones/>
+    <ImgEmpresasEmbarcaciones/>
+    <AcordeonEmbarcaciones/>
+  <Carrousel/>
+
     </>
+
   )
 }

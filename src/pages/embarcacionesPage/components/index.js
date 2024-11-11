@@ -3,3 +3,8 @@ export * from "./CardEmbarcaciones";
 export * from "./CardOptionEmbarcaciones"
 export * from "./ElementoCardEmbarcaciones"
 export * from "./DataEmbarcaciones"
+export * from "./BannerEmbarcaciones"
+export * from "./DataEmbarcaciones"
+export * from "./AcordeonEmbarcaciones"
+export * from "./AcordeonCompEmbarcaciones"
+export * from "./ImgEmpresasEmbarcaciones"
