@@ -1,7 +1,6 @@
 import "../components/HeaderMotos.css"
 import fotoMotos from '../../../../assets/image/Header-seguro-moto.png'
 import fotoMotoTablet from '../../../../assets/image/Header-Moto-tablet.jpg'
-import fotoMotosCelular from  '../../../../assets/image/Header-moto-celular.jpg'
 
 
 
@@ -11,7 +10,7 @@ export const HeaderMotos = () => {
    <header className='header-motos'>
   <img src={fotoMotos} alt=""  className='imgPorDefectoMotos' />
   <img  src={fotoMotoTablet} alt="" className='imgRemplazoMotos'  />
-  <img  src={fotoMotosCelular} alt="" className='imgFotoCelular'  />
+  <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731328296/Header-moto-celular_iq0lgk.jpg" alt="" className='imgFotoCelular'  />
   
   <div className='container-motos'>
   <h1 className='h1-motos'>SEGURO DE MOTO</h1>

@@ -159,8 +159,8 @@ height: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 21px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 180px;
-    margin: 10px 15px 25px 15px;
+    width: 43vw;
+    margin: 10px 15px 25px 10px;
     text-align: center;
   }
   
@@ -226,9 +226,11 @@ height: 20px;
     width: calc(50% - 20px); /* Dos columnas en móviles */
   }
 
-  .card-imagen-wf2-4taimg img{
+  .card-imagen-wf2-4taimg img {
     position: absolute;
-  }
+    width: 58vw;
+    margin: 11px 0px 0px -0px;
+}
   
 
 

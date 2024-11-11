@@ -72,13 +72,13 @@ const Navbar = () => {
                 >
                     Institucional
                 </Link>
-                <Link 
+                {/* <Link 
                     to="/siniestros" 
                     className={activePage === 'siniestros' ? 'active' : ''} 
                     onClick={() => handlePageChange('siniestros')}
                 >
                     Siniestros
-                </Link>
+                </Link> */}
                 {/* <Link 
                     to="/club-yuju" 
                     className={activePage === 'club-yuju' ? 'active' : ''} 

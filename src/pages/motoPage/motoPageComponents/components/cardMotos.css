@@ -151,9 +151,10 @@
         font-family: Inter;
         font-weight: 800;
         font-size: 14px;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 10px;
         color: #3369FF;
+        margin-left: 6%;
     }
 
     .card-container {
