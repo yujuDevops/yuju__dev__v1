@@ -25,6 +25,6 @@ export const AcordeonCompEmbarcaciones = ({id,title,subtitle}) => {
   AcordeonCompEmbarcaciones.PropType = {
       id: PropType.number,
       title: PropType.string,
-      content: PropType.string
+      subtitle: PropType.string
       
  }
