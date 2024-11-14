@@ -30,7 +30,7 @@
    
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
 
   .header-salud img{
     position: absolute;
@@ -76,7 +76,7 @@
   display: -webkit-box;
     -webkit-box-orient: horizontal;
     overflow: hidden;
-    width: 80%; /* Ancho específico */
+    width: 95%; 
   }
  
   
@@ -90,7 +90,6 @@
 
 
 .h1-motos{
- 
   margin-left: 0.1%;
   font-weight: 500;
   font-size: 100%!important;
@@ -103,7 +102,6 @@
 }
 
 
- 
 .h3-motos{
   font-size: 60%;
 }

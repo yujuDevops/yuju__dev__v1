@@ -138,10 +138,10 @@
   }
 
 @media only screen and (max-width: 600px) {
-  /* .div-cotizaAhora {
-    margin-top: 90%;
+  .div-cotizaAhora {
+    margin-top: 105%;
     
-} */
+}
 
 .moto-insurance-container {
   display: flex;
