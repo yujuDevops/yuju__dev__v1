@@ -12,3 +12,8 @@ export * from './sanCristobalPage'
 export * from './siniestrosPage'
 export * from "./industrialPage"
 export * from "./embarcacionesPage"
+export * from "./celularPage"
+export * from "./notebookPage"
+export * from "./vidaPage"
+export * from "./saludPage"
+export * from "./accidentesPersonales"
