@@ -1,4 +1,4 @@
-import "./CoberturaSalud.css"
+import "./coberturaSalud.css"
 
 export const CoberturaSalud = () => {
     return (

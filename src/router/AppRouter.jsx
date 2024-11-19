@@ -1,7 +1,7 @@
 import {  Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
-import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage, IndustrialPage, Embarcaciones, CelularPage, VidaPage, SaludPage, AccidentesPersonales, NotebookPage} from '../pages';
+import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage, IndustrialPage, Embarcaciones, CelularPage, VidaPage, SaludPage, AccidentesPersonales, NotebookPage, } from '../pages';
 
 
 
