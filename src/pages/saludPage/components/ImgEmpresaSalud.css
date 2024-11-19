@@ -85,7 +85,13 @@ color: #3369FF;
 
 @media only screen and (max-width: 600px) {
 
-    .h2ImgEmpresas {
+
+    .divImgEmpresas-salud{
+        margin-top: 225px;
+    }
+    
+
+    .h2ImgEmpresas-salud {
         font-family: Inter;
     font-weight: 800;
     font-size: 12px!important;
@@ -95,12 +101,12 @@ color: #3369FF;
     color: #3369FF;
     }
 
-    .divImgEmpresas {
+    .divImgEmpresas-salud {
         margin-top: 230px;
         
     }
 
-    .EmpresasgridImage{
+    .EmpresasgridImage-salud{
         height: 120%;
     }
 }
