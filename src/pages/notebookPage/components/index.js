@@ -1,1 +1,7 @@
 export * from "./HeaderNotebook"
+export * from "./InfoNotebook"
+export * from "./DataNotebook"
+export * from "./BaneerNotebook"
+export * from "./ImgEmpresasNotebook"
+export * from "./AcordeonCompNotebook"
+export * from "./AcordeonNotebook"
