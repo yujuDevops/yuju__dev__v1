@@ -106,8 +106,9 @@ export const HomePage = ({ pageId }) => {
       </div>
 
 
-
-        <CardComponent/>
+      {/* Notebook y pc */}
+        <CardComponent/> 
+        {/* MOBILE */}
         <CardMobile/>
         
       <div className="background-semisphere"></div>

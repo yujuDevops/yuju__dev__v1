@@ -1,23 +1,24 @@
 
 .coberturas-container-acc {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0px 60px;
     position: relative;
+    margin-top: -50px;
 }
 
 .imgCoberturas-acc{
     height: auto;
-    max-width: 100%;
-    margin: 0px 20px;
+    max-width: 20%;
+    margin: 0px 30px;
 
 }
 
 .cobertura-text-acc {
-    position: absolute;
-    top: 80px;
-    left: 165px;
-
+    position: relative;
+    top: -156px;
+    left: 187px;
 }
+
 
 .cobertura-text-acc h3 {
     font-size: 16px;
@@ -31,4 +32,116 @@
     color: #8D8B8E;
     font-weight: 400;
     font-family: inter;
+}
+
+
+.imgCoberturas-acc {
+    display: none;
+}
+
+
+@media(min-width: 1200px) and (max-width: 1600px) {
+
+
+    .coberturas-container-acc {
+        width: 100%;
+        padding: 0px 20px;
+        position: relative;
+    }
+    
+    .imgCoberturas-acc{
+        height: auto;
+        max-width: 100%;
+        margin: 0px 20px;
+    
+    }
+    
+    .cobertura-text-acc {
+        position: relative;
+        top: -116px;
+        left: 157px;
+    }
+    
+    
+    .cobertura-text-acc h3 {
+        font-size: 16px;
+        color: #8D8B8E;
+        font-weight: 800;
+        font-family: inter;
+    }
+    
+    .cobertura-text-acc p {
+        font-size: 14px;
+        color: #8D8B8E;
+        font-weight: 400;
+        font-family: inter;
+    }
+
+
+    .imgCoberturas-acc {
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .coberturas-container-acc {
+        width: 100%;
+        padding: 0px 20px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 35px 0px 0px 0px;
+    }
+
+    .cobertura-item {
+        flex: 2 24%;
+        border: 1px solid;
+        margin: 0 auto;
+        display: grid;
+        align-items: self-start;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+    
+    .imgCoberturas-acc{
+        height: auto;
+        max-width: 45%;
+        margin: 0px 47px;
+        display: flex;
+    }
+    
+    .cobertura-text-acc {
+        position: relative;
+        top: -7px;
+        left: 0px;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .cobertura-text-acc h3 {
+        font-size: 12px;
+        color: #8D8B8E;
+        font-weight: 800;
+        font-family: inter;
+    }
+    
+    .cobertura-text-acc p {
+        font-size: 8px;
+        color: #8D8B8E;
+        font-weight: 400;
+        font-family: inter;
+    }
+
+
+    .imgCoberturas-acc-grande {
+        display: none;
+    }
+
 }

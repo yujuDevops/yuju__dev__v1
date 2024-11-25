@@ -12,12 +12,14 @@ export const BiciPage = () => {
       <div className="semisphere-bici"></div>
       <div className="content-bici">
  <HeaderBici/>
+ <div className="CotizaHoraBiciPage">
  <CotizaAhora
   titulo="Seguro de bicicleta"
   presio="Desde $1.125/mes"
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1724953992/Bici_sdsltk.png"
  />
+ </div>
  {/* esta ordenado en cascada amigo, los css estan creados en su mayoria pero no le puse nada estan para que vos lo retoques menos el de
  DataBiciCard,BannerBici, ImgBiciEmpresas dependen del css de Moto, si se lo queres cambiar ahi esta el padre  */}
   <CardsBici/>

@@ -5,6 +5,7 @@ export const HeaderHogar = () => {
 <>
 <header className="headerHogar">
 <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1722601576/Header-seguro-moto_copia_ghguov.png" alt="" className='imgNotebookHogar'/>
+<img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732470995/Header-Hogar-tablet_reaw4w.webp" alt="" className='imgRemplazoMotos'  />
    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730391155/Header-hogar-celular_ld6obv.jpg" alt="" className='imgFotoCelular'  />
 <div className='containerHogar'>
 <h1 className='h1Hogar'>SEGURO DE HOGAR</h1>

@@ -9,7 +9,7 @@ export const HeaderMotos = () => {
    <>
    <header className='header-motos'>
   <img src={fotoMotos} alt=""  className='imgPorDefectoMotos' />
-  <img  src={fotoMotoTablet} alt="" className='imgRemplazoMotos'  />
+  <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732302219/Header-Moto-tablet_mcqpkh.webp" alt="" className='imgRemplazoMotos'  />
   <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731328296/Header-moto-celular_iq0lgk.jpg" alt="" className='imgFotoCelular'  />
   
   <div className='container-motos'>

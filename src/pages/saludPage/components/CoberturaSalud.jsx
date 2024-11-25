@@ -1,4 +1,4 @@
-import "./CoberturaSalud.css"
+import "./coberturaSalud.css"
 
 export const CoberturaSalud = () => {
     return (
@@ -8,7 +8,7 @@ export const CoberturaSalud = () => {
       </div>
 
       <div className="coberturas-container coberturas-container-sm">
-      <div className="cobertura-item cobertura-item-sm">
+      <div className="cobertura-item-salud cobertura-item-salud-sm">
         <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728480423/Salud-indemnizacion_prro8k.png" alt="Indemnización" className="img-grande"/>
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731528219/Anticipo_del_capital_1_ecsdhs.png" alt="Indemnización" className="imagen-pequena" />
         <div className="cobertura-text cobertura-text-sm">
@@ -17,7 +17,7 @@ export const CoberturaSalud = () => {
         </div>
       </div>
     
-      <div className="cobertura-item cobertura-item-sm">
+      <div className="cobertura-item-salud cobertura-item-salud-sm">
         <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728480430/Salud-enfermedades_pif8vz.png" alt="Enfermedades graves" className="img-grande"/>
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731528219/cobertura_basica_1_nplrtp.png" alt="Enfermedades graves" className="imagen-pequena" />
         <div className="cobertura-text cobertura-text-sm">
@@ -26,7 +26,7 @@ export const CoberturaSalud = () => {
         </div>
       </div>
     
-      <div className="cobertura-item cobertura-item-sm">
+      <div className="cobertura-item-salud cobertura-item-salud-sm">
         <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728480436/Salud-transplante_tsvefw.png" alt="Trasplante" className="img-grande"/>
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731528219/transplante_de_organo_1_hqgeio.png" alt="Trasplante" className="imagen-pequena" />
         <div className="cobertura-text cobertura-text-sm">
@@ -35,7 +35,7 @@ export const CoberturaSalud = () => {
         </div>
       </div>
     
-      <div className="cobertura-item cobertura-item-sm">
+      <div className="cobertura-item-salud cobertura-item-salud-sm">
         <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728480441/Salud-internacion_zrhdcq.png" alt="Renta diaria por internación" className="img-grande"/>
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731528219/internacion_por_accidente_1_wdvz7w.png" alt="Renta diaria por internación" className="imagen-pequena" />
         <div className="cobertura-text cobertura-text-sm">

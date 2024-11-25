@@ -2,7 +2,7 @@
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 210px;
+  gap: 50px;
   padding: 20px;
 
 }
@@ -16,19 +16,20 @@ margin-left: 4%;
 color: #3369FF;
 }
 
-
 .CardInfoCards__1 {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 10px #8d8b8e40;
     width: 142%;
-    max-width: 260px;
+    max-width: 400px;
     padding: 20px 45px;
     text-align: center;
     max-height: 260px;
 }
-
-
+.CardInfoContainerCard__1 img{
+    width: 50%;
+    object-fit: none;
+}
 
 .h3CardInfo{
     color: #8D8B8E;
@@ -44,35 +45,103 @@ color: #3369FF;
     font-weight: 400;
 }
 
-
-
 .cards__1  {
     font-size: 12px;
     font-family: 'Inter';
     font-weight: 400;
-    color: #3369FF;
+    color:#3369FF;
     font: bold;
 }
 
-@media 
-(min-width: 700px) and (max-width: 1400px) {
+
+@media (min-width: 1200px) and (max-width: 1600px) {
     .CardInfoContainerCard__1{
-        gap: 40px;
-        /* width: 94vw; */
-        /* max-height: 202px; */
-        margin: 0 auto; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
     }
     
     .CardInfoContainerCard__1 img{
-        width: 58%;
+        width: 35%;
         object-fit: none;
     }
+
+    .CardInfoCards__1 {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #8d8b8e40;
+        width: 142%;
+        max-width: 280px;
+        padding: 20px 2px;
+        text-align: center;
+        max-height: 260px;
+    }
+    }
+
+    @media (min-width: 881px) and (max-width: 1199px) {
+
+        .CardInfoContainerCard__1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 23px;
+            padding: 20px;
+            }
+            
+            .CardInfoContainerCard__1 img{
+                width: 70%;
+                object-fit: none;
+            }
+        
+            .CardInfoCards__1 {
+                background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 0 10px #8d8b8e40;
+            width: 142%;
+            max-width: 185px;
+            padding: 19px 20px;
+            text-align: center;
+            max-height: 238px;
+        
+            }
+    
+
     }
 
 
+    @media (min-width: 601px) and (max-width: 880px) {
+
+        .CardInfoContainerCard__1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        }
+        
+        .CardInfoContainerCard__1 img{
+            width: 70%;
+            object-fit: none;
+        }
+    
+        .CardInfoCards__1 {
+            background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #8d8b8e40;
+        width: 142%;
+        max-width: 170px;
+        padding: 19px 20px;
+        text-align: center;
+        max-height: 238px;
+    
+        }
+
+    }
 
 @media 
-(min-width: 400px) and (max-width: 699px) {
+(min-width: 400px) and (max-width: 600px) {
     .CardInfoContainerCard__1{
         gap: 30px;
         width: 100%;
@@ -97,14 +166,10 @@ color: #3369FF;
     font-size: 90%;    
     }
 
-
-
-    
-.cards__1  {
-    
-    font-size: 10px;
- max-width: 150px;   
-}
+    .cards__1  {
+        font-size: 10px;
+        max-width: 150px;   
+    }
 
 }
 
@@ -120,30 +185,31 @@ color: #3369FF;
         .CardInfoContainerCard__1 {
             display: flex;
             flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
-            gap: 10px;       /* Espacio entre las cards */
+            gap: 0px;       /* Espacio entre las cards */
             width: 100%;
             justify-content: center; /* Centra las cards */
-            padding: 0 10px; /* Agregar un padding para dar espacio en los bordes */
+            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
             margin: 0 auto;
         }
     
         /* Cada card individual */
         .CardInfoCards__1 {
-            flex: 1 20%; /* Cada card ocupa el 45% del ancho, permitiendo dos cards por fila */
-            margin: 10px;  /* Espacio alrededor de cada card */
-            box-sizing: border-box; /* Asegurar que el padding y el margen no rompan el layout */
+            flex: 1 40%;
+            margin: 10px;
+            box-sizing: border-box; 
+            padding: 11px 30px;
         }
     
         /* Ajustar el título dentro de las cards */
         .h2-cardInfo {
-            font-size: 14px;
+            font-size: 12px;
             margin-bottom: 20px;
         }
     
         /* Imagen dentro de las cards */
         .CardInfoContainerCard__1 img {
             height: auto;
-            max-width: 100%; /* Asegurar que la imagen sea responsiva y no se desborde */
+            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
             object-fit: cover; /* Mantener la proporción de la imagen */
         }
     
@@ -151,20 +217,201 @@ color: #3369FF;
         .pCardInfo {
             color: #8D8B8E;
             font-family: Inter;
-            font-size: 10px;
+            font-size: 8px;
             text-align:inherit;
         }
     
         /* Ajuste del subtítulo */
         .h3CardInfo {
-            font-size: 90%;
+            font-size: 12px;
             text-align: center;
         }
     
         /* Ajuste general de las cards */
         .cards__1 {
-            font-size: 10px;
+            font-size: 8px;
             max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
         }
     }
 
+
+
+    @media only screen and (min-width: 426px) and (max-width: 500px) {
+
+        body {
+            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+        }
+    
+        /* Contenedor principal de las cards con Flexbox */
+        .CardInfoContainerCard__1 {
+            display: flex;
+            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
+            gap: 0px;       /* Espacio entre las cards */
+            width: 100%;
+            justify-content: center; /* Centra las cards */
+            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
+            margin: 0 auto;
+        }
+    
+        /* Cada card individual */
+        .CardInfoCards__1 {
+            flex: 1 40%;
+            margin: 10px;
+            box-sizing: border-box; 
+            padding: 11px 30px;
+        }
+    
+        /* Ajustar el título dentro de las cards */
+        .h2-cardInfo {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    
+        /* Imagen dentro de las cards */
+        .CardInfoContainerCard__1 img {
+            height: auto;
+            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
+            object-fit: cover; /* Mantener la proporción de la imagen */
+        }
+    
+        /* Ajuste del párrafo en las cards */
+        .pCardInfo {
+            color: #8D8B8E;
+            font-family: Inter;
+            font-size: 8px;
+            text-align:inherit;
+        }
+    
+        /* Ajuste del subtítulo */
+        .h3CardInfo {
+            font-size: 12px;
+            text-align: center;
+        }
+    
+        /* Ajuste general de las cards */
+        .cards__1 {
+            font-size: 8px;
+            max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
+        }
+
+    }
+
+    @media only screen and (min-width: 391px) and (max-width: 425px) {
+
+
+        body {
+            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+        }
+    
+        /* Contenedor principal de las cards con Flexbox */
+        .CardInfoContainerCard__1 {
+            display: flex;
+            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
+            gap: 0px;       /* Espacio entre las cards */
+            width: 100%;
+            justify-content: center; /* Centra las cards */
+            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
+            margin: 0 auto;
+        }
+    
+        /* Cada card individual */
+        .CardInfoCards__1 {
+            flex: 1 40%;
+            margin: 10px;
+            box-sizing: border-box; 
+            padding: 11px 30px;
+        }
+    
+        /* Ajustar el título dentro de las cards */
+        .h2-cardInfo {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    
+        /* Imagen dentro de las cards */
+        .CardInfoContainerCard__1 img {
+            height: auto;
+            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
+            object-fit: cover; /* Mantener la proporción de la imagen */
+        }
+    
+        /* Ajuste del párrafo en las cards */
+        .pCardInfo {
+            color: #8D8B8E;
+            font-family: Inter;
+            font-size: 8px;
+            text-align:inherit;
+        }
+    
+        /* Ajuste del subtítulo */
+        .h3CardInfo {
+            font-size: 12px;
+            text-align: center;
+        }
+    
+        /* Ajuste general de las cards */
+        .cards__1 {
+            font-size: 8px;
+            max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
+        }
+    }
+
+    @media only screen and (min-width: 100px) and (max-width: 390px) {
+
+
+        body {
+            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+        }
+    
+        /* Contenedor principal de las cards con Flexbox */
+        .CardInfoContainerCard__1 {
+            display: flex;
+            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
+            gap: 0px;       /* Espacio entre las cards */
+            width: 100%;
+            justify-content: center; /* Centra las cards */
+            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
+            margin: 0 auto;
+        }
+    
+        /* Cada card individual */
+        .CardInfoCards__1 {
+            flex: 1 40%;
+            margin: 10px;
+            box-sizing: border-box; 
+            padding: 11px 22px;
+        }
+    
+        /* Ajustar el título dentro de las cards */
+        .h2-cardInfo {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+    
+        /* Imagen dentro de las cards */
+        .CardInfoContainerCard__1 img {
+            height: auto;
+            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
+            object-fit: cover; /* Mantener la proporción de la imagen */
+        }
+    
+        /* Ajuste del párrafo en las cards */
+        .pCardInfo {
+            color: #8D8B8E;
+            font-family: Inter;
+            font-size: 8px;
+            text-align:inherit;
+        }
+    
+        /* Ajuste del subtítulo */
+        .h3CardInfo {
+            font-size: 12px;
+            text-align: center;
+        }
+    
+        /* Ajuste general de las cards */
+        .cards__1 {
+            font-size: 8px;
+            max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
+        }
+    }

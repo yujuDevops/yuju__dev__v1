@@ -3,6 +3,8 @@ import "./cardsAccidentesPersonales.css"
 
 export const CardsAccidentesPersonales = () => {
   return (
+    <>
+    <h2 className="h2CardAp">Conocé nuestras coberturas</h2>
     <div className="insurance-cards-ap">
       {cardsDataAccidentesPersonales.map((card, index) => (
         <div className="card-ap" key={index}>
@@ -13,5 +15,6 @@ export const CardsAccidentesPersonales = () => {
         </div>
       ))}
     </div>
+    </>
   )
 }

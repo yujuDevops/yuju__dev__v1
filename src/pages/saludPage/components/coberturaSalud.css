@@ -3,18 +3,26 @@
   padding: 40px 20px;
 }
 
-.coberturas-container h2 { 
-  color:#3369FF;
-  text-align: left;
-  margin-left: 35px;
-  font-family: inter;
-  margin-top: 50px;
-  font-size: 16px;
-  font-weight: 700;
+.coberturash2-container h2 {
+      color: #3369FF;
+      text-align: left;
+      margin-left: 16px;
+      font-family: inter;
+      margin-top: 76px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 4.2%;
 }
 
-.cobertura-item {
+.cobertura-item-salud {
   position: relative;
+}
+
+.cobertura-text {
+  position: relative;
+  top: -130px;
+  left: 201px;
+  width: 60%;
 }
 
 .cobertura-text h3 {
@@ -23,6 +31,7 @@
   font-family: inter;
   font-weight: 700;
 }
+
 
 .cobertura-text p {
   color: #8D8B8E;
@@ -33,10 +42,212 @@
 
 .img-grande {
   display: block;
+  width: 80%;
+  margin-top: -35px;
+  margin-left: 1%;
 }
 
 .imagen-pequena {
   display: none;
+}
+
+
+.coberturah3-item h2 {
+  font-size: 16px;
+  font-family: inter;
+  font-weight: bold;
+  color: rgba(51, 105, 255, 1);
+  margin-top: -60px;
+  margin-left: 4%;
+}
+
+.coberturah3-item h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: rgba(141, 139, 142, 1);
+  line-height: 1.4;
+  margin-left: 4%;
+  font-weight: 800;
+  font-family: inter;
+} 
+
+.coberturah3-item h4 {
+  font-family: inter;
+  font-size: 12px;
+  color: rgba(141, 139, 142, 1);
+  width: 100%;
+  font-weight: 400;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+  .coberturas-container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  
+  .coberturash2-container h2 {
+        color: #3369FF;
+        text-align: left;
+        margin-left: 16px;
+        font-family: inter;
+        margin-top: 76px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 4.2%;
+  }
+
+  .cobertura-item-salud {
+    position: relative;
+  }
+  
+  .cobertura-text {
+    position: relative;
+    top: -122px!important;
+    left: 141px!important;
+    width: 85%;
+}
+
+  .cobertura-text h3 {
+    color: #8D8B8E;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 700;
+  }
+  
+
+  .cobertura-text p {
+    color: #8D8B8E;
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 400;
+  }
+  
+  .img-grande {
+    display: block;
+    width: 100%;
+    margin-left: 0%;
+  }
+  
+  .imagen-pequena {
+    display: none;
+  }
+  
+
+  .coberturah3-item h2 {
+    font-size: 16px;
+    font-family: inter;
+    font-weight: bold;
+    color: rgba(51, 105, 255, 1);
+    margin-top: -40px;
+    margin-left: 4%;
+  }
+
+  .coberturah3-item h3 {
+    margin-top: 10px;
+    font-family: inter;
+    font-size: 14px;
+    color: rgba(141, 139, 142, 1);
+    line-height: 1.4;
+    margin-left: 4%;
+    font-weight: 800;
+  } 
+
+  .coberturah3-item h4 {
+    font-family: inter;
+    font-size: 12px;
+    color: rgba(141, 139, 142, 1);
+    width: 100%;
+    font-weight: 400;
+  }
+
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+
+  .coberturas-container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  
+  .coberturash2-container h2 {
+        color: #3369FF;
+        text-align: left;
+        margin-left: 16px;
+        font-family: inter;
+        margin-top: 76px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 4.2%;
+  }
+
+  .cobertura-item-salud {
+    position: relative;
+  }
+  
+  .cobertura-text {
+    position: relative;
+    top: -104px !important;
+    left: 105px !important;
+    width: 85%;
+}
+
+  .cobertura-text h3 {
+    color: #8D8B8E;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 700;
+  }
+  
+
+  .cobertura-text p {
+    color: #8D8B8E;
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 400;
+  }
+  
+  .img-grande {
+    display: block;
+    width: 100%;
+    margin-left: 0%;
+  }
+  
+  .imagen-pequena {
+    display: none;
+  }
+  
+
+  .coberturah3-item h2 {
+    font-size: 16px;
+    font-family: inter;
+    font-weight: bold;
+    color: rgba(51, 105, 255, 1);
+    margin-top: -40px;
+    margin-left: 4%;
+  }
+
+  .coberturah3-item h3 {
+    margin-top: 10px;
+    font-family: inter;
+    font-size: 14px;
+    color: rgba(141, 139, 142, 1);
+    line-height: 1.4;
+    margin-left: 4%;
+    font-weight: 800;
+  } 
+
+  .coberturah3-item h4 {
+    font-family: inter;
+    font-size: 12px;
+    color: rgba(141, 139, 142, 1);
+    width: 100%;
+    font-weight: 400;
+  }
+
+
 }
 
 @media (max-width: 600px) {
@@ -44,7 +255,7 @@
   .coberturash2-container-sm h2 {
         font-family: Inter;
         font-weight: 800;
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 30px;
         margin-bottom: 10px;
         margin-left: 5%;
@@ -60,13 +271,13 @@
     gap: 4px;
   }
 
-  .cobertura-item-sm {
+  .cobertura-item-salud-sm {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 8px;
-    padding: 16px;
+    padding: 0px;
     margin-bottom: 20px;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     flex: 1 45%;
@@ -105,7 +316,7 @@
   }
 
   .coberturah3-item-sm h2 {
-    font-size: 14px;
+    font-size: 12px;
     font-family: inter;
     font-weight: bold;
     color: rgba(51, 105, 255, 1);
@@ -130,4 +341,12 @@
     width: 100%;
     font-weight: 400;
   }
+
+  .cobertura-text {
+    position: relative;
+    top: -9px;
+    left: 0px;
+    width: 100%;
+    padding: 12px;
+}
 }

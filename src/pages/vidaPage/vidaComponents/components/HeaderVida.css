@@ -54,14 +54,34 @@
     font-family: inter;
     font-weight: 400;
   }
+
+
+  .buttonVidaHeader {
+    display: flex;
+    position: relative;
+    top: 70px;
+    padding: 6px 75px 6px 75px;
+    border-radius: 6px;
+    border: 0.2px transparent;
+    background-color: #33FFCC;
+  }
+  
+  .buttonVidaHeader a {
+    font-size: 12px;
+    font-family: 'Inter';
+    text-decoration: none;
+    color: #3369FF;
+  }
+
   
   @media 
   (min-width: 1200px) and (max-width: 1600px) {
+
     .container-vida{
-     
       top: 50px;
-      
+      width: 70%;
     }
+
     .h2-vida h2{
       font-size: 100%!important;
       font-weight: 800;
@@ -69,9 +89,10 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       width: 734px;
+      font-size: 24px;
   }
+
     .h3-vida{
-  
       margin-bottom: -40px;
       font-size: 100%;
       font-weight: 400;
@@ -94,15 +115,69 @@
         text-decoration: none;
         color: #3369FF;
       }
-
-
-    
-
   
   }
   
   /* ///////////////Notebook////////////*/
   
+  @media (min-width: 601px) and (max-width: 900px) {
+
+    .container-vida{
+      top: 50px;
+      width: 70%;
+    }
+
+    .h2-vida {
+      margin-top: 10px;
+      color: white;
+      font-family: inter;
+      font-weight: 700 !important;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 18px;
+  }
+
+    .h3-vida{
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  
+    .buttonVidaHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonVidaHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+  
+      .header-vida .imgPorDefectoMotos{
+        display: none;
+      }
+      
+      .header-vida .imgRemplazoMotos{
+        display: flex;
+      }
+      .header-vida .imgFotoCelular{
+        display: none;
+      }
+
+  }
+
+
+
+
 
   @media only screen and (max-width: 600px) {
   
@@ -211,14 +286,14 @@
   }
   
     
-  @media only screen and (min-width: 100px) and (max-width: 420px) {
+  @media only screen and (min-width: 100px) and (max-width: 430px) {
 
     .header-vida img{
       position: absolute;
       display: flex;
       overflow: hidden;
       z-index: -1;
-      margin-top: -230px!important;
+      margin-top: -265px!important;
     }
   
   

@@ -107,7 +107,7 @@ color:#3369FF;
   
 
   .card-content h2 {
-    font-size: 1.3rem;
+    font-size: 16px;
     color: #3369ff;
     font-family: inter;
     font-weight: 700;
@@ -118,7 +118,7 @@ color:#3369FF;
   }
   
   .card-image {
-    width: 90px;
+    width: 80px;
     height: auto;
     border-top-right-radius: 12px;
   }
@@ -130,7 +130,7 @@ color:#3369FF;
     border-radius: 6px;
     padding: 9px 90px 9px 90px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Inter';
     margin-top: 16px;
 

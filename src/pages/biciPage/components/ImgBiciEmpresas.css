@@ -1,5 +1,5 @@
 .divImgEmpresasBici{
-    margin-top: 500px;
+    margin-top: 420px;
 }
 
 .h2ImgEmpresas-bici {
@@ -48,7 +48,7 @@
   (min-width: 1200px) and (max-width: 1600px) {
     
     .divImgEmpresasBici{
-        margin-top: 500px;
+        margin-top: 365px;
     }
     
     .h2ImgEmpresas-bici {
@@ -98,18 +98,11 @@
   @media (min-width: 601px) and (max-width: 900px) {
 
 
-
-  }
-
-
-
-@media only screen and (max-width: 600px) {
-  
     .h2ImgEmpresas-bici{
-        font-size: 12px;
+        font-size: 16px;
     }
     .divImgEmpresasBici {
-        margin-top: 275px;
+        margin-top: 285px;
         
     }
 
@@ -117,4 +110,45 @@
         height: 120%;
     }
 
-}
+  }
+
+
+
+  @media (min-width: 421px) and (max-width: 600px) {
+
+    .h2ImgEmpresas-bici{
+        font-size: 12px;
+    }
+    .divImgEmpresasBici {
+        margin-top: 265px;
+        
+    }
+
+    .EmpresasgridImage{
+        height: 120%;
+    }
+
+  }
+
+  
+  @media (min-width: 100px) and (max-width: 420px) {
+
+    .h2ImgEmpresas-bici{
+        font-size: 12px;
+    }
+    .divImgEmpresasBici {
+        margin-top: 225px;
+        
+    }
+
+    .EmpresasgridImage{
+        height: 120%;
+    }
+
+
+  }
+
+
+
+
+

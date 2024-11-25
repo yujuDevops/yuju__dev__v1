@@ -52,6 +52,23 @@
     font-weight: 400;
   }
 
+  .buttonBiciHeader {
+    display: flex;
+    position: relative;
+    top: 70px;
+    padding: 6px 75px 6px 75px;
+    border-radius: 6px;
+    border: 0.2px transparent;
+    background-color: #33FFCC;
+}
+
+.buttonBiciHeader a {
+    font-size: 12px;
+    font-family: 'Inter';
+    text-decoration: none;
+    color: #3369FF;
+}
+
 
   /* //////////Notebook///////// */
 
@@ -95,9 +112,62 @@
     }
 
   }
+
+
+
+  @media (min-width: 601px) and (max-width: 960px) {
+
+    .header-bici .imgRemplazoMotos{
+      display: flex;
+    }
+ 
+    .container-bici{
+     
+      top: 70px;
+      
+    }
+  
+    .h2-bici{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3-bici{
+  
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+  
+    .buttonBiciHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+    }
+  
+    .buttonBiciHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+    }
+
+  }
+
+
+
+
+
+
   
   /* ///////////////Celular////////////*/
   
+
 
    
   @media only screen and (max-width: 600px) {

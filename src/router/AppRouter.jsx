@@ -20,12 +20,12 @@ const AppRouter = () => {
                 <Route path="/celular" element={<CelularPage />} />
                 <Route path="/hogar" element={<HogarPage />} />
                 <Route path="/industria" element={< IndustrialPage/>} />
-                <Route path="/rus" element={<RusPage />} />
-                <Route path="/experta" element={<ExpertaPage />} />
-                <Route path="/san-cristobal" element={<SanCristobalPage />} />
+                {/* <Route path="/rus" element={<RusPage />} /> */}
+                {/* <Route path="/experta" element={<ExpertaPage />} />
+                <Route path="/san-cristobal" element={<SanCristobalPage />} /> */}
                 <Route path="/institucional" element={<InstitucionalPage />} />
-                <Route path="/siniestros" element={<SiniestrosPage />} />
-                <Route path="/club-yuju" element={<ClubYujuPage/>} />
+                {/* <Route path="/siniestros" element={<SiniestrosPage />} /> */}
+                {/* <Route path="/club-yuju" element={<ClubYujuPage/>} /> */}
                 <Route path="/contacto" element={<ContactPage/>} />
                 <Route path="/vida" element={<VidaPage/>} />
                 <Route path="/salud" element={<SaludPage/>} />

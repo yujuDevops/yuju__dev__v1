@@ -60,7 +60,7 @@ export const seguros = [
       titulo: "Integral de Comercio",
       foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1723258520/Card-industria_xh4ddk.png",
       boton: "Ver más",
-      href: "/integral-de-comercio"
+      href: "/industria"
     },
     {
       uid: "10",

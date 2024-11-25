@@ -1,0 +1,262 @@
+
+.padreDiv{
+    margin-bottom: 90px;
+    
+  }
+  hr{
+    margin-right:90px;
+  }
+  
+  
+  .h2Acordeon {
+      font-family: inter;
+      font-weight: 800!important;
+      font-size: 16px!important;
+      margin-top: 85px;
+      margin-bottom: 40px;
+      margin-left: 4%;
+      color: #3369FF;
+  }
+  
+  .h3Acordeon {
+      font-family: Inter;
+      font-weight: 400!important;
+      font-size: 14px!important;
+      margin-top: 20px;
+      margin-bottom: 60px;
+      margin-left: 4%;
+      color: #8D8B8E;
+  }
+  .divAcordeonComp div{
+   margin-left: 4%;
+  }
+  
+  .divPadreAcordeon {
+      margin-left: 70px;
+    
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    /* .dropdown-button*/
+    .bottonAcordeon {
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+      cursor: pointer;
+      border: none;
+      background-color: #ffffff95;
+      text-align: left;
+      font-size: 16px;
+      color: #8D8B8E;
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 13.52px;
+    }
+  
+  
+    .divHijoAcordeon::after {
+      
+      float: right;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    
+    .divHijoAcordeon {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #ffffff;
+      
+      border-top: none;
+    }
+    
+    .divHijoAcordeon.show {
+      max-height: 200px; /* Ajusta esta altura según el contenido */
+      transition: max-height 0.3s ease-in;
+      padding: 10px;
+    }
+    
+    .divHijoAcordeon p {
+      margin: 0;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+  @media (min-width: 1200px) and (max-width: 1600px) {
+  
+  .padreDiv{
+    margin-bottom: 90px;
+    
+  }
+  
+  hr{
+    margin-right:90px;
+  }
+  
+  
+  .h2Acordeon {
+      font-family: Inter;
+      font-weight: 800;
+      font-size: 16px;
+      margin-top: 30px!important;
+      margin-bottom: 40px;
+      margin-left: 4%;
+      color: #3369FF;
+  }
+  
+  .h3Acordeon {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 20px!important;
+      margin-left: 4%;
+      color: #8D8B8E;
+  }
+  
+  .divAcordeonComp div{
+   margin-left: 4%;
+  }
+  
+  .divPadreAcordeon {
+      margin-left: 70px;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+    /* .dropdown-button*/
+    .bottonAcordeon {
+      width: 100%;
+      padding: 10px 0px 10px 0px;
+      cursor: pointer;
+      border: none;
+      background-color: #ffffff95;
+      text-align: left;
+      font-size: 16px;
+      color: #8D8B8E;
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 13.52px;
+    }
+    
+    .divHijoAcordeon::after {
+      float: right;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    
+    .divHijoAcordeon {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #ffffff;
+      
+      border-top: none;
+    }
+    
+    .divHijoAcordeon.show {
+      max-height: 200px; /* Ajusta esta altura según el contenido */
+      transition: max-height 0.3s ease-in;
+      padding: 10px;
+    }
+    
+    .divHijoAcordeon p {
+      margin: 0;
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+  
+    .h2Acordeon {
+      font-family: Inter;
+      font-weight: 800;
+      font-size: 16px;
+      margin-top: 30px!important;
+      margin-bottom: 40px;
+      margin-left: 4%;
+      color: #3369FF;
+  }
+  
+  .divPadreAcordeon {
+    margin-left: 70px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+  }
+  
+  .h3Acordeon {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 4%;
+    color: #8D8B8E;
+  }
+  
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+  
+    .padreDiv{
+      margin-bottom: 35px;
+      
+    }
+  
+    .divPadreAcordeon {
+      margin-left: 10px;
+      position: relative;
+      display: inline-block;
+      width: 96vw;
+  }
+  
+    .bottonAcordeon {
+      width: 90%;
+      cursor: pointer;
+      border: none;
+      background-color: #ffffff95;
+      text-align: left;
+      font-size: 16px;
+      color: #8D8B8E;
+      font-family: Inter;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 13.52px;
+  
+    }
+  
+    .h2Acordeon{
+      font-family: Inter;
+      font-weight: 800;
+      font-size: 12px!important;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin-left: 4%;
+      color: #3369FF;
+    }
+  
+    hr{
+      width: 90%;
+    }
+  
+    .bottonAcordeon{
+      font-size: 8px!important;
+      font-family: inter;
+      font-weight: 400!important;
+    }
+  
+    .h3Acordeon{
+      font-size: 8px!important;
+      font-family: inter;
+      font-weight: 400!important;
+      margin-bottom: 20px!important;
+    }
+  
+  }

@@ -10,7 +10,7 @@ const CardMobile = () => {
     <div className="card-father-mobile">
       <img src={visionIcon} alt="Imagen de Vision" className="card-icon-mobile" />
       <div className="card-content-mobile">
-        <h3 className="card-title-mobile">vision</h3>
+        <h3 className="card-title-mobile">Visión</h3>
         <p className="card-text-mobile">Nuestra visión es transformar la industria de seguros, aprovechando la tecnología para brindarte soluciones más <strong>ágiles, accesibles y personalizadas.</strong> </p>
       </div>
       <div className="card-shadow-mobile"></div>
@@ -28,7 +28,7 @@ const CardMobile = () => {
     <div className="card-father-mobile">
       <img src={objetivoIcon} alt="Imagen de Vision" className="card-icon-mobile" />
       <div className="card-content-mobile">
-        <h3 className="card__title__mobile__obj">objetivo</h3>
+        <h3 className="card__title__mobile__obj">Objetivo</h3>
         <p className="card-text-mobile">Por eso, en Yuju, nuestro objetivo es <strong>cubrir a tus seres queridos y tu patrimonio,</strong> con productos justos y modernos, totalmente transparentes y al <strong>mejor precio del mercado.</strong></p>
       </div>
       <div className="card-shadow-mobile"></div>

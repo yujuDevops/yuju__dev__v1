@@ -1,0 +1,238 @@
+div .imgBannerContratar-ap{
+    display: block;
+}
+
+div .imgBannerMotosCelular-ap{
+    display: none;
+}
+div .imgBannerMotosTablet-ap{
+    display: none;
+}
+
+
+.imgBannerContratar-ap {
+    margin-top: 40px;
+    position: absolute;
+    z-index: 0;
+    
+}
+.vidBanner-ap{
+    position: relative;
+   top: 130px;
+   left: 4%;
+}
+
+.h2Banner-ap{
+    position: relative;
+    top: 125px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    left: 4%;
+    color: #31EEC3;
+}
+.spanBanner-ap {
+
+    font-weight: 300; 
+}
+
+.buttonMotoBanner-ap button{
+    position: relative;
+    top: 210px;
+    left: 75px;
+    background-color: #31EEC3;
+    border-radius: 6px;
+    padding: 10px 70px 10px 70px;
+    border: 0.4px solid transparent;
+    color: #3369FF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttonMotoBanner-ap a {
+    font-size: 12px;
+    font-family: inter;
+    color: #3369FF;
+}
+
+
+@media 
+(min-width: 1200px) and (max-width: 1600px) {
+
+    .h2Banner-ap{
+        position: relative;
+        top: 145px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 16px;
+        left: 4%;
+        color: #31EEC3;
+    }
+    .vidBanner-ap{
+        top: 90px;
+        margin-bottom: -100px;
+    }
+    .imgBannerContratar-ap{
+        margin-top: 90px;
+    }
+
+    .buttonMotoBanner-ap button{
+        position: relative;
+        top: 190px;
+        left: 50px;
+        background-color: #31EEC3;
+        border-radius: 6px;
+        padding: 10px 70px 10px 70px;
+        border: 0.4px solid;
+        color: #3369FF;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .buttonMotoBanner-ap a {
+        font-size: 12px;
+        font-family: inter;
+        color: #3369FF;
+    }
+
+
+    div .imgBannerContratar-ap{
+        display: none;
+    }
+    
+    div .imgBannerMotosCelular-ap{
+        display: none;
+        margin-top: 40px;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 50%;
+       
+    }
+
+    div .imgBannerMotosTablet-ap{
+        display: block;
+        margin-top: 70px;
+        position: absolute;
+    }
+
+}
+
+
+   
+
+@media only screen and (max-width: 600px) {
+    div .imgBannerContratar-ap{
+        display: none;
+    }
+    
+    div .imgBannerMotosCelular-ap{
+        position: absolute;
+        display: block;
+        margin-top: 50px;
+        object-fit: fill;
+        height: 16vh;
+    }
+    div .imgBannerMotosTablet-ap{
+        display: none;
+
+    }
+    .h2Banner-ap{
+        position: relative;
+        top: 75px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 7px;
+        left: 3%;
+        color: #31EEC3;
+        inline-size: 236px;
+    }
+
+
+        .vidBanner-ap{
+           position: relative;
+           top: 130px;
+           left: 4%;
+        }
+        
+
+        .buttonMotoBanner-ap button{
+            position: relative;
+        top: 95px;
+        left: 10px;
+        background-color: #31EEC3;
+        border-radius: 4px;
+        padding: 5px 25px 5px 25px;
+        border: 0.4px solid;
+        color: #3369FF;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 8px;
+        }
+    
+        .buttonMotoBanner-ap a {
+            font-size: 12px;
+            font-family: inter;
+            color: #3369FF;
+        }
+    
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 390px) {
+
+    div .imgBannerContratar-ap{
+        display: none;
+    }
+    
+    div .imgBannerMotosCelular-ap{
+        position: absolute;
+        display: block;
+        margin-top: 50px;
+        object-fit: fill;
+        height: 16vh;
+    }
+    div .imgBannerMotosTablet-ap{
+        display: none;
+
+    }
+    .h2Banner-ap{
+        position: relative;
+        top: 65px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 7px;
+        left: 3%;
+        color: #31EEC3;
+        inline-size: 236px;
+    }
+
+
+        .vidBanner-ap{
+           position: relative;
+           top: 110px;
+           left: 4%;
+        }
+        
+
+        .buttonMotoBanner-ap button{
+            position: relative;
+        top: 75px;
+        left: 10px;
+        background-color: #31EEC3;
+        border-radius: 4px;
+        padding: 5px 25px 5px 25px;
+        border: 0.4px solid;
+        color: #3369FF;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 8px;
+        }
+    
+        .buttonMotoBanner-ap a {
+            font-size: 12px;
+            font-family: inter;
+            color: #3369FF;
+        }
+
+}

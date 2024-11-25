@@ -8,7 +8,8 @@ export const CoberturasAccidentesPersonales = () => {
 <div className="coberturas-container-acc">
     
           <div className="cobertura-item">
-            <img className="imgCoberturas-acc" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730767771/AP-invalidez-acc_ylrcua.png" alt="Indemnización" />
+          <img className="imgCoberturas-acc-grande" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730767771/AP-invalidez-acc_ylrcua.png" alt="Indemnización"/>
+            <img className="imgCoberturas-acc" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731586577/AP-invalidez_1_gmvyeb.png" alt="Indemnización" />
             <div className="cobertura-text-acc">
               <h3>Muerte e invalidez</h3>
               <p>
@@ -19,7 +20,8 @@ export const CoberturasAccidentesPersonales = () => {
 
     
           <div className="cobertura-item">
-            <img className="imgCoberturas-acc"  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730767771/AP-farmaceutica-acc_ro30cn.png" alt="Indemnización" />
+          <img className="imgCoberturas-acc-grande" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730767771/AP-farmaceutica-acc_ro30cn.png" alt="Indemnización"/>
+            <img className="imgCoberturas-acc"  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731586577/AP-farmaceutica_x5cfzd.png" alt="Indemnización" />
             <div className="cobertura-text-acc">
               <h3>Asistencia médico farmacéutica</h3>
               <p>

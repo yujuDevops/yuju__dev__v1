@@ -13,8 +13,18 @@ export const CardInfo = () => {
 return(
     <div className='CardInfoCards__1' key={data.numero}>
   <img src={data.imagen} alt="" />
-    <h3 className="h3CardInfo" >{data.numero}</h3>
-    <p className="pCardInfo">{data.titulo}</p>
+    <h3 className="h3CardInfo">{data.numero}.</h3>
+    <p className="pCardInfo">
+              {data.isStrongFirst ? (
+                <>
+                  <strong>{data.tituloStrong}</strong> {data.tituloNormal}
+                </>
+              ) : (
+                <>
+                  {data.tituloNormal} <strong>{data.tituloStrong}</strong>
+                </>
+              )}
+            </p>
   </div>
     
 )

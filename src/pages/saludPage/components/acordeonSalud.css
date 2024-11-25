@@ -1,34 +1,32 @@
-
-.padreDiv-acc{
-    margin-bottom: 90px;;
+.padreDiv{
+    margin-bottom: 90px;
+    
   }
-
   hr{
-    margin-right:130px;
+    margin-right:90px;
   }
   
   
-  .h2Acordeon-acc {
+  .h2Acordeon {
   
       font-family: Inter;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 25px;
       margin-top: 85px;
       margin-bottom: 40px;
       margin-left: 4%;
       color: #3369FF;
   }
   
-  .h3Acordeon-acc {
+  .h3Acordeon {
       font-family: Inter;
       font-weight: 800;
-      font-size: 14px;
+      font-size: 16px;
       margin-top: 20px;
       margin-bottom: 60px;
       margin-left: 4%;
       color: #8D8B8E;
   }
-
   .divAcordeonComp div{
    margin-left: 4%;
   }
@@ -54,6 +52,7 @@
       font-weight: 700;
       font-size: 12px;
       line-height: 13.52px;
+    ;
     }
   
   
@@ -87,7 +86,7 @@
   
   @media (min-width: 1200px) and (max-width: 1600px) {
   
-  .padreDiv-acc{
+  .padreDiv{
     margin-bottom: 90px;
     
   }
@@ -96,7 +95,7 @@
   }
   
   
-  .h2Acordeon-acc {
+  .h2Acordeon {
   
       font-family: Inter;
       font-weight: 800;
@@ -107,7 +106,7 @@
       color: #3369FF;
   }
   
-  .h3Acordeon-acc {
+  .h3Acordeon {
       font-family: Inter;
       font-weight: 800;
       font-size: 14px;
@@ -184,7 +183,7 @@
   @media only screen and (max-width: 600px) {
   
   
-    .padreDiv-acc{
+    .padreDiv{
       margin-bottom: 35px;
       
     }
@@ -211,7 +210,7 @@
   
     }
   
-    .h2Acordeon-acc{
+    .h2Acordeon{
       font-family: Inter;
       font-weight: 800;
       font-size: 12px;
@@ -229,7 +228,7 @@
   
       font-size: 9px;
     }
-    .h3Acordeon-acc{
+    .h3Acordeon{
       font-size: 10px;
     }
   

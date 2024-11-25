@@ -1,4 +1,4 @@
-import "./cardBici.css";
+import "./cardsBici.css";
 import { CardOption } from "./CardOption";
 
 

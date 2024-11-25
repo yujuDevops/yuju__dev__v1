@@ -1,3 +1,8 @@
+.industrial-icon-celular {
+  display: none;
+}
+
+
 /* Contenedor principal */
 .industrial-container {
     display: flex;
@@ -10,12 +15,9 @@
   
   /* Tarjeta individual */
   .industrial-card {
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: transparent; 
     padding: 20px;
-    width: calc(50% - 10px); /* Dos columnas */
+    width: calc(50% - 10px);
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -24,9 +26,10 @@
   
   /* Icono de la tarjeta */
   .industrial-icon {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     margin-right: 15px;
+    position: absolute;
   }
   
   /* Título de la tarjeta */
@@ -55,6 +58,207 @@
     left: 10px;
     right: 10px;
     height: 1px;
-    border-bottom: 1px dotted #e0e0e0;
+  }
+
+  .industrial-padre-text p{
+    font-size: 10px;
+    position: relative;
+    top: 0px;
+    right: -69px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+}
+  
+  .industrial-padre-text h3 {
+    font-size: 12px;
+    position: relative;
+    top: 0px;
+    right: -69px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+    font-weight: 800;
+}
+
+
+
+
+@media 
+(min-width: 1200px) and (max-width: 1600px) { 
+
+  .industrial-icon-celular {
+    display: none;
   }
   
+
+/* Contenedor principal */
+.industrial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Tarjeta individual */
+.industrial-card {
+  background-color: transparent; 
+  padding: 20px;
+  width: calc(50% - 10px);
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Icono de la tarjeta */
+.industrial-icon {
+  width: 100%;
+  height: auto;
+  margin-right: 15px;
+  position: absolute;
+}
+
+/* Título de la tarjeta */
+.industrial-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding-top: 5px;
+}
+
+/* Descripción de la tarjeta */
+.industrial-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 5px;
+  padding-right: 20px;
+}
+
+/* Línea de puntos estilo separador */
+.industrial-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+}
+
+.industrial-padre-text p{
+  font-size: 10px;
+  position: relative;
+  top: 0px;
+  right: -69px;
+  width: 90%;
+  font-family: 'Inter';
+  color: rgba(141, 139, 142, 1);
+}
+
+.industrial-padre-text h3 {
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  right: -69px;
+  width: 90%;
+  font-family: 'Inter';
+  color: rgba(141, 139, 142, 1);
+  font-weight: 800;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) { 
+  .industrial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 15px;
+  }
+  
+  /* Tarjeta individual */
+  .industrial-card {
+    background-color: transparent; 
+    padding: 20px;
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
+    right: 25px;
+  }
+  
+  /* SACO FOTO PANTALLA GRANDE */
+  .industrial-icon {
+    display: none;
+  }
+  
+  .industrial-icon-celular {
+    width: 100%;
+    height: auto;
+    margin-right: 15px;
+    position: absolute;
+    display: flex;
+  }
+
+
+
+  /* Título de la tarjeta */
+  .industrial-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding-top: 5px;
+  }
+  
+  /* Descripción de la tarjeta */
+  .industrial-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding-right: 20px;
+  }
+  
+  /* Línea de puntos estilo separador */
+  .industrial-card::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+  }
+  
+  .industrial-padre-text p{
+        font-size: 7px;
+        position: relative;
+        top: 20px;
+        right: -35px;
+        width: 100%;
+        font-family: 'Inter';
+        color: rgba(141, 139, 142, 1);
+        inline-size: 160px;
+  }
+  
+  .industrial-padre-text h3 {
+    font-size: 8px;
+    position: relative;
+    top: 20px;
+    right: -35px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+    font-weight: 800;
+}
+
+
+}

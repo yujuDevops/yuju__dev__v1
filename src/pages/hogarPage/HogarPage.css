@@ -12,7 +12,7 @@
         padding: 0px 0px;
         background-color: #ffffff; 
         overflow: hidden;
-        height: 2820px;
+        height: 2620px;
         z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
       }
       
@@ -34,7 +34,7 @@
           top: 928px;
           right: 257px;
           width: 818px;
-          height: 1000px;
+          height: 654px;
           background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
           border-bottom-right-radius: 345px;
           transform: translate(-65%, -48%);

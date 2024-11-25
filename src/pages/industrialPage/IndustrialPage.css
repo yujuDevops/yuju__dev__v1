@@ -1,30 +1,20 @@
-.card-imagen-wf2-4taimg{
-  position: relative;
-  z-index: 120;
-  top: -371px;
-  left: 898px;
-  width: 409px;
-  background-color: transparent;
-}
-
-
 @media (min-width: 1200px) and (max-width: 1600px) {
-    .semisphere-container-bici {
+    .semisphere-container-industria {
       position: relative;
       width: 100%;
       padding: 0px 0px;
       background-color: #ffffff; 
       overflow: hidden;
-      height: 2530px;
+      height: 2650px;
       z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
     }
     
-    .semisphere-bici {
+    .semisphere-industria {
       position: absolute;
       top: 385px;
       right: -877px;
       width: 818px;
-      height: 1000px;
+      height: 865px;
       background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
       border-bottom-right-radius: 345px;
       transform: translate(-65%, -48%);
@@ -32,12 +22,12 @@
       z-index: 0; /* Aseguramos que esté detrás de los botones y contenido */
     }
     
-    .content-bici{
+    .content-industria {
       position: relative;
       z-index: 2; /* Aseguramos que el contenido esté por encima de la semiesfera */
     }
   
-    .card-bici {
+    .card-industrias {
       position: relative; /* Cambiado de absolute a relative para mantener el flujo del documento */
       z-index: 3; /* Asegura que esté por encima del contenedor y semiesfera */
       margin-top: 50px; /* Ajusta el espaciado según sea necesario */
@@ -47,41 +37,12 @@
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade algo de profundidad */
     }
   
-    .card-bici button {
+    .card-industrias button {
       z-index: 4; /* Asegura que los botones estén completamente por encima */
       position: relative; /* Asegura que los botones se mantengan en el flujo y sean interactivos */
     }
-
-    .card-imagen-wf2-4taimg{
-      position: relative;
-      z-index: 120;
-      top: -371px;
-      left: 873px;
-      width: 409px;
-      background-color: transparent;
-  }
-    
   }
   
-
-  @media (min-width: 601px) and (max-width: 890px) {
-
-    .card-imagen-wf2-4taimg{
-      position: relative;
-        z-index: 120;
-        top: -347px;
-        left: 381px;
-        width: 50%;
-        background-color: transparent;
-  }
-
-  .card-imagen-wf2-4taimg img {
-    position: absolute;
-    width: 40vw!important;
-}
-
-
-  }
 
   @media only screen and (max-width: 600px) {
 
@@ -89,23 +50,5 @@
       overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
     }
 
-    .card-imagen-wf2-4taimg{
-      position: relative;
-        z-index: 120;
-        top: -268px;
-        left: 199px;
-        width: 50%;
-        background-color: transparent;
-  }
-
-  .card-imagen-wf2-4taimg img {
-    position: absolute;
-    width: 50vw!important;
-}
-
-
-  .CotizaHoraBiciPage {
-    margin: 100px 0px 0px 0px;
-  }
 
   }

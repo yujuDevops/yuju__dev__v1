@@ -1,5 +1,5 @@
 .divImgEmpresas-vida {
-    margin-top: 490px;
+    margin-top: 400px;
 }
 
 .h2ImgEmpresas-vida {
@@ -37,8 +37,8 @@ color: #3369FF;
 @media (min-width: 1200px) and (max-width: 1600px) {
    
 
-    .divImgEmpresas{
-        margin-top: 425px;
+    .divImgEmpresas-vida{
+        margin-top: 380px;
     }
     
     .h2ImgEmpresas-vida {
@@ -77,7 +77,24 @@ color: #3369FF;
 
   @media (min-width: 601px) and (max-width: 900px) {
 
+    .h2ImgEmpresas-vida {
+        font-family: Inter;
+    font-weight: 800;
+    font-size: 16px!important;
+    margin-top: -60px;
+    margin-bottom: 40px!important;
+    margin-left: 4%;
+    color: #3369FF;
+    }
 
+    .divImgEmpresas-vida {
+        margin-top: 290px;
+        
+    }
+
+    .EmpresasgridImage{
+        height: 120%;
+    }
 
   }
 
@@ -95,7 +112,29 @@ color: #3369FF;
     }
 
     .divImgEmpresas-vida {
-        margin-top: 250px;
+        margin-top: 230px;
+        
+    }
+
+    .EmpresasgridImage{
+        height: 120%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+
+      .h2ImgEmpresas-vida {
+        font-family: Inter;
+    font-weight: 800;
+    font-size: 12px!important;
+    margin-top: -60px;
+    margin-bottom: 40px!important;
+    margin-left: 4%;
+    color: #3369FF;
+    }
+
+    .divImgEmpresas-vida {
+        margin-top: 200px;
         
     }
 

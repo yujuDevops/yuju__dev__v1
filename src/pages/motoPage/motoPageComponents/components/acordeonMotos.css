@@ -9,10 +9,9 @@ hr{
 
 
 .h2Acordeon {
-
-    font-family: Inter;
-    font-weight: 800;
-    font-size: 25px;
+    font-family: inter;
+    font-weight: 800!important;
+    font-size: 16px!important;
     margin-top: 85px;
     margin-bottom: 40px;
     margin-left: 4%;
@@ -21,8 +20,8 @@ hr{
 
 .h3Acordeon {
     font-family: Inter;
-    font-weight: 800;
-    font-size: 16px;
+    font-weight: 400!important;
+    font-size: 14px!important;
     margin-top: 20px;
     margin-bottom: 60px;
     margin-left: 4%;
@@ -53,7 +52,6 @@ hr{
     font-weight: 700;
     font-size: 12px;
     line-height: 13.52px;
-  ;
   }
 
 
@@ -91,17 +89,17 @@ hr{
   margin-bottom: 90px;
   
 }
+
 hr{
   margin-right:90px;
 }
 
 
 .h2Acordeon {
-
     font-family: Inter;
     font-weight: 800;
-    font-size: 25px;
-    margin-top: 85px;
+    font-size: 16px;
+    margin-top: 30px!important;
     margin-bottom: 40px;
     margin-left: 4%;
     color: #3369FF;
@@ -109,20 +107,20 @@ hr{
 
 .h3Acordeon {
     font-family: Inter;
-    font-weight: 800;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     margin-left: 4%;
     color: #8D8B8E;
 }
+
 .divAcordeonComp div{
  margin-left: 4%;
 }
 
 .divPadreAcordeon {
     margin-left: 70px;
-  
     position: relative;
     display: inline-block;
     width: 100%;
@@ -141,13 +139,9 @@ hr{
     font-weight: 700;
     font-size: 12px;
     line-height: 13.52px;
-  ;
   }
-
-
   
   .divHijoAcordeon::after {
-    
     float: right;
     font-size: 12px;
     margin-top: 4px;
@@ -177,6 +171,33 @@ hr{
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
+
+  .h2Acordeon {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 30px!important;
+    margin-bottom: 40px;
+    margin-left: 4%;
+    color: #3369FF;
+}
+
+.divPadreAcordeon {
+  margin-left: 70px;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+}
+
+.h3Acordeon {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 4%;
+  color: #8D8B8E;
+}
 
 
 }
@@ -214,9 +235,9 @@ hr{
   .h2Acordeon{
     font-family: Inter;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 12px!important;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 4%;
     color: #3369FF;
   }
@@ -226,11 +247,16 @@ hr{
   }
 
   .bottonAcordeon{
-
-    font-size: 9px;
+    font-size: 8px!important;
+    font-family: inter;
+    font-weight: 400!important;
   }
+
   .h3Acordeon{
-    font-size: 10px;
+    font-size: 8px!important;
+    font-family: inter;
+    font-weight: 400!important;
+    margin-bottom: 20px!important;
   }
 
 }

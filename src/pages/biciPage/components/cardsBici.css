@@ -1,0 +1,94 @@
+.DivPadreCadrBici{
+    margin-top: 80px;
+}
+
+.tituloBici{
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    padding: 16px;
+    font-family: inter;
+    font-weight: 800;
+    margin-left: 60px;
+  }
+
+  .h2Bici{
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1600px) {
+
+    .DivPadreCadrBici{
+      margin-top: 80px;
+  }
+  
+  .tituloBici{
+      text-align: left;
+      padding: 16px;
+      font-family: inter;
+      font-weight: 800;
+      margin-left: 35px;
+    }
+  
+    .h2Bici{
+      color: #3369FF;
+      font-size: 16px;
+      font-family: 'Inter';
+      font-weight: 800;
+    }
+
+  }
+
+
+  @media (min-width: 601px) and (max-width: 890px) {
+
+    .DivPadreCadrBici{
+      margin-top: 80px;
+  }
+  
+  .tituloBici{
+      text-align: left;
+      padding: 16px;
+      font-family: inter;
+      font-weight: 800;
+      margin-left: 25px!important;
+    }
+  
+    .h2Bici{
+      color: #3369FF;
+      font-size: 16px;
+      font-family: 'Inter';
+      font-weight: 800;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .DivPadreCadrBici{
+      margin-top: 80px;
+  }
+  
+  .tituloBici{
+      font-family: inter;
+      text-align: left;
+      padding: 16px;
+      font-family: inter;
+      font-weight: 800;
+      margin-left: 5px;
+      margin-top: -50px;
+      margin-bottom: 15px;
+    }
+  
+
+    .h2Bici{
+      color: #3369FF;
+      font-size: 12px;
+      font-family: 'Inter';
+      font-weight: 800;
+    }
+
+
+  }
