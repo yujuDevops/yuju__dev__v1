@@ -1,3 +1,4 @@
+import "./cardOptionEmbarcaciones.css"
 import { dataCardEmbarcaciones } from "../data"
 import { ElementoCardEmbarcaciones } from "./ElementoCardEmbarcaciones"
 
@@ -7,7 +8,7 @@ export const CardOptionEmbarcaciones = () => {
     return (
 
 
-        <div className="DivBiciOption">
+        <div className="DivEmbarcacionOption">
             {
                dataCardEmbarcaciones.map((event)=>(
     <ElementoCardEmbarcaciones

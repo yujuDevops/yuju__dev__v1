@@ -39,7 +39,7 @@ color: #3369FF;
    
 
     .divImgEmpresas-industria{
-        margin-top: 435px;
+        margin-top: 355px;
     }
     
     .h2ImgEmpresas-industrial {
@@ -78,7 +78,9 @@ color: #3369FF;
 
   @media (min-width: 601px) and (max-width: 900px) {
 
-
+    .divImgEmpresas-industria{
+        margin-top: 270px;
+    }
 
   }
 
@@ -86,7 +88,7 @@ color: #3369FF;
 @media only screen and (max-width: 600px) {
 
     .h2ImgEmpresas-industrial {
-        font-family: Inter;
+    font-family: Inter;
     font-weight: 800;
     font-size: 12px!important;
     margin-top: -60px;
@@ -96,11 +98,38 @@ color: #3369FF;
     }
 
     .divImgEmpresas-industria {
-        margin-top: 230px;
+        margin-top: 210px;
         
     }
 
     .EmpresasgridImage{
         height: 120%;
     }
+}
+
+
+
+
+
+@media(min-width: 100px) and (max-width: 360px) {
+
+    .h2ImgEmpresas-industrial {
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 12px!important;
+        margin-top: -60px;
+        margin-bottom: 40px!important;
+        margin-left: 4%;
+        color: #3369FF;
+        }
+    
+        .divImgEmpresas-industria {
+            margin-top: 190px;
+            
+        }
+    
+        .EmpresasgridImage{
+            height: 120%;
+        }
+
 }

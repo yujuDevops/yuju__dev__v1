@@ -108,14 +108,15 @@
   }
   
   .h3Acordeon-acc {
-      font-family: Inter;
-      font-weight: 800;
-      font-size: 14px;
-      margin-top: 20px;
-      margin-bottom: 60px;
-      margin-left: 4%;
-      color: #8D8B8E;
-  }
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 4%;
+    color: #8D8B8E;
+}
+
   .divAcordeonComp div{
    margin-left: 4%;
   }
@@ -178,6 +179,15 @@
   
   @media (min-width: 601px) and (max-width: 900px) {
   
+    .h3Acordeon-acc {
+      font-family: Inter;
+      font-weight: 800;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 4%;
+      color: #8D8B8E;
+  }
   
   }
   
@@ -210,6 +220,17 @@
       line-height: 13.52px;
   
     }
+
+
+    .h3Acordeon-acc {
+      font-family: Inter;
+      font-weight: 800;
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 4%;
+      color: #8D8B8E;
+  }
   
     .h2Acordeon-acc{
       font-family: Inter;

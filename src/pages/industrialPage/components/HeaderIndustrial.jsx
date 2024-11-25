@@ -4,7 +4,7 @@ export const HeaderIndustrial = () => {
   return (
 <header className='header-industria'>
   <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730211408/Header-seguro-industria_a2rbsq.png" alt=""  className='imgPorDefectoMotos' />
-  <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730211408/Header-seguro-industria_a2rbsq.png" alt="" className='imgRemplazoMotos'  />
+  <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732539624/Header-industria-tablet_wxfumc.webp" alt="" className='imgRemplazoMotos'  />
   <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732025479/Header-industria-celular_knvie4.jpg" alt="" className='imgFotoCelular'  />
   
   <div className='container-industria'>
