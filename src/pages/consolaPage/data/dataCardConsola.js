@@ -1,7 +1,7 @@
-export const dataCardPcGamer = [
+export const dataCardConsola = [
     {
       numero: 1.,
-      tituloStrong: "Elegí el plan ",
+      tituloStrong: " Elegí el plan ",
       tituloNormal: "que más te guste",
       isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740508/web_Icono-selecciona_azul_3_n8ekxs.svg"
