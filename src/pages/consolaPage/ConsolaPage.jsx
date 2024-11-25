@@ -1,5 +1,6 @@
+import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { BannerConsola, DataCardConsola, HeaderConsola, InfoConsola } from "./components"
+import { AcordeonConsola, BannerConsola, DataCardConsola, HeaderConsola, ImgEmpresasConsola, InfoConsola } from "./components"
 
 
 export const ConsolaPage = () => {
@@ -15,6 +16,9 @@ export const ConsolaPage = () => {
  <InfoConsola/>
  <DataCardConsola/>
  <BannerConsola/>
+ <ImgEmpresasConsola/>
+ <AcordeonConsola/>
+ <Carrousel/> 
 
     </>
   )

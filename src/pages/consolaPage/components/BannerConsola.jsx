@@ -8,7 +8,7 @@ export const BannerConsola = () => {
     <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1727098799/Banner-contratar-celular_yrtb8i.jpg" alt="" />
     
     <h2 className="h2Banner">Disfrutá sin preocupaciones <span className="spanBanner"> 
-    . Yuju te brinda el seguro de consola más <br/>
+    .Yuju te brinda el seguro de consola más <br/>
     completo y accesible. ¿Querés saber más?
     </span>
    
