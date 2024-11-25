@@ -56,6 +56,70 @@ div .imgBannerMotosTablet-ap{
 }
 
 
+@media(min-width: 601px) and (max-width: 900px) {
+
+    .h2Banner-ap {
+        position: relative;
+        top: 105px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 14px;
+        left: 4%;
+        color: #31EEC3;
+    }
+
+    .vidBanner-ap{
+        top: 90px;
+        margin-bottom: -100px;
+    }
+    .imgBannerContratar-ap{
+        margin-top: 90px;
+    }
+
+ .buttonMotoBanner-ap button {
+        position: relative;
+        top: 139px;
+        left: 35px;
+        background-color: #31EEC3;
+        border-radius: 6px;
+        padding: 10px 70px 10px 70px;
+        border: 0.4px solid;
+        color: #3369FF;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .buttonMotoBanner-ap a {
+        font-size: 12px;
+        font-family: inter;
+        color: #3369FF;
+    }
+
+
+    div .imgBannerContratar-ap{
+        display: none;
+    }
+    
+    div .imgBannerMotosCelular-ap{
+        display: none;
+        margin-top: 40px;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 50%;
+       
+    }
+
+    div .imgBannerMotosTablet-ap{
+        display: block;
+        margin-top: 70px;
+        position: absolute;
+    }
+
+
+}
+
+
 @media 
 (min-width: 1200px) and (max-width: 1600px) {
 

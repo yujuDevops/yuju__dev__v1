@@ -1,3 +1,4 @@
+import "./embarcaciones.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonEmbarcaciones, BannerEmbarcaciones, CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones, ImgEmpresasEmbarcaciones } from "./components"
@@ -8,6 +9,9 @@ export const Embarcaciones = () => {
   return (
 
     <>
+    <div className="semisphere-container-embarcacion">
+      <div className="semisphere-embarcacion"></div>
+      <div className="content-embarcacion"></div>
    <HeaderEmbarcaciones/>
    <CotizaAhora 
  titulo="Seguro de motos"
@@ -17,8 +21,8 @@ export const Embarcaciones = () => {
 />
 
 <CardEmbarcaciones/>
-<div className="card-imagen-wf2-4taimg">
-      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1729689717/foto-bici-2_h83oru.svg" alt="" />
+<div className="card-imagen-wf2-4taimg-emba">
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732545558/Ilustracion-embarcacion-notebook_mtbxpl.svg" alt="" />
     </div>  
    
    <DataEmbarcaciones/>
@@ -26,7 +30,7 @@ export const Embarcaciones = () => {
     <ImgEmpresasEmbarcaciones/>
     <AcordeonEmbarcaciones/>
   <Carrousel/>
-
+  </div> 
     </>
 
   )

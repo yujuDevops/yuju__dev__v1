@@ -1,0 +1,213 @@
+.card-embarcacion-wf2 {
+    width: 270px;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+  .card-title-embarcacion-wf2 {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(51, 105, 255, 1);
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-family: inter;
+    text-align: start; 
+  }
+  
+  .card-features-embarcacion-wf2 {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  
+
+
+  .card-feature-embarcacion-wf2 {
+    display: flex;
+    align-items: center; /* Alinea ícono y texto verticalmente */
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    margin-bottom: 8px; /* Espaciado entre los ítems */
+    font-size: 14px;
+    color: #6e6e6e;
+  }
+  
+  .card-feature-embarcacion-wf2 img {
+    flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
+    width: 16px; /* Ajusta el tamaño del ícono */
+    height: 16px;
+  }
+  
+  .card-feature-embarcacion-wf2 span {
+    display: flex; /* Asegura que los íconos no rompan el diseño */
+    font-size: 12px;
+    font-family: inter;
+    font-weight: 400;
+    color: rgba(141, 139, 142, 1);
+    padding-bottom: 10px;
+  }
+  
+  .card-feature-embarcacion-wf2 span img {
+    margin-right: 10px; /* Espacio entre ícono y texto */
+  }
+  
+  .card-features-embarcacion-wf2 {
+    list-style: none; /* Elimina los estilos predeterminados de lista */
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .card-button-embarcacion-wf2 {
+    background: rgba(51, 105, 255, 1);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 80px 8px 80px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+}
+  
+  .card-button-embarcacion-wf2:hover {
+    background: #155cb0;
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1600px) {
+
+    .card-embarcacion-wf2 {
+        width: 270px;
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px 0px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+      .card-title-embarcacion-wf2 {
+        font-size: 12px;
+        font-weight: bold;
+        color: rgba(51, 105, 255, 1);
+        margin-bottom: 15px;
+        font-weight: 800;
+        font-family: inter;
+        text-align: start; 
+      }
+      
+      .card-features-embarcacion-wf2 {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        width: 100%;
+      }
+      
+    
+    
+      .card-feature-embarcacion-wf2 {
+        display: flex;
+        align-items: center; /* Alinea ícono y texto verticalmente */
+        gap: 10px; /* Espacio entre el ícono y el texto */
+        margin-bottom: 8px; /* Espaciado entre los ítems */
+        font-size: 14px;
+        color: #6e6e6e;
+      }
+      
+      .card-feature-embarcacion-wf2 img {
+        flex-shrink: 0; /* Evita que el ícono cambie de tamaño */
+        width: 16px; /* Ajusta el tamaño del ícono */
+        height: 16px;
+      }
+      
+      .card-feature-embarcacion-wf2 span {
+        display: flex; /* Asegura que los íconos no rompan el diseño */
+        font-size: 12px;
+        font-family: inter;
+        font-weight: 400;
+        color: rgba(141, 139, 142, 1);
+        padding-bottom: 10px;
+      }
+      
+      .card-feature-embarcacion-wf2 span img {
+        margin-right: 10px; /* Espacio entre ícono y texto */
+      }
+      
+      .card-features-embarcacion-wf2 {
+        list-style: none; /* Elimina los estilos predeterminados de lista */
+        padding: 0;
+        margin: 0;
+      }
+      
+      
+      .card-button-embarcacion-wf2 {
+        background: rgba(51, 105, 255, 1);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 8px 80px 8px 80px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Inter';
+    }
+      
+      .card-button-embarcacion-wf2:hover {
+        background: #155cb0;
+      }
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+
+    .card-embarcacion-wf2 {
+        width: 190px;
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .card-feature-embarcacion-wf2 span {
+        display: flex;
+        font-size: 8px;
+        font-family: inter;
+        font-weight: 400;
+        color: rgba(141, 139, 142, 1);
+        padding-bottom: 0px;
+    }
+
+    .DivEmbarcacionOption {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        margin-left: 15px;
+    }
+
+    .card-button-embarcacion-wf2 {
+        background: rgba(51, 105, 255, 1);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 47px 4px 47px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Inter';
+        margin-top: 10px;
+    }
+
+  }

@@ -108,28 +108,28 @@
       
       
       .h1-accidentespersonales {
-      z-index: 1;
-      color: white;
-      font-size: 29px;
-      margin-left: -10px;
-      font-family: inter;
-      background-color: rgba(51, 255, 204, 0.5);
-      inline-size: fit-content;
-      font-weight: 900;
-      padding: 10px;
-      top: 40px;
+        z-index: 1;
+        color: white;
+        font-size: 29px;
+        margin-left: -10px;
+        font-family: inter;
+        background-color: rgba(51, 255, 204, 0.5);
+        inline-size: fit-content;
+        font-weight: 900;
+        padding: 10px;
+        top: 40px;
       } 
       
   
     .h2-accidentespersonales{
-      font-weight: 700;
+        font-weight: 700;
         font-size: 110%;
         /* inline-size: 111%; */
         display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 3; /* Número de líneas visibles */
-  line-clamp: 3; /* Agrega también la versión estándar */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+       -webkit-line-clamp: 3; /* Número de líneas visibles */
+        line-clamp: 3; /* Agrega también la versión estándar */
         width: 482px;
     }
   
@@ -175,7 +175,94 @@
       }
 
     }
-  
+
+
+    @media(min-width: 601px) and (max-width: 900px) {
+
+      .header-accidentespersonales .imgPorDefectoMotos{
+       display: none;
+        }
+        
+        .header-accidentespersonales .imgRemplazoMotos{
+          display: flex;
+        z-index: -1;
+        }
+      
+        .header-accidentespersonales .imgFotoCelular{
+          display: none;
+        }
+        
+        .container-accidentespersonales{
+          top: 30px;
+          width: 90%;
+         
+        }
+      
+        .container-accidentespersonales{
+          position: relative;
+          z-index: 1;
+          top: 50px!important;
+          left:4%
+        }
+      
+        .h1-accidentespersonales {
+        z-index: 1;
+        color: white;
+        font-size: 45px;
+        margin-left: -10px;
+        font-family: inter;
+        background-color: rgba(51, 255, 204, 0.5);
+        inline-size: fit-content;
+        font-weight: 900!important;
+        padding: 12px;
+        top: 40px;
+        } 
+        
+        .h2-accidentespersonales{
+        margin-top: 10px;
+        color: white;
+        font-family: inter;
+        font-weight: 700!important;
+        font-size: 14px!important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 3; /* Número de líneas visibles */
+        line-clamp: 3; /* Agrega también la versión estándar */
+          width: 80%; /* Ancho específico */
+        }
+       
+        
+        .h3-accidentespersonales{
+          margin-top:10px;
+          color: white;
+          font-family: inter;
+          font-weight: 400;
+          font-size: 12px!important;
+        }
+      
+      
+      .h1-accidentespersonales{
+        margin-left: 0.1%;
+        font-weight: 500;
+        font-size: 130%!important;
+        padding: 4PX;
+      }
+      
+      .h2-accidentespersonales{
+        font-weight: 500;
+        font-size: 80%;
+      }
+      
+      
+       
+      .h3-accidentespersonales{
+        font-size: 60%;
+      }
+
+    }
+
+
   /* ///////////////Celular////////////*/
    
   @media only screen and (max-width: 600px) {
@@ -298,7 +385,7 @@
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -265px!important;
+     margin-top: -275px!important;
     }
   
   
