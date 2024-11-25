@@ -1,15 +1,12 @@
-import React from 'react'
-import { dataCardCelulares } from '../data'
+import { dataCardPcGamer } from "../data"
 
-export const CardSeguroCelular = () => {
-
-
+export const DataCardPcgamer = () => {
     return (
         <>
     
         <h2 className="h2-cardInfo">Asegurarte es fácil, Yuju!</h2>
         <div className='CardInfoContainerCard__1'>
-        {dataCardCelulares.map((data)=> {
+        {dataCardPcGamer.map((data)=> {
         // creacion de componente para las card
         return(
             <div className='CardInfoCards__1' key={data.numero}>
