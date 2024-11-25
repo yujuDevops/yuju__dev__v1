@@ -12,7 +12,11 @@ export const HeaderEmbarcaciones = () => {
     <h1 className='h1-motos'>SEGURO DE EMBARCACIÓN</h1>
     <h2 className='h2-motos'>Navegá sin límites. Cotizá y contratá online.</h2>
     <h3 className='h3-motos'>El mejor seguro náutico, para que puedas disfrutar de tu pasión por el<br/> agua con seguridad y tranquilidad. Podés contratarlo de forma rápida y<br/> sencilla desde tu celular.</h3>
+<<<<<<< HEAD
     <button className='buttonMotosHeader'><a href="">Cotizá</a></button>
+=======
+    <button className='buttonVidaHeader'><a href="" target="_blank">Cotizá</a></button>
+>>>>>>> f9ac1453223497513c0cc656b107d1d17416f536
     </div>
   
     </header>

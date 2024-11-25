@@ -1,5 +1,6 @@
+import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { HeaderPcGamer } from "./components"
+import { AcordeonPcGamer, BannerPcGamer, DataCardPcgamer, HeaderPcGamer, ImgEmpresasPcGamer, InfoPcGamer } from "./components"
 
 
 export const PcGamerPage = () => {
@@ -12,6 +13,12 @@ export const PcGamerPage = () => {
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1732028885/PC_gamer_dtmula.png"
  />
+ <InfoPcGamer/>
+ <DataCardPcgamer/>
+ <BannerPcGamer/> 
+ <ImgEmpresasPcGamer /> 
+ <AcordeonPcGamer/>
+ <Carrousel/> 
 </>
   )
 }

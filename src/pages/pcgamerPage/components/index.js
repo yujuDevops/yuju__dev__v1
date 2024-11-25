@@ -1,1 +1,6 @@
 export * from "./HeaderPcGamer"
+export * from "./InfoPcGamer"
+export * from "./DataCardPcgamer"
+export * from "./BannerPcGamer"
+export * from "./ImgEmpresasPcGamer"
+export * from "./AcordeonPcGamer"
