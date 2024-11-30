@@ -12,7 +12,7 @@ export const CelularPage = () => {
    <HeaderCelulares/>
    <CotizaAhora 
  titulo="Seguro de celuar"
- presio="Desde $2.000/mes"
+ precio="Desde $2.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1731331114/Celular_1_1_dgdlcm.png"
 />

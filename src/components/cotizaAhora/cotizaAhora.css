@@ -30,7 +30,7 @@
     font-family: Inter;
   }
   
-   .moto-presio {
+   .moto-precio {
     color: #3369FF;
     font-weight: bold;
     font-family: Inter;
@@ -96,7 +96,7 @@
       font-family: Inter;
     }
     
-     .moto-presio {
+     .moto-precio {
       color: #3369FF;
       font-weight: bold;
       font-family: Inter;
@@ -111,7 +111,7 @@
     }
     
     .moto-button {
-      background-color:  #0F2BA1;
+      background-color:  rgba(15, 43, 161, 1);
       color: white;
       border: none;
       padding: 10px 20px;
@@ -174,7 +174,7 @@
     justify-content: center;
   }
 
-  .moto-presio {
+  .moto-precio {
     height: 10%;
     width: 17%;
     font-size: 60%;
@@ -204,7 +204,7 @@
   padding: 10px;
   margin-left: 4%;
   border-radius: 8px;
-  width: 90%;
+  width: 91%;
   border: 0px solid;
   box-shadow: 0 0 10px #8d8b8e40;
   margin: 0px 20px;
@@ -222,9 +222,10 @@
     font-size: 8px;
     align-items: center;
     justify-content: center;
+    background-color: rgba(15, 43, 161, 1);
   }
 
-  .moto-presio {
+  .moto-precio {
     height: 10%;
     width: 17%;
     font-size: 60%;
@@ -270,9 +271,10 @@
     font-size: 8px;
     align-items: center;
     justify-content: center;
+    background-color: rgba(15, 43, 161, 1);
   }
 
-  .moto-presio {
+  .moto-precio {
     height: 10%;
     width: 17%;
     font-size: 60%;
@@ -320,9 +322,10 @@
     font-size: 8px;
     align-items: center;
     justify-content: center;
+    background-color: rgba(15, 43, 161, 1);
   }
 
-  .moto-presio {
+  .moto-precio {
     height: 10%;
     width: 17%;
     font-size: 8px;

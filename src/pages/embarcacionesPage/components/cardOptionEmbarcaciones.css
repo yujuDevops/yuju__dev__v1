@@ -25,7 +25,7 @@
     }
 
     .card-motos-wf2 {
-        background-color: white;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 3px 21px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -56,3 +56,24 @@
     }
     
 }
+
+
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+
+
+
+
+}
+
+@media only screen and (min-width: 391px) and (max-width: 400px) {
+
+
+
+}
+
+@media only screen and (min-width: 100px) and (max-width: 390px) {
+
+  
+
+}
+

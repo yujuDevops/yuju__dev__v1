@@ -12,16 +12,18 @@ export const Header = ({ imageSrcMobile, imageSrc, title, subtitle, tercerTitulo
         { value: '/moto', label: 'Seguro de Moto' },
         { value: '/bici', label: 'Seguro de Bicicleta' },
         { value: '/hogar', label: 'Seguro de Hogar' },
-        { value: '/rus', label: 'Rus' },
-        { value: '/experta', label: 'Experta' },
-        { value: '/san-cristobal', label: 'San Cristóbal' },
-        { value: '/institucional', label: 'Institucional' },
-        { value: '/siniestros', label: 'Siniestros' },
-        { value: '/club-yuju', label: 'Club Yuju' },
-        { value: '/contacto', label: 'Contacto' },
         { value: '/vida', label: 'Seguro de Vida' },
         { value: '/salud', label: 'Seguro de Salud' },
-        { value: '/accidentespersonales', label: 'Accidentes Personales' }
+        { value: '/accidentespersonales', label: 'Seguro de Accidentes personales' },
+        { value: '/asisviajero', label: 'Seguro de Asistencia al viajero' },
+        { value: '/industria', label: 'Seguro de Integral de comercio' },
+        { value: '/retiro', label: 'Seguro de Retiro' },
+        { value: '/embarcaciones', label: 'Seguro de Embarcaciones' },
+        { value: '/celular', label: 'Seguro de Celular' },
+        { value: '/notebook', label: 'Seguro de Notebook' },
+        { value: '/pcgamer', label: 'Seguro de Pc gamer' },
+        { value: '/consola', label: 'Seguro de Consola' },
+        { value: '/tablet', label: 'Seguro de Tablet' }
     ];
 
     // Manejar el cambio de selección

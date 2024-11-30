@@ -9,7 +9,7 @@ export const ConsolaPage = () => {
 <HeaderConsola/>
 <CotizaAhora 
  titulo="Seguro consola"
- presio="Desde $1.060/mes"
+ precio="Desde $1.060/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1732547215/Consola_gpdhgr.png"
  />

@@ -7,6 +7,18 @@
   height: 840px;
 }
 
+.lazy-card {
+  opacity: 0;
+  transform: translateY(30px); /* Tarjetas empiezan desplazadas hacia abajo */
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+/* Estado visible */
+.lazy-card.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Tarjetas vuelven a su posición */
+}
+
 .semisphere {
   position: absolute;
   top: 323px;

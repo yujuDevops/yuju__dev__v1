@@ -17,7 +17,7 @@ export const MotoPage = () => {
 
 <CotizaAhora 
  titulo="Seguro de motos"
- presio="Desde $4.000/mes"
+ precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src={fotoMoto}
 />

@@ -14,7 +14,7 @@ export const IndustrialPage = () => {
  <HeaderIndustrial/>
  <CotizaAhora 
  titulo="Seguro de motos"
- presio="Desde $4.000/mes"
+ precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730211831/SICEI_z9umiy.png"
 />

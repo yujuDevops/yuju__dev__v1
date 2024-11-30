@@ -14,6 +14,9 @@ const CardComponent = () => {
     { id: 3, title: "Objetivo", icon: objetivoIcon, text: "Por eso, en Yuju, nuestro objetivo es cubrir a tus seres queridos y tu patrimonio, con productos justos y modernos, totalmente transparentes y al mejor precio del mercado." }
   ];
 
+
+  
+
   return (
     <div className="contenedor__main__card">
     <div className="card-wrap">

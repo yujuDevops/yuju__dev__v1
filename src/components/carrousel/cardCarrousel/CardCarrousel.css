@@ -3,6 +3,19 @@
   flex-wrap: wrap;
 }
 
+/* Animación inicial para lazy loading */
+.lazy-card {
+  opacity: 0;
+  transform: translateY(30px); /* Tarjetas empiezan desplazadas hacia abajo */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Estado visible */
+.lazy-card.is-visible {
+  opacity: 1;
+  transform: translateY(0); /* Tarjetas vuelven a su posición */
+}
+
 .card {
   background-color: #fff;
   border-radius: 12px;
@@ -70,6 +83,8 @@ color:#3369FF;
 
 @media 
 (min-width: 1200px) and (max-width: 1400px) {
+
+ 
 
 
   .container {

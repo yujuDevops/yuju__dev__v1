@@ -2,6 +2,9 @@
     width: 280px!important;
 }
 
+
+
+
 .slick-track {
 width: 5056px;
     opacity: 1;
@@ -63,6 +66,19 @@ width: 5056px;
 
 @media 
 (min-width: 1200px) and (max-width: 1600px){
+
+    .lazy-card {
+        opacity: 0;
+        transform: translateY(30px); /* Tarjetas empiezan desplazadas hacia abajo */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
+      
+      /* Estado visible */
+      .lazy-card.is-visible {
+        opacity: 1;
+        transform: translateY(0); /* Tarjetas vuelven a su posición */
+      }
+
 .ContenedorPadreCard > div {
     width: 280px!important;
 }
@@ -259,8 +275,8 @@ width: 5056px;
 @media only screen and (max-width: 600px) {
    
     .ContenedorPadreCard > div {
-        width: 38vw !important;
-        margin-left: 10px;
+        width: 42vw !important;
+        
     }
     
     .slick-track {

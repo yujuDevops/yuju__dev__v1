@@ -24,9 +24,23 @@ const testimonials = [
   },
 ];
 
+
+const lazyCards = document.querySelectorAll(".lazy-card");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target); // Deja de observar la tarjeta después de hacerla visible
+    }
+  });
+});
+
+lazyCards.forEach((card) => observer.observe(card));
+
 const TestimonialCards = () => {
   return (
-    <div className="testimonial-cards">
+    <div className="testimonial-cards lazy-card">
       <h2>Opiniones de nuestros clientes</h2>
       <div className="cards_test_container">
         {testimonials.map((testimonial, index) => (

@@ -19,7 +19,7 @@ export const AccidentesPersonales = () => {
 
 <CotizaAhora
 titulo="Seguro de accidentes personales"
-presio="Desde $677,75/mes"
+precio="Desde $677,75/mes"
 button="¡Cotizá ahora!"
 src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux.png"
 />

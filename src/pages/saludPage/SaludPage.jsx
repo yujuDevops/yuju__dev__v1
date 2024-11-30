@@ -14,7 +14,7 @@ export const SaludPage = () => {
   <HeaderSalud/>  
   <CotizaAhora
   titulo="Seguro de salud"
-  presio="Desde $645/mes"
+  precio="Desde $645/mes"
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux.png"
   />

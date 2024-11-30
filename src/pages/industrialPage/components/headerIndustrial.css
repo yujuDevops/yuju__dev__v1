@@ -52,7 +52,7 @@
     font-weight: 400;
   }
   
-  .buttonMotosHeader {
+  .buttonIndustriaHeader {
     display: flex;
     position: relative;
     top: 60px;
@@ -60,9 +60,10 @@
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
+    margin-bottom: 400px;
   }
   
-  .buttonMotosHeader a {
+  .buttonIndustriaHeader a {
     font-size: 12px;
     font-family: 'Inter';
     text-decoration: none;
@@ -116,6 +117,7 @@
         border-radius: 6px;
         border: 0.2px transparent;
         background-color: #33FFCC;
+        margin-bottom: 0px;
       }
       
       .buttonIndustriaHeader a {

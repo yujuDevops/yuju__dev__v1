@@ -128,14 +128,13 @@ color: #3369FF;
     
         .CardInfoCards__1 {
             background-color: white;
-        border-radius: 12px;
-        box-shadow: 0 0 10px #8d8b8e40;
-        width: 142%;
-        max-width: 170px;
-        padding: 19px 20px;
-        text-align: center;
-        max-height: 238px;
-    
+            border-radius: 12px;
+            box-shadow: 0 0 10px #8d8b8e40;
+            width: 142%;
+            max-width: 181px;
+            padding: 19px 18px;
+            text-align: center;
+            max-height: 238px;
         }
 
     }

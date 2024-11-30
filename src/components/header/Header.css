@@ -13,7 +13,7 @@
 }
 
 .header h1 {
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 900;
   margin-bottom: 5px;
   font-family: inter;
@@ -22,7 +22,7 @@
 }
 
 .header h2 {
-  font-size: 35px;
+  font-size: 45px;
   margin-left: -10px;
   font-family: inter;
   background-color: rgba(51, 255, 204, 0.5);
@@ -32,7 +32,7 @@
 }
 
 .header h3 {
-  font-size: 35px;
+  font-size: 45px;
   font-family: inter;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@
   font-family: 'Inter';
   font-weight: 500;
   margin-top: 60px;
-  width: 20vw;
+  width: 25vw;
   border-radius: 12px;
   cursor: pointer;
   color: #8D8B8E;

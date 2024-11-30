@@ -304,7 +304,7 @@
       display: flex;
       justify-content: space-between;
       align-items:flex-start;
-      background-color: #ffffff;
+      background-color: rgba(51, 105, 255, 1);
       padding: 10px 20px;
       z-index: 1;
     }
@@ -312,6 +312,7 @@
     .navbar-links {
       display: none;
       flex-direction: column;
+      color: #ffffff;
     }
   
     .navbar-links.open {
@@ -322,7 +323,7 @@
         align-items: center;
         right: 20px;
         top: 55px;
-        z-index: 1;
+        z-index: 5;
     }
   
     .navbar-links a, .dropdown .dropbtn {
@@ -360,6 +361,95 @@
       width: auto;
     }
 
+    .fa-bars:before, .fa-navicon:before {
+      content: "\f0c9";
+      color: #ffffff;
+  }
+
+  .fa-times::before {
+    color: #ffffff;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .navbar-logo img {
+    object-fit: contain;
+    vertical-align: -webkit-baseline-middle;
+    margin: 18px 10px;
+  }
+
+  .logo-mobile {
+    height: 38px;
+    object-fit: contain;
+    /* margin-top: 18px; */
+    vertical-align: -webkit-baseline-middle;
+    margin: 18px 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1400;
+    width: 230px;
+    padding: 0px 0px 0px 8px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-left: -115px;
+  }
+  
+  /* Estilos para cada columna del dropdown */
+  .dropdown-column {
+    width: 45%; /* Ajusta el ancho de las columnas según sea necesario */
+  }
+  
+  /* Estilos del separador entre las columnas */
+  .dropdown-separator {
+    width: 1px;
+    background-color: #e0e0e0;
+    margin: 5px 10px 20px;
+  }
+  
+  /* Mostrar dropdown cuando se hace hover */
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+  
+  .dropdown-content a {
+    padding: 10px 0;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #8D8B8E;
+  }
+  
+  /* Estilo para hover sobre los enlaces del dropdown */
+  .dropdown-content a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Estilo para el botón del dropdown */
+  .dropbtn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el ícono de flecha en el botón */
+  .dropbtn i {
+    margin-left: 5px;
+  }
+
+  .dropdown{
+    display: none;
+  }
+
     
   }
 
@@ -388,7 +478,7 @@
         align-items: center;
         right: 20px;
         top: 55px;
-        z-index: 1;
+        z-index: 5;
     }
   
     .navbar-links a, .dropdown .dropbtn {

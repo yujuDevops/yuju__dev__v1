@@ -1,11 +1,62 @@
-@media (min-width: 1200px) and (max-width: 1600px) {
+.semisphere-container-embarcacion {
+  position: relative;
+  width: 100%;
+  padding: 0px 0px;
+  background-color: #ffffff; 
+  overflow: hidden;
+  height: 3175px;
+  z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
+}
+
+.semisphere-embarcacion {
+  position: absolute;
+  top: 605px;
+  right: -777px;
+  width: 818px;
+  height: 1000px;
+  background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
+  border-bottom-right-radius: 345px;
+  transform: translate(-65%, -48%);
+  pointer-events: none; /* Permite clics a través de la semiesfera */
+  z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
+}
+
+.content-embarcacion{
+  position: relative;
+  z-index: 2; /* Aseguramos que el contenido esté por encima de la semiesfera */
+}
+
+.card-embarcacion {
+  position: relative; /* Cambiado de absolute a relative para mantener el flujo del documento */
+  z-index: 3; /* Asegura que esté por encima del contenedor y semiesfera */
+  margin-top: 50px; /* Ajusta el espaciado según sea necesario */
+  width: 80%; /* Ajusta el tamaño de la tarjeta si es necesario */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade algo de profundidad */
+}
+
+.card-embarcacion button {
+  z-index: 4; /* Asegura que los botones estén completamente por encima */
+  position: relative; /* Asegura que los botones se mantengan en el flujo y sean interactivos */
+}
+
+
+.card-imagen-wf2-4taimg-emba img {
+    position: absolute;
+    width: 15%;
+    top: 756px;
+    right: 600px;
+}
+
+@media (min-width: 1200) and (max-width: 1600px) {
     .semisphere-container-embarcacion {
       position: relative;
       width: 100%;
       padding: 0px 0px;
       background-color: #ffffff; 
       overflow: hidden;
-      height: 2820px;
+      height: 2830px;
       z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
     }
     
@@ -50,12 +101,43 @@
         right: 47px;
     }
   }
+
+
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .card-imagen-wf2-4taimg-emba img {
+      position: absolute;
+      width: 30%;
+      top: 1361px;
+      right: 103px;
+  }
+
+  .semisphere-embarcacion {
+    display: none;
+  }
+
+
+  .semisphere-container-embarcacion {
+    position: relative;
+    width: 100%;
+    padding: 0px 0px;
+    background-color: #ffffff; 
+    overflow: hidden;
+    height: 3400px;
+    z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
+  }
+
+  }
   
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (min-width: 391px) and (max-width: 600px) {
 
     body {
       overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+    }
+
+    .semisphere-embarcacion {
+      display: none;
     }
 
     .card-imagen-wf2-4taimg-emba img {
@@ -66,4 +148,102 @@
         margin-top: -259px;
     }
 
+    .semisphere-container-embarcacion {
+      position: relative;
+      width: 100%;
+      padding: 0px 0px;
+      background-color: #ffffff; 
+      overflow: hidden;
+      height: 3030px;
+    }
+
+
+  }
+
+
+
+  @media only screen and (min-width: 391px) and (max-width: 460px) {
+
+    body {
+      overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+    }
+
+    .semisphere-embarcacion {
+      display: none;
+    }
+
+    .card-imagen-wf2-4taimg-emba img {
+        position: relative;
+        width: 40% !important;
+        top: -166px;
+        left: 230px;
+        margin-top: -259px;
+    }
+
+    .semisphere-container-embarcacion {
+      position: relative;
+      width: 100%;
+      padding: 0px 0px;
+      background-color: #ffffff; 
+      overflow: hidden;
+      height: 3080px;
+      z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
+    }
+
+
+  }
+
+
+  @media only screen and (min-width: 361px) and (max-width: 390px) {
+
+    .card-imagen-wf2-4taimg-emba img {
+      position: relative;
+      width: 40% !important;
+      top: -166px;
+      left: 200px;
+      margin-top: -259px;
+  }
+
+
+  .semisphere-embarcacion {
+    display: none;
+  }
+
+  .semisphere-container-embarcacion {
+    position: relative;
+    width: 100%;
+    padding: 0px 0px;
+    background-color: #ffffff; 
+    overflow: hidden;
+    height: 2970px;
+    z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
+  }
+  }
+
+
+  
+  @media only screen and (min-width: 100px) and (max-width: 360px) {
+
+    .card-imagen-wf2-4taimg-emba img {
+      position: relative;
+      width: 40% !important;
+      top: -166px;
+      left: 200px;
+      margin-top: -259px;
+  }
+
+
+  .semisphere-embarcacion {
+    display: none;
+  }
+
+  .semisphere-container-embarcacion {
+    position: relative;
+    width: 100%;
+    padding: 0px 0px;
+    background-color: #ffffff; 
+    overflow: hidden;
+    height: 2910px;
+    z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
+  }
   }

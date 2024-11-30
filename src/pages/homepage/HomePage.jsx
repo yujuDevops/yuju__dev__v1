@@ -20,7 +20,19 @@ export const HomePage = ({ pageId }) => {
       setHeaderData(header);
     }, [pageId]);
 
-    
+    const lazyCards = document.querySelectorAll(".lazy-card");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target); // Deja de observar la tarjeta después de hacerla visible
+        }
+      });
+    });
+
+    lazyCards.forEach((card) => observer.observe(card));
+
     return (
       <>
       <div className="HomePage">
@@ -42,8 +54,8 @@ export const HomePage = ({ pageId }) => {
 
           {/* COMIENZAN LAS CARDS*/}
       
-        <h2 className='h2__comp'>¿Cómo funciona?</h2>
-        <div className='containerCard__1'>
+        <h2 className='h2__comp lazy-card'>¿Cómo funciona?</h2>
+        <div className='containerCard__1 lazy-card'>
         <div className='cards__1'>
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-1-azul_iroyga.svg" alt="" />
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-1-verde_why77p.svg" alt="" className='hover-image' />

@@ -10,7 +10,8 @@
     gap: 20px;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-bottom: 50px;
   }
   
   /* Tarjeta individual */
@@ -63,8 +64,8 @@
   .industrial-padre-text p{
     font-size: 10px;
     position: relative;
-    top: 0px;
-    right: -69px;
+    top: 34px;
+    right: -90px;
     width: 90%;
     font-family: 'Inter';
     color: rgba(141, 139, 142, 1);
@@ -73,8 +74,8 @@
   .industrial-padre-text h3 {
     font-size: 12px;
     position: relative;
-    top: 0px;
-    right: -69px;
+    top: 34px;
+    right: -90px;
     width: 90%;
     font-family: 'Inter';
     color: rgba(141, 139, 142, 1);
@@ -99,7 +100,8 @@
   gap: 20px;
   justify-content: space-between;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 70px;
+  margin-bottom: -20px;
 }
 
 /* Tarjeta individual */
