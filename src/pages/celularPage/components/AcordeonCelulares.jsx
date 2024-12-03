@@ -16,9 +16,6 @@ export const AcordeonCelulares = () => {
               
                 </div>
               )})}
-      
-      
-      
           </div>
     )
   }

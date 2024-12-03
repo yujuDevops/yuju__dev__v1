@@ -2,7 +2,6 @@
   
   .todoRiesgoContainer {
     margin-top: 100px;
-
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -22,6 +21,7 @@
     justify-content: space-around;
     align-items: start;
     position: relative;
+    margin-left: -50px;
   }
   
   .todoRiesgoItem {
@@ -105,6 +105,49 @@
   @media (min-width: 601px) and (max-width: 960px) {
 
 
+    .todoRiesgoContainer {
+      margin-top: 100px;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .todoRiesgoTitle {
+      color: rgba(51, 105, 255, 1);
+      font-size: 16px;
+      font-weight: 800;
+      font-family: inter;
+      display: flex;
+      margin: -40px 0px 30px 18px;
+    }
+    
+    .todoRiesgoItems {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+    }
+    
+    .todoRiesgoItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:rgba(141, 139, 142, 1) ;
+    } 
+  
+    .todoRiesgoItem span {
+      position: absolute;
+      top: 23px;
+      font-size: 14px;
+      font-family: inter;
+      font-weight: 700;
+      color: rgba(141, 139, 142, 1);
+    }
+    
+    .todoRiesgoIcon {
+      width: 90%;
+      margin-bottom: 8px;
+    }
   }
 
 

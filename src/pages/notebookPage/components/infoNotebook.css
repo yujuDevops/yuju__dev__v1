@@ -1,4 +1,907 @@
-.tituloNotebook{
-    margin-top: 100px;
-    margin-left: 2%;
+.notebook-icon-celular {
+    display: none;
+  }
+  
+
+  .notebook-title-celular {
+    display: none;
+  }
+
+  .notebook-description-celular {
+    display: none;
+  }
+
+
+  .notebook-uhsf {
+    display: none;
+  }
+  
+  /* Contenedor principal */
+  .notebook-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-right: 75px;
+    margin-left: 20px;
+    }
+    
+
+    /* Tarjeta individual */
+    .notebook-card {
+      background-color: transparent; 
+      padding: 20px;
+      width: calc(50% - 10px);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    /* Icono de la tarjeta */
+    .notebook-icon {
+      width: 100%;
+      height: auto;
+      margin-right: 15px;
+      position: absolute;
+    }
+    
+    /* Título de la tarjeta */
+    .notebook-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+      padding-top: 5px;
+    }
+    
+    /* Descripción de la tarjeta */
+    .notebook-description {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.5;
+      margin-top: 5px;
+      padding-right: 20px;
+    }
+    
+    /* Línea de puntos estilo separador */
+    .notebook-card::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+    }
+  
+    .notebook-padre-text p{
+      font-size: 10px;
+      position: relative;
+      top: 34px;
+      right: -100px;
+      width: 90%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+  }
+    
+    .notebook-padre-text h3 {
+      font-size: 12px;
+      position: relative;
+      top: 34px;
+      right: -100px;
+      width: 90%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+      font-weight: 800;
+  }
+  
+
+  
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 70px 0px -50px 75px;
+  }
+
+
+  .notebook-celular-icon {
+    display: none;
+  }
+  
+  
+  
+  @media 
+  (min-width: 1200px) and (max-width: 1600px) { 
+  
+    .notebook-icon-celular {
+      display: none;
+    }
+
+    .notebook-title-celular {
+        display: none;
+      }
+    
+      .notebook-description-celular {
+        display: none;
+      }
+    
+      
+  .notebook-uhsf {
+    display: none;
+  }
+  
+  /* Contenedor principal */
+  .notebook-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-right: 45px;
+    margin-left: 5px;
+  }
+  
+  /* Tarjeta individual */
+  .notebook-card {
+    background-color: transparent; 
+    padding: 20px;
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Icono de la tarjeta */
+  
+  /* Título de la tarjeta */
+  .notebook-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding-top: 5px;
+  }
+  
+  /* Descripción de la tarjeta */
+  .notebook-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding-right: 20px;
+  }
+  
+  /* Línea de puntos estilo separador */
+  .notebook-card::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+  }
+  
+  .notebook-padre-text p{
+    font-size: 10px;
+    position: relative;
+    top: 0px;
+    right: -69px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+  }
+  
+  .notebook-padre-text h3 {
+    font-size: 12px;
+    position: relative;
+    top: 0px;
+    right: -69px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+    font-weight: 800;
+  }
+
+
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 70px 0px -30px 50px;
+  }
+  
+  .notebook-celular-icon {
+    display: none;
+  }
+
+  }
+  
+  
+  
+
+  
+  @media (min-width: 851px) and (max-width: 900px) {
+  
+    .notebook-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: start;
+      padding: 60px 60px 0px 40px;
+      margin-top: 15px;
+      margin-left: 0px;
+  }
+    
+    /* Tarjeta individual */
+    .notebook-card {
+      background-color: transparent;
+      padding: 20px;
+      width: calc(28% - -42px);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 68px;
+      right: 25px;
+  }
+    
+    /* SACO FOTO PANTALLA GRANDE */
+
+
+/* SACO FOTO PANTALLA GRANDE */
+.notebook-icon {
+    display: none;
+  }
+  
+
+.notebook-icon-celular {
+  width: 100%;
+  height: auto;
+  margin-right: 15px;
+  position: absolute;
+  display: flex;
 }
+
+.notebook-celular-icon {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-right: 15px;
+  position: absolute;
+}
+
+
+/* Título de la tarjeta */
+.notebook-title {
+ display: none;
+}
+
+/* Descripción de la tarjeta */
+.notebook-description {
+  display: none;
+}
+
+.notebook-title-celular {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    text-align: center;
+  }
+
+  .notebook-description-celular {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding-right: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+    
+    /* Línea de puntos estilo separador */
+    .notebook-card::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+    }
+    
+    .notebook-padre-text p {
+      font-size: 11px;
+      position: relative;
+      top: 20px;
+      right: -42px;
+      width: 100%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+      inline-size: 204px;
+  }
+    
+    .notebook-padre-text h3 {
+      font-size: 12px;
+      position: relative;
+      top: 20px;
+      right: -42px;
+      width: 90%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+      font-weight: 800;
+      place-content: center;
+  }
+
+
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 60px 0px -30px 33px;
+  }
+
+  
+  .notebook-uhsf {
+    margin-left: 0px;
+    display: grid;
+  }
+
+  .notebook-uhsf p {
+    font-size: 12px;
+    font-family: inter;
+    font-family: 700;
+    color: rgba(51, 105, 255, 1);
+  }
+  
+  }
+  
+  
+  
+  @media (min-width: 601px) and (max-width: 850px) {
+  
+    .notebook-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: start;
+      padding: 60px -1px 0px 30px;
+      margin-top: 15px;
+      margin-left: 0px;
+  }
+    
+    /* Tarjeta individual */
+    .notebook-card {
+      background-color: transparent;
+      padding: 25px;
+      width: calc(18% - -118px);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 68px;
+      right: 25px;
+  }
+    
+    /* SACO FOTO PANTALLA GRANDE */
+  /* SACO FOTO PANTALLA GRANDE */
+  .notebook-icon {
+    display: none;
+  }
+  
+
+.notebook-icon-celular {
+  width: 100%;
+  height: auto;
+  margin-right: 15px;
+  position: absolute;
+  display: flex;
+}
+
+.notebook-celular-icon {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-right: 15px;
+  position: absolute;
+}
+
+
+/* Título de la tarjeta */
+.notebook-title {
+ display: none;
+}
+
+/* Descripción de la tarjeta */
+.notebook-description {
+  display: none;
+}
+
+.notebook-title-celular {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding-top: 5px;
+    display: flex;
+    text-align: center;
+  }
+
+  .notebook-description-celular {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding-right: 20px;
+    display: flex;
+    text-align: center;
+  }
+
+    
+    /* Línea de puntos estilo separador */
+    .notebook-card::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+    }
+    
+    .notebook-padre-text p {
+      font-size: 11px;
+      position: relative;
+      top: 20px;
+      right: -52px;
+      width: 100%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+      inline-size: 204px;
+  }
+    
+    .notebook-padre-text h3 {
+      font-size: 12px;
+      position: relative;
+      top: 20px;
+      right: -52px;
+      width: 90%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+      font-weight: 800;
+      place-content: center;
+  }
+
+
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 40px 0px -10px 33px;
+  }
+
+  .notebook-uhsf {
+    margin-left: 15px;
+    display: grid;
+  }
+
+  .notebook-uhsf p {
+    font-size: 12px;
+    font-family: inter;
+    font-family: 700;
+    color: rgba(51, 105, 255, 1);
+  }
+  
+  }
+  
+
+  @media only screen and (max-width: 600px) { 
+
+    .notebook-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      justify-content: space-between;
+      padding: 0px;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+    
+    /* Tarjeta individual */
+    .notebook-card {
+      background-color: transparent; 
+      padding: 20px;
+      width: calc(50% - 10px);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 20px;
+      right: 25px;
+    }
+    
+    /* SACO FOTO PANTALLA GRANDE */
+    .notebook-icon {
+        display: none;
+      }
+      
+    
+    .notebook-icon-celular {
+      width: 100%;
+      height: auto;
+      margin-right: 15px;
+      position: absolute;
+      display: flex;
+    }
+
+    .notebook-celular-icon {
+      display: flex;
+      width: 100%;
+      height: auto;
+      margin-right: 15px;
+      position: absolute;
+    }
+  
+  
+    /* Título de la tarjeta */
+    .notebook-title {
+     display: none;
+    }
+    
+    /* Descripción de la tarjeta */
+    .notebook-description {
+      display: none;
+    }
+    
+    .notebook-title-celular {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+        padding-top: 5px;
+        display: flex;
+        text-align: center;
+      }
+    
+      .notebook-description-celular {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+        margin-top: 5px;
+        padding-right: 20px;
+        display: flex;
+        text-align: center;
+      }
+
+    /* Línea de puntos estilo separador */
+    .notebook-card::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+    }
+    
+    .notebook-padre-text p{
+          font-size: 7px;
+          position: relative;
+          top: 29px;
+          right: -20px;
+          width: 100%;
+          font-family: 'Inter';
+          color: rgba(141, 139, 142, 1);
+          inline-size: 155px;
+    }
+    
+    .notebook-padre-text h3 {
+      font-size: 8px;
+      position: relative;
+      top: 27px;
+      right: -15px;
+      width: 90%;
+      font-family: 'Inter';
+      color: rgba(141, 139, 142, 1);
+      font-weight: 800;
+      place-content: center;
+  }
+  
+  
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 40px 0px -10px 15px;
+  }
+
+  .notebook-uhsf {
+    margin-top: 40px;
+    margin-left: 0px;
+    display: grid;
+  }
+
+  .notebook-uhsf p {
+    font-size: 8px;
+    font-family: inter;
+    font-family: 700;
+    color: rgba(51, 105, 255, 1);
+  }
+  
+  }
+  
+  
+  
+  @media(min-width: 361px) and (max-width: 420px) {
+  
+    .notebook-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: space-between;
+        padding: 15px 0px 34px 0px;
+        margin-top: 15px;
+        margin-bottom: -50px;
+    }
+    
+    /* Tarjeta individual */
+    .notebook-card {
+      background-color: transparent; 
+      padding: 20px;
+      width: calc(50% - 10px);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 20px;
+      right: 25px;
+    }
+    
+    /* SACO FOTO PANTALLA GRANDE */
+    .notebook-icon {
+        display: none;
+      }
+      
+    
+    .notebook-icon-celular {
+      width: 100%;
+      height: auto;
+      margin-right: 15px;
+      position: absolute;
+      display: flex;
+      text-align: center;
+    }
+
+    .notebook-celular-icon {
+        display: flex;
+        width: 100%;
+      height: auto;
+      margin-right: 15px;
+      position: absolute;
+      text-align: center;
+    }
+  
+    /* Título de la tarjeta */
+    .notebook-title {
+        display: none;
+       }
+       
+       /* Descripción de la tarjeta */
+       .notebook-description {
+         display: none;
+       }
+       
+       .notebook-title-celular {
+           font-size: 18px;
+           font-weight: 600;
+           color: #333;
+           margin: 0;
+           padding-top: 5px;
+         }
+       
+         .notebook-description-celular {
+           font-size: 14px;
+           color: #666;
+           line-height: 1.5;
+           margin-top: 5px;
+           padding-right: 20px;
+         }
+    
+    /* Línea de puntos estilo separador */
+    .notebook-card::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+    }
+    
+    .notebook-padre-text p {
+        font-size: 7px;
+        position: relative;
+        top: 10px;
+        right: -17px;
+        width: 100%;
+        font-family: 'Inter';
+        color: rgba(141, 139, 142, 1);
+        inline-size: 136px;
+  }
+    
+  .notebook-padre-text h3 {
+        font-size: 8px;
+        position: relative;
+        top: 10px;
+        right: -13px;
+        width: 90%;
+        font-family: 'Inter';
+        color: rgba(141, 139, 142, 1);
+        font-weight: 800;
+  }
+   
+  
+  
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 40px 0px -10px 15px;
+  }
+
+
+  .notebook-uhsf {
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    display: grid;
+  }
+
+  .notebook-uhsf p {
+    font-size: 8px;
+    font-family: inter;
+    font-family: 700;
+    color: rgba(51, 105, 255, 1);
+    inline-size: 70%;
+  }
+
+  }
+  
+  
+  
+  
+  
+  @media(min-width: 100px) and (max-width: 360px) {
+  
+    .notebook-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      justify-content: space-between;
+      padding: 0px;
+      margin-top: 15px;
+      margin-bottom: -50px;
+    }
+    
+    /* Tarjeta individual */
+    .notebook-card {
+      background-color: transparent; 
+      padding: 20px;
+      width: calc(50% - 10px);
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 20px;
+      right: 25px;
+    }
+    
+    /* SACO FOTO PANTALLA GRANDE */
+    .notebook-icon {
+        display: none;
+      }
+      
+    
+    .notebook-icon-celular {
+      width: 100%;
+      height: auto;
+      margin-right: 15px;
+      position: absolute;
+      display: flex;
+    }
+
+    .notebook-padre-text p {
+        font-size: 7px;
+        position: relative;
+        top: -1px;
+        right: -15px;
+        width: 100%;
+        font-family: 'Inter';
+        color: rgba(141, 139, 142, 1);
+        inline-size: 135px;
+  }
+    
+  .notebook-padre-text h3 {
+        font-size: 8px;
+        position: relative;
+        top: -1px;
+        right: -13px;
+        width: 90%;
+        font-family: 'Inter';
+        color: rgba(141, 139, 142, 1);
+        font-weight: 800;
+  }
+
+
+    /* Título de la tarjeta */
+       .notebook-title {
+        display: none;
+       }
+       
+       /* Descripción de la tarjeta */
+       .notebook-description {
+         display: none!important;
+       }
+       
+       .notebook-title-celular {
+           font-size: 18px;
+           font-weight: 600;
+           color: #333;
+           margin: 0;
+           padding-top: 5px;
+           display: flex;
+         }
+       
+         .notebook-description-celular {
+           font-size: 14px;
+           color: #666;
+           line-height: 1.5;
+           margin-top: 5px;
+           padding-right: 20px;
+           display: flex;
+         }
+    
+    /* Línea de puntos estilo separador */
+    .notebook-card::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      right: 10px;
+      height: 1px;
+    }
+    
+
+  
+  .h2Bici-notebook {
+    color: #3369FF;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 40px 0px -10px 15px;
+  }
+
+
+  .notebook-uhsf {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+    display: grid;
+  }
+
+  .notebook-uhsf p {
+    font-size: 8px;
+    font-family: inter;
+    font-family: 700;
+    color: rgba(51, 105, 255, 1);
+    inline-size: 70%;
+  }
+      
+  }
