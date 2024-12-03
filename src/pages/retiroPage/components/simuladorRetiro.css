@@ -8,6 +8,7 @@
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 28px;
     box-shadow: 0 0 10px #8d8b8e40;
+    margin-top: 100px;
   }
   
   /* Sliders */
@@ -15,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+
   }
 
   .span-age span {

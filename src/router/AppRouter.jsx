@@ -1,8 +1,8 @@
 import {  Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
-import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage, IndustrialPage, Embarcaciones, CelularPage, VidaPage, SaludPage, AccidentesPersonales, NotebookPage, PcGamerPage, ConsolaPage, TabletPage, } from '../pages';
-import { RetiroPage } from '../pages/retiroPage/RetiroPage';
+import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,RusPage,ExpertaPage,ContactPage,InstitucionalPage,SanCristobalPage,SiniestrosPage,ClubYujuPage, IndustrialPage, Embarcaciones, CelularPage, VidaPage, SaludPage, AccidentesPersonales, NotebookPage, PcGamerPage, ConsolaPage, TabletPage, RetiroPage, } from '../pages';
+
 
 
 
