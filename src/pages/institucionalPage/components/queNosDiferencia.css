@@ -1,0 +1,37 @@
+.diferencia-container {
+    background-color: #005eff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .diferencia-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .diferencia-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .diferencia-card {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .diferencia-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
