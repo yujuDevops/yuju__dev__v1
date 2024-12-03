@@ -1,0 +1,35 @@
+/* RetirementPlan.css */
+.retirement-plan-container {
+    background-color: #ffffff; /* Color de fondo similar al de la imagen */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 300px;
+    margin-bottom: -300px;
+  }
+  
+  .retirement-plan-container p {
+    margin: 10px 0;
+  }
+  
+  .retirement-plan-container a {
+    color: #007bff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .retirement-plan-container a:hover {
+    color: #0056b3;
+  }
+  
+  .retirement-plan-container ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .retirement-plan-container li {
+    margin: 5px 0;
+  }
+  

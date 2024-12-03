@@ -1,5 +1,7 @@
+import Carrousel from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { BannerTablet, DataCardTablet, HeaderTablet, InfoTablet } from "./components"
+import { AcordeonTablet, BannerTablet, DataCardTablet, HeaderTablet, ImgTablet, InfoTablet } from "./components"
+
 
 export const TabletPage = () => {
   return (
@@ -14,6 +16,10 @@ export const TabletPage = () => {
  <InfoTablet/>
  <DataCardTablet/>  
  <BannerTablet/> --------------
+ <ImgTablet/>
+ <AcordeonTablet/>
+ <Carrousel/>
 </>
+
 )
 }

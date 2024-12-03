@@ -22,6 +22,8 @@ const EmailInput = () => {
     } else {
       setError('Debes utilizar "@" en este campo');
     }
+
+    setEmail("");
   };
 
   return (

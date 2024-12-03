@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./simuladorRetiro.css";
 
-const SimuladorRetiro = () => {
+export const SimuladorRetiro = () => {
   const [age, setAge] = useState(18);
   const [monthlySavings, setMonthlySavings] = useState(0);
 
@@ -26,6 +26,7 @@ const SimuladorRetiro = () => {
   const updateProgress = (value, min, max) => ((value - min) / (max - min)) * 100;
 
   return (
+    <>
     <div className="retirement-simulator">
       <div className="sliders">
         {/* Slider de edad */}
@@ -40,7 +41,7 @@ const SimuladorRetiro = () => {
             style={{
               "--progress": `${updateProgress(age, 18, 65)}%`,
             }}
-          />
+            />
           <div className="contenedor-numerosPR">
             <p className="numerosPR0">18</p>
             <p className="numerosPR0">65</p>
@@ -63,7 +64,7 @@ const SimuladorRetiro = () => {
             style={{
               "--progress": `${updateProgress(monthlySavings, 0, 20000)}%`,
             }}
-          />
+            />
           <div className="contenedor-numero-precio">
             <p className="numerosPR0">$0</p>
             <p className="numerosPR0">$20.000</p>
@@ -91,7 +92,11 @@ const SimuladorRetiro = () => {
         </p>
       </div>
     </div>
+    <h3>
+    *El cálculo es una aproximación y no tiene en cuenta el impuesto de sellos provincial que varía según cada provincia. La simulación es a fines ilustrativos y no implica un compromiso contractual.
+    </h3>
+            </>
   );
 };
 
-export default SimuladorRetiro;
+
