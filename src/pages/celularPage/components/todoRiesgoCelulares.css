@@ -9,27 +9,161 @@
   }
   
   .todoRiesgoTitle {
-    color: var(--todo-riesgo-color-primary);
-    font-size: 1.2em;
-    margin-bottom: var(--todo-riesgo-spacing);
+    color: rgba(51, 105, 255, 1);
+    font-size: 16px;
+    font-weight: 800;
+    font-family: inter;
+    display: flex;
+    margin: -40px 0px 30px 55px;
   }
   
   .todoRiesgoItems {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
+    position: relative;
   }
   
   .todoRiesgoItem {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--todo-riesgo-text-color);
+    color:rgba(141, 139, 142, 1) ;
+  } 
+
+  .todoRiesgoItem span {
+    position: absolute;
+    top: 30px;
+    font-size: 16px;
+    font-family: inter;
+    font-weight: 700;
+    color: rgba(141, 139, 142, 1);
   }
   
   .todoRiesgoIcon {
-    width: var(--todo-riesgo-icon-size);
-    height: var(--todo-riesgo-icon-size);
+    width: 100%;
     margin-bottom: 8px;
   }
   
+
+
+  @media 
+  (min-width: 1200px) and (max-width: 1600px) {
+
+
+  
+    .todoRiesgoContainer {
+      margin-top: 100px;
+  
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .todoRiesgoTitle {
+      color: rgba(51, 105, 255, 1);
+      font-size: 16px;
+      font-weight: 800;
+      font-family: inter;
+      display: flex;
+      margin: -40px 0px 30px 30px;
+    }
+    
+    .todoRiesgoItems {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+    }
+    
+    .todoRiesgoItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:rgba(141, 139, 142, 1) ;
+    } 
+  
+    .todoRiesgoItem span {
+      position: absolute;
+      top: 30px;
+      font-size: 16px;
+      font-family: inter;
+      font-weight: 700;
+      color: rgba(141, 139, 142, 1);
+    }
+    
+    .todoRiesgoIcon {
+      width: 90%;
+      margin-bottom: 8px;
+    }
+
+  
+
+  }
+
+
+  @media (min-width: 601px) and (max-width: 960px) {
+
+
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+  
+    .todoRiesgoContainer {
+      margin-top: 100px;
+      padding: 0px 0px 0px 18px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    
+    .todoRiesgoTitle {
+      color: rgba(51, 105, 255, 1);
+      font-size: 12px;
+      font-weight: 800;
+      font-family: inter;
+      display: flex;
+      margin: -40px 0px 40px 00px;
+    }
+    
+    .todoRiesgoItems {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 40px;
+    }
+    
+    .todoRiesgoItem {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      color:rgba(141, 139, 142, 1) ;
+    } 
+  
+    .todoRiesgoItem span {
+      position: relative;
+      top: -4px;
+      right: -35px;
+      font-size: 12px;
+      font-family: inter;
+      font-weight: 700;
+      color: rgba(141, 139, 142, 1);
+    }
+    
+    .todoRiesgoIcon {
+     display: flex;
+     position: absolute;
+     width: 40%;
+    }
+
+
+  }
+
+
+  @media only screen and (min-width: 100px) and (max-width: 430px) {
+
+    
+  }
