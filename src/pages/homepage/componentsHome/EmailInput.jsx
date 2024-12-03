@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './EmailInput.css'; // Asegúrate de crear y vincular el archivo CSS
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
