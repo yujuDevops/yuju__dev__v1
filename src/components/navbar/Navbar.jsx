@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link to="/vida" onClick={() => handlePageChange('vida')}>Vida</Link>
             <Link to="/salud" onClick={() => handlePageChange('salud')}>Salud</Link>
             <Link to="/accidentespersonales" onClick={() => handlePageChange('accidentespersonales')}>Accidentes p.</Link>
-            
+            <Link to="/viajero" onClick={() => handlePageChange('viajero')}>Asist. al viajero</Link>
           </div>
           <div className="dropdown-separator"></div>
           <div className="dropdown-column">
