@@ -1,0 +1,6 @@
+export * from "./HeaderViajero"
+export * from "./BeneficiosViajero"
+export * from "./DataViajeros"
+export * from "./BannerViajero"
+export * from "./AcodeonViajero"
+export * from "./AcordeonCompViajero"
