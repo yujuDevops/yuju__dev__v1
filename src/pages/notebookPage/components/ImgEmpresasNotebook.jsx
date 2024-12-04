@@ -1,9 +1,11 @@
-import { dataEmpresasNotebook } from "../data/dataEmpresasNotebook"
+import "./ImgEmpresasNotebook.css";
+
+import { dataEmpresasNotebook } from "../data/dataEmpresasNotebook";
 
 export const ImgEmpresasNotebook = () => {
     return (
-        <div className="divImgEmpresas-salud">
-            <h2 className="h2ImgEmpresas">
+        <div className="divImgEmpresas-notebook">
+            <h2 className="h2ImgEmpresas-notebook">
             Trabajamos con
             </h2>
             <div>
