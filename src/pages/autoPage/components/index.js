@@ -1,0 +1,5 @@
+export * from "./HeaderAuto"
+export * from "./CoberturasAuto"
+export * from "./ImgEmpresasAuto"
+export * from "./AcordeonCompAuto"
+export * from "./AcordeonAuto"
