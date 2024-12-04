@@ -74,6 +74,7 @@
       justify-content: space-around;
       align-items: center;
       position: relative;
+      margin-left: -4px;
     }
     
     .todoRiesgoItem {
@@ -126,6 +127,7 @@
       justify-content: space-around;
       align-items: center;
       position: relative;
+      margin-left: -6px;
     }
     
     .todoRiesgoItem {
@@ -178,6 +180,7 @@
       justify-content: center;
       position: relative;
       margin-bottom: 40px;
+      margin-left: -6px;
     }
     
     .todoRiesgoItem {

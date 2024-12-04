@@ -95,7 +95,7 @@ export const seguros = [
       titulo: "PC Gamer",
       foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1723258518/Card-pcgamer_nvjvbz.png",
       boton: "Ver más",
-      href: "/pc-gamer"
+      href: "/pcgamer"
     },
     {
       uid: "15",

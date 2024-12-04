@@ -1,3 +1,4 @@
+import "./notebookPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonNotebook, BannerNotebook, DataNotebook, HeaderNotebook, ImgEmpresasNotebook, InfoNotebook } from "./components"
@@ -6,6 +7,9 @@ import { AcordeonNotebook, BannerNotebook, DataNotebook, HeaderNotebook, ImgEmpr
 export const NotebookPage = () => {
   return (
    <>
+   <div className="semisphere-container-notebook">
+      <div className="semisphere-notebook"></div>
+      <div className="content-notebook"></div>
    <HeaderNotebook/>
    <CotizaAhora 
  titulo="Seguro de notebook"
@@ -20,7 +24,7 @@ export const NotebookPage = () => {
 <AcordeonNotebook/>
 <Carrousel/>
 
-
+</div>
 
    </>
   )

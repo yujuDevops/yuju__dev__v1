@@ -8,7 +8,7 @@ export const InfoNotebook = () => {
         <>
            
     <div className="tituloNotebook">
-    <h2 className="h2Bici-notebook">¿Qué cubre el seguro de bici de Yuju?</h2>
+    <h2 className="h2Bici-notebook">El seguro de notebook te cubre contra todo riesgo.</h2>
     </div>
         <h1></h1>
         <div className="notebook-container">
