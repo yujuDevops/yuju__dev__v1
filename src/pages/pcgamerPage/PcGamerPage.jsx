@@ -1,3 +1,4 @@
+import "./pcGamerPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonPcGamer, BannerPcGamer, DataCardPcgamer, HeaderPcGamer, ImgEmpresasPcGamer, InfoPcGamer } from "./components"
@@ -6,6 +7,9 @@ import { AcordeonPcGamer, BannerPcGamer, DataCardPcgamer, HeaderPcGamer, ImgEmpr
 export const PcGamerPage = () => {
   return (
 <>
+<div className="semisphere-container-pcgamer">
+      <div className="semisphere-pcgamer"></div>
+      <div className="content-pcgamer"></div>
 <HeaderPcGamer/>
 <CotizaAhora 
  titulo="Seguro de PC gamer"
@@ -19,6 +23,7 @@ export const PcGamerPage = () => {
  <ImgEmpresasPcGamer /> 
  <AcordeonPcGamer/>
  <Carrousel/> 
+ </div>
 </>
   )
 }
