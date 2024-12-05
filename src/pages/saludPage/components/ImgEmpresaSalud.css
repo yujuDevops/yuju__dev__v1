@@ -46,7 +46,7 @@ color: #3369FF;
     font-family: Inter;
     font-weight: 800;
     font-size: 16px;
-    margin-top: -60px;
+    margin-top: -80px;
     margin-bottom: 40px;
     margin-left: 4%;
     color: #3369FF;
@@ -110,6 +110,33 @@ color: #3369FF;
 
     .divImgEmpresas-salud{
         margin-top: 225px;
+    }
+    
+
+    .h2ImgEmpresas-salud {
+        font-family: Inter;
+    font-weight: 800;
+    font-size: 12px!important;
+    margin-top: -60px;
+    margin-bottom: 40px!important;
+    margin-left: 4%;
+    color: #3369FF;
+    }
+
+    .divImgEmpresas-salud {
+        margin-top: 230px;
+        
+    }
+
+    .EmpresasgridImage-salud{
+        height: 120%;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+
+    .divImgEmpresas-salud{
+        margin-top: 200px!important;
     }
     
 

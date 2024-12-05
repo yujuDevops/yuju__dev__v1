@@ -18,7 +18,7 @@ export const dataCardCelulares = [
       tituloStrong: "Verificá ",
       tituloNormal: "tu dispositivo",
       isStrongFirst: true,
-      imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740627/web_Icono-asegurado_azul_3_ylxoce.svg"
+      imagen: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733095482/Verifica-icono_dgn2hd.png"
     },
     {
       numero: 4.,

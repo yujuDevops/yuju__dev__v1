@@ -53,7 +53,7 @@ export const seguros = [
       titulo: "Asistencia al Viajero",
       foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1723258518/Card-asistencia_1_qg3vjq.png",
       boton: "Ver más",
-      href: "/asistencia-al-viajero"
+      href: "/viajero"
     },
     {
       uid: "9",

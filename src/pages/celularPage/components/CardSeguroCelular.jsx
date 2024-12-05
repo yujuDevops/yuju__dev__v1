@@ -1,3 +1,4 @@
+import "./cardSeguroCelular.css";
 import React from 'react'
 import { dataCardCelulares } from '../data'
 
