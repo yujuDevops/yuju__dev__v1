@@ -19,7 +19,7 @@ export const ViajeroPage = () => {
  <BannerViajero/>
  <ImgEmpresasViajero/>
  <AcordeonViajero/>
- <Carrousel/>
+ <Carrousel Name="Asistencia al Viajero"/>
 </>
   )
 }

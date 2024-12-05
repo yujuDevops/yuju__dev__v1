@@ -34,7 +34,7 @@ src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux
 <ImgEmpresasAccidentesPersonales/>
 
 <AcordeonAccidentesPersonales/>
-<Carrousel/>
+<Carrousel Name="Accidentes Personales"/>
 </div>
 </>
   )

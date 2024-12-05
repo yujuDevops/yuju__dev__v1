@@ -18,7 +18,7 @@ export const ConsolaPage = () => {
  <BannerConsola/>
  <ImgEmpresasConsola/>
  <AcordeonConsola/>
- <Carrousel/> 
+ <Carrousel Name="Consola"/> 
 
     </>
   )

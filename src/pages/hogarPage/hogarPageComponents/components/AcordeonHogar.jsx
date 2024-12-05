@@ -13,7 +13,7 @@ export const AcordeonHogar = () => {
     {preguntasData.map((resp)=> {
             return(
               <div className="divAcordeonComp" key={resp.id}>
-              <AcordeonComp  id={resp.id} title = {resp.title} content = {resp.content} />
+              <AcordeonComp  id={resp.id} title = {resp.title} subtitle = {resp.subtitle} />
             
               </div>
             )})}

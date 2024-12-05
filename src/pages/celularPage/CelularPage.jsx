@@ -21,7 +21,7 @@ export const CelularPage = () => {
 <BannerCelulares/>
 <ImgEmpresasCelulares/>
 <AcordeonCelulares/>
-<Carrousel/>
+<Carrousel Name="Celular"/>
  </>
   )
 }

@@ -29,7 +29,7 @@ export const MotoPage = () => {
 <BannerContratar/>
 <ImgEmpresas/>
 <AcordeonMotos/>
-<Carrousel/> 
+<Carrousel Name="Motos" /> 
 
 </div>
 </div>

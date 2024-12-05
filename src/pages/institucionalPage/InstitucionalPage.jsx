@@ -18,7 +18,7 @@ export const InstitucionalPage = () => {
         </div>
        </div>
 
-<Carrousel/>
+<Carrousel Name="Integral de Comercio"/>
 
     </>
   )

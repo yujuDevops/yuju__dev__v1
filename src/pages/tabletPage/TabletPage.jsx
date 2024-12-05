@@ -18,7 +18,7 @@ export const TabletPage = () => {
  <BannerTablet/> --------------
  <ImgTablet/>
  <AcordeonTablet/>
- <Carrousel/>
+ <Carrousel Name="Tablet"/>
 </>
 
 )

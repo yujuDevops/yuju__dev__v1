@@ -29,7 +29,7 @@ export const Embarcaciones = () => {
    <BannerEmbarcaciones/>
     <ImgEmpresasEmbarcaciones/>
     <AcordeonEmbarcaciones/>
-  <Carrousel/>
+  <Carrousel Name="Embarcaciones"/>
   </div> 
     </>
 

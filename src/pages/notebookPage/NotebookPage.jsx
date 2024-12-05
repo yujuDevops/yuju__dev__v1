@@ -22,7 +22,7 @@ export const NotebookPage = () => {
 <BannerNotebook/>
 <ImgEmpresasNotebook/>
 <AcordeonNotebook/>
-<Carrousel/>
+<Carrousel Name="Notebook"/>
 
 </div>
 

@@ -23,7 +23,7 @@ export const VidaPage = () => {
    <BannerVida/>
    <AseguradorasVida/>
    <AcordeonVida/>
-   <Carrousel/>
+   <Carrousel Name="Vida"/>
     </div>
     </div>
     </>

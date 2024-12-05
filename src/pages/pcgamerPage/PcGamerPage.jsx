@@ -22,7 +22,7 @@ export const PcGamerPage = () => {
  <BannerPcGamer/> 
  <ImgEmpresasPcGamer /> 
  <AcordeonPcGamer/>
- <Carrousel/> 
+ <Carrousel Name="PC Gamer"/> 
  </div>
 </>
   )

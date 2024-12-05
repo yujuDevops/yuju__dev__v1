@@ -1,8 +1,13 @@
 import { acordeonIndustrila } from "../data"
 import { AcordeonCompIndustrial } from "./AcordeonCompIndustrial"
 
+
+
+
 export const AcordeonIndustrila = () => {
     
+
+
     return (
       <div className="padreDiv">
       <h2 className="h2Acordeon">¿Te gustaría saber más sobre el seguro para Comercio?</h2>
@@ -11,7 +16,7 @@ export const AcordeonIndustrila = () => {
       {acordeonIndustrila.map((resp)=> {
               return(
                 <div className="divAcordeonComp" key={resp.id}>
-                < AcordeonCompIndustrial id={resp.id} title = {resp.title} content = {resp.subtitle} />
+                < AcordeonCompIndustrial id={resp.id} title = {resp.title} subtitle = {resp.subtitle} />
               
                 </div>
               )})}

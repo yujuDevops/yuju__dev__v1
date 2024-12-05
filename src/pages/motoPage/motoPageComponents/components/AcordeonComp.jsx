@@ -2,7 +2,7 @@ import { useState} from "react"
 import PropType from "prop-types"
 
 
-export const AcordeonComp = ( {id, title, content}) => {
+export const AcordeonComp = ( {id, title, subtitle}) => {
 
 
   const [isOpen ,setIsOpen] = useState(false)
@@ -18,7 +18,7 @@ const alternar = ()=>{
                 {title}
               </button>
               <div className={`divHijoAcordeon ${isOpen ? 'show' : ''}`}>
-                <p>{content}</p>
+                <p>{subtitle}</p>
               </div>
           { id===18? null : <hr/>}
             </div> 
@@ -29,7 +29,7 @@ const alternar = ()=>{
 AcordeonComp.PropType = {
 id: PropType.number,
 title: PropType.string,
-content: PropType.string
+subtitle: PropType.string
 
 
 }

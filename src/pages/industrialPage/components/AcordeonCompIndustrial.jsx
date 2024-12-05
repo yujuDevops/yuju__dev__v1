@@ -1,8 +1,8 @@
 import { useState} from "react"
 import PropType from "prop-types"
+import "./acordeon.css"
 
-
-export const AcordeonCompIndustrial = ( {id, title, content}) => {
+export const AcordeonCompIndustrial = ( {id, title, subtitle}) => {
 
 
   const [isOpen ,setIsOpen] = useState(false)
@@ -18,9 +18,9 @@ const alternar = ()=>{
                 {title}
               </button>
               <div className={`divHijoAcordeon ${isOpen ? 'show' : ''}`}>
-                <p>{content}</p>
+                <p>{subtitle}</p>
               </div>
-          { id===12? null : <hr/>}
+          { id===17? null : <hr/>}
             </div> 
      
 )}
@@ -29,7 +29,7 @@ const alternar = ()=>{
 AcordeonCompIndustrial.PropType = {
 id: PropType.number,
 title: PropType.string,
-content: PropType.string
+subtitle: PropType.string
 
 
 }
