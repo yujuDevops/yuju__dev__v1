@@ -1,3 +1,4 @@
+import "./celularPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { BannerCelulares, CardSeguroCelular, HeaderCelulares, ImgEmpresasCelulares, TodoRiesgoCelular } from "./components"
@@ -9,6 +10,9 @@ export const CelularPage = () => {
   return (
 
     <>
+    <div className="semisphere-container-celular">
+      <div className="semisphere-celular"></div>
+      <div className="content-celular"></div>
    <HeaderCelulares/>
    <CotizaAhora 
  titulo="Seguro de celuar"
@@ -22,6 +26,7 @@ export const CelularPage = () => {
 <ImgEmpresasCelulares/>
 <AcordeonCelulares/>
 <Carrousel Name="Celular"/>
+</div>
  </>
   )
 }

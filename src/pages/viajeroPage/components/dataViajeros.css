@@ -1,12 +1,12 @@
-.CardInfoContainerCard__1{
+.CardInfoContainerCard__1_viajes{
     display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
   padding: 20px;
-}
 
-.h2-cardInfo{
+}
+.h2-cardInfo_viajes{
 font-family: Inter;
 font-weight: 800;
 font-size: 16px;
@@ -16,35 +16,34 @@ margin-left: 4%;
 color: #3369FF;
 }
 
-.CardInfoCards__1 {
+.CardInfoCards__1_viajes {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 0 10px #8d8b8e40;
     width: 142%;
     max-width: 400px;
-    padding: 20px 45px;
+    padding: 0px 45px;
     text-align: center;
     max-height: 260px;
-    z-index: 1;
 }
-
-.CardInfoContainerCard__1 img{
+.CardInfoContainerCard__1_viajes img{
     width: 50%;
     object-fit: cover;
 }
 
-.h3CardInfo{
+.h3CardInfo_viajes{
     color: #8D8B8E;
     font-family: Inter;
     font-size: 12px;
     font-weight: 800;
 }
 
-.pCardInfo{
+.pCardInfo-bici_viajes{
     color: #8D8B8E;
     font-family: Inter;
     font-size: 12px;
     font-weight: 400;
+    padding: 5px;
 }
 
 .cards__1  {
@@ -57,7 +56,7 @@ color: #3369FF;
 
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-    .CardInfoContainerCard__1{
+    .CardInfoContainerCard__1_viajes{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -65,18 +64,18 @@ color: #3369FF;
         padding: 20px;
     }
     
-    .CardInfoContainerCard__1 img{
-        width: 35%;
+    .CardInfoContainerCard__1_viajes img{
+        width: 45%;
         object-fit: cover;
     }
 
-    .CardInfoCards__1 {
+    .CardInfoCards__1_viajes {
         background-color: white;
         border-radius: 12px;
         box-shadow: 0 0 10px #8d8b8e40;
         width: 142%;
         max-width: 280px;
-        padding: 20px 2px;
+        padding: 5px 20px;
         text-align: center;
         max-height: 260px;
     }
@@ -84,27 +83,27 @@ color: #3369FF;
 
     @media (min-width: 881px) and (max-width: 1199px) {
 
-        .CardInfoContainerCard__1{
+        .CardInfoContainerCard__1_viajes{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 23px;
             padding: 20px;
-            z-index: 1;
+            margin-bottom: -30px;
             }
             
-            .CardInfoContainerCard__1 img{
-                width: 70%;
+            .CardInfoContainerCard__1_viajes img{
+                width: 80%;
                 object-fit: cover;
             }
         
-            .CardInfoCards__1 {
+            .CardInfoCards__1_viajes {
                 background-color: white;
             border-radius: 12px;
             box-shadow: 0 0 10px #8d8b8e40;
             width: 142%;
             max-width: 185px;
-            padding: 19px 20px;
+            padding: 0px 10px;
             text-align: center;
             max-height: 238px;
         
@@ -116,7 +115,7 @@ color: #3369FF;
 
     @media (min-width: 601px) and (max-width: 880px) {
 
-        .CardInfoContainerCard__1{
+        .CardInfoContainerCard__1_viajes{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -124,18 +123,18 @@ color: #3369FF;
         padding: 20px;
         }
         
-        .CardInfoContainerCard__1 img{
-            width: 70%;
-            object-fit: none;
+        .CardInfoContainerCard__1_viajes img{
+            width: 80%;
+            object-fit: cover;
         }
     
-        .CardInfoCards__1 {
+        .CardInfoCards__1_viajes {
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 0 10px #8d8b8e40;
             width: 142%;
             max-width: 181px;
-            padding: 19px 18px;
+            padding: 0px 10px;
             text-align: center;
             max-height: 238px;
         }
@@ -144,27 +143,27 @@ color: #3369FF;
 
 @media 
 (min-width: 400px) and (max-width: 600px) {
-    .CardInfoContainerCard__1{
+    .CardInfoContainerCard__1_viajes{
         gap: 30px;
         width: 100%;
         margin-left: -4%;
       
     }
-    .CardInfoContainerCard__1 img{
+    .CardInfoContainerCard__1_viajes img{
         height: 50%;
     }
 
-    .CardInfoCards__1{
+    .CardInfoCards__1_viajes{
         width: 30%;
     }
 
-    .pCardInfo{
+    .pCardInfo-bici_viajes{
         color: #8D8B8E;
         font-family: Inter;
         font-size: 70%;
     }
     
-    .h3CardInfo{
+    .h3CardInfo_viajes{
     font-size: 90%;    
     }
 
@@ -184,7 +183,7 @@ color: #3369FF;
         }
     
         /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1 {
+        .CardInfoContainerCard__1_viajes {
             display: flex;
             flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
             gap: 0px;       /* Espacio entre las cards */
@@ -195,7 +194,7 @@ color: #3369FF;
         }
     
         /* Cada card individual */
-        .CardInfoCards__1 {
+        .CardInfoCards__1_viajes {
             flex: 1 40%;
             margin: 10px;
             box-sizing: border-box; 
@@ -203,20 +202,20 @@ color: #3369FF;
         }
     
         /* Ajustar el título dentro de las cards */
-        .h2-cardInfo {
+        .h2-cardInfo_viajes {
             font-size: 12px;
             margin-bottom: 20px;
         }
     
         /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1 img {
+        .CardInfoContainerCard__1_viajes img {
             height: auto;
             max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
             object-fit: cover; /* Mantener la proporción de la imagen */
         }
     
         /* Ajuste del párrafo en las cards */
-        .pCardInfo {
+        .pCardInfo-bici_viajes {
             color: #8D8B8E;
             font-family: Inter;
             font-size: 8px;
@@ -224,7 +223,7 @@ color: #3369FF;
         }
     
         /* Ajuste del subtítulo */
-        .h3CardInfo {
+        .h3CardInfo_viajes {
             font-size: 12px;
             text-align: center;
         }
@@ -245,7 +244,7 @@ color: #3369FF;
         }
     
         /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1 {
+        .CardInfoContainerCard__1_viajes {
             display: flex;
             flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
             gap: 0px;       /* Espacio entre las cards */
@@ -256,7 +255,7 @@ color: #3369FF;
         }
     
         /* Cada card individual */
-        .CardInfoCards__1 {
+        .CardInfoCards__1_viajes {
             flex: 1 40%;
             margin: 10px;
             box-sizing: border-box; 
@@ -264,20 +263,20 @@ color: #3369FF;
         }
     
         /* Ajustar el título dentro de las cards */
-        .h2-cardInfo {
+        .h2-cardInfo_viajes {
             font-size: 12px;
             margin-bottom: 20px;
         }
     
         /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1 img {
+        .CardInfoContainerCard__1_viajes img {
             height: auto;
             max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
             object-fit: cover; /* Mantener la proporción de la imagen */
         }
     
         /* Ajuste del párrafo en las cards */
-        .pCardInfo {
+        .pCardInfo-bici_viajes {
             color: #8D8B8E;
             font-family: Inter;
             font-size: 8px;
@@ -285,7 +284,7 @@ color: #3369FF;
         }
     
         /* Ajuste del subtítulo */
-        .h3CardInfo {
+        .h3CardInfo_viajes {
             font-size: 12px;
             text-align: center;
         }
@@ -306,7 +305,7 @@ color: #3369FF;
         }
     
         /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1 {
+        .CardInfoContainerCard__1_viajes {
             display: flex;
             flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
             gap: 0px;       /* Espacio entre las cards */
@@ -317,7 +316,7 @@ color: #3369FF;
         }
     
         /* Cada card individual */
-        .CardInfoCards__1 {
+        .CardInfoCards__1_viajes {
             flex: 1 40%;
             margin: 10px;
             box-sizing: border-box; 
@@ -325,20 +324,20 @@ color: #3369FF;
         }
     
         /* Ajustar el título dentro de las cards */
-        .h2-cardInfo {
+        .h2-cardInfo_viajes {
             font-size: 12px;
             margin-bottom: 20px;
         }
     
         /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1 img {
+        .CardInfoContainerCard__1_viajes img {
             height: auto;
             max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
             object-fit: cover; /* Mantener la proporción de la imagen */
         }
     
         /* Ajuste del párrafo en las cards */
-        .pCardInfo {
+        .pCardInfo-bici_viajes {
             color: #8D8B8E;
             font-family: Inter;
             font-size: 8px;
@@ -346,7 +345,7 @@ color: #3369FF;
         }
     
         /* Ajuste del subtítulo */
-        .h3CardInfo {
+        .h3CardInfo_viajes {
             font-size: 12px;
             text-align: center;
         }
@@ -366,7 +365,7 @@ color: #3369FF;
         }
     
         /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1 {
+        .CardInfoContainerCard__1_viajes {
             display: flex;
             flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
             gap: 0px;       /* Espacio entre las cards */
@@ -377,7 +376,7 @@ color: #3369FF;
         }
     
         /* Cada card individual */
-        .CardInfoCards__1 {
+        .CardInfoCards__1_viajes {
             flex: 1 40%;
             margin: 10px;
             box-sizing: border-box; 
@@ -385,20 +384,20 @@ color: #3369FF;
         }
     
         /* Ajustar el título dentro de las cards */
-        .h2-cardInfo {
+        .h2-cardInfo_viajes {
             font-size: 12px;
             margin-bottom: 20px;
         }
     
         /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1 img {
+        .CardInfoContainerCard__1_viajes img {
             height: auto;
             max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
             object-fit: cover; /* Mantener la proporción de la imagen */
         }
     
         /* Ajuste del párrafo en las cards */
-        .pCardInfo {
+        .pCardInfo-bici_viajes {
             color: #8D8B8E;
             font-family: Inter;
             font-size: 8px;
@@ -406,7 +405,7 @@ color: #3369FF;
         }
     
         /* Ajuste del subtítulo */
-        .h3CardInfo {
+        .h3CardInfo_viajes {
             font-size: 12px;
             text-align: center;
         }

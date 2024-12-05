@@ -4,7 +4,7 @@ export const dataViajeros = [
       tituloStrong: "Cotizá",
       tituloNormal: "tu seguro",
       isStrongFirst: false,
-      imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740627/web_Icono-asegurado_azul_3_ylxoce.svg"
+      imagen: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733401720/Icono-cotiza_hih1ey.png"
     },
     {
       numero: 2,

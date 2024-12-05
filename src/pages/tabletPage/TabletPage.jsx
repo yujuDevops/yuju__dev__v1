@@ -1,3 +1,4 @@
+import "./tabletPage.css";
 import Carrousel from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonTablet, BannerTablet, DataCardTablet, HeaderTablet, ImgTablet, InfoTablet } from "./components"
@@ -6,6 +7,9 @@ import { AcordeonTablet, BannerTablet, DataCardTablet, HeaderTablet, ImgTablet, 
 export const TabletPage = () => {
   return (
 <>
+<div className="semisphere-container-tablet">
+      <div className="semisphere-tablet"></div>
+      <div className="content-tablet"></div>
 <HeaderTablet/>
 <CotizaAhora 
  titulo="Seguro tablet"
@@ -19,6 +23,8 @@ export const TabletPage = () => {
  <ImgTablet/>
  <AcordeonTablet/>
  <Carrousel Name="Tablet"/>
+
+ </div>
 </>
 
 )

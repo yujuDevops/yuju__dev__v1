@@ -51,7 +51,7 @@
     padding: 0px 0px;
     background-color: #ffffff; 
     overflow: hidden;
-    height: 2600px!important;
+    height: 2500px!important;
     z-index: 0; /* Cambiado a 1 para evitar problemas de superposición */
   }
   

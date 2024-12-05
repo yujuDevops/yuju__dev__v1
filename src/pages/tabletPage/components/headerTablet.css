@@ -1,30 +1,30 @@
-.header-celular .imgPorDefectoMotos{
+.header-tablet .imgPorDefectoMotos{
     display: block;
   }
   
-  .header-celular .imgRemplazoMotos{
+  .header-tablet .imgRemplazoMotos{
     display: none;
   }
-  .header-celular .imgFotoCelular{
+  .header-tablet .imgFotoCelular{
     display: none;
   }
   
-  .header-celular img{
+  .header-tablet img{
     position: absolute;
     display: flex;
     overflow: hidden;
     z-index: 1;
-   
   }
-  .container-celular{
+
+  .container-tablet{
     position: relative;
     z-index: 1;
     top: 120px;
-    left:4%
+    left:4%;
   }
   
   
-  .h1-celular {
+  .h1-tablet {
   z-index: 1;
   color: white;
   font-size: 35px;
@@ -37,7 +37,7 @@
   top: 40px;
   } 
   
-  .h2-celular{
+  .h2-tablet{
   margin-top: 10px;
   color: white;
   font-family: inter;
@@ -45,14 +45,14 @@
   inline-size: 45%;
   }
   
-  .h3-celular{
+  .h3-tablet{
     margin-top: 10px;
     color: white;
     font-family: inter;
     font-weight: 400;
   }
   
-  .buttonMotosHeader {
+  .buttonTabletHeader {
     display: flex;
     position: relative;
     top: 60px;
@@ -60,9 +60,10 @@
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
+    margin-bottom: 440px;
   }
   
-  .buttonMotosHeader a {
+  .buttonTabletHeader a {
     font-size: 12px;
     font-family: 'Inter';
     text-decoration: none;
@@ -74,16 +75,17 @@
   @media 
   (min-width: 1200px) and (max-width: 1600px) {
   
-    .container-celular{
+    .container-tablet{
       top: 50px;
+      z-index: 1;
     }
   
-    .h2-celular{
+    .h2-tablet{
       font-weight: 700;
       font-size: 130%;
     }
   
-    .h3-celular{
+    .h3-tablet{
       margin-bottom: -40px;
       font-size: 90%;
       font-weight: 400!important;
@@ -91,7 +93,7 @@
     }
         
       
-      .buttonMotosHeader {
+      .buttonTabletHeader {
         display: flex;
         position: relative;
         top: 60px;
@@ -99,9 +101,10 @@
         border-radius: 6px;
         border: 0.2px transparent;
         background-color: #33FFCC;
+        margin-bottom: 310px;
       }
       
-      .buttonMotosHeader a {
+      .buttonTabletHeader a {
         font-size: 12px;
         font-family: 'Inter';
         text-decoration: none;
@@ -114,24 +117,24 @@
   
     @media (min-width: 601px) and (max-width: 960px) {
   
-      .header-celular .imgRemplazoMotos {
+      .header-tablet .imgRemplazoMotos {
         display: flex;
     }
   
-    .container-celular{
+    .container-tablet{
       top: 30px;
       width: 90%;
-     
+        margin-bottom: -90px;
     }
   
-    .container-celular{
+    .container-tablet{
       position: relative;
       z-index: 1;
       top: 50px!important;
       left:4%
     }
   
-    .h1-celular {
+    .h1-tablet {
     z-index: 1;
     color: white;
     font-size: 45px;
@@ -144,53 +147,54 @@
     top: 40px;
     } 
     
-    .h2-celular{
+    .h2-tablet{
     margin-top: 10px;
     color: white;
     font-family: inter;
     font-weight: 700!important;
-    font-size: 12px!important;
+    font-size: 14px!important;
     display: -webkit-box;
       -webkit-box-orient: horizontal;
       overflow: hidden;
       width: 80%; /* Ancho específico */
+      inline-size: 570px;
     }
    
     
-    .h3-celular{
+    .h3-tablet{
       margin-top:10px;
       color: white;
       font-family: inter;
       font-weight: 400;
-      font-size: 8px!important;
+      font-size: 12px!important;
     }
   
   
-  .h1-celular{
+  .h1-tablet{
     margin-left: 0.1%;
     font-weight: 500;
     font-size: 150%!important;
-    padding: 4PX;
+    padding: 4px;
   }
   
-  .h2-celular{
+  .h2-tablet{
     font-weight: 500;
-    font-size: 80%;
+    font-size: 90%;
   }
    
-  .h3-celular{
+  .h3-tablet{
     font-size: 60%;
   }
   
-    .header-celular .imgPorDefectoMotos{
+    .header-tablet .imgPorDefectoMotos{
       display: none;
     }
     
-    .header-celular .imgFotoCelular{
+    .header-tablet .imgFotoCelular{
       display: none;
     }
   
-    .buttonMotosHeader {
+    .buttonTabletHeader {
         display: flex;
           position: relative;
           top: 30px;
@@ -200,7 +204,7 @@
           background-color: #33FFCC;
       }
   
-      .buttonMotosHeader a {
+      .buttonTabletHeader a {
         font-size: 8px;
         font-family: 'Inter';
         text-decoration: none;
@@ -217,7 +221,7 @@
    
   @media only screen and (max-width: 600px) {
   
-    .header-celular img{
+    .header-tablet img{
       position: absolute;
       display: flex;
       overflow: hidden;
@@ -226,20 +230,20 @@
     }
   
   
-    .container-celular{
+    .container-tablet{
       top: 30px;
       width: 90%;
      
     }
   
-    .container-celular{
+    .container-tablet{
       position: relative;
       z-index: 1;
       top: 50px!important;
       left:4%
     }
   
-    .h1-celular {
+    .h1-tablet {
     z-index: 1;
     color: white;
     font-size: 45px;
@@ -252,7 +256,7 @@
     top: 40px;
     } 
     
-    .h2-celular{
+    .h2-tablet{
     margin-top: 10px;
     color: white;
     font-family: inter;
@@ -265,7 +269,7 @@
     }
    
     
-    .h3-celular{
+    .h3-tablet{
       margin-top:10px;
       color: white;
       font-family: inter;
@@ -274,7 +278,7 @@
     }
   
   
-  .h1-celular{
+  .h1-tablet{
    
     margin-left: 0.1%;
     font-weight: 500;
@@ -282,30 +286,30 @@
     padding: 4PX;
   }
   
-  .h2-celular{
+  .h2-tablet{
     font-weight: 500;
     font-size: 80%;
   }
   
   
    
-  .h3-celular{
+  .h3-tablet{
     font-size: 60%;
   }
   
-    .header-celular .imgPorDefectoMotos{
+    .header-tablet .imgPorDefectoMotos{
       display: none;
     }
     
-    .header-celular .imgRemplazoMotos{
+    .header-tablet .imgRemplazoMotos{
       display: none;
     }
   
-    .header-celular .imgFotoCelular{
+    .header-tablet .imgFotoCelular{
       display: block;
     }
   
-    .buttonMotosHeader {
+    .buttonTabletHeader {
         display: flex;
           position: relative;
           top: 30px;
@@ -315,41 +319,46 @@
           background-color: #33FFCC;
       }
   
-      .buttonMotosHeader a {
+      .buttonTabletHeader a {
         font-size: 8px;
         font-family: 'Inter';
         text-decoration: none;
         color: #3369FF;
-    }
-  
+    }  
   }
 
 
-  @media only screen and (min-width: 431px) and (max-width: 500px) {
 
-    .header-celular img{
+
+
+
+
+  
+  @media only screen and (min-width: 401px) and (max-width: 430px) {
+  
+    .header-tablet img{
       position: absolute;
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -235px!important;
+     margin-top: -305px!important;
     }
   
   
-    .container-celular{
+    .container-tablet{
       top: 30px;
       width: 90%;
      
     }
   
-    .container-celular{
+    .container-tablet{
       position: relative;
       z-index: 1;
       top: 50px!important;
       left:4%
     }
   
-    .h1-celular {
+    .h1-tablet {
     z-index: 1;
     color: white;
     font-size: 45px;
@@ -362,7 +371,7 @@
     top: 40px;
     } 
     
-    .h2-celular{
+    .h2-tablet{
     margin-top: 10px;
     color: white;
     font-family: inter;
@@ -375,7 +384,7 @@
     }
    
     
-    .h3-celular{
+    .h3-tablet{
       margin-top:10px;
       color: white;
       font-family: inter;
@@ -384,7 +393,7 @@
     }
   
   
-  .h1-celular{
+  .h1-tablet{
    
     margin-left: 0.1%;
     font-weight: 500;
@@ -392,30 +401,30 @@
     padding: 4PX;
   }
   
-  .h2-celular{
+  .h2-tablet{
     font-weight: 500;
     font-size: 80%;
   }
   
   
    
-  .h3-celular{
+  .h3-tablet{
     font-size: 60%;
   }
   
-    .header-celular .imgPorDefectoMotos{
+    .header-tablet .imgPorDefectoMotos{
       display: none;
     }
     
-    .header-celular .imgRemplazoMotos{
+    .header-tablet .imgRemplazoMotos{
       display: none;
     }
   
-    .header-celular .imgFotoCelular{
+    .header-tablet .imgFotoCelular{
       display: block;
     }
   
-    .buttonMotosHeader {
+    .buttonTabletHeader {
         display: flex;
           position: relative;
           top: 30px;
@@ -423,23 +432,24 @@
           border-radius: 8px;
           border: 0.2px transparent;
           background-color: #33FFCC;
+
       }
   
-      .buttonMotosHeader a {
+      .buttonTabletHeader a {
         font-size: 8px;
         font-family: 'Inter';
         text-decoration: none;
         color: #3369FF;
     }
-
-
+  
   }
 
+
+
+
+  @media only screen and (min-width: 361px) and (max-width: 400px) {
   
-  
-  @media only screen and (min-width: 361px) and (max-width: 430px) {
-  
-    .header-celular img{
+    .header-tablet img{
       position: absolute;
       display: flex;
       overflow: hidden;
@@ -448,20 +458,20 @@
     }
   
   
-    .container-celular{
+    .container-tablet{
       top: 30px;
       width: 90%;
      
     }
   
-    .container-celular{
+    .container-tablet{
       position: relative;
       z-index: 1;
       top: 50px!important;
       left:4%
     }
   
-    .h1-celular {
+    .h1-tablet {
     z-index: 1;
     color: white;
     font-size: 45px;
@@ -474,7 +484,7 @@
     top: 40px;
     } 
     
-    .h2-celular{
+    .h2-tablet{
     margin-top: 10px;
     color: white;
     font-family: inter;
@@ -487,7 +497,7 @@
     }
    
     
-    .h3-celular{
+    .h3-tablet{
       margin-top:10px;
       color: white;
       font-family: inter;
@@ -496,7 +506,7 @@
     }
   
   
-  .h1-celular{
+  .h1-tablet{
    
     margin-left: 0.1%;
     font-weight: 500;
@@ -504,30 +514,30 @@
     padding: 4PX;
   }
   
-  .h2-celular{
+  .h2-tablet{
     font-weight: 500;
     font-size: 80%;
   }
   
   
    
-  .h3-celular{
+  .h3-tablet{
     font-size: 60%;
   }
   
-    .header-celular .imgPorDefectoMotos{
+    .header-tablet .imgPorDefectoMotos{
       display: none;
     }
     
-    .header-celular .imgRemplazoMotos{
+    .header-tablet .imgRemplazoMotos{
       display: none;
     }
   
-    .header-celular .imgFotoCelular{
+    .header-tablet .imgFotoCelular{
       display: block;
     }
   
-    .buttonMotosHeader {
+    .buttonTabletHeader {
         display: flex;
           position: relative;
           top: 30px;
@@ -537,7 +547,7 @@
           background-color: #33FFCC;
       }
   
-      .buttonMotosHeader a {
+      .buttonTabletHeader a {
         font-size: 8px;
         font-family: 'Inter';
         text-decoration: none;
@@ -545,116 +555,118 @@
     }
   
   }
-  
+
   @media only screen and (min-width: 100px) and (max-width: 360px) {
 
-    .header-celular img{
-      position: absolute;
-      display: flex;
-      overflow: hidden;
-      z-index: -1;
-     margin-top: -225px!important;
-    }
-  
-  
-    .container-celular{
-      top: 30px;
-      width: 90%;
-     
-    }
-  
-    .container-celular{
-      position: relative;
+    .header-tablet img{
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        z-index: -1;
+       margin-top: -215px!important;
+      }
+    
+    
+      .container-tablet{
+        top: 30px;
+        width: 90%;
+       
+      }
+    
+      .container-tablet{
+        position: relative;
+        z-index: 1;
+        top: 50px!important;
+        left:4%
+      }
+    
+      .h1-tablet {
       z-index: 1;
-      top: 50px!important;
-      left:4%
-    }
-  
-    .h1-celular {
-    z-index: 1;
-    color: white;
-    font-size: 45px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 900!important;
-    padding: 12px;
-    top: 40px;
-    } 
-    
-    .h2-celular{
-    margin-top: 10px;
-    color: white;
-    font-family: inter;
-    font-weight: 700!important;
-    font-size: 12px!important;
-    display: -webkit-box;
-      -webkit-box-orient: horizontal;
-      overflow: hidden;
-      width: 80%; /* Ancho específico */
-    }
-   
-    
-    .h3-celular{
-      margin-top:10px;
+      color: white;
+      font-size: 45px;
+      margin-left: -10px;
+      font-family: inter;
+      background-color: rgba(51, 255, 204, 0.5);
+      inline-size: fit-content;
+      font-weight: 900!important;
+      padding: 12px;
+      top: 40px;
+      } 
+      
+      .h2-tablet{
+      margin-top: 10px;
       color: white;
       font-family: inter;
-      font-weight: 400;
-      font-size: 8px!important;
-    }
-  
-  
-  .h1-celular{
-   
-    margin-left: 0.1%;
-    font-weight: 500;
-    font-size: 100%!important;
-    padding: 4PX;
-  }
-  
-  .h2-celular{
-    font-weight: 500;
-    font-size: 80%;
-  }
-  
-  
-   
-  .h3-celular{
-    font-size: 60%;
-  }
-  
-    .header-celular .imgPorDefectoMotos{
-      display: none;
+      font-weight: 700!important;
+      font-size: 12px!important;
+      display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        overflow: hidden;
+        width: 80%; /* Ancho específico */
+      }
+     
+      
+      .h3-tablet{
+        margin-top:10px;
+        color: white;
+        font-family: inter;
+        font-weight: 400;
+        font-size: 8px!important;
+      }
+    
+    
+    .h1-tablet{
+     
+      margin-left: 0.1%;
+      font-weight: 500;
+      font-size: 100%!important;
+      padding: 4PX;
     }
     
-    .header-celular .imgRemplazoMotos{
-      display: none;
+    .h2-tablet{
+      font-weight: 500;
+      font-size: 80%;
     }
-  
-    .header-celular .imgFotoCelular{
-      display: block;
+    
+    
+     
+    .h3-tablet{
+      font-size: 60%;
     }
-  
-    .buttonMotosHeader {
-        display: flex;
-          position: relative;
-          top: 30px;
-          padding: 8px 30px 8px 30px;
-          border-radius: 8px;
-          border: 0.2px transparent;
-          background-color: #33FFCC;
+    
+      .header-tablet .imgPorDefectoMotos{
+        display: none;
       }
-  
-      .buttonMotosHeader a {
-        font-size: 8px;
-        font-family: 'Inter';
-        text-decoration: none;
-        color: #3369FF;
-    }
-  
+      
+      .header-tablet .imgRemplazoMotos{
+        display: none;
+      }
+    
+      .header-tablet .imgFotoCelular{
+        display: block;
+      }
+    
+      .buttonTabletHeader {
+          display: flex;
+            position: relative;
+            top: 30px;
+            padding: 8px 30px 8px 30px;
+            border-radius: 8px;
+            border: 0.2px transparent;
+            background-color: #33FFCC;
+        }
+    
+        .buttonTabletHeader a {
+          font-size: 8px;
+          font-family: 'Inter';
+          text-decoration: none;
+          color: #3369FF;
+      }
+    
 
   }
+  
+  
   
   
     

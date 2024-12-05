@@ -1,3 +1,4 @@
+import "./consolaPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonConsola, BannerConsola, DataCardConsola, HeaderConsola, ImgEmpresasConsola, InfoConsola } from "./components"
@@ -6,6 +7,9 @@ import { AcordeonConsola, BannerConsola, DataCardConsola, HeaderConsola, ImgEmpr
 export const ConsolaPage = () => {
   return (
     <>
+    <div className="semisphere-container-consola">
+      <div className="semisphere-consola"></div>
+      <div className="content-consola"></div>
 <HeaderConsola/>
 <CotizaAhora 
  titulo="Seguro consola"
@@ -19,7 +23,7 @@ export const ConsolaPage = () => {
  <ImgEmpresasConsola/>
  <AcordeonConsola/>
  <Carrousel Name="Consola"/> 
-
-    </>
+   </div>
+</>
   )
 }

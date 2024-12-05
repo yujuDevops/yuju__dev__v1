@@ -4,7 +4,7 @@ import { dataEmpresasTablets } from "../data"
 export const ImgTablet = () => {
   return (
     <div className="divImgEmpresas-salud">
-    <h2 className="h2ImgEmpresas">
+    <h2 className="h2ImgEmpresas-salud">
     Trabajamos con
     </h2>
     <div>

@@ -1,17 +1,22 @@
-import { dataBeneficiosViajeros } from "../data"
+import "./beneficiosViajero.css";
+import { dataBeneficiosViajeros } from "../data";
 
 
 
 export const BeneficiosViajero = () => {
   return (
-<div className="coberturas-container-ggts">
-      <h2 className="coberturas-title-ggts">Tu seguro de asistencia al viajero te ofrece los siguientes beneficios:</h2>
+<div className="coberturas-container-vgts">
+      <h2 className="coberturas-title-vgts">
+        Tu seguro de asistencia al viajero te ofrece los <br />
+         siguientes beneficios:
+        </h2>
+      
     
-      <div className="coberturas-grid-ggts">
+      <div className="coberturas-grid-vgts">
         {dataBeneficiosViajeros.map((cobertura) => (
-          <div key={cobertura.id} className="cobertura-card-ggts">
-            <img src={cobertura.icon} alt={cobertura.title} className="cobertura-icon-ggts" />
-            <p className="cobertura-title-ggts">{cobertura.title}</p>
+          <div key={cobertura.id} className="cobertura-card-vgts">
+            <img src={cobertura.icon} alt={cobertura.title} className="cobertura-icon-vgts" />
+            <p className="cobertura-title-vgts">{cobertura.title}</p>
           </div>
         ))}
       </div>

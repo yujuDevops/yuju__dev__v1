@@ -1,3 +1,4 @@
+import "./viajeroPage.css";
 import Carrousel from '../../components/carrousel/Carrousel'
 import { CotizaAhora } from '../../components/cotizaAhora/CotizaAhora'
 import { AcordeonViajero, BannerViajero, BeneficiosViajero, DataViajeros, HeaderViajero } from './components'
@@ -7,6 +8,7 @@ import { ImgEmpresasViajero } from './components/ImgEmpresasViajero'
 export const ViajeroPage = () => {
   return (
 <>
+
 <HeaderViajero/>
 <CotizaAhora 
  titulo="Seguro de asistencia al viajero"
@@ -20,6 +22,8 @@ export const ViajeroPage = () => {
  <ImgEmpresasViajero/>
  <AcordeonViajero/>
  <Carrousel Name="Asistencia al Viajero"/>
+
 </>
+
   )
 }

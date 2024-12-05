@@ -78,6 +78,14 @@ color: #3369FF;
         text-align: center;
         max-height: 260px;
     }
+
+    .pCardInfo-bici{
+        color: #8D8B8E;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px;
+    }
     }
 
     @media (min-width: 881px) and (max-width: 1199px) {
