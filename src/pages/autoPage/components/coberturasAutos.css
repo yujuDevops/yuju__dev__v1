@@ -1,0 +1,61 @@
+.coberturas-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #2b2b2b;
+    margin-top: 450px;
+    margin-bottom: -200px;
+  }
+  
+  .coberturas-container h2 {
+    color: #0a58ff;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card-coberturas {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-coberturas .h3-coberturas {
+    color: #0a58ff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card-coberturas .p-coberturas {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #595959;
+  }
+  
+  .card-coberturas button {
+    background-color: #0a58ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
