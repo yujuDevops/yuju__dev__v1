@@ -7,7 +7,6 @@
 
 .ReactModal__Overlay--after-open{ 
     background-color: rgba(104, 104, 104, 0.9)!important;
-    /* padding: 15px 0px 0px 180px; */
     z-index: 1!important;
     padding-left: 300px;
     padding-top: 150px;

@@ -4,7 +4,7 @@
   padding: 0px 0px;
   background-color: #ffffff; 
   overflow: hidden;
-  height: 3175px;
+  height: 2845px;
   z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
 }
 
