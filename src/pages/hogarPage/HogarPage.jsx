@@ -23,7 +23,7 @@ export const HogarPage = () => {
     <BannerHogarPage/>
     <ImgHogar/>
     <AcordeonHogar/>
-    <Carrousel/>
+    <Carrousel Name="Hogar"/>
     </div>
     </div>
     </>

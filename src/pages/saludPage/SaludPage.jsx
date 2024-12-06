@@ -26,7 +26,7 @@ export const SaludPage = () => {
   {/* Acordeon salud depende de otros estilos de css, creo que de AcordeonBici */}
   <ImgEmpresaSalud/>
   <AcordeonSalud/>
-  <Carrousel/>
+  <Carrousel Name="Salud"/>
   </div>
   </div>
   </>

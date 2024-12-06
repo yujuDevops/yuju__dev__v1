@@ -9,7 +9,7 @@ export const AutoPage = () => {
 <CoberturasAuto/>
 <ImgEmpresasAuto/>
 <AcordeonAuto/>
-<Carrousel/>
+<Carrousel Name="Auto"/>
 </>
   )
 }

@@ -30,7 +30,7 @@ export const BiciPage = () => {
  <BannerBici/>
  <ImgBiciEmpresas/>
  <AcordeonBici/>
- <Carrousel/>
+ <Carrousel Name="Bicicleta"/>
 
  </div>
  </div>

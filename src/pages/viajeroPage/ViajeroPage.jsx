@@ -8,9 +8,7 @@ import { ImgEmpresasViajero } from './components/ImgEmpresasViajero'
 export const ViajeroPage = () => {
   return (
 <>
-<div className="semisphere-container-viajero">
-      <div className="semisphere-viajero"></div>
-      <div className="content-viajero">
+
 <HeaderViajero/>
 <CotizaAhora 
  titulo="Seguro de asistencia al viajero"
@@ -23,9 +21,9 @@ export const ViajeroPage = () => {
  <BannerViajero/>
  <ImgEmpresasViajero/>
  <AcordeonViajero/>
- <Carrousel/>
- </div>
- </div>
+ <Carrousel Name="Asistencia al Viajero"/>
+
 </>
+
   )
 }

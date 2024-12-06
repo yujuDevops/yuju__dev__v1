@@ -23,7 +23,7 @@ export const RetiroPage = () => {
   <BannerRetiro/>
   <ImgEmpresasRetiro/>
   <AcordeonRetiro/>
-  <Carrousel/>
+  <Carrousel Name="Retiro"/>
     </>
   )
 }
