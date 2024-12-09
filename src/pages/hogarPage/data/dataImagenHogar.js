@@ -16,36 +16,41 @@ export const dataImagMotos = [
     },
     {
         id: 4,
+        titulo: "Experta",
+        foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1727804828/EXPERTA_jksavm.png"
+    },
+    {
+        id: 5,
         titulo: "Mercantil Andina",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840210/MERCANTIL_nfqqco.png"
     },
     {
-        id: 5,
+        id: 6,
         titulo: "Mapfre",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840232/MAPFRE_umlkiw.png"
     },
     {
-        id: 6,
+        id: 7,
         titulo: "ATM Seguros",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840261/ATM_ohp4cf.png"
     },
     {
-        id: 7,
+        id: 8,
         titulo: "HDI Seguros",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840285/HDI_wpbawf.png"
     },
     {
-        id: 8,
+        id: 9,
         titulo: "Libra Seguros",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840324/LIBRA_npopkj.png"
     },
     {
-        id: 9,
+        id: 10,
         titulo: "Integrity",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1723477322/INTEGRITY_nlrpmd.png"
     },
     {
-        id: 10,
+        id: 11,
         titulo: "Zurich",
         foto:"https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
     }

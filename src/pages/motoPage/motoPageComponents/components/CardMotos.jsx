@@ -16,7 +16,7 @@ export const CardMotos = () => {
                     </li>
                 ))}
             </ul>
-            <button className="buttonCardMotos">Contratar</button>
+            <button onClick={() => window.location.href = "https://wa.me/5491156307246"} className="buttonCardMotos">Contratar</button>
         </div>
     ))}
 </div>

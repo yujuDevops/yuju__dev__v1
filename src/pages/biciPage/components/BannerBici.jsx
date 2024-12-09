@@ -15,7 +15,7 @@ export const BannerBici = () => {
 
 </h2>
 <div className="buttonbiciBanner">
-  <a href="">
+  <a href="https://wa.me/5491156307246">
   <button>Escribinos</button>
   </a>
 </div>

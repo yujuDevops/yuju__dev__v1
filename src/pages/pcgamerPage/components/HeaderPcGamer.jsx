@@ -11,7 +11,8 @@ export const HeaderPcGamer = () => {
     <h1 className='h1-pcgamers'>SEGURO DE PC GAMER</h1>
     <h2 className='h2-pcgamers'>Que nada te limite en tu juego. Asegurá tu PC Gamer al mejor precio.</h2>
     <h3 className='h3-pcgamers'>Tenemos el mejor seguro para tu PC Gamer, para que puedas tener la mejor <br/>experiencia de juego posible. Contratalo hoy, 100% online.</h3>
-    <button className='buttonpcgamersHeader'><a href="" target="_blank">Cotizá</a></button>
+    <button className='buttonpcgamersHeader'><a href="
+https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
     </div>
   
     </header>

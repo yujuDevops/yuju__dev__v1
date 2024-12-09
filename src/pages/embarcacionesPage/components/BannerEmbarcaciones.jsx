@@ -16,7 +16,7 @@ export const BannerEmbarcaciones = () => {
    </h2>
 
 <div className="buttonMotoBanner">
-  <a href="">
+  <a href="https://wa.me/5491156307246">
   <button>Escribinos</button>
   </a>
 </div>

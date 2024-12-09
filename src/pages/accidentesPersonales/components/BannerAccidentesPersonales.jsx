@@ -12,7 +12,8 @@ export const BannerAccidentesPersonales = () => {
      ¿Querés saber mas?
     </h2>
     <div className="buttonMotoBanner-ap">
-      <a href="">
+      <a href="
+http://www.motos.rus.com.ar/9254">
       <button>Te asesoramos</button>
       </a>
     </div>

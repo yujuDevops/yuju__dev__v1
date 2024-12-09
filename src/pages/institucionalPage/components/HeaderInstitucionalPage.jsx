@@ -11,7 +11,8 @@ export const HeaderInstitucionalPage = () => {
     <h1 className='h1-industria'>SOMOS YUJU</h1>
 
     <h3 className='h3-industria'>Somos una empresa joven, dinámica y comprometida con la innovación y la sostenibilidad. <br/>Nacimos de la mano de Nimbus Bróker de Seguros, una empresa con más de 15 años <br/> de experiencia y trayectoria en el sector.</h3>
-    <button className='buttonIndustriaHeader'><a href="">Cotizá</a></button>
+    <button className='buttonIndustriaHeader'><a href="
+https://wa.me/5491156307246">Cotizá</a></button>
     </div>
   
     </header>

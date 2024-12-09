@@ -13,7 +13,7 @@ export const BannerIndustrial = () => {
     
     </h2>
     <div className="buttonIndustrialBanner">
-      <a href="">
+      <a href="https://wa.me/5491156307246">
       <button>Te asesoramos</button>
       </a>
     </div>

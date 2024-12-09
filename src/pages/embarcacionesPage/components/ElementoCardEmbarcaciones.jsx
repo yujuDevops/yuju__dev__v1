@@ -20,7 +20,7 @@ export const ElementoCardEmbarcaciones = ({title,features,buttonText}) => {
           </li>
         ))}
       </ul>
-      <button className="card-button-embarcacion-wf2">{buttonText}</button>
+      <button onClick={()=> window.location.href="https://wa.me/5491156307246" } className="card-button-embarcacion-wf2">{buttonText}</button>
     </div>
   </>
   )

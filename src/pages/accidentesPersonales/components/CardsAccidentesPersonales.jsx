@@ -11,7 +11,7 @@ export const CardsAccidentesPersonales = () => {
            <img src={card.imageUrl} alt={card.title} className="card-image" />
           <h3>{card.title}</h3>
           <p>{card.description}</p>
-          <button>Contratar</button>
+          <button onClick={()=> window.location.href="https://wa.me/1156307246" }> Contratar</button>
         </div>
       ))}
     </div>

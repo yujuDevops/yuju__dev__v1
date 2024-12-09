@@ -10,7 +10,7 @@ export const CoberturasAuto = () => {
               <div key={index} className="card-coberturas-auto">
                 <h3 className='h3-coberturas-auto'>{cobertura.title}</h3>
                 <p className='p-coberturas-auto'>{cobertura.description}</p>
-                <button>Contratar</button>
+                <button onClick={() => window.location.href = "https://wa.me/5491156307246"} >Contratar</button>
               </div>
             ))}
           </div>

@@ -1,5 +1,5 @@
 import "./headerViajero.css";
-import React from 'react'
+
 
 export const HeaderViajero = () => {
   return (
@@ -12,7 +12,7 @@ export const HeaderViajero = () => {
     <h1 className='h1-viejero'>SEGURO DE ASISTENCIA AL VIAJERO</h1>
     <h2 className='h2-viejero'>Creá tu propia historia. Viajá con la seguridad de que estás protegido con Yuju.</h2>
     <h3 className='h3-viejero'>Tenemos el plan que se adapta a vos y a tu tipo de viaje, con la cobertura más amplia y personalizada</h3>
-    <button className='buttonviejeroHeader'><a href="" target="_blank">Cotizá</a></button>
+    <button className='buttonviejeroHeader'><a href="https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
     </div>
   
     </header>
