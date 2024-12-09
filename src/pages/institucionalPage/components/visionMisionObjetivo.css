@@ -1,37 +1,61 @@
 .cardVision-container {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background: white; /* Color de fondo */
+  border-radius: 22px;
+  padding: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 250px;
+  margin-bottom: 70px;
+  position: relative;
+  width: 93%;
+  margin-left: 35px;
+}
+
+.cardVision-separator::before {
+  position: absolute;
+  width: 0.111px;
+  content: "";
+  border-left: 0.1px solid rgba(226, 226, 226, 1);
+  height: 80%;
+  box-sizing: border-box;
+}
+
+.cardVision {
+  text-align: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.cardVision-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.cardVision-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(51, 105, 255, 1);
+  font-family: inter;
+  margin-bottom: 10px;
+}
+
+.cardVision-text {
+  font-size: 1rem;
+  color: rgba(141, 139, 142, 1);
+  font-weight: 400;
+  font-family: inter;
+}
+
+@media (max-width: 768px) {
+  .cardVision-container {
+    flex-direction: column;
     align-items: center;
-    background-color: #f9fafa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
   .cardVision {
-    text-align: center;
-    padding: 20px;
-    max-width: 300px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
   }
-  
-  .cardVision-icon {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 15px;
-  }
-  
-  .cardVision-title {
-    font-size: 1.5rem;
-    color: #0044cc;
-    margin-bottom: 10px;
-  }
-  
-  .cardVision-text {
-    font-size: 1rem;
-    color: #555555;
-    line-height: 1.5;
-  }
-  
+}

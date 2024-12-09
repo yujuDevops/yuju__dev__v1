@@ -16,6 +16,7 @@ export const VisionMisionObjetivo = () => {
               personalizadas.
             </p>
           </div>
+          <div className="cardVision-separator"></div>
           <div className="cardVision">
             <img
               src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733235231/web_Icono-mision_qiip2m.svg"
@@ -30,6 +31,7 @@ export const VisionMisionObjetivo = () => {
               y confiable.
             </p>
           </div>
+          <div className="cardVision-separator"></div>
           <div className="cardVision">
             <img
               src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733235238/web_Icono-objetivos_qktorb.svg"

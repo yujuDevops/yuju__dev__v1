@@ -1,3 +1,5 @@
+import "./bannerConsola.css";
+
 import React from 'react'
 
 export const BannerConsola = () => {
@@ -7,7 +9,7 @@ export const BannerConsola = () => {
       <img className="imgBannerMotosTablet" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732293710/Banner-CTA-NOTEBOOK_l1xj8j.svg" alt="" />
       <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732294859/Banner-contacto-celular_rge8dd.svg" alt="" />
     
-    <h2 className="h2Banner">Disfrutá sin preocupaciones <span className="spanBanner"> 
+    <h2 className="h2Banner-pc">Disfrutá sin preocupaciones <span className="spanBanner"> 
     .Yuju te brinda el seguro de consola más <br/>
     completo y accesible. ¿Querés saber más?
     <br />

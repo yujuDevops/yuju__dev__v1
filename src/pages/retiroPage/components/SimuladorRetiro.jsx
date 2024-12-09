@@ -92,9 +92,12 @@ export const SimuladorRetiro = () => {
         </p>
       </div>
     </div>
+    <div className="legalRetiro">
     <h3>
     *El cálculo es una aproximación y no tiene en cuenta el impuesto de sellos provincial que varía según cada provincia. La simulación es a fines ilustrativos y no implica un compromiso contractual.
     </h3>
+    </div>
+    
             </>
   );
 };

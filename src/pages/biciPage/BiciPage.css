@@ -9,16 +9,7 @@
 
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-    .semisphere-container-bici {
-      position: relative;
-      width: 100%;
-      padding: 0px 0px;
-      background-color: #ffffff; 
-      overflow: hidden;
-      height: 2530px;
-      z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
-    }
-    
+
     .semisphere-bici {
       position: absolute;
       top: 385px;

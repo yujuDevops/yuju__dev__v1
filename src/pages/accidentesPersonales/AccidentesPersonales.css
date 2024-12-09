@@ -1,12 +1,3 @@
-.semisphere-container-acc-per {
-  position: relative;
-  width: 100%;
-  padding: 0px 0px;
-  background-color: #ffffff; 
-  overflow: hidden;
-  height: 3300px;
-  z-index: 0; /* Cambiado a 1 para evitar problemas de superposición */
-}
 
 .semisphere-acc-per {
   position: absolute;
@@ -45,15 +36,7 @@
 
 @media(min-width: 1200px) and (max-width: 1600px) {
 
-  .semisphere-container-acc-per {
-    position: relative;
-    width: 100%;
-    padding: 0px 0px;
-    background-color: #ffffff; 
-    overflow: hidden;
-    height: 2500px!important;
-    z-index: 0; /* Cambiado a 1 para evitar problemas de superposición */
-  }
+
   
   .semisphere-acc-per {
     position: absolute;
@@ -96,15 +79,7 @@
 
 @media(min-width: 601px) and (max-width: 900px) {
 
-  .semisphere-container-acc-per {
-    position: relative;
-    width: 100%;
-    padding: 0px 0px;
-    background-color: #ffffff; 
-    overflow: hidden;
-    height: 2560px!important;
-    z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
-  }
+
   
   .semisphere-acc-per {
     position: absolute;
@@ -144,15 +119,7 @@
 
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-    .semisphere-container-acc-per {
-      position: relative;
-      width: 100%;
-      padding: 0px 0px;
-      background-color: #ffffff; 
-      overflow: hidden;
-      height: 2830px;
-      z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
-    }
+
     
     .semisphere-acc-per {
       position: absolute;
@@ -199,14 +166,6 @@
      display: none;
     }
     
-    .semisphere-container-acc-per {
-      position: relative;
-      width: 100%;
-      padding: 0px 0px;
-      background-color: #ffffff; 
-      overflow: hidden;
-      height: 2530px;
-      z-index: 0; /* Cambiado a 1 para evitar problemas de superposición */
-    }
+
 
   }

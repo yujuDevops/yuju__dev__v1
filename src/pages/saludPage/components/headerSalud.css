@@ -92,7 +92,7 @@ inline-size: 45%;
 /* ////////notebook////////// */
 
 @media 
-(min-width: 1200px) and (max-width: 1600px) {
+(min-width: 1401px) and (max-width: 1600px) {
   .container-motos{
    
     top: 50px;
@@ -147,6 +147,65 @@ inline-size: 45%;
 
     
   }
+
+
+  @media 
+  (min-width: 1200px) and (max-width: 1400px) {
+    .container-motos{
+     
+      top: 50px;
+      
+    }
+  
+    .h2-motos{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3-motos{
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+    }
+        
+      
+      .buttonMotosHeader {
+        display: flex;
+        position: relative;
+        top: 60px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonMotosHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+      
+      .buttonSaludHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonSaludHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+  
+      
+    }
+  
 
 
 @media (min-width: 601px) and (max-width: 900px){

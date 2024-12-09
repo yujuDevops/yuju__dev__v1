@@ -22,7 +22,7 @@ div .imgBannerMotosTablet{
    left: 4%;
 }
 
-.h2Banner{
+.h2Banner-retiro{
     position: relative;
     top: 125px;
     font-family: Inter;
@@ -36,7 +36,7 @@ div .imgBannerMotosTablet{
     font-weight: 300; 
 }
 
-.buttonNotebookBanner button{
+.buttonRetiroBanner button{
     position: relative;
     top: 205px;
     left: 80px;
@@ -49,37 +49,37 @@ div .imgBannerMotosTablet{
     cursor: pointer;
 }
 
-.buttonNotebookBanner a {
+.buttonRetiroBanner a {
     font-size: 12px;
     font-family: inter;
     color: #3369FF;
 }
 
 
+@media (min-width: 1401px) and (max-width: 1600px) {
 
-@media 
-(min-width: 1401px) and (max-width: 1600px) {
-
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
-        top: 115px;
+        top: 145px;
         font-family: Inter;
         font-weight: 700;
         font-size: 16px;
         left: 4%;
         color: #31EEC3;
     }
+
     .vidBanner{
         top: 90px;
         margin-bottom: -100px;
     }
+
     .imgBannerContratar{
         margin-top: 90px;
     }
 
-    .buttonNotebookBanner button{
+    .buttonRetiroBanner button{
         position: relative;
-        top: 175px;
+        top: 205px;
         left: 50px;
         background-color: #31EEC3;
         border-radius: 6px;
@@ -90,7 +90,7 @@ div .imgBannerMotosTablet{
         cursor: pointer;
     }
 
-    .buttonNotebookBanner a {
+    .buttonRetiroBanner a {
         font-size: 12px;
         font-family: inter;
         color: #3369FF;
@@ -124,7 +124,7 @@ div .imgBannerMotosTablet{
 @media 
 (min-width: 1200px) and (max-width: 1400px) {
 
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
         top: 125px;
         font-family: Inter;
@@ -141,7 +141,7 @@ div .imgBannerMotosTablet{
         margin-top: 90px;
     }
 
-    .buttonNotebookBanner button{
+    .buttonRetiroBanner button{
         position: relative;
         top: 175px;
         left: 50px;
@@ -154,7 +154,7 @@ div .imgBannerMotosTablet{
         cursor: pointer;
     }
 
-    .buttonNotebookBanner a {
+    .buttonRetiroBanner a {
         font-size: 12px;
         font-family: inter;
         color: #3369FF;
@@ -185,7 +185,7 @@ div .imgBannerMotosTablet{
 
 @media (min-width: 601px) and (max-width: 960px) {
 
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
         top: 102px;
         font-family: Inter;
@@ -203,9 +203,9 @@ div .imgBannerMotosTablet{
         margin-top: 90px;
     }
 
-    .buttonNotebookBanner button{
+    .buttonRetiroBanner button{
         position: relative;
-        top: 136px;
+        top: 126px;
         left: 36px;
         background-color: #31EEC3;
         border-radius: 6px;
@@ -216,7 +216,7 @@ div .imgBannerMotosTablet{
         cursor: pointer;
     }
 
-    .buttonNotebookBanner a {
+    .buttonRetiroBanner a {
         font-size: 12px;
         font-family: inter;
         color: #3369FF;
@@ -262,7 +262,7 @@ div .imgBannerMotosTablet{
         display: none;
 
     }
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
         top: 80px;
         font-family: Inter;
@@ -281,9 +281,9 @@ div .imgBannerMotosTablet{
         }
         
 
-        .buttonNotebookBanner button{
+        .buttonRetiroBanner button{
             position: relative;
-        top: 130px;
+        top: 110px;
         left: 10px;
         background-color: #31EEC3;
         border-radius: 4px;
@@ -295,7 +295,7 @@ div .imgBannerMotosTablet{
         font-size: 8px;
         }
     
-        .buttonNotebookBanner a {
+        .buttonRetiroBanner a {
             font-size: 8px;
             font-family: inter;
             color: #3369FF;
@@ -325,7 +325,7 @@ div .imgBannerMotosTablet{
         display: none;
 
     }
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
         top: 80px;
         font-family: Inter;
@@ -344,9 +344,9 @@ div .imgBannerMotosTablet{
         }
         
 
-        .buttonNotebookBanner button{
-        position: relative;
-        top:105px;
+        .buttonRetiroBanner button{
+            position: relative;
+        top: 95px;
         left: 10px;
         background-color: #31EEC3;
         border-radius: 4px;
@@ -358,7 +358,7 @@ div .imgBannerMotosTablet{
         font-size: 8px;
         }
     
-        .buttonNotebookBanner a {
+        .buttonRetiroBanner a {
             font-size: 8px;
             font-family: inter;
             color: #3369FF;
@@ -383,7 +383,7 @@ div .imgBannerMotosTablet{
         display: none;
 
     }
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
         top: 80px;
         font-family: Inter;
@@ -402,7 +402,7 @@ div .imgBannerMotosTablet{
         }
         
 
-        .buttonNotebookBanner button{
+        .buttonRetiroBanner button{
             position: relative;
         top: 90px;
         left: 10px;
@@ -416,7 +416,7 @@ div .imgBannerMotosTablet{
         font-size: 8px;
         }
     
-        .buttonNotebookBanner a {
+        .buttonRetiroBanner a {
             font-size: 12px;
             font-family: inter;
             color: #3369FF;
@@ -441,7 +441,7 @@ div .imgBannerMotosTablet{
         display: none;
 
     }
-    .h2Banner{
+    .h2Banner-retiro{
         position: relative;
         top: 72px;
         font-family: Inter;
@@ -460,7 +460,7 @@ div .imgBannerMotosTablet{
         }
         
 
-        .buttonNotebookBanner button{
+        .buttonRetiroBanner button{
             position: relative;
         top: 85px;
         left: 10px;
@@ -474,7 +474,7 @@ div .imgBannerMotosTablet{
         font-size: 8px;
         }
     
-        .buttonNotebookBanner a {
+        .buttonRetiroBanner a {
             font-size: 8px;
             font-family: inter;
             color: #3369FF;

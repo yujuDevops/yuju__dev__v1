@@ -1,6 +1,144 @@
-.containerNewsletterContacto{
- background-color: rgba(179, 179, 175, 0.808);
-   margin-top: 600px; 
-   margin-bottom: 100px;
+
+
+
+.containerNewsletterContacto-gg{
+  background-color: rgba(179, 179, 175, 0.808);
+    margin-top: 580px; 
+    margin-bottom: 100px;
+   
+ }
+
+ @media only screen and (min-width: 1401px) and (max-width: 1600px) {
+
   
+  .semisphere-contacto {
+    position: absolute;
+    top: 385px;
+    right: -877px;
+    width: 818px;
+    height: 1000px;
+    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
+    border-bottom-right-radius: 345px;
+    transform: translate(-65%, -48%);
+    pointer-events: none; /* Permite clics a través de la semiesfera */
+    z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
+  }
+  
+  .content-contacto {
+    position: relative;
+    z-index: 2; /* Aseguramos que el contenido esté por encima de la semiesfera */
+  }
+
+  .card-contacto {
+    position: relative; /* Cambiado de absolute a relative para mantener el flujo del documento */
+    z-index: 3; /* Asegura que esté por encima del contenedor y semiesfera */
+    margin-top: 50px; /* Ajusta el espaciado según sea necesario */
+    width: 80%; /* Ajusta el tamaño de la tarjeta si es necesario */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade algo de profundidad */
+  }
+
+
+
+  .containerNewsletterContacto-gg{
+    background-color: rgba(179, 179, 175, 0.808);
+      margin-top: 500px; 
+      margin-bottom: 100px;
+     z-index: 12;
+   }
+
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+
+
+  .semisphere-contacto {
+    position: absolute;
+    top: 385px;
+    right: -877px;
+    width: 818px;
+    height: 1000px;
+    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
+    border-bottom-right-radius: 345px;
+    transform: translate(-65%, -48%);
+    pointer-events: none; /* Permite clics a través de la semiesfera */
+    z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
+  }
+  
+  .content-contacto {
+    position: relative;
+    z-index: 2; /* Aseguramos que el contenido esté por encima de la semiesfera */
+  }
+
+  .card-contacto {
+    position: relative; /* Cambiado de absolute a relative para mantener el flujo del documento */
+    z-index: 3; /* Asegura que esté por encima del contenedor y semiesfera */
+    margin-top: 50px; /* Ajusta el espaciado según sea necesario */
+    width: 80%; /* Ajusta el tamaño de la tarjeta si es necesario */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade algo de profundidad */
+  }
+
+
+
+  .containerNewsletterContacto-gg{
+    background-color: rgba(179, 179, 175, 0.808);
+      margin-top: 500px; 
+      margin-bottom: 100px;
+     z-index: 12;
+   }
+
+
+  .containerNewsletterContacto-gg{
+    background-color: rgba(179, 179, 175, 0.808);
+      margin-top: 420px; 
+      margin-bottom: 100px;
+     
+   }
+
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+
+
+.semisphere-contacto {
+  position: absolute;
+  top: 385px;
+  right: -877px;
+  width: 818px;
+  height: 1000px;
+  background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
+  border-bottom-right-radius: 345px;
+  transform: translate(-65%, -48%);
+  pointer-events: none; /* Permite clics a través de la semiesfera */
+  z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
+}
+
+.content-contacto {
+  position: relative;
+  z-index: 2; /* Aseguramos que el contenido esté por encima de la semiesfera */
+}
+
+.card-contacto {
+  position: relative; /* Cambiado de absolute a relative para mantener el flujo del documento */
+  z-index: 3; /* Asegura que esté por encima del contenedor y semiesfera */
+  margin-top: 50px; /* Ajusta el espaciado según sea necesario */
+  width: 80%; /* Ajusta el tamaño de la tarjeta si es necesario */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade algo de profundidad */
+}
+
+
+.containerNewsletterContacto-gg{
+  background-color: rgba(179, 179, 175, 0.808);
+    margin-top: 320px; 
+    margin-bottom: 100px;
+   
+ }
+
 }

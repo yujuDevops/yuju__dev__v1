@@ -1,4 +1,4 @@
-
+import "./bannerCelulares.css";
 
 export const BannerCelulares = () => {
     return (

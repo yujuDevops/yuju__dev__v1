@@ -55,7 +55,34 @@ color: #3369FF;
 }
 
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .CardInfoContainerCard__1_viajes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 20px;
+        padding: 20px 0px 0px 60px;
+    }
+    
+    .CardInfoContainerCard__1_viajes img{
+        width: 45%;
+        object-fit: cover;
+    }
+
+    .CardInfoCards__1_viajes {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #8d8b8e40;
+        width: 142%;
+        max-width: 280px;
+        padding: 5px 20px;
+        text-align: center;
+        max-height: 260px;
+    }
+    }
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
     .CardInfoContainerCard__1_viajes{
         display: flex;
         flex-wrap: wrap;

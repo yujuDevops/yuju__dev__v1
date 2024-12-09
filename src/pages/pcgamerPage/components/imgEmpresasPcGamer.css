@@ -1,13 +1,13 @@
 
-.divImg-pcEmpresas-pc-notebook {
+.divImg-pcEmpresas-pc {
     margin-top: 425px;
 }
 
-.h2ImgEmpresas-pc-notebook {
+.h2ImgEmpresas-pc {
     font-family: Inter;
     font-weight: 800;
     font-size: 16px;
-    margin-top: -60px;
+    margin-top: 330px;
     margin-bottom: 40px;
     margin-left: 4%;
     color: #3369FF;
@@ -34,16 +34,16 @@
 }
 
 
-@media (min-width: 1200px) and (max-width: 1600px) {
-    .divImg-pcEmpresas-pc-notebook {
-        margin-top: 350px;
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .divImg-pcEmpresas-pc {
+        margin-top: 500px;
     }
 
-    .h2ImgEmpresas-pc-notebook {
+    .h2ImgEmpresas-pc {
         font-family: "inter";
         font-weight: 800;
         font-size: 16px;
-        margin-top: -60px;
+        margin-top: 270px;
         margin-bottom: 40px;
         margin-left: 4%;
         color: #3369FF;

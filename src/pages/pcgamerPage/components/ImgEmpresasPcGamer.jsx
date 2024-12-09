@@ -1,6 +1,6 @@
 import "./imgEmpresasPcGamer.css";
-import React from 'react'
-import { dataEmpresasPcGamer } from '../data'
+import React from 'react';
+import { dataEmpresasPcGamer } from '../data';
 
 export const ImgEmpresasPcGamer = () => {
     return (

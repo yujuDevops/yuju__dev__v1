@@ -33,6 +33,15 @@ export const Carrousel = ( {Name} ) => {
     initialSlide: 0,
     responsive: [
       {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
         breakpoint: 1400,
         settings: {
           slidesToShow: 4,

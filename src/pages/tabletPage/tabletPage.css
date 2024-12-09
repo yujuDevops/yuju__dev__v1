@@ -1,13 +1,20 @@
-@media (min-width: 1200px) and (max-width: 1600px) {
-    .semisphere-container-tablet {
-      position: relative;
-      width: 100%;
-      padding: 0px 0px;
-      background-color: #ffffff; 
-      overflow: hidden;
-      height: 2400px;
-      z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
-    }
+@media (min-width: 1401px) and (max-width: 1600px) {
+    
+  .semisphere-tablet {
+    position: absolute;
+    top: 385px;
+    right: -877px;
+    width: 818px;
+    height: 1000px;
+    background: radial-gradient(ellipse, rgba(51, 255, 204, 1) -70%, rgba(235, 254, 249, 0) 67%);
+    border-bottom-right-radius: 345px;
+    transform: translate(-65%, -48%);
+    pointer-events: none; /* Permite clics a través de la semiesfera */
+    z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
     
     .semisphere-tablet {
       position: absolute;

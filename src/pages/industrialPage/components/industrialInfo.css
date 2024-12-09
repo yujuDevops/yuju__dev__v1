@@ -84,9 +84,8 @@
 
 
 
-
 @media 
-(min-width: 1200px) and (max-width: 1600px) { 
+(min-width: 1401px) and (max-width: 1600px) { 
 
   .industrial-icon-celular {
     display: none;
@@ -100,7 +99,7 @@
   gap: 20px;
   justify-content: space-between;
   padding: 20px;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: -20px;
 }
 
@@ -117,7 +116,101 @@
 
 /* Icono de la tarjeta */
 .industrial-icon {
-  width: 100%;
+  width: 95%;
+  height: auto;
+  margin-right: 15px;
+  position: absolute;
+}
+
+/* Título de la tarjeta */
+.industrial-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding-top: 5px;
+}
+
+/* Descripción de la tarjeta */
+.industrial-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-top: 5px;
+  padding-right: 20px;
+}
+
+/* Línea de puntos estilo separador */
+.industrial-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  right: 10px;
+  height: 1px;
+}
+
+.industrial-padre-text p{
+  font-size: 10px;
+  position: relative;
+  top: 20px;
+  right: -80px;
+  width: 90%;
+  font-family: 'Inter';
+  color: rgba(141, 139, 142, 1);
+}
+
+.industrial-padre-text h3 {
+  font-size: 12px;
+  position: relative;
+  top: 20px;
+  right: -80px;
+  width: 90%;
+  font-family: 'Inter';
+  color: rgba(141, 139, 142, 1);
+  font-weight: 800;
+}
+
+}
+
+
+
+
+
+
+@media 
+(min-width: 1200px) and (max-width: 1400px) { 
+
+  .industrial-icon-celular {
+    display: none;
+  }
+  
+
+/* Contenedor principal */
+.industrial-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: -20px;
+}
+
+/* Tarjeta individual */
+.industrial-card {
+  background-color: transparent; 
+  padding: 20px;
+  width: calc(50% - 10px);
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Icono de la tarjeta */
+.industrial-icon {
+  width: 95%;
   height: auto;
   margin-right: 15px;
   position: absolute;

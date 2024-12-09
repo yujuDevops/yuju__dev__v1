@@ -17,9 +17,8 @@ export const RetiroPage = () => {
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733146003/Retiro_opfgnr.png"
  />
-
-  <SimuladorRetiro/>
   <SegundoParrafoRetiro/>
+  <SimuladorRetiro/>
   <BannerRetiro/>
   <ImgEmpresasRetiro/>
   <AcordeonRetiro/>

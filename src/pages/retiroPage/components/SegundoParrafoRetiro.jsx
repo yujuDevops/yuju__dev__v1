@@ -6,7 +6,7 @@ export const SegundoParrafoRetiro = () => {
           <div className="text-section">
             <p>
               ¿Te gustaría tener un futuro seguro y confiable con el seguro de retiro de Yuju?{" "}
-              <a >¡Usá nuestro simulador y descubrí cómo podés armar tu plan personalizado y flexible!</a> 
+              <a >{" "}¡Usá nuestro simulador y descubrí cómo podés armar tu plan personalizado y flexible! {" "}</a> 
               Con nuestro simulador podés ver cuánto podés ahorrar con tus aportes mensuales a planes de ahorro planificado.
             </p>
             <p>

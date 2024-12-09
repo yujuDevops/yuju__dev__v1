@@ -1,0 +1,60 @@
+.arrow {
+    margin-left: 10px; /* Espacio entre el título y la flecha */
+    font-size: 16px; /* Tamaño de la flecha */
+    transition: transform 0.3s ease; /* Transición suave para la rotación */
+    color: rgba(51, 105, 255, 1);
+    display: flex;
+    position: relative;
+    top: -10px;
+    left: 1725px;
+  }
+  
+  .arrow-open i {
+    transform: rotate(0deg); /* Rotamos el ícono 180 grados cuando está abierto */
+  }
+  
+  .arrow-closed i {
+    transform: rotate(3600deg); /* Ícono sin rotar cuando está cerrado */
+  }
+  
+  .divHijoAcordeon {
+    display: none; /* Ocultamos el contenido por defecto */
+    transition: max-height 0.3s ease-in-out; /* Transición para la apertura y cierre */
+  }
+  
+  .divHijoAcordeon.show {
+    display: block; /* Mostramos el contenido cuando se abre el acordeón */
+  }
+  
+
+  @media 
+(min-width: 1200px) and (max-width: 1600px) { 
+
+    .arrow {
+        margin-left: 10px; /* Espacio entre el título y la flecha */
+        font-size: 16px; /* Tamaño de la flecha */
+        transition: transform 0.3s ease; /* Transición suave para la rotación */
+        color: rgba(51, 105, 255, 1);
+        display: flex;
+        position: relative;
+        top: -10px;
+        left: 1425px;
+      }
+      
+      .arrow-open i {
+        transform: rotate(0deg); /* Rotamos el ícono 180 grados cuando está abierto */
+      }
+      
+      .arrow-closed i {
+        transform: rotate(3600deg); /* Ícono sin rotar cuando está cerrado */
+      }
+      
+      .divHijoAcordeon {
+        display: none; /* Ocultamos el contenido por defecto */
+        transition: max-height 0.3s ease-in-out; /* Transición para la apertura y cierre */
+      }
+      
+      .divHijoAcordeon.show {
+        display: block; /* Mostramos el contenido cuando se abre el acordeón */
+      }
+}

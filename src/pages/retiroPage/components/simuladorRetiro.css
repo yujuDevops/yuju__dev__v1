@@ -2,13 +2,13 @@
 .retirement-simulator {
     font-family: inter;
     color: #333;
-    max-width: 1165px;
+    max-width: 1755px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 28px;
     box-shadow: 0 0 10px #8d8b8e40;
-    margin-top: 100px;
+    margin-top: 0px;
   }
   
   /* Sliders */
@@ -107,7 +107,7 @@
     padding: 20px;
     text-align: center;
     position: relative;
-    width: 103.8%;
+    width: 102.47222%;
     top: 25px;
     top: 25px;
     border-top-left-radius: 0px;
@@ -146,3 +146,331 @@
     margin-right: 15px;
   }
   
+
+
+
+  @media (min-width: 1401px) and (max-width: 1600px) {
+
+    /* Estilo general del simulador */
+.retirement-simulator {
+  font-family: inter;
+  color: #333;
+  max-width: 1385px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 28px;
+  box-shadow: 0 0 10px #8d8b8e40;
+  margin-top: 0px;
+}
+
+/* Sliders */
+.sliders {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+}
+
+.span-age span {
+  margin-top: 15px;
+  display: flex;
+  align-items: start;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(51, 105, 255, 1);
+}
+
+.sliders div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.sliders label {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: rgba(141, 139, 142, 1);
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+  appearance: none;
+  height: 16px;
+  background: linear-gradient(
+    to right,
+    #007bff var(--progress),
+    #ddd var(--progress)
+  );
+  border-radius: 20px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #0056b3;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #007bff;
+}
+
+.contenedor-numerosPR {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-numero-precio{
+  display: flex;
+  justify-content: space-between;
+}
+
+.numerosPR0 {
+  color: rgba(51, 105, 255, 1);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.results {
+  left: -21px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 103.1222%;
+  top: 25px;
+  top: 25px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+.results p {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  margin-left: 15px;
+  font-family: 'Inter';
+  margin-top: 20px;
+}
+
+
+.separator {
+  border: none;
+  border-top: 2px solid #ffffff;
+  margin: 0px 0;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1.6;
+}
+
+
+.results strong {
+  font-size: 24px;
+  color: rgba(49, 238, 195, 1);
+  font-family: 'Inter';
+  font-weight: 800;
+  margin-right: 15px;
+}
+
+.legalRetiro h3 {
+  margin-top: 15px;
+  margin-left: 70px;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: inter;
+  color: rgba(141, 139, 142, 1);
+}
+
+
+  }
+
+
+
+  @media (min-width: 1200px) and (max-width: 1400px) {
+
+    /* Estilo general del simulador */
+.retirement-simulator {
+  font-family: inter;
+  color: #333;
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 28px;
+  box-shadow: 0 0 10px #8d8b8e40;
+  margin-top: 0px;
+}
+
+/* Sliders */
+.sliders {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+}
+
+.span-age span {
+  margin-top: 15px;
+  display: flex;
+  align-items: start;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(51, 105, 255, 1);
+}
+
+.sliders div {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.sliders label {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: rgba(141, 139, 142, 1);
+  font-family: 'Inter';
+  font-weight: 400;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+  appearance: none;
+  height: 16px;
+  background: linear-gradient(
+    to right,
+    #007bff var(--progress),
+    #ddd var(--progress)
+  );
+  border-radius: 20px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #0056b3;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-progress {
+  background: #007bff;
+}
+
+.contenedor-numerosPR {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-numero-precio{
+  display: flex;
+  justify-content: space-between;
+}
+
+.numerosPR0 {
+  color: rgba(51, 105, 255, 1);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.results {
+  left: -21px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 103.7222%;
+  top: 25px;
+  top: 25px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+.results p {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  margin-left: 15px;
+  font-family: 'Inter';
+  margin-top: 20px;
+}
+
+
+.separator {
+  border: none;
+  border-top: 2px solid #ffffff;
+  margin: 0px 0;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1.6;
+}
+
+
+.results strong {
+  font-size: 24px;
+  color: rgba(49, 238, 195, 1);
+  font-family: 'Inter';
+  font-weight: 800;
+  margin-right: 15px;
+}
+
+.legalRetiro h3 {
+  margin-top: 15px;
+  margin-left: 55px;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: inter;
+  color: rgba(141, 139, 142, 1);
+}
+
+
+  }

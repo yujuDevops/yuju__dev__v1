@@ -114,9 +114,122 @@
   }
   
   
+
+  @media 
+  (min-width: 1401px) and (max-width: 1600px) { 
+  
+    .pcgamer-icon-celular {
+      display: none;
+    }
+
+    .pcgamer-title-celular {
+        display: none;
+      }
+    
+      .pcgamer-description-celular {
+        display: none;
+      }
+    
+      
+  .pcgamer-uhsf {
+    display: none;
+  }
+  
+  /* Contenedor principal */
+  .pcgamer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-right: 45px;
+    margin-left: 5px;
+  }
+  
+  /* Tarjeta individual */
+  .pcgamer-card {
+    background-color: transparent; 
+    padding: 20px;
+    width: calc(50% - 10px);
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Icono de la tarjeta */
+  
+  /* Título de la tarjeta */
+  .pcgamer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    padding-top: 5px;
+  }
+  
+  /* Descripción de la tarjeta */
+  .pcgamer-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding-right: 20px;
+  }
+  
+  /* Línea de puntos estilo separador */
+  .pcgamer-card::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+  }
+  
+  .pcgamer-padre-text p{
+    font-size: 10px;
+    position: relative;
+    top: 10px;
+    right: -80px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+  }
+  
+  .pcgamer-padre-text h3 {
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    right: -80px;
+    width: 90%;
+    font-family: 'Inter';
+    color: rgba(141, 139, 142, 1);
+    font-weight: 800;
+  }
+
+
+  .h2Bici-pcgamer {
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 800;
+    margin: 70px 0px -30px 60px;
+  }
+  
+  .pcgamer-celular-icon {
+    display: none;
+  }
+
+  }
+  
+
+
   
   @media 
-  (min-width: 1200px) and (max-width: 1600px) { 
+  (min-width: 1200px) and (max-width: 1400px) { 
   
     .pcgamer-icon-celular {
       display: none;

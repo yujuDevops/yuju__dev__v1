@@ -108,6 +108,40 @@
     background-color: #0056b3;
 }
 
+
+@media 
+(min-width: 1401px) and (max-width: 1700px) {
+
+    .card-container {
+        gap: 0px;
+        
+    }
+
+    .divCardMotos {
+        width: 22%;
+        box-shadow: 0 0 10px #8d8b8e40;
+    }
+    .liCardMotos {
+        padding: 4px 0px;
+    }
+
+    .buttonCardMotos {
+        background-color: #3369FF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        font-family: Inter;
+    }
+
+}
+
+
+
 @media 
 (min-width: 1124px) and (max-width: 1400px) {
 

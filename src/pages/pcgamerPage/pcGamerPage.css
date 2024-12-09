@@ -1,17 +1,7 @@
 
+
   
-  
-    @media (min-width: 1200px) and (max-width: 1600px) {
-        .semisphere-container-pcgamer {
-          position: relative;
-          width: 100%;
-          padding: 0px 0px;
-          background-color: #ffffff; 
-          overflow: hidden;
-          height: 2400px;
-          z-index: 1; /* Cambiado a 1 para evitar problemas de superposición */
-        }
-        
+    @media (min-width: 1401px) and (max-width: 1600px) {
         .semisphere-pcgamer {
           position: absolute;
           top: 385px;
@@ -22,7 +12,7 @@
           border-bottom-right-radius: 345px;
           transform: translate(-65%, -48%);
           pointer-events: none; /* Permite clics a través de la semiesfera */
-          z-index: 0; /* Aseguramos que esté detrás de los botones y contenido */
+          z-index: -1; /* Aseguramos que esté detrás de los botones y contenido */
         }
         
         .content-pcgamer {

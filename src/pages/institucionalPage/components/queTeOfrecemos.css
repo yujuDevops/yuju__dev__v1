@@ -7,16 +7,23 @@
   }
   
   .ofrecemos-title {
-    font-size: 2rem;
-    color: #0044cc;
+    font-size: 1rem;
+    color: rgba(51, 105, 255, 1);
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 800;
+    font-family: 'Inter';
+    display: flex;
+    margin-left: 15px;
   }
   
   .ofrecemos-description {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.8rem;
     margin-bottom: 20px;
+    color: rgba(141, 139, 142, 1);
+    text-align: left;
+    margin-left: 15px;
+    font-family: inter;
+    font-weight: 400;
   }
   
   .ofrecemos-cards {
@@ -49,7 +56,7 @@
   
   .ofrecemos-card-text {
     font-size: 0.9rem;
-    color: #555555;
+    color: rgba(141, 139, 142, 1);
     line-height: 1.5;
   }
   

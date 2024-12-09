@@ -53,8 +53,41 @@ color: #3369FF;
     font: bold;
 }
 
+@media (min-width: 1401px) and (max-width: 1600px) {
+    .CardInfoContainerCard__1-bici{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 20px;
+        padding: 20px 0px 0px 60px;
+    }
+    
+    .CardInfoContainerCard__1-bici img{
+        width: 35%;
+        object-fit: none;
+    }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+    .CardInfoCards__1-bici {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #8d8b8e40;
+        width: 142%;
+        max-width: 280px;
+        padding: 20px 2px;
+        text-align: center;
+        max-height: 260px;
+    }
+
+    .pCardInfo-bici{
+        color: #8D8B8E;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px;
+    }
+    }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
     .CardInfoContainerCard__1-bici{
         display: flex;
         flex-wrap: wrap;

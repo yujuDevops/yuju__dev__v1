@@ -250,8 +250,9 @@ text-align: center;
 }
 
 
+
 @media 
-(min-width: 1200px) and (max-width: 1600px) {
+(min-width: 1200px) and (max-width: 1400px) {
 
 
 .semisphere-container {
