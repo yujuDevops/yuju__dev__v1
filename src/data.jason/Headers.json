@@ -2,8 +2,8 @@
   "headers": [
     {
       "id": "home",
-      "imageSrc": "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733588738/Header-inicio_1_ogjmpr.webp",
-      "imageTabletSrc": "",
+      "imageSrc": "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg",
+      "imageTabletSrc": "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg",
       "imageSrcMobile":"src/assets/image/Mobile-home.jpg",
       "title": "Conectá con la alegría de estar protegido.",
       "subtitle": "Elegí, cotizá y viví seguro,",

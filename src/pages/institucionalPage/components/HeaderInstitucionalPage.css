@@ -1,0 +1,536 @@
+.header-institucional .imgPorDefectoMotos{
+    display: block;
+  }
+  
+  .header-institucional .imgRemplazoMotos{
+    display: none;
+  }
+  .header-institucional .imgFotoCelular{
+    display: none;
+  }
+  
+  .header-institucional img{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    z-index: 0;
+   
+  }
+  .container-institucional{
+    position: relative;
+    z-index: 1;
+    top: 140px;
+    left:4%
+  }
+  
+  
+  .h1-institucional {
+  z-index: 1;
+  color: white;
+  font-size: 35px;
+  margin-left: -10px;
+  font-family: inter;
+  background-color: rgba(51, 255, 204, 0.5);
+  inline-size: fit-content;
+  font-weight: 900;
+  padding: 10px;
+  top: 40px;
+  } 
+  
+  .h2-institucional{
+  margin-top: 10px;
+  color: white;
+  font-family: inter;
+  font-weight: 700;
+  inline-size: 45%;
+  }
+  
+  .h3-institucional{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 400;
+  }
+  
+  
+  /* ////////notebook////////// */
+  
+  @media 
+  (min-width: 1200px) and (max-width: 1600px) {
+    .container-institucional{
+      top: 100px;
+    }
+
+
+    .h1-institucional {
+        z-index: 1;
+        color: white;
+        font-size: 22px;
+        margin-left: -10px;
+        font-family: inter;
+        background-color: rgba(51, 255, 204, 0.5);
+        inline-size: fit-content;
+        font-weight: 900;
+        padding: 10px;
+        top: 40px;
+        } 
+        
+        .h2-institucional{
+        margin-top: 10px;
+        color: white;
+        font-family: inter;
+        font-weight: 700;
+        inline-size: 45%;
+        font-size: 20px;
+        }
+        
+        .h3-institucional{
+          margin-top: 30px;
+          margin-left: -10px;
+          color: white;
+          font-family: inter;
+          font-weight: 400;
+          font-size: 14px;
+        }
+      
+    }
+
+
+    @media (min-width: 601px) and (max-width: 900px) {
+
+      .header-institucional .imgPorDefectoMotos{
+        display: none;
+      }
+      
+      .header-institucional .imgRemplazoMotos{
+        display: flex;
+      }
+      .header-institucional .imgFotoCelular{
+        display: none;
+      }
+      
+      .container-institucional{
+        top: 50px;
+        width: 95%;
+      }
+  
+  
+      .h1-institucional {
+          z-index: 1;
+          color: white;
+          font-size: 22px;
+          margin-left: -10px;
+          font-family: inter;
+          background-color: rgba(51, 255, 204, 0.5);
+          inline-size: fit-content;
+          font-weight: 900;
+          padding: 10px;
+          top: 40px;
+          } 
+          
+          .h2-institucional{
+          margin-top: 10px;
+          color: white;
+          font-family: inter;
+          font-weight: 700;
+          inline-size: 60%;
+          font-size: 20px;
+          }
+          
+          .h3-institucional{
+            margin-top: 10px;
+            color: white;
+            font-family: inter;
+            font-weight: 400;
+            font-size: 14px;
+            width: 55%;
+          }
+    
+
+    }
+
+
+  
+  /* ///////////////Celular////////////*/
+   
+  @media only screen and (max-width: 600px) {
+  
+    .header-institucional img{
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      z-index: -1;
+     margin-top: -300px!important;
+    }
+  
+  
+    .container-institucional{
+      top: 30px;
+      width: 90%;
+     
+    }
+  
+    .container-institucional{
+      position: relative;
+      z-index: 1;
+      top: 50px!important;
+      left:4%
+    }
+  
+    .h1-institucional {
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 900!important;
+    padding: 12px;
+    top: 40px;
+    } 
+    
+    .h2-institucional{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 700!important;
+    font-size: 12px!important;
+    display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      overflow: hidden;
+      width: 80%; /* Ancho específico */
+    }
+   
+    
+    .h3-institucional{
+      margin-top:10px;
+      color: white;
+      font-family: inter;
+      font-weight: 400;
+      font-size: 8px!important;
+    }
+  
+  
+  
+    .h1-institucional{
+      margin-left: 0.1%;
+     font-weight: 500;
+     font-size: 100% !important;
+     padding: 4PX;
+     inline-size: min-content;
+     width: 54%;
+}
+  
+  .h2-institucional{
+    font-weight: 500;
+    font-size: 80%;
+  }
+  
+  
+   
+  .h3-institucional{
+    font-size: 60%;
+  }
+  
+    .header-institucional .imgPorDefectoMotos{
+      display: none;
+    }
+    
+    .header-institucional .imgRemplazoMotos{
+      display: none;
+    }
+  
+    .header-institucional .imgFotoCelular{
+      display: block;
+    }
+  
+  
+  }
+
+
+
+  @media only screen and (min-width: 431px) and (max-width: 599px) {
+
+    .header-institucional img{
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      z-index: -1;
+     margin-top: -300px!important;
+    }
+  
+  
+    .container-institucional{
+      top: 30px;
+      width: 90%;
+     
+    }
+  
+    .container-institucional{
+      position: relative;
+      z-index: 1;
+      top: 50px!important;
+      left:4%
+    }
+  
+    .h1-institucional {
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 900!important;
+    padding: 12px;
+    top: 40px;
+    } 
+    
+    .h2-institucional{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 700!important;
+    font-size: 12px!important;
+    display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      overflow: hidden;
+      width: 80%; /* Ancho específico */
+    }
+   
+    
+    .h3-institucional{
+      margin-top:10px;
+      color: white;
+      font-family: inter;
+      font-weight: 400;
+      font-size: 8px!important;
+    }
+  
+  
+  .h1-institucional{
+         margin-left: 0.1%;
+        font-weight: 500;
+        font-size: 100% !important;
+        padding: 4PX;
+        inline-size: min-content;
+        width: 60%;
+  }
+  
+  .h2-institucional{
+    font-weight: 500;
+    font-size: 80%;
+  }
+   
+  .h3-institucional{
+    font-size: 60%;
+  }
+  
+    .header-institucional .imgPorDefectoMotos{
+      display: none;
+    }
+    
+    .header-institucional .imgRemplazoMotos{
+      display: none;
+    }
+  
+    .header-institucional .imgFotoCelular{
+      display: block;
+    }
+  
+
+  }
+
+
+
+
+  
+  @media only screen and (min-width: 361px) and (max-width: 430px) {
+  
+    .header-institucional img{
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      z-index: -1;
+     margin-top: -285px!important;
+    }
+  
+  
+    .container-institucional{
+      top: 30px;
+      width: 90%;
+     
+    }
+  
+    .container-institucional{
+      position: relative;
+      z-index: 1;
+      top: 50px!important;
+      left:4%
+    }
+  
+    .h1-institucional {
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 900!important;
+    padding: 12px;
+    top: 40px;
+    } 
+    
+    .h2-institucional{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 700!important;
+    font-size: 12px!important;
+    display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      overflow: hidden;
+      width: 80%; /* Ancho específico */
+    }
+   
+    
+    .h3-institucional{
+      margin-top:10px;
+      color: white;
+      font-family: inter;
+      font-weight: 400;
+      font-size: 8px!important;
+    }
+  
+  
+  .h1-institucional{
+         margin-left: 0.1%;
+        font-weight: 500;
+        font-size: 100% !important;
+        padding: 4PX;
+        inline-size: min-content;
+        width: 60%;
+  }
+  
+  .h2-institucional{
+    font-weight: 500;
+    font-size: 80%;
+  }
+   
+  .h3-institucional{
+    font-size: 60%;
+  }
+  
+    .header-institucional .imgPorDefectoMotos{
+      display: none;
+    }
+    
+    .header-institucional .imgRemplazoMotos{
+      display: none;
+    }
+  
+    .header-institucional .imgFotoCelular{
+      display: block;
+    }
+  
+  }
+
+
+
+  @media only screen and (min-width: 100px) and (max-width: 360px) {
+
+    .header-institucional img{
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      z-index: -1;
+     margin-top: -205px!important;
+    }
+  
+  
+    .container-institucional{
+      top: 30px;
+      width: 90%;
+     
+    }
+  
+    .container-institucional{
+      position: relative;
+      z-index: 1;
+      top: 50px!important;
+      left:4%
+    }
+  
+    .h1-institucional {
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 900!important;
+    padding: 12px;
+    top: 40px;
+    } 
+    
+    .h2-institucional{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 700!important;
+    font-size: 12px!important;
+    display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      overflow: hidden;
+      width: 80%; /* Ancho específico */
+    }
+   
+    
+    .h3-institucional{
+      margin-top:10px;
+      color: white;
+      font-family: inter;
+      font-weight: 400;
+      font-size: 8px!important;
+    }
+  
+  
+  .h1-institucional{
+         margin-left: 0.1%;
+        font-weight: 500;
+        font-size: 100% !important;
+        padding: 4PX;
+        inline-size: min-content;
+        width: 60%;
+  }
+  
+  .h2-institucional{
+    font-weight: 500;
+    font-size: 80%;
+  }
+   
+  .h3-institucional{
+    font-size: 60%;
+  }
+  
+    .header-institucional .imgPorDefectoMotos{
+      display: none;
+    }
+    
+    .header-institucional .imgRemplazoMotos{
+      display: none;
+    }
+  
+    .header-institucional .imgFotoCelular{
+      display: block;
+    }
+  
+  }
+  
+  
+  
+  
+    

@@ -20,6 +20,7 @@ export const QueTeOfrecemo = () => {
           <div className="ofrecemos-cards">
             <div className="ofrecemos-card">
               <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733236263/web_Icono-tecnologia_1_gcbzwp.svg" alt="Tecnología y agilidad" className="ofrecemos-icon" />
+              <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733753252/Icono-tecnologia_verde_cqcc1q.svg" alt="Tecnología y agilidad" className="ofrecemos-icon-verde" />
               <h3 className="ofrecemos-card-title">Tecnología y agilidad</h3>
               <p className="ofrecemos-card-text">
                 Te brindamos una experiencia única con seguros online, rápidos y multicanal, que te ahorran tiempo y esfuerzo. Tenés todo lo que necesitás al alcance de tu mano.
@@ -27,6 +28,7 @@ export const QueTeOfrecemo = () => {
             </div>
             <div className="ofrecemos-card">
               <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733236123/web_Icono-whatsapp_rbacjg.svg" alt="Facilidad y personalización" className="ofrecemos-icon" />
+              <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733753251/Icono-whatsapp_verde_w7ucci.svg" alt="Tecnología y agilidad" className="ofrecemos-icon-verde" />
               <h3 className="ofrecemos-card-title">Facilidad y personalización</h3>
               <p className="ofrecemos-card-text">
                 Te simplificamos la vida, con una plataforma intuitiva y seguros a tu medida. Podés personalizar tu seguro, eligiendo lo que más te conviene.
@@ -34,6 +36,7 @@ export const QueTeOfrecemo = () => {
             </div>
             <div className="ofrecemos-card">
               <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733236108/web_Icono-humanidad_y8z4bj.svg" alt="Humanidad y confianza" className="ofrecemos-icon" />
+              <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733753251/Icono-humanidad_verde_e8gc5g.svg" alt="Tecnología y agilidad" className="ofrecemos-icon-verde" />
               <h3 className="ofrecemos-card-title">Humanidad y confianza</h3>
               <p className="ofrecemos-card-text">
                 Te asesoramos con calidez y cercanía, para proteger lo que más te importa. Estamos siempre a tu disposición, para resolver tus dudas y atender tus reclamos.
@@ -41,6 +44,7 @@ export const QueTeOfrecemo = () => {
             </div>
             <div className="ofrecemos-card">
               <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733236096/web_Icono-excelencia_khhbq0.svg" alt="Excelencia y calidad" className="ofrecemos-icon" />
+              <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733753251/Icono-excelencia_verde_pbrbdj.svg" alt="Tecnología y agilidad" className="ofrecemos-icon-verde" />
               <h3 className="ofrecemos-card-title">Excelencia y calidad</h3>
               <p className="ofrecemos-card-text">
                 Te garantizamos un servicio de excelencia, con productos justos, modernos y transparentes. Te aseguramos la calidad, la seguridad y la satisfacción que merecés.
@@ -48,6 +52,7 @@ export const QueTeOfrecemo = () => {
             </div>
             <div className="ofrecemos-card">
               <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733235223/web_Icono-innovacion_terfcr.svg" alt="Innovación y creatividad" className="ofrecemos-icon" />
+              <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733753250/Icono-innovacion_verde_crkoab.svg" alt="Tecnología y agilidad" className="ofrecemos-icon-verde" />
               <h3 className="ofrecemos-card-title">Innovación y creatividad</h3>
               <p className="ofrecemos-card-text">
                 Te sorprendemos con soluciones creativas y eficientes, que se adaptan a tus preferencias y a tu estilo de vida.
@@ -55,6 +60,7 @@ export const QueTeOfrecemo = () => {
             </div>
             <div className="ofrecemos-card">
               <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733236086/web_Icono-sustentabilidad_hp1fob.svg" alt="Sostenibilidad y responsabilidad" className="ofrecemos-icon" />
+              <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733753251/Icono-sustentabilidad_verde_rnz53h.svg" alt="Tecnología y agilidad" className="ofrecemos-icon-verde" />
               <h3 className="ofrecemos-card-title">Sostenibilidad y responsabilidad</h3>
               <p className="ofrecemos-card-text">
                 Nos preocupamos por el cuidado del medio ambiente y la responsabilidad social. Reducimos nuestro impacto ecológico y contribuimos al desarrollo de la comunidad.

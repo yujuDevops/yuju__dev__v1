@@ -1,3 +1,5 @@
+import "./InstitucionalPage.css";
+
 import Carrousel from "../../components/carrousel/Carrousel"
 import EmailInput from "../homepage/componentsHome/EmailInput"
 import { HeaderInstitucionalPage, QueNosDiferencia, QueTeOfrecemo, VisionMisionObjetivo } from "./components"
@@ -17,8 +19,8 @@ export const InstitucionalPage = () => {
         <EmailInput />
         </div>
        </div>
-
-<Carrousel Name="Integral de Comercio"/>
+      <div className="separator-interm"></div>
+      <Carrousel Name="Integral de Comercio"/>
 
     </>
   )

@@ -33,6 +33,7 @@
 .content {
   position: relative;
   z-index: 1;
+  margin-top: -20px;
 }
 
 
@@ -278,6 +279,7 @@ text-align: center;
 .content {
     position: relative;
     z-index: 1;
+    margin-top: -20px;
 }
 
 

@@ -147,6 +147,15 @@
   }
   
 
+  .legalRetiro h3 {
+    margin-top: 15px;
+    margin-left: 75px;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: inter;
+    color: rgba(141, 139, 142, 1);
+  }
+
 
 
   @media (min-width: 1401px) and (max-width: 1600px) {
