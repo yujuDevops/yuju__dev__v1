@@ -11,7 +11,7 @@ export const HeaderCelulares = () => {
     <h1 className='h1-celular'>SEGURO DE CELULAR</h1>
     <h2 className='h2-celular'>Conectate con el mundo con seguridad. <br/>Elegí el plan que más te beneficie.</h2>
     <h3 className='h3-celular'>Tenemos las mejores opciones de seguro, para que puedas disfrutar de las fotos, <br/>los mensajes y las llamadas que te importan con el mejor respaldo.</h3>
-    <button className='buttonVidaHeader'><a href="" target="_blank">Cotizá</a></button>
+    <button className='buttonVidaHeader'><a href="https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
     </div>
   
     </header>

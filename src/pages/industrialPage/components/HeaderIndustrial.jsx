@@ -11,7 +11,7 @@ export const HeaderIndustrial = () => {
   <h1 className='h1-industria'>SEGURO DE INTEGRAL DE COMERCIO E INDUSTRIA</h1>
   <h2 className='h2-industria'>Respaldo integral para tu actividad comercial.</h2>
   <h3 className='h3-industria'>Protegé tu negocio con coberturas a medida. Elegí entre nuestros planes <br/>flexibles para comercios de todo tipo y concentrate en hacer crecer tu empresa.</h3>
-  <button className='buttonIndustriaHeader'><a href="">Cotizá</a></button>
+  <button className='buttonIndustriaHeader'><a href="https://wa.me/5491156307246">Cotizá</a></button>
   </div>
 
   </header>

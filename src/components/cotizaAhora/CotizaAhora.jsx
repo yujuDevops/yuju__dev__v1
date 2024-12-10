@@ -14,7 +14,7 @@ export const CotizaAhora = ({titulo,precio,button,src}) => {
       <span className="moto-precio">{precio}</span>
       <div className="vertical-dotted-separator"></div>
      <img src={src} alt="" className='moto-icon' />
-      <button className="moto-button">{button}</button>
+      <button onClick={()=> window.location.href="https://wa.me/5491156307246"} className="moto-button">{button}</button>
     </div>
 
 
