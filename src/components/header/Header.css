@@ -604,7 +604,7 @@
 
   @media only screen and (max-width: 600px) {
     .header{
-    background-image: url(src/assets/image/Header-inicio-celular.webp)!important;
+    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
     background-size: cover;
     background-position: right;
     padding: 20px;
@@ -689,7 +689,7 @@
   @media only screen and (min-width: 421px) and (max-width: 600px) {
     
     .header{
-      background-image: url(src/assets/image/Header-inicio-celular.webp)!important;
+      background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
       background-size: cover;
       background-position: right;
       padding: 20px;
@@ -773,7 +773,7 @@
     @media only screen and (min-width: 361px) and (max-width: 420px) {
 
       .header{
-        background-image: url(src/assets/image/Header-inicio-celular.webp)!important;
+        background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
         background-size: cover;
         background-position: right;
         padding: 20px;
@@ -858,7 +858,7 @@
     @media only screen and (min-width: 0px) and (max-width: 360px) {
 
       .header{
-        background-image: url(src/assets/image/Header-inicio-celular.webp)!important;
+        background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
         background-size: cover;
         background-position: right;
         padding: 20px;

@@ -1,12 +1,13 @@
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import { seguros } from "./DataCarrousel";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./cardCarrousel/CardCarrousel.css";
 import "./Carrousel.css";
 
-export const Carrousel = ( {Name} ) => {
+export const Carrousel = ({ Name }) => {
   useEffect(() => {
     const lazyCards = document.querySelectorAll(".lazy-card");
 
@@ -82,29 +83,29 @@ export const Carrousel = ( {Name} ) => {
 
   return (
     <>
-<Slider {...settings} className="lazy-card">
-  {seguros.map((e) => {
-    // Verificar si e.titulo existe
-    if (e.titulo === Name) {
-      return null; // No mostrar nada si e.titulo existe
-    }
+      <Slider {...settings} className="lazy-card">
+        {seguros.map((e) => {
+          // Verificar si e.titulo existe
+          if (e.titulo === Name) {
+            return null; // No mostrar nada si e.titulo existe
+          }
 
-    // Renderizar la tarjeta si e.titulo no existe
-    return (
-      <div className="ContenedorPadreCard" key={e.titulo || e.id}>
-        <div className="card">
-          <div className="card-content">
-            <h2>{e.titulo}</h2>
-            <img src={e.foto} alt={e.titulo} className="card-image" />
-          </div>
-          <a href={e.href} className="card-button">
-            <button>{e.boton}</button>
-          </a>
-        </div>
-      </div>
-    );
-  })}
-</Slider>
+          // Renderizar la tarjeta si e.titulo no existe
+          return (
+            <div className="ContenedorPadreCard" key={e.titulo || e.id}>
+              <div className="card">
+                <div className="card-content">
+                  <h2>{e.titulo}</h2>
+                  <img src={e.foto} alt={e.titulo} className="card-image" />
+                </div>
+                <Link to={e.href} className="card-button">
+                  <button>{e.boton}</button>
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </Slider>
     </>
   );
 };
