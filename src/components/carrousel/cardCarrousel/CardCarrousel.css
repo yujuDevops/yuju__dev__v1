@@ -81,6 +81,83 @@ color:#3369FF;
 }
 /* PAGINA WEB NOTEBOOK  */
 
+@media (min-width: 1601px) and (max-width: 1800px) {
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+    box-shadow: 0 0 10px #8d8b8e40;
+    padding-bottom: 20px;
+  }
+
+
+  .card:hover {
+    background-color: #3369FF;
+  }
+
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 23px;
+  }
+  
+
+  .card-content h2 {
+    font-size: 16px;
+    color: #3369ff;
+    font-family: inter;
+    font-weight: 700;
+  }
+
+  .card:hover .card-content h2 {
+    color: #FFFFFF;
+  }
+  
+  .card-image {
+    width: 80px;
+    height: auto;
+    border-top-right-radius: 12px;
+  }
+
+  .card-button button {
+    background-color: #3369ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 90px 9px 90px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Inter';
+    margin-top: 16px;
+
+}
+
+.card:hover .card-button button {
+  background-color: #33FFCC;
+  color:#3369FF;
+}
+
+
+}
+
+
+
 @media 
 (min-width: 1200px) and (max-width: 1600px) {
 

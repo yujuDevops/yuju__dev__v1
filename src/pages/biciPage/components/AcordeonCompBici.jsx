@@ -17,7 +17,7 @@ export const AcordeonCompBici = ({ id, title, subtitle }) => {
           <i className={`fas ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`} />
         </span>
       </button>
-      <div className={`divHijoAcordeon ${isOpen ? "show" : ""}`}>
+      <div className={`divHijoBiciAcordeon ${isOpen ? "show" : ""}`}>
         <p>{subtitle}</p>
       </div>
       {id === 7 ? null : <hr />}

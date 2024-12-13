@@ -86,10 +86,13 @@
 }
 
 .image-section img {
-  max-width: 150px; /* Ajusta el tamaño de la imagen */
+  max-width: 255px;
   height: auto;
+  display: flex;
+  position: absolute;
+  left: 790px;
+  top: 5px;
 }
-
 
   }
 
@@ -137,8 +140,12 @@
 }
 
 .image-section img {
-  max-width: 150px; /* Ajusta el tamaño de la imagen */
+  max-width: 255px;
   height: auto;
+  display: flex;
+  position: absolute;
+  left: 880px;
+  top: 750px;
 }
 
 

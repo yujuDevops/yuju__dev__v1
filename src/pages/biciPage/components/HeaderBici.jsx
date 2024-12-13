@@ -13,8 +13,10 @@ export const HeaderBici = () => {
    <h1 className='h1-bici'>SEGURO DE BICICLETA</h1>
    <h2 className='h2-bici'>Disfrutá el camino. Yuju te acompaña.</h2>
    <h3 className='h3-bici'>Te ofrecemos un seguro ágil que cuida de vos y tu bici.<br/> Elegí tu cobertura y sumá kilómetros sin preocupaciones.</h3>
-    <button className='buttonBiciHeader'><a href="
-https://wa.me/5491156307246">Cotizá</a></button>
+    
+      <a href="https://wa.me/5491156307246">
+      <button className='buttonBiciHeader'>Cotizá</button>
+      </a>
    </div>
  
    </header>

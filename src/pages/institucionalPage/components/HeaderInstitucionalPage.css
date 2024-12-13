@@ -55,14 +55,13 @@
   
   /* ////////notebook////////// */
   
-  @media 
-  (min-width: 1200px) and (max-width: 1600px) {
-    .container-institucional{
-      top: 100px;
-    }
+  @media (min-width: 1401px) and (max-width: 1600px) {
 
+        .container-institucional{
+          top: 100px;
+        }
 
-    .h1-institucional {
+        .h1-institucional {
         z-index: 1;
         color: white;
         font-size: 22px;
@@ -75,25 +74,51 @@
         top: 40px;
         } 
         
-        .h2-institucional{
-        margin-top: 10px;
-        color: white;
-        font-family: inter;
-        font-weight: 700;
-        inline-size: 45%;
-        font-size: 20px;
-        }
-        
-        .h3-institucional{
+        .h3-institucional {
           margin-top: 30px;
-          margin-left: -10px;
+          margin-left: -5px;
           color: white;
           font-family: inter;
           font-weight: 400;
           font-size: 14px;
-        }
+          width: 50%;
+          text-align: left;
+      }
       
     }
+
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+
+        .container-institucional{
+          top: 100px;
+        }
+
+        .h1-institucional {
+        z-index: 1;
+        color: white;
+        font-size: 22px;
+        margin-left: -10px;
+        font-family: inter;
+        background-color: rgba(51, 255, 204, 0.5);
+        inline-size: fit-content;
+        font-weight: 900;
+        padding: 10px;
+        top: 40px;
+        } 
+        
+        .h3-institucional {
+          margin-top: 30px;
+          margin-left: -5px;
+          color: white;
+          font-family: inter;
+          font-weight: 400;
+          font-size: 14px;
+          width: 50%;
+          text-align: left;
+      }
+    }
+
 
 
     @media (min-width: 601px) and (max-width: 900px) {
@@ -144,6 +169,7 @@
             font-weight: 400;
             font-size: 14px;
             width: 55%;
+
           }
     
 
@@ -160,7 +186,7 @@
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -300px!important;
+     margin-top: -100px!important;
     }
   
   
@@ -209,6 +235,7 @@
       font-family: inter;
       font-weight: 400;
       font-size: 8px!important;
+      width: 60%;
     }
   
   
@@ -257,7 +284,7 @@
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -300px!important;
+     margin-top: -100px!important;
     }
   
   
@@ -306,6 +333,7 @@
       font-family: inter;
       font-weight: 400;
       font-size: 8px!important;
+      width: 60%;
     }
   
   
@@ -353,7 +381,7 @@
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -285px!important;
+     margin-top: -105px!important;
     }
   
   
@@ -402,6 +430,7 @@
       font-family: inter;
       font-weight: 400;
       font-size: 8px!important;
+      width: 65%;
     }
   
   
@@ -446,7 +475,7 @@
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -205px!important;
+     margin-top: -105px!important;
     }
   
   
@@ -495,6 +524,7 @@
       font-family: inter;
       font-weight: 400;
       font-size: 8px!important;
+      width: 65%;
     }
   
   

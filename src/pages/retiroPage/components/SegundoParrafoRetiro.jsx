@@ -18,7 +18,7 @@ export const SegundoParrafoRetiro = () => {
             </p>
           </div>
           <div className="image-section">
-            <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733146482/Ilustracion-retiro_swdzll.png" alt="Íconos de simulador y ahorro" />
+            <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1734022131/Seccion_retiro_icono_ulh012.svg" alt="Íconos de simulador y ahorro" />
           </div>
         </div>
       );
