@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import "./acordeonCompBici.css";  // Asegúrate de que tu CSS esté correctamente importado
+import "./acordeonCompBici.css";
 
 export const AcordeonCompBici = ({ id, title, subtitle }) => {
   const [isOpen, setIsOpen] = useState(false);

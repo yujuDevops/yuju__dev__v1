@@ -4,7 +4,7 @@ export const HeaderInstitucionalPage = () => {
   return (
     <header className='header-institucional'>
     <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733233267/Header-nosotros-quienes-somos_oiiu0e.jpg" alt=""  className='imgPorDefectoMotos' />
-    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733233267/Header-nosotros-quienes-somos_oiiu0e.jpg" alt="" className='imgRemplazoMotos'  />
+    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1734361692/Header-instit-tablet2_frclu9.jpg" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1734105845/Header-instit-celular_s40xzz.jpg" alt="" className='imgFotoCelular'  />
     
     <div className='container-institucional'>

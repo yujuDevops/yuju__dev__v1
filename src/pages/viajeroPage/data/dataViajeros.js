@@ -1,15 +1,15 @@
 export const dataViajeros = [
     {
       numero: 1,
-      tituloStrong: "Cotizá",
-      tituloNormal: "tu seguro",
+      tituloStrong: "tu seguro",
+      tituloNormal: "Cotizá",
       isStrongFirst: false,
       imagen: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733401720/Icono-cotiza_hih1ey.png"
     },
     {
       numero: 2,
       tituloStrong: "Elegí",
-      tituloNormal: "Elegí",
+      tituloNormal: "tu plan",
       isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740508/web_Icono-selecciona_azul_3_n8ekxs.svg",
      

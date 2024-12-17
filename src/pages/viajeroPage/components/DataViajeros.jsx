@@ -21,7 +21,7 @@ export const DataViajeros = () => {
                 </>
               ) : (
                 <>
-                  {data.tituloNormal} <strong>{data.tituloStrong}</strong>
+                  <strong>{data.tituloNormal}</strong> {data.tituloStrong}
                 </>
               )}
             </p>

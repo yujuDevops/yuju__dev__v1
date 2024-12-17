@@ -38,6 +38,7 @@
   } 
   
   .h2-vida{
+  font-size: 24px;
   margin-top: 10px;
   color: white;
   font-family: inter;
@@ -74,23 +75,23 @@
   }
 
   
-  @media 
-  (min-width: 1200px) and (max-width: 1600px) {
+  @media (min-width: 1200px) and (max-width: 1600px) {
 
     .container-vida{
       top: 50px;
       width: 70%;
     }
 
-    .h2-vida h2{
-      font-size: 100%!important;
-      font-weight: 800;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      width: 734px;
-      font-size: 24px;
-  }
+    .h2-vida{
+      font-size: 130%;
+      margin-top: 10px;
+      color: white;
+      font-family: inter;
+      font-weight: 700!important;
+      width: 900px; /* Ancho específico */
+      white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+      overflow: hidden; /* Oculta el desbordamiento */
+      }
 
     .h3-vida{
       margin-bottom: -40px;
