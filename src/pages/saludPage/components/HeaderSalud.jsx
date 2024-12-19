@@ -4,7 +4,7 @@ export const HeaderSalud = () => {
   return (
     <header className='header-salud'>
     <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728478472/Header-seguro-asistencia-viajera_y4avr1.png" alt=""  className='imgPorDefectoMotos' />
-    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732478749/Header-vida-tablet_f3t8ea.webp" alt="" className='imgRemplazoMotos'  />
+    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617516/Header-salud_tinzzf.webp" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1731327573/Header-salud-celular_jk9rsg.jpg" alt="" className='imgFotoCelular'  />
     
     <div className='container-motos'>

@@ -4,7 +4,7 @@ export const HeaderTablet = () => {
   return (
     <header className='header-tablet'>
     <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/c_crop,w_4001,h_1053/v1733410798/Header-tablet-definitva-desktop_a6y0k1.jpg" alt=""  className='imgPorDefectoMotos' />
-    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733407835/Header-tablet_cdusei.webp" alt="" className='imgRemplazoMotos'  />
+    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617521/Header-tablet_ri8axm.webp" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733407834/Header-tablet-celular_1_hblnmc.jpg" alt="" className='imgFotoCelular'  />
     
     <div className='container-tablet'>

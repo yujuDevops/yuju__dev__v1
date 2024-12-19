@@ -4,7 +4,7 @@ export const HeaderNotebook = () => {
   return (
     <header className='header-notebook'>
     <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1731509101/Header-seguro-notebook_bnezri.png" alt=""  className='imgPorDefectoMotos' />
-    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733262320/Header-notebook-tablet_ekghk7.webp" alt="" className='imgRemplazoMotos'  />
+    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617504/Header-notebook_kflwx1.webp" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733242703/Header-notebook-celular_xqiyp9.jpg" alt="" className='imgFotoCelular'  />
     
     <div className='container-notebook'>

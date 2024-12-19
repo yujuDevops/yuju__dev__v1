@@ -5,7 +5,7 @@ export const HeaderViajero = () => {
   return (
     <header className='header-viejero'>
     <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733315200/Header-seguro-moto_copia_6_xjj2iv.png" alt=""  className='imgPorDefectoviejero' />
-    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733403928/Header-asistencia-tablet_jgzwvp.webp" alt="" className='imgRemplazoviejero'  />
+    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617400/Header-asistencia_sas9t4.webp" alt="" className='imgRemplazoviejero'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733327892/Header-asistenciaviajero-celular_fbpwz2.jpg" alt="" className='imgFotoCelular'  />
     
     <div className='container-viejero'>
