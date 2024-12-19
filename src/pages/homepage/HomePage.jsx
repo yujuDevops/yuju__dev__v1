@@ -136,13 +136,7 @@ export const HomePage = ({ pageId }) => {
         </div>
        </div>
 
-       <div className="semisphere-container-two">
-      <div className="semisphere-two"></div>
-      <div className="content">
-      <div className='container__form__p'><p>Contacto</p></div>
-      <FormComponent></FormComponent>
-      </div>
-      </div>
+     
 
       </>
     );

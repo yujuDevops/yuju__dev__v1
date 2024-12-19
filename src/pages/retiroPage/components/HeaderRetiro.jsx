@@ -4,7 +4,7 @@ export const HeaderRetiro = () => {
   return (
     <header className='header-motos'>
     <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733764017/Header-seguro-retiro_gynemg.png" alt=""  className='imgPorDefectoMotos' />
-    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1734360830/Header-retiro-tablet_t1pr0d.png" alt="" className='imgRemplazoMotos'  />
+    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733764017/Header-seguro-retiro_gynemg.png" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733764447/Header-retiro-celular_oxfbte.jpg" alt="" className='imgFotoCelular'  />
     
     <div className='container-motos'>

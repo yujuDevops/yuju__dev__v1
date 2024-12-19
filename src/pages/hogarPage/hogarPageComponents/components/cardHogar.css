@@ -28,7 +28,6 @@
     border-radius: 22px;
     box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
     width: 100%;
-    position: relative;
   }
   
   div.cardHogar {
@@ -41,16 +40,15 @@
   }
   
 
-  .separtor-hogar::before {
+  div.cardHogar:not(:last-child)::after {
     content: '';
     position: absolute;
-    border-left: 0.1px solid rgba(226, 226, 226, 1);
-    width: 0.111px;
-    height: 85%;
+    top: 0;
+    right: -18px;
+    width: 0.3px;
+    height: 100%;
     background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
     display: flex;
-    top: 20px;
-    box-sizing:content-box;
   }
   
 
@@ -229,39 +227,6 @@
     background-color: #ccc;
     margin: 0 20px;
   }
-
-  .floating-alert {
-    position: fixed;
-    bottom: 50px; /* Empieza fuera de la pantalla */
-    margin: 0 auto;
-    right: 16px; /* Separación desde el borde derecho */
-    z-index: 10000; /* Asegura que esté por encima de otros elementos */
-    animation: slideIn 0.5s forwards, slideOut 0.5s 4.5s forwards;
-  }
-  
-  /* Animación para mostrar el alert */
-  @keyframes slideIn {
-    from {
-      bottom: -100px;
-      opacity: 0;
-    }
-    to {
-      bottom: 16px;
-      opacity: 1;
-    }
-  }
-  
-  /* Animación para ocultar el alert */
-  @keyframes slideOut {
-    from {
-      bottom: 16px;
-      opacity: 1;
-    }
-    to {
-      bottom: -100px;
-      opacity: 0;
-    }
-  }
   
 
   @media 
@@ -288,39 +253,39 @@
       top: 75px;
   }
   .cardsHogar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f2f7fa;
-    border-radius: 22px;
-    box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    position: relative;
-  }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #f2f7fa;
+      border-radius: 22px;
+      box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    }
+    
+    div.cardHogar {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      width: 30%;
+      position: relative;
+    }
+    
   
-  div.cardHogar {
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    position: relative;
-  }
+    div.cardHogar:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -18px;
+      width: 0.3px;
+      height: 100%;
+      background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
+      display: flex;
+    }
+    
   
-
-  .separtor-hogar::before {
-    content: '';
-    position: absolute;
-    border-left: 0.1px solid rgba(226, 226, 226, 1);
-    width: 0.111px;
-    height: 85%;
-    background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
-    display: flex;
-    top: 20px;
-    box-sizing:content-box;
-  }
-
+    
     .h3CardHogar{
       color: rgba(51, 105, 255, 1);
       font-weight: 800;
@@ -523,40 +488,6 @@
     z-index: 9;
 }
 
-.cardsHogar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f2f7fa;
-  border-radius: 22px;
-  box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  position: relative;
-}
-
-div.cardHogar {
-  background-color: white;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  width: 30%;
-  position: relative;
-}
-
-
-.separtor-hogar::before {
-  content: '';
-  position: absolute;
-  border-left: 0.1px solid rgba(226, 226, 226, 1);
-  width: 0.111px;
-  height: 85%;
-  background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
-  display: flex;
-  top: 20px;
-  box-sizing:content-box;
-}
-
 
   .divModalHogar .plan-details p {
     display: flex;
@@ -626,10 +557,6 @@ width: 12%;
 
   @media only screen and (max-width: 600px) {
 
-    .cardsHogar {
-      position: relative;
-    }
-
       .modal{
       background-color:white;
       border-radius: 22px;
@@ -696,16 +623,16 @@ width: 12%;
   margin-bottom: 80px;
 }
 
-.separtor-hogar::before{
-  display: flex;
-  border-bottom: 1px solid rgba(226, 226, 226, 1);
-  height: 0.1px;
-  width: 75vw;
-  position: initial;
-}
 
-.cardHogar::after {
-  display: none!important;
+div.cardHogar:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 225px!important;
+  right: -45px;
+  width: 300px;
+  height: 0.1%;
+  background-color: rgba(226, 226, 226, 1);
+  display: grid;
 }
 
 .divModalHogar .xButton {
@@ -788,18 +715,17 @@ width: 12%;
   margin-bottom: 80px;
 }
 
-.separtor-hogar::before{
-  display: flex;
-  border-bottom: 1px solid rgba(226, 226, 226, 1);
-  height: 0.1px;
-  width: 75vw;
-  position: initial;
-}
 
-.cardHogar::after {
-  display: none!important;
-}
-
+    div.cardHogar:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 210px!important;
+      right: -58px!important;
+      width: 300px!important;
+      height: 0.1%;
+      background-color: rgba(226, 226, 226, 1);
+      display: grid;
+  }
 
 
   .divModalHogar .xButton {
@@ -899,18 +825,16 @@ width: 12%;
 }
 
 
-.separtor-hogar::before{
-  display: flex;
-  border-bottom: 1px solid rgba(226, 226, 226, 1);
-  height: 0.1px;
-  width: 75vw;
-  position: initial;
-}
-
-.cardHogar::after {
-  display: none!important;
-}
-
+    div.cardHogar:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 225px;
+      right: -65px!important;
+      width: 300px!important;
+      height: 0.1%;
+      background-color: rgba(226, 226, 226, 1);
+      display: grid;
+  }
 
 
   .divModalHogar .xButton {
@@ -1009,18 +933,16 @@ width: 12%;
 }
 
 
-.separtor-hogar::before{
-  display: flex;
-  border-bottom: 1px solid rgba(226, 226, 226, 1);
-  height: 0.1px;
-  width: 75vw;
-  position: initial;
-}
-
-.cardHogar::after {
-  display: none!important;
-}
-
+    div.cardHogar:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 239px!important;
+      right: -55px!important;
+      width: 265px;
+      height: 0.1%;
+      background-color: rgba(226, 226, 226, 1);
+      display: grid;
+  }
 
 
   .divModalHogar .xButton {

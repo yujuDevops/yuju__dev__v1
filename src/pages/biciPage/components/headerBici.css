@@ -292,7 +292,7 @@
   }
 
 
-  @media (min-width: 426px) and (max-width: 600px) { 
+  @media (min-width: 421px) and (max-width: 600px) { 
 
     .header-bici img{
       position: absolute;
@@ -405,126 +405,14 @@
   }
 
 
-  @media (min-width: 361px) and (max-width: 425px)  { 
+  @media (min-width: 100px) and (max-width: 420px)  { 
 
     .header-bici img{
       position: absolute;
       display: flex;
       overflow: hidden;
       z-index: -1;
-     margin-top: -280px!important;
-    }
-  
-  
-    .container-bici{
-      top: 30px;
-      width: 90%;
-     
-    }
-  
-    .container-bici{
-      position: relative;
-      z-index: 1;
-      top: 60px;
-      left:4%
-    }
-  
-    .h1-bici {
-    z-index: 1;
-    color: white;
-    font-size: 35px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 900!important;
-    padding: 12px;
-    top: 40px;
-    } 
-    
-    .h2-bici{
-    margin-top: 10px;
-    color: white;
-    font-family: inter;
-    font-weight: 700!important;
-    font-size: 12px!important;
-    width: 103%!important;
-    }
-    
-    .h3-bici{
-      margin-top: 10px;
-      color: white;
-      font-family: inter;
-      font-weight: 400;
-      font-size: 8px!important;
-    }
-  
-  
-  .h1-bici{
-   
-    margin-left: 0.1%;
-    font-weight: 500;
-    font-size: 100%!important;
-    padding: 4PX;
-  }
-  
-  .h2-bici{
-    font-weight: 500;
-    font-size: 80%;
-  }
-   
-  .h3-bici{
-    font-size: 60%;
-  }
-  
-    .header-bici .imgPorDefectoMotos{
-      display: none;
-    }
-    
-    .header-bici .imgRemplazoMotos{
-      display: none;
-    }
-  
-    .header-bici .imgFotoCelular{
-      display: block;
-    }
-  
-    .buttonBiciHeader {
-      display: flex;
-      position: relative;
-      top: 30px;
-      padding: 8px 30px 8px 30px;
-      border-radius: 8px;
-      border: 0.2px transparent;
-      background-color: #33FFCC;
-    }
-
-    .header-bici a {
-      text-decoration: none;
-    }
-    
-    .buttonBiciHeader  {
-      font-size: 8px;
-      font-family: 'Inter';
-      text-decoration: none;
-      color: #3369FF;
-    }
-
-
-
-
-  }
-
-
-  
-  @media (min-width: 100px) and (max-width: 360px)  { 
-
-    .header-bici img{
-      position: absolute;
-      display: flex;
-      overflow: hidden;
-      z-index: -1;
-     margin-top: -240px!important;
+     margin-top: -250px!important;
     }
   
   

@@ -7,7 +7,7 @@ export const BeneficiosViajero = () => {
   return (
 <div className="coberturas-container-vgts">
       <h2 className="coberturas-title-vgts">
-        Tu seguro de asistencia al viajero te ofrece los
+        Tu seguro de asistencia al viajero te ofrece los <br />
          siguientes beneficios:
         </h2>
       
