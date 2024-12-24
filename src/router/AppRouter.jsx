@@ -33,7 +33,6 @@ const AppRouter = () => {
                 <Route path="/pcgamer" element={<PcGamerPage/>} />
                 <Route path="/accidentespersonales" element={<AccidentesPersonales/>} />
                 <Route path="/retiro" element={<RetiroPage/>} />
-                <Route path="/*" element={<Navigate to={"/Home"}/>} />
             </Routes>
         </Router>
             <Footer/>
