@@ -12,7 +12,7 @@ const AppRouter = () => {
   return (
     <>
      <Navbar />
-     <Router>
+   
             <Routes>
              <Route path="/viajero" element={<ViajeroPage pageId="viajero"/>} />
                 <Route path="/home" element={<HomePage pageId="home"/>} />
@@ -34,7 +34,7 @@ const AppRouter = () => {
                 <Route path="/accidentespersonales" element={<AccidentesPersonales/>} />
                 <Route path="/retiro" element={<RetiroPage/>} />
             </Routes>
-        </Router>
+       
             <Footer/>
      
 
