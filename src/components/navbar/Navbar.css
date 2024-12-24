@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     z-index: 100;
+    gap: 15px;
   }
   
   .navbar-links a, .dropdown .dropbtn {
@@ -32,7 +33,7 @@
     border: 0px;
     background-color: rgba(255, 255, 255, 0);
     display: inline-block;
-    transition: transform 0.1s ease, font-weight 0.1s ease;
+    /* transition: transform 0.1s ease, font-weight 0.1s ease; */
     white-space: nowrap;
     min-width: 50px; /* Ajusta según sea necesario */
     overflow: hidden;

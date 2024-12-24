@@ -13,14 +13,14 @@ const alternar = ()=>{
   return (
   
         
-        <div key={id} className="divPadreAcordeon">
-              <button onClick={alternar} className="bottonAcordeon">
+        <div key={id} className="divPadreAcordeon-bici">
+              <button onClick={alternar} className="bottonAcordeon-bici">
                 {title}
                 <span className={`arrow ${isOpen ? "arrow-open" : "arrow-closed"}`}>
                 <i className={`fas ${isOpen ? "fa-chevron-up" : "fa-chevron-down"}`} />
                 </span>
               </button>
-              <div className={`divHijoBiciAcordeon ${isOpen ? 'show' : ''}`}>
+              <div className={`divHijoBiciAcordeon-bici ${isOpen ? 'show' : ''}`}>
                 <p>{content}</p>
               </div>
           { id===7? null : <hr/>}

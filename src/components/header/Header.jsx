@@ -74,6 +74,7 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
                     maxMenuHeight={120} // Limitar altura del menú
                     onChange={handleSelectChange}
                     ref={selectRef} // Asignar la referencia
+                    isSearchable={false} // Deshabilita el teclado
                 />
             </div>
         </div>

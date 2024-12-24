@@ -300,6 +300,7 @@
 
 @media (min-width: 1401px) and (max-width: 1600px) {
 
+
   .header {
     background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
     background-size: contain;
@@ -398,7 +399,16 @@
 
 
 
-@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+@media (min-width: 1101px) and (max-width: 1400px) {
+  .header {
+    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
+    height:110vh;
+    width: 100vw;
+  }
+
+
   .header {
     background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
     background-size: contain;
@@ -407,8 +417,6 @@
     padding: 10px;
     color: rgb(255, 255, 255);
     position: relative;
-    height: 670px;
-    margin-bottom: -50px;
   }
   
 
@@ -497,23 +505,213 @@
 }
 
 
-@media (min-width: 601px) and (max-width: 900px) {
+
+
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .header {
+    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
+    height:100vh;
+    width: 120vw;
+  }
+
 
   .header {
     background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
-    height: 455px;
-  }
-
-  
-  .background-image-tablet img{
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
-    height: 890px;
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 10px;
     color: rgb(255, 255, 255);
     position: relative;
+  }
+  
+
+  .header-content {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+  }
+
+  .header h1 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-family: inter;
+    inline-size: 45.4rem;
+    line-height: 42.49px;
+  }
+
+  .header h2 {
+    font-size: 35px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 400;
+    padding: 10px;
+  }
+
+  .header h3 {
+    font-size: 35px;
+    font-family: inter;
+    font-weight: 400;
+  }
+
+  .header-select {
+    padding: 0px;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 500;
+    margin-top: 60px;
+    width: 28vw;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #8D8B8E;
+    position: relative;
+  }
+
+  .css-26l3qy-menu { 
+    max-height: 60px; /* Limitar la altura máxima del menú */
+    overflow-y: auto; /* Activar el scroll */
+}
+
+  .header-select select {
+    width: 100%;
+    max-height: 150px; /* Limita la altura máxima del desplegable */
+    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+  }
+
+
+  .header-select select:focus {
+    color: #8D8B8E;
+  }
+
+
+  .css-hlgwow {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 8px!important;
+    box-sizing: border-box;
+    border-radius: 12px!important;
+  }
+
+}
+
+
+@media (min-width: 801px) and (max-width: 900px) {
+
+  .header {
+    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
+    height:43vh ;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-family: inter;
+    inline-size: 17.4rem;
+    line-height: 31.49px;
+}
+  
+  
+  .header h2 {
+    font-size: 22px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 400;
+    padding: 10px;
+  }
+  
+  .header h3 {
+    font-size: 18px;
+    font-family: inter;
+    font-weight: 400;
+  }
+
+  .header-select {
+    padding: 0px;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 500;
+    margin-top: 60px;
+    width: 28vw;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #8D8B8E;
+    position: relative;
+  }
+
+  .css-26l3qy-menu { 
+    max-height: 60px; /* Limitar la altura máxima del menú */
+    overflow-y: auto; /* Activar el scroll */
+}
+
+  .header-select select {
+    width: 100%;
+    max-height: 150px; /* Limita la altura máxima del desplegable */
+    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+  }
+
+
+  .header-select select:focus {
+    color: #8D8B8E;
+  }
+
+
+  .css-hlgwow {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 8px!important;
+    box-sizing: border-box;
+    border-radius: 12px!important;
+  }
+
+}
+
+
+
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+  .header {
+    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
+    height:33vh ;
   }
 
   .header-content {

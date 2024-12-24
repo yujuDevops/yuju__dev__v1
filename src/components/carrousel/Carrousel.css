@@ -379,7 +379,76 @@ width: 5056px;
 
 }
 
-@media (min-width: 881px) and (max-width: 1199px){
+
+
+@media (min-width: 1000px) and (max-width: 1199px){
+
+    .ContenedorPadreCard > div {
+        width: 245px!important;
+        margin-top: 70px;
+    }
+    
+    .slick-track {
+    width: 5056px;
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    
+    .slick-slider{
+        width: 1025px!important;
+    
+    }
+    
+    
+    .slick-next{
+        display: none!important;
+    }
+    
+    .slick-list {
+        margin: 0px 10px 0px 0px;
+        height: 250px;
+        margin: 0px ;
+        left:  15px;
+        margin-top: -50px;
+    }
+    
+    .slick-list > div{
+        margin: 0px 20px 1px 10px;
+    }
+    
+    .slick-dots li.slick-active button:before {
+        opacity: 1.75;
+        color: #3369FF!important;
+    }
+    
+    
+    .slick-dots {
+        left: 20px;
+        top: 222px;
+    }
+    
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 8px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: '•';
+        text-align: center;
+        opacity: .25;
+        color: #3369FF;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+
+}
+
+
+@media (min-width: 881px) and (max-width: 1000px){
 
     .ContenedorPadreCard > div {
         width: 225px!important;

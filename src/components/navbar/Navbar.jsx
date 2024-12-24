@@ -124,9 +124,9 @@ const Navbar = () => {
                 <Link to="/institucional" onClick={handlePageChange}>
                     Institucional
                 </Link>
-                <Link to="/contacto" onClick={handlePageChange}>
+                {/* <Link to="/contacto" onClick={handlePageChange}>
                     Contacto
-                </Link>
+                </Link> */}
             </div>
             <div className="navbar-social">
                 <a href="#">

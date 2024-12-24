@@ -100,3 +100,83 @@
   }
 
   }
+
+  @media only screen and (min-width: 426px) and (max-width: 500px) {
+    body {
+      overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+    }
+
+    .card-imagen-wf2-4taimg{
+      position: relative;
+        z-index: 120;
+        top: -268px;
+        left: 199px;
+        width: 50%;
+        background-color: transparent;
+  }
+
+  .card-imagen-wf2-4taimg img {
+    position: absolute;
+    width: 50vw;
+}
+
+
+  .CotizaHoraBiciPage {
+    margin: 100px 0px 0px 0px;
+  }
+
+  }
+
+
+  @media only screen and (min-width: 391px) and (max-width: 425px) {
+    body {
+      overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+    }
+
+    .card-imagen-wf2-4taimg{
+      position: relative;
+        z-index: 120;
+        top: -268px;
+        left: 199px;
+        width: 50%;
+        background-color: transparent;
+  }
+
+  .card-imagen-wf2-4taimg img {
+    position: absolute;
+    width: 50vw;
+}
+
+
+  .CotizaHoraBiciPage {
+    margin: 100px 0px 0px 0px;
+  }
+
+  }
+
+  @media only screen and (min-width: 100px) and (max-width: 390px) {
+
+    body {
+      overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
+    }
+
+    .card-imagen-wf2-4taimg{
+      position: relative;
+        z-index: 120;
+        top: -228px;
+        left: 199px;
+        width: 40%;
+        background-color: transparent;
+  }
+
+  .card-imagen-wf2-4taimg img {
+    position: absolute;
+    width: 50vw!important;
+}
+
+
+  .CotizaHoraBiciPage {
+    margin: 100px 0px 0px 0px;
+  }
+
+  }
