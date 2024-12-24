@@ -306,7 +306,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 94vw;
+    width: 96vw;
     padding: 10px;
     background-color: #fff;
     border: none;
@@ -365,7 +365,7 @@
     height: 1px;
     background-color: #ddd;
     margin: 0;
-    width: 91vw;
+    width: 93vw;
   }
 
 }
@@ -381,7 +381,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 91vw;
+    width: 96vw;
     padding: 10px;
     background-color: #fff;
     border: none;
@@ -440,7 +440,7 @@
     height: 1px;
     background-color: #ddd;
     margin: 0;
-    width: 88vw;
+    width: 93vw;
   }
 
 
