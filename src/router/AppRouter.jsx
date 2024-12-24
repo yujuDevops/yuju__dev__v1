@@ -1,4 +1,4 @@
-import {  Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from "../components/footer/Footer"
 import {HomePage,AutoPage,MotoPage,BiciPage,HogarPage,ContactPage,InstitucionalPage,ClubYujuPage, IndustrialPage, Embarcaciones, CelularPage, VidaPage, SaludPage, AccidentesPersonales, NotebookPage, PcGamerPage, ConsolaPage, TabletPage, RetiroPage, ViajeroPage,} from '../pages';
@@ -12,6 +12,7 @@ const AppRouter = () => {
   return (
     <>
      <Navbar />
+     <Router>
             <Routes>
              <Route path="/viajero" element={<ViajeroPage pageId="viajero"/>} />
                 <Route path="/home" element={<HomePage pageId="home"/>} />
@@ -34,6 +35,7 @@ const AppRouter = () => {
                 <Route path="/retiro" element={<RetiroPage/>} />
                 <Route path="/*" element={<Navigate to={"/Home"}/>} />
             </Routes>
+        </Router>
             <Footer/>
      
 
