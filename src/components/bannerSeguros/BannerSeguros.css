@@ -1,0 +1,61 @@
+/* Ocultar banner por defecto */
+.bannerContrataSegurosPadre {
+    display: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Mostrar el banner en pantallas pequeñas */
+    .bannerContrataSegurosPadre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      position: relative;
+    }
+  
+    /* Imagen del banner */
+    .bannerImage {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Contenedor del botón centrado */
+    .buttonWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    /* Estilo del botón */
+    .buttonContrataBannerSeguros {
+        padding: 10px 25px;
+        background-color: rgba(49, 238, 195, 1);
+        color: rgba(51, 105, 255, 1);
+        border: none;
+        border-radius: 5px;
+        font-size: 8px;
+        font-weight: 500;
+        font-family: inter;
+        cursor: pointer;
+        position: absolute;
+        top: -30px;
+        text-wrap-mode: nowrap;
+    }
+  
+    .buttonContrataBannerSeguros:hover {
+      animation: both;
+    }
+
+    html {
+        scroll-behavior: smooth;
+}
+}

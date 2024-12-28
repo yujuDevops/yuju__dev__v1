@@ -81,16 +81,21 @@ export const Carrousel = ({ Name }) => {
     ],
   };
 
+  // Hook para desplazarse al inicio de la página cuando el componente se monta
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Slider {...settings} className="lazy-card">
         {seguros.map((e) => {
-          // Verificar si e.titulo existe
+         
           if (e.titulo === Name) {
-            return null; // No mostrar nada si e.titulo existe
+            return null; 
           }
 
-          // Renderizar la tarjeta si e.titulo no existe
+         
           return (
             <div className="ContenedorPadreCard" key={e.titulo || e.id}>
               <div className="card">
@@ -110,4 +115,4 @@ export const Carrousel = ({ Name }) => {
   );
 };
 
-export default Carrousel;
+export default Carrousel;

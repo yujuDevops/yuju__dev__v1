@@ -4,7 +4,7 @@ import "./headerAuto.css";
 export const HeaderAuto = () => {
   return (
     <header className='header-auto'>
-    <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733320954/Header-seguro-auto_2_wpyagu.jpg" alt=""  className='imgPorDefectoMotos' />
+    <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1734616533/Header-Auto_b8y6kc.webp" alt=""  className='imgPorDefectoMotos' />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733696070/Header-Auto-tablet_1_kxc5zg.webp" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733695978/Header-auto-celular_z1kbti.jpg" alt="" className='imgFotoCelular'  />
     

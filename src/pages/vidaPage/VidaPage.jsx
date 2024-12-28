@@ -2,7 +2,7 @@ import "./VidaPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import {  Coberturas ,CoberturasAdicionales,HeaderVida,BannerVida, AseguradorasVida,  AcordeonVida} from "./vidaComponents/components"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
 
 
 
@@ -22,8 +22,11 @@ export const VidaPage = () => {
    <CoberturasAdicionales/>
    <BannerVida/>
    <AseguradorasVida/>
+    <BannerSeguros/>
    <AcordeonVida/>
+    <div id="carrousel">
    <Carrousel Name="Vida"/>
+   </div>
     </div>
     </div>
     </>

@@ -2,7 +2,7 @@ import "./IndustrialPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo } from "./components"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
 
 export const IndustrialPage = () => {
   return (
@@ -22,8 +22,11 @@ export const IndustrialPage = () => {
 
 <BannerIndustrial/>
 <ImgEmpresasIndustrial/>
+<BannerSeguros/>
 <AcordeonIndustrila/>
+<div id="carrousel">
 <Carrousel/>
+</div>
 </div>
  </>  
   )

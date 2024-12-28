@@ -5,7 +5,7 @@ export const HeaderBici = () => {
   return (
     <>
     <header className='header-bici'>
-   <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1724950770/Bici_jjmvvk.png" alt=""  className='imgPorDefectoMotos' />
+   <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735217515/Header-Bicicleta_hmzfgb.webp" alt=""  className='imgPorDefectoMotos' />
    <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617426/Header-Bicicleta_tycahz.webp" alt="" className='imgRemplazoMotos'  />
    <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1730821957/d_rahpoz.jpg" alt="" className='imgFotoCelular'  />
    

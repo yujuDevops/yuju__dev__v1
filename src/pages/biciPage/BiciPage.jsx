@@ -2,7 +2,7 @@ import "./BiciPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonBici, BannerBici, CardsBici, DataBiciCard, HeaderBici, ImgBiciEmpresas } from "./components"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
 
 
 export const BiciPage = () => {
@@ -26,12 +26,14 @@ export const BiciPage = () => {
   <div className="card-imagen-wf2-4taimg">
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1729689717/foto-bici-2_h83oru.svg" alt="" />
     </div>  
+<BannerSeguros/>  
  <DataBiciCard/>
  <BannerBici/>
  <ImgBiciEmpresas/>
  <AcordeonBici/>
+  <div id="carrousel">
  <Carrousel Name="Bicicleta"/>
-
+ </div>
  </div>
  </div>
   </div>

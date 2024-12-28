@@ -2,7 +2,7 @@ import "./embarcaciones.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonEmbarcaciones, BannerEmbarcaciones, CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones, ImgEmpresasEmbarcaciones } from "./components"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
 
 
 export const Embarcaciones = () => {
@@ -24,12 +24,16 @@ export const Embarcaciones = () => {
 <div className="card-imagen-wf2-4taimg-emba">
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732545558/Ilustracion-embarcacion-notebook_mtbxpl.svg" alt="" />
     </div>  
-   
+    
+<BannerSeguros/>
+
    <DataEmbarcaciones/>
    <BannerEmbarcaciones/>
     <ImgEmpresasEmbarcaciones/>
     <AcordeonEmbarcaciones/>
+    <div id="carrousel">
   <Carrousel Name="Embarcaciones"/>
+  </div> 
   </div> 
     </>
 

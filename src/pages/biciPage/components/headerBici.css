@@ -106,6 +106,7 @@
         border: 0.2px transparent;
         background-color: #33FFCC;
         text-decoration: none;
+        margin-bottom: 320px;
     }
 
 
@@ -354,6 +355,7 @@
     font-weight: 500;
     font-size: 100%!important;
     padding: 4PX;
+    line-break: anywhere;
   }
   
   .h2-bici{

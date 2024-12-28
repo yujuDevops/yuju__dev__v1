@@ -2,7 +2,7 @@ import "./HogarPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonHogar,PlanesHogar,ImgHogar,HeaderHogar,BannerHogarPage } from "./hogarPageComponents"
-
+import  BannerSeguros  from "../../components/bannerSeguros/BannerSeguros"
 
 
 export const HogarPage = () => {
@@ -22,8 +22,11 @@ export const HogarPage = () => {
     <PlanesHogar/>
     <BannerHogarPage/>
     <ImgHogar/>
+    <BannerSeguros/>  
     <AcordeonHogar/>
+    <div id="carrousel">
     <Carrousel Name="Hogar"/>
+    </div>
     </div>
     </div>
     </>

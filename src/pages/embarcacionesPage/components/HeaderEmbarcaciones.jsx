@@ -4,7 +4,7 @@ import"./headerEmbarcaciones.css";
 export const HeaderEmbarcaciones = () => {
   return (
     <header className='header-motos'>
-    <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730742673/Header-seguro-embarcacion_hm8k6h.png" alt=""  className='imgPorDefectoMotos' />
+    <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735217735/Header-embarcacion_1_hmiy4f.webp" alt=""  className='imgPorDefectoMotos' />
     <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617452/Header-embarcacion_1_kmtrgq.webp" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732547049/Header-embarcaciones-celular_dmqnpq.jpg" alt="" className='imgFotoCelular'  />
     

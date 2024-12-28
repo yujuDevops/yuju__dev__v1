@@ -2,6 +2,7 @@ import "./consolaPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonConsola, BannerConsola, DataCardConsola, HeaderConsola, ImgEmpresasConsola, InfoConsola } from "./components"
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
 
 
 export const ConsolaPage = () => {
@@ -21,8 +22,11 @@ export const ConsolaPage = () => {
  <DataCardConsola/>
  <BannerConsola/>
  <ImgEmpresasConsola/>
+ <BannerSeguros/>
  <AcordeonConsola/>
+ <div id="carrousel">
  <Carrousel Name="Consola"/> 
+ </div>
    </div>
 </>
   )

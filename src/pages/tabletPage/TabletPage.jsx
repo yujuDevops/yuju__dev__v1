@@ -2,6 +2,7 @@ import "./tabletPage.css";
 import Carrousel from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonTablet, BannerTablet, DataCardTablet, HeaderTablet, ImgTablet, InfoTablet } from "./components"
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
 
 
 export const TabletPage = () => {
@@ -19,11 +20,13 @@ export const TabletPage = () => {
  />
  <InfoTablet/>
  <DataCardTablet/>  
- <BannerTablet/> --------------
+ <BannerTablet/>
  <ImgTablet/>
+ <BannerSeguros/>
  <AcordeonTablet/>
+ <div id="carrousel">
  <Carrousel Name="Tablet"/>
-
+ </div>
  </div>
 </>
 

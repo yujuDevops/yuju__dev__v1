@@ -13,7 +13,7 @@ export const Footer = () => {
           <img id='logo__yuju' src={yujuBlaco} alt="Yuju Logo" />
           </a>
         </div>
-        <div className='logos__insta__face__mobil'>
+        <div className='logos_instaface_mobil'>
           <a href="">
             <img src={facebook} alt="" />
           </a>
@@ -23,9 +23,10 @@ export const Footer = () => {
           <div className='term__condiciones_mobile'>
             <a href="">
             <p>Términos y condiciones Política de privacidad</p>
+            <a href=""><span>011 5630-7246</span></a>
             </a>
-            
           </div>
+         
         </div>
         <div className="footer-links">
           <a href="#">
@@ -33,6 +34,9 @@ export const Footer = () => {
           Política de Cookies
           Aviso legal
           Condiciones de Venta</p>
+          </a>
+          <a href="#sdsd">
+          <span>011 5630-7246</span>
           </a>
         </div>
         <div className="footer-nimbus-logo">
@@ -87,4 +91,4 @@ export const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;

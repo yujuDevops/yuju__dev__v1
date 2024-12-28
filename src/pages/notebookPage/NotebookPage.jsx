@@ -2,6 +2,7 @@ import "./notebookPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonNotebook, BannerNotebook, DataNotebook, HeaderNotebook, ImgEmpresasNotebook, InfoNotebook } from "./components"
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
 
 
 export const NotebookPage = () => {
@@ -21,9 +22,11 @@ export const NotebookPage = () => {
 <DataNotebook/>
 <BannerNotebook/>
 <ImgEmpresasNotebook/>
+<BannerSeguros/>
 <AcordeonNotebook/>
+<div id="carrousel">
 <Carrousel Name="Notebook"/>
-
+</div>
 </div>
 
    </>

@@ -3,9 +3,8 @@ import "./AccidentesPersonales.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonAccidentesPersonales, BannerAccidentesPersonales, CoberturasAccidentesPersonales, HeaderAccidentesPersonales, ImgEmpresasAccidentesPersonales } from "./components"
-
 import { CardsAccidentesPersonales } from "./components/CardsAccidentesPersonales"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
 
 export const AccidentesPersonales = () => {
   return (
@@ -27,6 +26,8 @@ src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux
 {/* estilos aproximados con chatGpt */}
 <CardsAccidentesPersonales/>
 
+<BannerSeguros/>
+
 <CoberturasAccidentesPersonales/>
 <BannerAccidentesPersonales/>
 
@@ -34,7 +35,9 @@ src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux
 <ImgEmpresasAccidentesPersonales/>
 
 <AcordeonAccidentesPersonales/>
+<div id="carrousel">
 <Carrousel Name="Accidentes Personales"/>
+</div>
 </div>
 </>
   )

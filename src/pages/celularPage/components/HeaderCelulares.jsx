@@ -3,7 +3,7 @@ import "./headerCelulares.css";
 export const HeaderCelulares = () => {
   return (
 <header className='header-celular'>
-    <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1731330800/Header-seguro-celular_mwzytb.png" alt=""  className='imgPorDefectoMotos' />
+    <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735217735/Header-celular_kgoc2j.webp" alt=""  className='imgPorDefectoMotos' />
     <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617430/Header-celular_sgv3iw.webp" alt="" className='imgRemplazoMotos'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1734020664/Header-celular-celular_geaaye.jpg" alt="" className='imgFotoCelular'  />
     

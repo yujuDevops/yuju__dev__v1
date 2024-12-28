@@ -2,7 +2,7 @@ import "./SaludPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonSalud, BannerVida, CoberturaSalud, HeaderSalud, ImgEmpresaSalud } from "./components"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
 
 export const SaludPage = () => {
   return (
@@ -25,8 +25,11 @@ export const SaludPage = () => {
   <BannerVida/>
   {/* Acordeon salud depende de otros estilos de css, creo que de AcordeonBici */}
   <ImgEmpresaSalud/>
+  <BannerSeguros/>
   <AcordeonSalud/>
+  <div id="carrousel">
   <Carrousel Name="Salud"/>
+  </div>
   </div>
   </div>
   </>

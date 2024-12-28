@@ -3,7 +3,7 @@ import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { HeaderMotos,CardMotos,CardInfo,BannerContratar,ImgEmpresas,AcordeonMotos } from "./motoPageComponents"
 import fotoMoto from "../../assets/image/Moto.png"
 import { Carrousel } from "../../components/carrousel/Carrousel";
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
 
 
 
@@ -15,6 +15,7 @@ export const MotoPage = () => {
       <div className="content-moto">
 <HeaderMotos/>
 
+
 <CotizaAhora 
  titulo="Seguro de motos"
  precio="Desde $4.000/mes"
@@ -23,14 +24,15 @@ export const MotoPage = () => {
 />
 
 
-      <CardMotos />
-
+<CardMotos />
+<BannerSeguros/>
 <CardInfo/>
 <BannerContratar/>
 <ImgEmpresas/>
 <AcordeonMotos/>
+<div id="carrousel">
 <Carrousel Name="Motos" /> 
-
+</div>
 </div>
 </div>
 

@@ -2,6 +2,7 @@ import "./pcGamerPage.css";
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonPcGamer, BannerPcGamer, DataCardPcgamer, HeaderPcGamer, ImgEmpresasPcGamer, InfoPcGamer } from "./components"
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
 
 
 export const PcGamerPage = () => {
@@ -21,8 +22,11 @@ export const PcGamerPage = () => {
  <DataCardPcgamer/>
  <BannerPcGamer/> 
  <ImgEmpresasPcGamer /> 
+ <BannerSeguros/>
  <AcordeonPcGamer/>
+ <div id="carrousel">
  <Carrousel Name="PC Gamer"/> 
+ </div>
  </div>
 </>
   )

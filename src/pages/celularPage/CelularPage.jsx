@@ -3,7 +3,7 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { BannerCelulares, CardSeguroCelular, HeaderCelulares, ImgEmpresasCelulares, TodoRiesgoCelular } from "./components"
 import { AcordeonCelulares } from "./components/AcordeonCelulares"
-
+import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
 
 
 export const CelularPage = () => {
@@ -24,8 +24,11 @@ export const CelularPage = () => {
 <CardSeguroCelular/>
 <BannerCelulares/>
 <ImgEmpresasCelulares/>
+<BannerSeguros/>
 <AcordeonCelulares/>
+<div id="carrousel">
 <Carrousel Name="Celular"/>
+</div>
 </div>
  </>
   )

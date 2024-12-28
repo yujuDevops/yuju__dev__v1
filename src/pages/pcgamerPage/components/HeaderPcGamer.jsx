@@ -3,7 +3,7 @@ import "./headerPcGamer.css";
 export const HeaderPcGamer = () => {
   return (
     <header className='header-pcgamers'>
-    <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1732029342/Header-seguro-pcgamer_lem2vq.png" alt=""  className='imgPorDefectopcgamers' />
+    <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735217736/Header-pcgamer_vfj1za.webp" alt=""  className='imgPorDefectopcgamers' />
     <img  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1734617510/Header-pcgamer_auujwd.webp" alt="" className='imgRemplazopcgamers'  />
     <img  src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733268916/Header-pcgamer-celular_egnacb.jpg" alt="" className='imgFotoCelular'  />
     
