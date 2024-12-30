@@ -1,5 +1,6 @@
 import { dataIndustrial } from "../data"
-import "./industrialInfo.css"
+import "./industrialInfo.css";
+
 export const IndustrialInfo = () => {
     return (
         <div className="industrial-container">

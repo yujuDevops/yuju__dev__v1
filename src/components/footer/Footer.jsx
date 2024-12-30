@@ -9,38 +9,38 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <a href="">
+          <a href="/home">
           <img id='logo__yuju' src={yujuBlaco} alt="Yuju Logo" />
           </a>
         </div>
         <div className='logos_instaface_mobil'>
-          <a href="">
-            <img src={facebook} alt="" />
+          <a href="https://www.facebook.com/share/1BtqRdRJeQ/">
+            <img src={facebook} alt="facebook" />
           </a>
-          <a href="">
-            <img src={instagram} alt="" />
+          <a href="https://www.instagram.com/segurosyuju?igsh=djkyZWxkZ3pvcXJn">
+            <img src={instagram} alt="instagram" />
           </a>
           <div className='term__condiciones_mobile'>
-            <a href="">
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">
             <p>Términos y condiciones Política de privacidad</p>
-            <a href=""><span>011 5630-7246</span></a>
+            <a href="https://wa.me/5491156307246"><span>011 5630-7246</span></a>
             </a>
           </div>
          
         </div>
         <div className="footer-links">
-          <a href="#">
+          <a href="https://www.argentina.gob.ar/superintendencia-de-seguros">
           <p>Política de Privacidad
           Política de Cookies
           Aviso legal
           Condiciones de Venta</p>
           </a>
-          <a href="#sdsd">
+          <a href="https://wa.me/5491156307246">
           <span>011 5630-7246</span>
           </a>
         </div>
         <div className="footer-nimbus-logo">
-          <a href="">
+          <a href="https://nimbusseguros.com/">
           <img src={nimbusBlaco} alt="Nimbus Logo" />
           </a>
         </div>

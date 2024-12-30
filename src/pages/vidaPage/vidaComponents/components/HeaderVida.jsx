@@ -13,7 +13,7 @@ export const HeaderVida = () => {
    <h2 className='h2-vida'>Cuidá a los que más querés. Asegurá tu futuro y el de <br/> tu familia con el mejor seguro de vida.</h2>
    <h3 className='h3-vida'>Construí un futuro seguro para vos y tu familia. Elegí la cobertura que se <br/> ajuste a tu vida y disfrutá el presente con tranquilidad.</h3>
    <button className='buttonVidaHeader'><a href="
-https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
+    https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
    </div>
  
    </header>

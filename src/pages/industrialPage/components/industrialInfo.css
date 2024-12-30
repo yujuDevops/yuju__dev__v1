@@ -26,7 +26,8 @@
   }
   
   /* Icono de la tarjeta */
-  .industrial-icon {
+  .industrial-icon{
+    display: flex;
     width: 100%;
     height: auto;
     margin-right: 15px;
@@ -84,8 +85,7 @@
 
 
 
-@media 
-(min-width: 1401px) and (max-width: 1600px) { 
+@media (min-width: 1401px) and (max-width: 1600px) { 
 
   .industrial-icon-celular {
     display: none;
@@ -178,8 +178,7 @@
 
 
 
-@media 
-(min-width: 1200px) and (max-width: 1400px) { 
+@media (min-width: 1200px) and (max-width: 1400px) { 
 
   .industrial-icon-celular {
     display: none;
@@ -460,6 +459,7 @@
 
 
 @media only screen and (max-width: 600px) { 
+
   .industrial-container {
     display: flex;
     flex-wrap: wrap;
@@ -469,7 +469,7 @@
     margin-top: 15px;
     margin-bottom: -20px;
     }
-  }
+  
   
   /* Tarjeta individual */
   .industrial-card {
@@ -549,7 +549,7 @@
 }
 
 
-
+}
 
 
 @media(min-width: 361px) and (max-width: 400px) {

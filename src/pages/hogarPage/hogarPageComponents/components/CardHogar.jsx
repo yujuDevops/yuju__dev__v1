@@ -48,7 +48,7 @@ const PlanModal = ({ isOpen, onRequestClose, planDetails, handleClick, datos ,ha
         <button onClick={handleClick}>¡Quiero que me contacten!</button>
       </form> */}
 
-      <a href="https://wa.me/XXXXXXXXXXXXXX" className="whatsapp-link">
+      <a href="https://wa.me/5491156307246" className="whatsapp-link">
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732423863/whatsapp-img_bzvj0d.png" alt="WhatsApp" />
         Hablar con un asesor
       </a>
