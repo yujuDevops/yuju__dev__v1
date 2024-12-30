@@ -1,29 +1,72 @@
-import  { useState } from 'react';
-import './EmailInput.css'; // Asegúrate de crear y vincular el archivo CSS
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { Alert, Snackbar } from '@mui/material';
+import './EmailInput.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const EmailInput = () => {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [openErrorAlert, setOpenErrorAlert] = useState(false);
+  const [openSuccessAlert, setOpenSuccessAlert] = useState(false);
 
   const handleChange = (event) => {
     setEmail(event.target.value);
     if (event.target.value.includes('@')) {
       setError('');
-    } else {
-      setError('Debes utilizar "@" en este campo');
     }
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (email.includes('@')) {
-      alert(`Email submitted: ${email}`);
-    } else {
+
+    if (!email.includes('@')) {
       setError('Debes utilizar "@" en este campo');
+      setOpenErrorAlert(true);
+      clearForm();
+      return;
     }
 
-    setEmail("");
+    // Configuración de EmailJS
+    const serviceID = 'service_t474l2s'; 
+    const templateID = 'template_4ezast9'; 
+    const userID = '9sEVU5bP2sI0FNqcI'; 
+
+    // Datos que se enviarán en la plantilla
+    const templateParams = {
+      email: email,
+      reply_to: email,
+    };
+
+    emailjs
+      .send(serviceID, templateID, templateParams, userID)
+      .then(
+        () => {
+          setSuccess('¡Yuju! ¡Newsletter enviado con éxito!');
+          setError('');
+          setOpenSuccessAlert(true);
+          clearForm();
+        },
+        (err) => {
+          setError('Hubo un error al enviar el correo. Inténtalo más tarde.');
+          setSuccess('');
+          setOpenErrorAlert(true);
+          console.error('Error al enviar email:', err);
+        }
+      );
+  };
+
+  const handleCloseError = () => {
+    setOpenErrorAlert(false);
+  };
+
+  const handleCloseSuccess = () => {
+    setOpenSuccessAlert(false);
+  };
+
+  const clearForm = () => {
+    setEmail('');
   };
 
   return (
@@ -38,10 +81,33 @@ const EmailInput = () => {
         className={`email-input ${error ? 'input-error' : ''}`}
         required
       />
-      {error && <p className="error-message">{error}</p>}
       <button type="submit" className="submit-button">
         <i className="fa-solid fa-angle-right"></i>
       </button>
+
+      {/* Snackbar para errores */}
+      <Snackbar
+        open={openErrorAlert}
+        autoHideDuration={5000}
+        onClose={handleCloseError}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      >
+        <Alert onClose={handleCloseError} severity="error" variant="filled">
+          {error}
+        </Alert>
+      </Snackbar>
+
+      {/* Snackbar para éxitos */}
+      <Snackbar
+        open={openSuccessAlert}
+        autoHideDuration={5000}
+        onClose={handleCloseSuccess}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      >
+        <Alert onClose={handleCloseSuccess} severity="success" variant="filled">
+          {success}
+        </Alert>
+      </Snackbar>
     </form>
   );
 };
