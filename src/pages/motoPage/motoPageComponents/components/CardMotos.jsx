@@ -3,7 +3,12 @@ import "./cardMotos.css";
 
 export const CardMotos = () => {
   const sendMessage = (title) => {
-    const message = `Hola, estoy interesado en contratar el seguro de motos: ${title}.`;
+  const message = `Hola, estoy interesado en contratar el seguro de motos: ${title} (COBERTURA) 
+🔶Marca: 
+🔶Versión: 
+🔶Año: 
+🔶Localidad: 
+`;
     const phoneNumber = "5491156307246"; // Número de WhatsApp
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = url;

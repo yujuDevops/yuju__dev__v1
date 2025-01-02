@@ -1,6 +1,9 @@
 import Carrousel from "../../components/carrousel/Carrousel"
+import "./AutoPage.css"
 import { AcordeonAuto, CoberturasAuto, HeaderAuto, ImgEmpresasAuto } from "./components"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
+import { CardInfo } from "./components/CardInfo"
+import { BannerContratar } from "../autoPage/components/BannerContratar"
 
 export const AutoPage = () => {
   return (
@@ -16,7 +19,10 @@ export const AutoPage = () => {
  />
 
 <CoberturasAuto/>
+<CardInfo/>
+<BannerContratar/>
 <ImgEmpresasAuto/>
+
 <AcordeonAuto/>
 <Carrousel Name="Auto"/>
 </>
