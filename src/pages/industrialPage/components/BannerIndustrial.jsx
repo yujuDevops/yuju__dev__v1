@@ -7,7 +7,7 @@ export const BannerIndustrial = () => {
 <img className="imgBannerMotosTablet" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732293710/Banner-CTA-NOTEBOOK_l1xj8j.svg" alt="" />
 <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732294859/Banner-contacto-celular_rge8dd.svg" alt="" />
     
-    <h2 className="h2Banner-ind">Hacé lo que amás sin miedo. Hacé lo que amás sin miedo. <span className="spanBanner">Yuju te asesora <br/>para que elijas el mejor seguro. Tenemos varias opciones de aseguradoras..</span>   
+    <h2 className="h2Banner-ind">Hacé lo que amás sin miedo. Hacé lo que amás sin miedo. <span className="spanBanner">Yuju te asesora <br/>para que elijas el mejor seguro. Tenemos varias opciones de aseguradoras.</span>   
       <br/>
      ¿Querés saber mas?
     

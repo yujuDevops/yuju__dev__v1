@@ -7,7 +7,7 @@ export const BannerViajero = () => {
 <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732294859/Banner-contacto-celular_rge8dd.svg" alt="" />
     
     <h2 className="h2Banner">Viví tu viaje al máximo.  <span className="spanBanner"> 
-    No dejes que nada te arruine tu experiencia.<br/> Tenemos el seguro que te soluciona todo,<br/> sin importar dónde, cuánto ni cómo viajás.
+    No dejes que nada te arruine tu experiencia.<br/> Tenemos el seguro que te soluciona todo, sin importar dónde, cuánto ni cómo viajás.
     <br/>
     </span>
     ¿Querés viajar tranquilo?

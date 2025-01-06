@@ -6,7 +6,7 @@ import { dataAcordenPcGamer } from '../data/dataAcordeonPcGamer'
 export const AcordeonPcGamer = () => {
     return (
         <div className="padreDiv-acc">
-        <h2 className="h2Acordeon-acc">¿Tenés dudas sobre el seguro para bicicleta?</h2>
+        <h2 className="h2Acordeon-acc">¿Te gustaría saber más sobre el seguro de PC gamer?</h2>
         <h3 className="h3Acordeon-acc">En Yuju Seguros nos gusta que estés bien informado, por eso te dejamos algunas respuestas a las preguntas más frecuentes:</h3>
         
         {dataAcordenPcGamer.map((resp)=> {

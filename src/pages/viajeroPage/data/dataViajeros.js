@@ -1,31 +1,31 @@
 export const dataViajeros = [
     {
       numero: 1,
-      tituloStrong: "Cotizá",
       tituloNormal: "tu seguro",
-      isStrongFirst: false,
+      tituloStrong: "Cotizá",
+      isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733401720/Icono-cotiza_hih1ey.png"
     },
     {
       numero: 2,
-      tituloStrong: "Elegí",
-      tituloNormal: "Elegí",
+      tituloNormal: "tu plan",
+      tituloStrong: "Elegi",
       isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740508/web_Icono-selecciona_azul_3_n8ekxs.svg",
      
     },
     {
       numero: 3,
-      tituloStrong: "Ingresá tus datos",
       tituloNormal: "personales y método de pago",
-      isStrongFirst: false,
+      tituloStrong: "Ingresá tus datos",
+      isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740383/web_Icono-completar_azul_3_k68cnn.svg",
      
      
     },
     {
       numero: 4,
-      tituloStrong: " ¡Listo! ",
+      tituloStrong: "  ¡Listo! ",
       tituloNormal: "Vas a recibir por email el certificado de cobertura",
       isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740627/web_Icono-asegurado_azul_3_ylxoce.svg",}
