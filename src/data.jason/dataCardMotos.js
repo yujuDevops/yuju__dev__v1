@@ -1,14 +1,14 @@
 export const dataCardMotos = [
   {
     numero: 1,
-    tituloStrong: "elegí tu plan",
+    tituloStrong: "Elegí tu plan",
     tituloNormal: "Cotizá, compará y",
     isStrongFirst: false,
     imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740508/web_Icono-selecciona_azul_3_n8ekxs.svg",
   },
   {
     numero: 2,
-    tituloStrong: "Completa los datos",
+    tituloStrong: "Completá los datos",
     tituloNormal: "de tu moto y tus datos personales",
     isStrongFirst: true,
     imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740383/web_Icono-completar_azul_3_k68cnn.svg",
