@@ -15,7 +15,7 @@ export const CelularPage = () => {
       <div className="content-celular"></div>
    <HeaderCelulares/>
    <CotizaAhora 
- titulo="Seguro de celuar"
+ titulo="Seguro de celular"
  precio="Desde $2.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1731331114/Celular_1_1_dgdlcm.png"

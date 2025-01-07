@@ -10,7 +10,7 @@ export const infoNotebook = [
     },
     {
       id: 2,
-      title: "Robo",
+      title: "Incendio",
       description: "Se cubre el robo total del bien asegurado, o su tentativa. Con franquicia del 15%.",
       title2: "Robo",
       description2: "Se cubre el robo total del bien asegurado, o su tentativa. Con franquicia del 15%.",
@@ -19,7 +19,7 @@ export const infoNotebook = [
     },
     {
       id: 3,
-      title: "Incendio",
+      title: "Robo",
       description: "Se cubre el incendio total del bien asegurado. Con franquicia del 15%.",
       title2: "Incendio",
       description2: "Se cubre el incendio total del bien asegurado. Con franquicia del 15%.",
@@ -29,7 +29,7 @@ export const infoNotebook = [
     {
       id: 4,
       title: "Cobertura adicional",
-      description: "Y además, podés sumar a tu plan tus accesorios contra robos e incendios. Cubre el mouse, teclado, auriculares, micrófono, cámara, casco de realidad virtual y joystick.",
+      description: "Además, podés sumar a tu plan tus accesorios contra robos e incendios. Cubre el mouse, teclado, auriculares, micrófono, cámara, casco de realidad virtual y joystick.",
       title2: "",
       description2: "",
       icon: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1733235813/Seccion_notebook_4-4_t39hcp.svg", // Agrega un icono si corresponde o déjalo vacío

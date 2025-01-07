@@ -14,7 +14,7 @@ export const HogarPage = () => {
       <div className="content-hogar">
     <HeaderHogar/>
     <CotizaAhora 
- titulo="Seguro de motos"
+ titulo="Seguro de hogar"
  precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1722606893/Hogar_t9ylef.png"

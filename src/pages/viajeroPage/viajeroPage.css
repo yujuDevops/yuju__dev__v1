@@ -1,6 +1,6 @@
 @media (min-width: 1200px) and (max-width: 1600px) {
 
-    
+
     .semisphere-viajero {
       position: absolute;
       top: 385px;
@@ -34,9 +34,13 @@
       position: relative; /* Asegura que los botones se mantengan en el flujo y sean interactivos */
     }
   }
+
+
+
   
 
   @media only screen and (max-width: 600px) {
+
 
     body {
       overflow-x: hidden!important; /* Deshabilitar el scroll horizontal en pantallas pequeñas */

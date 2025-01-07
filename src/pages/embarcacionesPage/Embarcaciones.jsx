@@ -14,7 +14,7 @@ export const Embarcaciones = () => {
       <div className="content-embarcacion"></div>
    <HeaderEmbarcaciones/>
    <CotizaAhora 
- titulo="Seguro de motos"
+ titulo="Seguro de embarcaciones"
  precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730742865/embarcaciones_uxaogz.png"
