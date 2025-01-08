@@ -126,7 +126,7 @@
   .divModalHogar p {
     font-family: inter;
     color: rgba(51, 105, 255, 1);
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     font-size: 12px;
     font-weight: 900;
   }
@@ -359,7 +359,7 @@
     .divModalHogar p {
       font-family: inter;
       color: rgba(51, 105, 255, 1);
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       font-size: 12px;
       font-weight: 900;
     }
