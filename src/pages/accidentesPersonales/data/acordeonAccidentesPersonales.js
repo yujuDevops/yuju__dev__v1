@@ -9,7 +9,7 @@ export const acordeonAccidentesPersonales =
     {
       "id": 2,
       "title": "¿En qué momento me cubre la póliza?",
-      "subtitle": "Eso depende del tipo de póliza que elijas. Podés optar por una póliza de accidentes laboral, que te cubre mientras realizás tu actividad declarada en la póliza. Por ejemplo, si sos pintor, jugador de fútbol o docente. También te cubre el in itinere, que es cuando vas o volvés del trabajo. (Algunas aseguradoras te cobran un extra por esto). O podés elegir una póliza 24hs, que te cubre todo el día, desde que empezás hasta que terminás la vigencia."
+      "subtitle": "Eso depende del tipo de póliza que elijas. Podés optar por una póliza de accidentes laboral, que te cubre mientras realizás tu actividad declarada en la póliza. Por ejemplo, si sos pintor, jugador de fútbol o docente. También te cubre el in itinere, que es cuando vas o volvés del trabajo. (Algunas aseguradoras te cobran un extra por esto). O podés elegir una póliza 24 hs, que te cubre todo el día, desde que empezás hasta que terminás la vigencia."
     },
     {
       "id": 3,

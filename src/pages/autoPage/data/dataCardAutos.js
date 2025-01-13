@@ -8,7 +8,7 @@ export const dataCardAutos = [
     },
     {
       numero: 2,
-      tituloStrong: "Completa los datos",
+      tituloStrong: "Completá los datos",
       tituloNormal: "de tu auto y tus datos personales",
       isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721740383/web_Icono-completar_azul_3_k68cnn.svg",

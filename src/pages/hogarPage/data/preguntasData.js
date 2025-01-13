@@ -22,7 +22,7 @@ export const preguntasData = [
     {
       id: 5,
       title: "¿En caso de mudanza se mantiene la cobertura?",
-      subtitle: "Si, por supuesto. Solo tenés que avisarnos tu nueva dirección y nosotros actualizamos tu póliza. Así, tu nueva casa queda protegida con la misma cobertura que tenías antes."
+      subtitle: "Sí, por supuesto. Solo tenés que avisarnos tu nueva dirección y nosotros actualizamos tu póliza. Así, tu nueva casa queda protegida con la misma cobertura que tenías antes."
     },
     {
       id: 6,
@@ -37,12 +37,12 @@ export const preguntasData = [
     {
       id: 8,
       title: "¿Puedo contratar una póliza de hogar si soy inquilino?",
-      subtitle: "Si, por supuesto. No hace falta que seas el dueño de la casa para asegurarla. Podés contratar una póliza de hogar como inquilino y proteger tus bienes y tu responsabilidad civil."
+      subtitle: "Sí, por supuesto. No hace falta que seas el dueño de la casa para asegurarla. Podés contratar una póliza de hogar como inquilino y proteger tus bienes y tu responsabilidad civil."
     },
     {
       id: 9,
       title: "¿Debo declarar los electrodomésticos de mi vivienda y los bienes tecnológicos que aseguro?",
-      subtitle: "Eso depende del tipo de cobertura que contrates. Si elegís una cobertura básica, no hace falta que declares nada. Si elegís una cobertura más completa, sí tenés que declarar los bienes que quieras asegurar, como tu televisor, tu heladera o tu computadora."
+      subtitle: "Eso depende del tipo de cobertura que contrates. Si elegís una cobertura básica, no hace falta que declares nada. Sí, elegís una cobertura más completa, sí tenés que declarar los bienes que quieras asegurar, como tu televisor, tu heladera o tu computadora."
     },
     {
       id: 10,
