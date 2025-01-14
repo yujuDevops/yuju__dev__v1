@@ -23,7 +23,8 @@ export const acordeonIndustrila = [
       "- Robo valores giro comercial\n" +
       "- Responsabilidad civil comprensiva\n" +
       "- Robo bienes de uso\n" +
-      "- Seguro técnico - Equipos electrónicos"
+      "- Seguro técnico \n" +
+      "- Equipos electrónicos"
   },
   {
     id: 4,

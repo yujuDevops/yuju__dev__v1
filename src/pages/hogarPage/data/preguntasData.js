@@ -22,7 +22,7 @@ export const preguntasData = [
     {
       id: 5,
       title: "¿En caso de mudanza se mantiene la cobertura?",
-      subtitle: "Si, por supuesto. Solo tenés que avisarnos tu nueva dirección y nosotros actualizamos tu póliza. Así, tu nueva casa queda protegida con la misma cobertura que tenías antes."
+      subtitle: "Sí, por supuesto. Solo tenés que avisarnos tu nueva dirección y nosotros actualizamos tu póliza. Así, tu nueva casa queda protegida con la misma cobertura que tenías antes."
     },
     {
       id: 6,

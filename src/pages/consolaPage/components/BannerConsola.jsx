@@ -11,8 +11,7 @@ export const BannerConsola = () => {
     
     <h2 className="h2Banner-pc">Disfrutá sin preocupaciones <span className="spanBanner"> 
     .Yuju te brinda el seguro de consola más <br/>
-    completo y accesible. ¿Querés saber más?
-    <br />
+    completo y accesible. <strong>¿Querés saber más?</strong>
     <br />
     </span>
    

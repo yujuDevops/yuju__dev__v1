@@ -50,6 +50,7 @@
     color: white;
     font-family: inter;
     font-weight: 400;
+    width: 100%;
   }
   
   .buttonConsolaHeader {
@@ -132,6 +133,7 @@
         font-size: 90%;
         font-weight: 400!important;
         font-family: inter;
+        width: 100%;
       }
           
         

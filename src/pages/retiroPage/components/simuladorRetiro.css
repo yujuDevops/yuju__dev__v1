@@ -473,10 +473,10 @@ input[type="range"]::-moz-range-progress {
 }
 
 .legalRetiro h3 {
-  margin-top: 15px;
+  margin-top: 35px;
   margin-left: 55px;
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 700;
   font-family: inter;
   color: rgba(141, 139, 142, 1);
 }

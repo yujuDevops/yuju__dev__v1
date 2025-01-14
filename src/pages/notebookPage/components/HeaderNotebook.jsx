@@ -10,7 +10,7 @@ export const HeaderNotebook = () => {
     <div className='container-notebook'>
     <h1 className='h1-notebook'>SEGURO DE NOTEBOOK</h1>
     <h2 className='h2-notebook'>Asegurá tu notebook desde donde estés. Encontrá el plan que más se adapte a vos.</h2>
-    <h3 className='h3-notebook'>Disfrutá haciendo, aprendiendo y creando. Tenemos el mejor seguro para tu notebook, <br/>para que la disfrutes con tranquilidad. Contratalo hoy, 100% online</h3>
+    <h3 className='h3-notebook'>Disfrutá haciendo, aprendiendo y creando. Tenemos el mejor seguro para tu notebook, <br/>para que la disfrutes con tranquilidad. Contratalo hoy, 100% online.</h3>
     <button className='buttonVidaHeader'><a href="
 https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
     </div>

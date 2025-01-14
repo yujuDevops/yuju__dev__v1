@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Laura González",
     date: "13/03/2024",
-    text: "Me está asesorando Malena. Una genia! me atendió de forma impecable y me dio el mejor precio.",
+    text: "Me está asesorando Malena. ¡Una genia! Me atendió de forma impecable y me dio el mejor precio.",
   },
 ];
 

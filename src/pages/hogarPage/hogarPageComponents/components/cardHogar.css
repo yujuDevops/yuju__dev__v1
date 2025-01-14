@@ -340,16 +340,14 @@
       justify-content: space-between;
       align-items: center;
       background-color: rgba(247, 247, 247, 0.123);
-      padding: 140px 0px 30px 45px;
+      padding: 134px 0px 30px 45px;
       border-radius: 20px;
       max-width: 1300px;
       position: relative;
-      margin:70px 30px 20px;
+      margin: 70px 30px 20px;
       z-index: 9;
-      height: 500px;
-    
-  
-    }
+      height: 635px;
+  }
     
     .divModalHogar h2 {
       color: #0070f3;
@@ -465,7 +463,18 @@
       width: 1px;
       background-color: #ccc;
       margin: 0 20px;
+      display: none;
     }
+
+    .plan-descripcion span {
+      font-family: inter;
+      color: rgba(58, 72, 89, 1);
+      font-size: 12px;
+      font-weight: 400;
+      position: absolute;
+      top: 90px;
+    }
+
 
   }
 

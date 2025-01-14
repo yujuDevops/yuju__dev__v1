@@ -16,7 +16,7 @@ export const BannerRetiro = () => {
         <div className="buttonRetiroBanner">
         <a href="
         https://wa.me/5491156307246">
-        <button>Escribinos</button>
+        <button>Te asesoramos</button>
         </a>
         </div>
             </div>

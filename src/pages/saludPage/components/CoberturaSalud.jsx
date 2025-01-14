@@ -47,7 +47,7 @@ export const CoberturaSalud = () => {
       </div>
 
       <div className="coberturah3-item coberturah3-item-sm">
-        <h2>Cobertura adicionales</h2>
+        <h2>Coberturas adicionales</h2>
         <h3>
           Atención Médica Digital <br />
           <h4>Servicio médico de atención por videoconsultas con diferentes profesionales las 24 hs del día.

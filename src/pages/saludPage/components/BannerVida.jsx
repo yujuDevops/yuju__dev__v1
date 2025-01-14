@@ -1,3 +1,5 @@
+import "./bannerVida.css";
+
 export const BannerVida = () => {
   return (
   
@@ -6,13 +8,13 @@ export const BannerVida = () => {
 <img className="imgBannerMotosTablet" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732293710/Banner-CTA-NOTEBOOK_l1xj8j.svg" alt="" />
 <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732294859/Banner-contacto-celular_rge8dd.svg" alt="" />
     
-    <h2 className="h2Banner">Vos elegís cómo cuidar tu salud.<br/><span className="spanBanner" > Yuju te asesora para que elijas el mejor seguro. Tenemos varias opciones de aseguradoras.</span>
+    <h2 className="h2Banner-salud">Vos elegís cómo cuidar tu salud.<span className="spanBanner" > Yuju te asesora para que elijas el mejor seguro. Tenemos varias opciones de aseguradoras.</span>
+    
     <br/>
-    <br/>
-    <span className="spanBanner">  ¿Querés saber más?</span>
+    <span className="spanBanner-salud">  ¿Querés saber más?</span>
     
     </h2>
-    <div className="buttonMotoBanner">
+    <div className="buttonSaludBanner">
   <a href="">
   <button>Te asesoramos</button>
   </a>
