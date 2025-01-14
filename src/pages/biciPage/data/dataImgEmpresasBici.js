@@ -32,9 +32,9 @@ export const dataImgEmpresasBici = [
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840324/LIBRA_npopkj.png"
     },
  
-    {
-        id: 7,
-        titulo: "Zurich",
-        foto:"https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
-    }
+    // {
+    //     id: 7,
+    //     titulo: "Zurich",
+    //     foto:"https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
+    // }
 ]
