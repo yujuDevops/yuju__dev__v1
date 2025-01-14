@@ -63,7 +63,7 @@ export const dataAcordeon = [
     id: 11,
     title: "Tuve un siniestro con mi moto, ¿qué debo hacer?",
     subtitle:
-      "En caso de accidente es de suma importancia obtener los siguientes datos del tercero: Del conductor: DNI, dirección y teléfono. Del vehículo: Patente, Marca modelo y compañía de seguros). Si hay lesionados, hacé la denuncia policial. No hagas acuerdos ni firmes nada con el tercero."
+      "En caso de accidente es de suma importancia obtener los siguientes datos del tercero: Del conductor: DNI, dirección y teléfono. Del vehículo: Patente, Marca, Modelo y compañía de seguros. Si hay lesionados, hacé la denuncia policial. No hagas acuerdos ni firmes nada con el tercero."
   },
   {
     id: 12,
@@ -100,7 +100,7 @@ export const dataAcordeon = [
     id: 17,
     title: "¿Cuál es la vigencia de la póliza?",
     subtitle:
-      "La vigencia suele ser anual con refacturaciones en el medio, que son actualizaciones del valor del vehículo y del seguro. Esto te permite tener tu moto bien asegurada. El período de cada refacturación depende de cada seguro, suele ser trimestral pero puede variar por la inflación."
+      "La vigencia suele ser anual con refacturaciones en el medio, que son actualizaciones del valor del vehículo y del seguro. Esto te permite tener tu moto bien asegurada. El período de cada refacturación depende de cada seguro, suele ser trimestral, pero puede variar por la inflación."
   },
   {
     id: 18,

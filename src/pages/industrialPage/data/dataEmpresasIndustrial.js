@@ -38,4 +38,9 @@ export const dataEmpresasIndustrial = [
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840285/HDI_wpbawf.png"
     },
 
+//    {
+//         id: 8,
+//         titulo: "Zurich",
+//         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
+//     }
 ]

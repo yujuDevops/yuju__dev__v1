@@ -39,9 +39,9 @@ export const dataVida = [
         titulo: "San Patricio Seguros",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840348/SANPATRICIO-color-2_a88xyo.png"
     },
-    {
-        id: 9,
-        titulo: "Zurich",
-        foto:"https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
-    }
+    // {
+    //     id: 9,
+    //     titulo: "Zurich",
+    //     foto:"https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
+    // }
 ]

@@ -27,7 +27,7 @@ export const dataAcordeonAuto = [
     {
       id: 6,
       title: "¿Qué debo hacer en caso de tener un siniestro con mi auto?",
-      subtitle: "Primero, asegurate de que todos estén bien y llamá al 911 si es necesario. Activá las balizas y usá el chaleco reflectivo. Intercambiá datos con los involucrados, sacá fotos del siniestro, completá la denuncia y comunicáte con tu aseguradora para informar el incidente."
+      subtitle: "Primero, asegurate de que todos estén bien y llamá al 911 si es necesario. Activá las balizas y usá el chaleco reflectivo. Intercambiá datos con los involucrados, sacá fotos del siniestro, completá la denuncia y comunicate con tu aseguradora para informar el incidente."
     },
     {
       id: 7,
