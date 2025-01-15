@@ -115,4 +115,3 @@ export const Carrousel = ({ Name }) => {
   );
 };
 
-export default Carrousel;

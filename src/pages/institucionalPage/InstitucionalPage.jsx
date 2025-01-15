@@ -1,8 +1,9 @@
 import "./InstitucionalPage.css";
 
-import Carrousel from "../../components/carrousel/Carrousel"
+
 import EmailInput from "../homepage/componentsHome/EmailInput"
 import { HeaderInstitucionalPage, QueNosDiferencia, QueTeOfrecemo, VisionMisionObjetivo } from "./components"
+import { Carrousel } from "../../components/carrousel/Carrousel";
 
 export const InstitucionalPage = () => {
   return (

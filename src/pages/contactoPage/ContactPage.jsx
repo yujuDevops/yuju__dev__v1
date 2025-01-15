@@ -1,5 +1,6 @@
 
-import Carrousel from '../../components/carrousel/Carrousel'
+
+import { Carrousel } from '../../components/carrousel/Carrousel'
 import EmailInput from '../homepage/componentsHome/EmailInput'
 import { HeaderContacto } from './Components'
 import "./contactoPage.css"

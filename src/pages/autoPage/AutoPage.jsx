@@ -1,9 +1,10 @@
-import Carrousel from "../../components/carrousel/Carrousel"
+
 import "./AutoPage.css"
 import { AcordeonAuto, CoberturasAuto, HeaderAuto, ImgEmpresasAuto } from "./components"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { CardInfo } from "./components/CardInfo"
 import { BannerContratar } from "../autoPage/components/BannerContratar"
+import { Carrousel } from "../../components/carrousel/Carrousel"
 
 export const AutoPage = () => {
   return (

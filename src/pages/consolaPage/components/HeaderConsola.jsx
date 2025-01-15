@@ -1,3 +1,4 @@
+import { MensajeWspConsola } from "../data/MensajeWspConsola";
 import "./headerConsola.css";
 import React from 'react';
 
@@ -12,8 +13,7 @@ export const HeaderConsola = () => {
     <h1 className='h1-consola'>SEGURO DE CONSOLA</h1>
     <h2 className='h2-consola'>Asegurá tu consola en minutos. Cotizá y contratá online.</h2>
     <h3 className='h3-consola'>Tu diversión está asegurada. Te ofrecemos los mejores planes para tu consola, <br />para que puedas disfrutar de tu diversión al máximo y sin interrupciones.<br /> Contratalo hoy, 100% online.</h3>
-    <button className='buttonConsolaHeader'><a href="
-https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
+    <button className='buttonConsolaHeader' onClick={()=>MensajeWspConsola("seguro de consola")}><a  target="_blank">Cotizá</a></button>
     </div>
   
     </header>
