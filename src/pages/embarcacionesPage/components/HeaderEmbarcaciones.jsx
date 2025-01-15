@@ -1,3 +1,4 @@
+import { MensajeWspEmbarcaciones } from "../data/MensajeWspEmbarcaciones";
 import"./headerEmbarcaciones.css";
 
 
@@ -12,8 +13,7 @@ export const HeaderEmbarcaciones = () => {
     <h1 className='h1-motos'>SEGURO DE EMBARCACIÓN</h1>
     <h2 className='h2-motos'>Navegá sin límites. Cotizá y contratá online.</h2>
     <h3 className='h3-motos'>El mejor seguro náutico, para que puedas disfrutar de tu pasión por el<br/> agua con seguridad y tranquilidad. Podés contratarlo de forma rápida y<br/> sencilla desde tu celular.</h3>
-    <button className='buttonMotosHeader'><a href="
-https://wa.me/5491156307246">Cotizá</a></button>
+    <button className='buttonMotosHeader' onClick={()=> MensajeWspEmbarcaciones("seguro de embarcación")}><a >Cotizá</a></button>
     </div>
   
     </header>
