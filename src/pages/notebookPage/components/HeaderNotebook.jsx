@@ -1,3 +1,4 @@
+import { MensajeWspNotebook } from "../data/MensajeWspNotebook";
 import "./headerNotebook.css";
 
 export const HeaderNotebook = () => {
@@ -14,6 +15,8 @@ export const HeaderNotebook = () => {
     <button className='buttonVidaHeader'><a href="
 https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
     </div>
+
+    {/* onClick={()=> MensajeWspNotebook("seguro de embarcación")} */}
   
     </header>
   )

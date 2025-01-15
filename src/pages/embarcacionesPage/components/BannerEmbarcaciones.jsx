@@ -1,3 +1,4 @@
+import { MensajeWspEmbarcaciones } from "../data/MensajeWspEmbarcaciones";
 import "./bannerEmbarcaciones.css";
 
 export const BannerEmbarcaciones = () => {
@@ -16,8 +17,8 @@ export const BannerEmbarcaciones = () => {
    </h2>
 
 <div className="buttonMotoBanner">
-  <a href="https://wa.me/5491156307246">
-  <button>Escribinos</button>
+  <a >
+  <button onClick={()=> MensajeWspEmbarcaciones("seguro de embarcación")}>Escribinos</button>
   </a>
 </div>
     
