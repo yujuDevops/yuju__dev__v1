@@ -68,6 +68,10 @@
     text-decoration: none;
     color: #3369FF;
   }
+
+  .header-celular a {
+    text-decoration: none;
+    }
   
   /* ////////notebook////////// */
   

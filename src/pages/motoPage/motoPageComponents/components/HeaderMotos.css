@@ -90,7 +90,7 @@ inline-size: 45%;
   cursor: pointer;
 }
 
-.separador-container {
+.separador-container-motos {
   display: none;
 }
 
@@ -156,7 +156,7 @@ inline-size: 45%;
     cursor: pointer;
   }
 
-  .separador-container {
+  .separador-container-motos {
     display: none;
   }
   }
@@ -260,7 +260,7 @@ inline-size: 45%;
   }
 
 
-  .separador-container {
+  .separador-container-motos {
     display: none;
   }
 
@@ -408,7 +408,7 @@ inline-size: 45%;
 
   /* SEPARADOR DE BOTONES PARA CELULAR  */
 
-  .separador-container {
+  .separador-container-motos {
     display: flex;
     align-items: center;
     gap: 10px; /* Espacio entre las líneas y el texto */
@@ -424,7 +424,7 @@ inline-size: 45%;
     font-weight: 900;
   }
   
-  .separador-celular {
+  .separador-celular-motos {
     font-size: 16px; /* Tamaño del texto */
     color: #ffffffab; /* Cambia el color según el diseño */
     font-weight: 400;
@@ -574,7 +574,7 @@ inline-size: 45%;
 
   /* SEPARADOR DE BOTONES PARA CELULAR  */
 
-  .separador-container {
+  .separador-container-motos {
     display: flex;
     align-items: center;
     gap: 15px; /* Espacio entre las líneas y el texto */
@@ -591,7 +591,7 @@ inline-size: 45%;
     font-weight: 900;
   }
   
-  .separador-celular {
+  .separador-celular-motos {
     font-size: 16px; /* Tamaño del texto */
     color: #ffffff; /* Cambia el color según el diseño */
     font-weight: 400;
@@ -741,7 +741,7 @@ inline-size: 45%;
 
   /* SEPARADOR DE BOTONES PARA CELULAR  */
 
-  .separador-container {
+  .separador-container-motos {
     display: flex;
     align-items: center;
     gap: 15px; /* Espacio entre las líneas y el texto */
@@ -758,7 +758,7 @@ inline-size: 45%;
     font-weight: 900;
   }
   
-  .separador-celular {
+  .separador-celular-motos {
     font-size: 16px; /* Tamaño del texto */
     color: #ffffffab; /* Cambia el color según el diseño */
     font-weight: 400;
@@ -908,7 +908,7 @@ inline-size: 45%;
 
   /* SEPARADOR DE BOTONES PARA CELULAR  */
 
-  .separador-container {
+  .separador-container-motos {
     display: flex;
     align-items: center;
     gap: 10px; /* Espacio entre las líneas y el texto */
@@ -925,7 +925,7 @@ inline-size: 45%;
     font-weight: 900;
   }
   
-  .separador-celular {
+  .separador-celular-motos {
     font-size: 16px; /* Tamaño del texto */
     color: #ffffffab; /* Cambia el color según el diseño */
     font-weight: 400;

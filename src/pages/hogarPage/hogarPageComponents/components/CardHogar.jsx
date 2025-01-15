@@ -2,7 +2,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import "./cardHogar.css";
 
-Modal.setAppElement("#root"); // Asegúrate de que coincida con el ID raíz de tu app.
+Modal.setAppElement("#root");
 
 const PlanModal = ({ isOpen, onRequestClose, planDetails }) => (
   <Modal
@@ -16,7 +16,7 @@ const PlanModal = ({ isOpen, onRequestClose, planDetails }) => (
       <div className="plan-details">
         <h2>{planDetails.title}</h2>
         <div className="plan-descripcion">
-        <span>Incluye las coberturas básicas e imprescindibles para proteger tu patrimonio, ideal para inquilinos.</span>
+        Incluye las coberturas básicas e imprescindibles para proteger tu patrimonio, ideal para inquilinos.
         </div>
         {Object.entries(planDetails.coverages).map(([key, value]) => (
           <p key={key}>
@@ -53,7 +53,6 @@ export const CardHogar = () => {
     setModalIsOpen(false);
   };
 
-  // Datos para la primera imagen
   const imagen1Plans = [
     {
       title: "Plan Pack 1000",
@@ -98,9 +97,7 @@ export const CardHogar = () => {
       },
     },
   ];
-  
 
-  // Datos para la segunda imagen
   const imagen2Plans = [
     {
       title: "Hogar Base",
@@ -158,7 +155,6 @@ export const CardHogar = () => {
       },
     },
   ];
-  
 
   const plans = currentImage === "imagen1" ? imagen1Plans : imagen2Plans;
 
@@ -167,18 +163,16 @@ export const CardHogar = () => {
       {/* Selector de imágenes */}
       <div className="imagesHogar">
         <img
-        className="imgHogar"
+          className={`imgHogar ${currentImage === "imagen1" ? "active" : "inactive"}`}
           src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840071/RUS_wfx021.png"
           alt="Imagen 1"
           onClick={() => setCurrentImage("imagen1")}
-          
         />
         <img
-          className="imgHogar"
+          className={`imgHogar ${currentImage === "imagen2" ? "active" : "inactive"}`}
           src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840134/SANCRISTOBAL_cfn89k.png"
           alt="Imagen 2"
           onClick={() => setCurrentImage("imagen2")}
-        
         />
       </div>
 
@@ -188,7 +182,7 @@ export const CardHogar = () => {
           <div className="cardHogar" key={index}>
             <h3 className="h3CardHogar">{plan.title}</h3>
             <p className="pCardHogar">{plan.subtitle}</p>
-            <p className=" pCardHogar__price"><strong>{plan.price}</strong>/ mes</p>
+            <p className="pCardHogar__price"><strong>{plan.price}</strong>/ mes</p>
             <button
               className="buttonCardHogar"
               onClick={() => openModal(plan)}

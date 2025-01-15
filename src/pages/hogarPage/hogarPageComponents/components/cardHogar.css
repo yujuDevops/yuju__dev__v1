@@ -1,25 +1,297 @@
-.modal{
-    background-color:white;
+.modal {
+  background-color: white;
+  border-radius: 22px;
+  z-index: 10;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.imgHogar {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.imgHogar.active {
+  filter: grayscale(0%);
+}
+
+.imgHogar.inactive {
+  filter: grayscale(100%);
+}
+
+.ReactModal__Overlay--after-open {
+  background-color: rgba(104, 104, 104, 0.9) !important;
+  z-index: 1 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.divModalHogar h3 {
+  color: #8D8B8E;
+  font-family: inter;
+  font-size: 12px;
+  position: absolute;
+  top: 75px;
+}
+
+.cardsHogar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f7fa;
+  border-radius: 22px;
+  box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+div.cardHogar {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  position: relative;
+}
+
+div.cardHogar:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px; /* Ajusta este valor según sea necesario */
+  width: 1px;
+  height: 100%;
+  background-color: rgba(226, 226, 226, 1);
+}
+
+.h3CardHogar {
+  color: rgba(51, 105, 255, 1);
+  font-weight: 800;
+  line-height: 18.15px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: inter;
+}
+
+.pCardHogar {
+  font-size: 12px;
+  margin: 15px 0;
+  color: rgba(141, 139, 142, 1);
+  font-family: inter;
+  font-weight: 400;
+  inline-size: 100%;
+}
+
+.pCardHogar__price {
+  font-size: 1em;
+  margin: 15px 0;
+  color: rgba(51, 105, 255, 1);
+  font-family: inter;
+}
+
+.buttonCardHogar {
+  background-color: #0070f3;
+  font-family: inter;
+  color: white;
+  width: 50.25%;
+  margin-top: 20px;
+  border: none;
+  height: 39px;
+  border-radius: 6px;
+  padding: 12px, 18px, 12px, 18px;
+  cursor: pointer;
+}
+
+.cardHogar button:hover {
+  background-color: #005bb5;
+}
+
+.divModalHogar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(247, 247, 247, 0.123);
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+.divModalHogar h2 {
+  color: #0070f3;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: inter;
+}
+
+.divModalHogar p {
+  font-family: inter;
+  color: rgba(51, 105, 255, 1);
+  margin-bottom: 2px;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.divModalHogar span {
+  font-family: inter;
+  color: rgba(51, 105, 255, 1);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.divModalHogar .xButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5f5f;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.divModalHogar .plan-details {
+  width: 100%;
+  text-align: left;
+}
+
+.divModalHogar .plan-details p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.divModalHogar .inputs-section {
+  font-family: inter;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modalInputs {
+  margin-bottom: 105px;
+}
+
+.modalInputs form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modalInputs input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modalInputs button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 41px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.modalInputs button:hover {
+  background-color: #005bb5;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  color: #25d366;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.whatsapp-link img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+/* .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+} */
+
+.plan-descripcion  {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(141, 139, 142, 1);
+  margin-top: -5px;
+  margin-bottom: 30px;
+  inline-size: 90%;
+}
+
+
+
+@media (min-width: 1401px) and (max-width: 1600px) { 
+
+  .modal {
+    background-color: white;
     border-radius: 22px;
     z-index: 10;
     width: 80%;
-}
-
-.ReactModal__Overlay--after-open{ 
-    background-color: rgba(104, 104, 104, 0.9)!important;
-    z-index: 1!important;
-    padding-left: 300px;
-    padding-top: 150px;
-}
-
-.divModalHogar h3{
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .imgHogar {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .imgHogar.active {
+    filter: grayscale(0%);
+  }
+  
+  .imgHogar.inactive {
+    filter: grayscale(100%);
+  }
+  
+  .ReactModal__Overlay--after-open {
+    background-color: rgba(104, 104, 104, 0.9) !important;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .divModalHogar h3 {
     color: #8D8B8E;
     font-family: inter;
     font-size: 12px;
     position: absolute;
     top: 75px;
-}
-.cardsHogar {
+  }
+  
+  .cardsHogar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,21 +311,17 @@
     position: relative;
   }
   
-
   div.cardHogar:not(:last-child)::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
-    right: -18px;
-    width: 0.3px;
+    right: -10px; /* Ajusta este valor según sea necesario */
+    width: 1px;
     height: 100%;
-    background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
-    display: flex;
+    background-color: rgba(226, 226, 226, 1);
   }
   
-
-  
-  .h3CardHogar{
+  .h3CardHogar {
     color: rgba(51, 105, 255, 1);
     font-weight: 800;
     line-height: 18.15px;
@@ -71,8 +339,7 @@
     font-weight: 400;
     inline-size: 100%;
   }
-
-
+  
   .pCardHogar__price {
     font-size: 1em;
     margin: 15px 0;
@@ -95,24 +362,20 @@
   
   .cardHogar button:hover {
     background-color: #005bb5;
-   
   }
   
-
-
   .divModalHogar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background-color: rgba(247, 247, 247, 0.123);
-    padding: 140px 0px 30px 45px;
+    padding: 20px;
     border-radius: 20px;
-    max-width: 1300px;
+    width: 100%;
+    max-width: 600px;
     position: relative;
-    margin: 60px 30px;
+    margin: 0 auto;
     z-index: 9;
-    height: 660px;
-
   }
   
   .divModalHogar h2 {
@@ -120,29 +383,27 @@
     margin-bottom: 10px;
     font-size: 24px;
     font-family: inter;
-    position: absolute;
-    top: 50px;
   }
   
   .divModalHogar p {
     font-family: inter;
     color: rgba(51, 105, 255, 1);
     margin-bottom: 2px;
-    font-size: 12px;
-    font-weight: 900;
+    font-size: 10.5px;
+    font-weight: 700;
   }
-
+  
   .divModalHogar span {
     font-family: inter;
-    color: rgba(58, 72, 89, 1);
+    color: rgba(51, 105, 255, 1);
     font-size: 12px;
     font-weight: 400;
   }
   
   .divModalHogar .xButton {
     position: absolute;
-    top: 18px;
-    left: -9px;
+    top: 10px;
+    right: 10px;
     background-color: #ff5f5f;
     color: #ffffff;
     border: none;
@@ -154,7 +415,8 @@
   }
   
   .divModalHogar .plan-details {
-    flex: 3;
+    width: 100%;
+    text-align: left;
   }
   
   .divModalHogar .plan-details p {
@@ -166,18 +428,14 @@
   
   .divModalHogar .inputs-section {
     font-family: inter;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding-left: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
-
- 
+  
   .modalInputs {
     margin-bottom: 105px;
   }
-
   
   .modalInputs form {
     display: flex;
@@ -214,48 +472,82 @@
     color: #25d366;
     text-decoration: none;
     font-size: 18px;
-    margin-top: -50px;
+    margin-top: 20px;
   }
   
   .whatsapp-link img {
     margin-right: 10px;
-    width: 10%;
+    width: 24px;
+    height: 24px;
   }
   
-  .divider {
-    height: 100%;
-    width: 1px;
+  /* .divider {
+    width: 100%;
+    height: 1px;
     background-color: #ccc;
-    margin: 0 20px;
-  }
+    margin: 20px 0;
+  } */
   
+  .plan-descripcion  {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(141, 139, 142, 1);
+    margin-top: -5px;
+    margin-bottom: 30px;
+    inline-size: 90%;
+  }
+
+  }
+
+
+
 
   @media 
-  (min-width: 1200px) and (max-width: 1600px) {
+  (min-width: 1200px) and (max-width: 1400px) { 
 
-    .modal{
-      background-color:white;
+    .modal {
+      background-color: white;
       border-radius: 22px;
       z-index: 10;
-      width: 100%;
-  }
-  
-  .ReactModal__Overlay--after-open{ 
-      background-color: rgba(104, 104, 104, 0.9)!important;
-      padding: 15px 30px;
-      z-index: 1!important;
-      padding-top: 0px;
-  }
-  
-  .divModalHogar h3{
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+    }
+    
+    .imgHogar {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+    
+    .imgHogar.active {
+      filter: grayscale(0%);
+    }
+    
+    .imgHogar.inactive {
+      filter: grayscale(100%);
+    }
+    
+    .ReactModal__Overlay--after-open {
+      background-color: rgba(104, 104, 104, 0.9) !important;
+      z-index: 1 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .divModalHogar h3 {
       color: #8D8B8E;
       font-family: inter;
       font-size: 12px;
       position: absolute;
       top: 75px;
-      margin-top: 10px;
-  }
-  .cardsHogar {
+    }
+    
+    .cardsHogar {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -275,21 +567,17 @@
       position: relative;
     }
     
-  
     div.cardHogar:not(:last-child)::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
-      right: -18px;
-      width: 0.3px;
+      right: -10px; /* Ajusta este valor según sea necesario */
+      width: 1px;
       height: 100%;
-      background-color: rgba(226, 226, 226, 1); /* Color de las barras verticales */
-      display: flex;
+      background-color: rgba(226, 226, 226, 1);
     }
     
-  
-    
-    .h3CardHogar{
+    .h3CardHogar {
       color: rgba(51, 105, 255, 1);
       font-weight: 800;
       line-height: 18.15px;
@@ -307,8 +595,7 @@
       font-weight: 400;
       inline-size: 100%;
     }
-  
-  
+    
     .pCardHogar__price {
       font-size: 1em;
       margin: 15px 0;
@@ -331,52 +618,48 @@
     
     .cardHogar button:hover {
       background-color: #005bb5;
-     
     }
     
-  
     .divModalHogar {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
       background-color: rgba(247, 247, 247, 0.123);
-      padding: 134px 0px 30px 45px;
+      padding: 20px;
       border-radius: 20px;
-      max-width: 1300px;
+      width: 100%;
+      max-width: 600px;
       position: relative;
-      margin: 70px 30px 20px;
+      margin: 0 auto;
       z-index: 9;
-      height: 635px;
-  }
+    }
     
     .divModalHogar h2 {
       color: #0070f3;
       margin-bottom: 10px;
       font-size: 24px;
       font-family: inter;
-      position: absolute;
-      top: 50px;
     }
     
     .divModalHogar p {
       font-family: inter;
       color: rgba(51, 105, 255, 1);
       margin-bottom: 2px;
-      font-size: 12px;
-      font-weight: 900;
+      font-size: 10.5px;
+      font-weight: 700;
     }
-  
+    
     .divModalHogar span {
       font-family: inter;
-      color: rgba(58, 72, 89, 1);
-      font-size: 12px;
+      color: rgba(51, 105, 255, 1);
+      font-size: 10px;
       font-weight: 400;
     }
     
     .divModalHogar .xButton {
       position: absolute;
-      top: 18px;
-      left: -9px;
+      top: 10px;
+      right: 10px;
       background-color: #ff5f5f;
       color: #ffffff;
       border: none;
@@ -388,30 +671,27 @@
     }
     
     .divModalHogar .plan-details {
-      flex: 2.3;
+      width: 100%;
+      text-align: left;
     }
     
     .divModalHogar .plan-details p {
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #ccc;
-      padding: 5px 0;
+      padding: 4px 0;
     }
     
     .divModalHogar .inputs-section {
       font-family: inter;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
-      padding-left: 40px;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
     }
-  
-   
+    
     .modalInputs {
-      margin-bottom: 5px;
+      margin-bottom: 105px;
     }
-  
     
     .modalInputs form {
       display: flex;
@@ -426,7 +706,6 @@
       font-size: 16px;
       margin-bottom: 10px;
     }
-
     
     .modalInputs button {
       background-color: #0070f3;
@@ -444,430 +723,207 @@
     }
     
     .whatsapp-link {
-        display: flex;
-        align-items: center;
-        color: #25d366;
-        text-decoration: none;
-        font-size: 16px;
-        margin-top: -31px;
-        margin-left: 34px;
-    }
-    
-    .whatsapp-link img {
-      margin-right: 10px;
-      width: 8%;
-    }
-    
-    .divider {
-      height: 100%;
-      width: 1px;
-      background-color: #ccc;
-      margin: 0 20px;
-      display: none;
-    }
-
-    .plan-descripcion span {
-      font-family: inter;
-      color: rgba(58, 72, 89, 1);
-      font-size: 12px;
-      font-weight: 400;
-      position: absolute;
-      top: 90px;
-    }
-
-
-  }
-
-
-  @media 
-  (min-width: 601px) and (max-width: 900px) {
-
-    .modal{
-      background-color:white;
-      border-radius: 22px;
-      z-index: 10;
-      width: 100%;
-  }
-
-  .divModalHogar {
-    display: grid;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(247, 247, 247, 0.123);
-    padding: 122px 0px 20px 40px;
-    border-radius: 20px;
-    max-width: 775px;
-    position: relative;
-    margin: 60px 35px;
-    z-index: 9;
-
-}
-
-
-  .divModalHogar .plan-details p {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    width: 95%;
-}
-
-
-.divModalHogar .inputs-section {
-  font-family: inter;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  padding-top: 20px;
-  padding-left: 0px;
-  padding-bottom: 20px;
-}
-
-.ReactModal__Overlay--after-open {
-  background-color: rgba(104, 104, 104, 0.9) !important;
-  padding: 0px 20px 0px 20px;
-  z-index: 1 !important;
-  width: 100vw;
-  padding-top: 150px;
-}
-
-
-.whatsapp-link {
-  display: flex;
-  align-items: center;
-  color: #25d366;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 15px;
-  -webkit-text-size-adjust: auto;
-}
-
-.whatsapp-link img {
-margin-right: 10px;
-width: 5%;
-}
-
-.modalInputs {
-  margin-bottom: 80px;
-}
-
-
-
-
-.divModalHogar .xButton {
-  position: absolute;
-  top: 12px;
-  left: -24px;
-  background-color: #ff5f5f;
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-  }
-
-
-  @media only screen and (max-width: 600px) {
-
-      .modal{
-      background-color:white;
-      border-radius: 22px;
-      z-index: 10;
-      width: 100%;
-  }
-
-    .divModalHogar {
-      display: grid;
-      justify-content: space-around;
-      align-items: center;
-      background-color: rgba(247, 247, 247, 0.123);
-      padding: 122px 0px 20px 40px;
-      border-radius: 20px;
-      max-width: 247px;
-      position: relative;
-      margin: 60px 35px;
-      z-index: 9;
-  }
-
-  .divModalHogar .plan-details p {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    width: 95%;
-}
-
-
-.divModalHogar .inputs-section {
-  font-family: inter;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
-  padding-left: 0px;
-  padding-bottom: 20px;
-}
-
-.ReactModal__Overlay--after-open {
-  background-color: rgba(104, 104, 104, 0.9) !important;
-  padding: 0px 20px 0px 20px;
-  z-index: 1 !important;
-  width: 100vw;
-}
-
-
-.whatsapp-link {
-  display: flex;
-  align-items: center;
-  color: #25d366;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: 20px;
-  margin: 0 auto 0 15px;
-}
-
-
-.whatsapp-link img {
-margin-right: 10px;
-width: 12%;
-}
-
-.modalInputs {
-  margin-bottom: 80px;
-}
-
-
-div.cardHogar:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 225px!important;
-  right: -45px;
-  width: 300px;
-  height: 0.1%;
-  background-color: rgba(226, 226, 226, 1);
-  display: grid;
-}
-
-.divModalHogar .xButton {
-  position: absolute;
-  top: 12px;
-  left: -24px;
-  background-color: #ff5f5f;
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-
-.divModalHogar .plan-details {
-  flex: 1;
-  width: 69vw;
-}
-
-  }
-
-
-
-  @media only screen and (min-width: 421px) and (max-width: 450px) {
-
-
-    .divModalHogar {
-      display: grid;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(247, 247, 247, 0.123);
-        padding: 120px 0px 20px 40px;
-        border-radius: 20px;
-        max-width: 247px;
-        position: relative;
-        margin: 60px 32px;
-        z-index: 9;
-  }
-
-  .divModalHogar .plan-details p {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    width: 95%;
-}
-
-
-.divModalHogar .inputs-section {
-  font-family: inter;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
-  padding-left: 0px;
-  padding-bottom: 20px;
-}
-
-.ReactModal__Overlay--after-open {
-  background-color: rgba(104, 104, 104, 0.9) !important;
-  padding: 0px 20px 0px 20px;
-  z-index: 1 !important;
-  width: 100vw;
-}
-
-
-.whatsapp-link {
-  display: flex;
-  align-items: center;
-  color: #25d366;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: 20px;
-  margin: 0 auto 0 15px;
-}
-
-
-  .whatsapp-link img {
-    width: 12%;
-  }
-
-.modalInputs {
-  margin-bottom: 80px;
-}
-
-
-    div.cardHogar:not(:last-child)::after {
-      content: '';
-      position: absolute;
-      top: 210px!important;
-      right: -58px!important;
-      width: 300px!important;
-      height: 0.1%;
-      background-color: rgba(226, 226, 226, 1);
-      display: grid;
-  }
-
-
-  .divModalHogar .xButton {
-    position: absolute;
-    top: 10px;
-    left: -22px;
-    background-color: #ff5f5f;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-.modalInputs button {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 41px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.divModalHogar .plan-details {
-  flex: 1;
-  width: 69vw;
-}
-  }
-
-
-
-  @media only screen and (min-width: 361px) and (max-width: 420px) {
-
-
-    .divModalHogar {
-      display: grid;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(247, 247, 247, 0.123);
-        padding: 120px 0px 20px 40px;
-        border-radius: 20px;
-        max-width: 247px;
-        position: relative;
-        margin: 60px 10px;
-        z-index: 9;
-  }
-
-  .divModalHogar .plan-details p {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    width: 95%;
-}
-
-
-.divModalHogar .inputs-section {
-  font-family: inter;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
-  padding-left: 0px;
-  padding-bottom: 20px;
-}
-
-.ReactModal__Overlay--after-open {
-  background-color: rgba(104, 104, 104, 0.9) !important;
-  padding: 0px 20px 0px 20px;
-  z-index: 1 !important;
-  width: 100vw;
-}
-
-
-  .whatsapp-link {
       display: flex;
       align-items: center;
       color: #25d366;
       text-decoration: none;
       font-size: 18px;
       margin-top: 20px;
-      margin: 0 auto 0 15px;
+    }
+    
+    .whatsapp-link img {
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+    }
+    
+    /* .divider {
+      width: 100%;
+      height: 1px;
+      background-color: #ccc;
+      margin: 20px 0;
+    } */
+    
+    .plan-descripcion  {
+      font-family: inter;
+      font-weight: 400;
+      font-size: 12px;
+      color: rgba(141, 139, 142, 1);
+      margin-top: -5px;
+      margin-bottom: 30px;
+      inline-size: 90%;
+    }
   }
 
-  .whatsapp-link img {
-    margin-right: 5px;
-    width: 8%;
+
+
+@media only screen and (max-width: 600px) {
+
+  .modal {
+    background-color: white;
+    border-radius: 22px;
+    z-index: 10;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .imgHogar {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .imgHogar.active {
+    filter: grayscale(0%);
+  }
+  
+  .imgHogar.inactive {
+    filter: grayscale(100%);
+  }
+  
+  .ReactModal__Overlay--after-open {
+    background-color: rgba(104, 104, 104, 0.9) !important;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .divModalHogar h3 {
+    color: #8D8B8E;
+    font-family: inter;
+    font-size: 12px;
+    position: absolute;
+    top: 75px;
+  }
+  
+  .cardsHogar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f7fa;
+    border-radius: 22px;
+    box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  div.cardHogar {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: relative;
+  }
+  
+  div.cardHogar:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 242px;
+    right: -57px;
+    width: 275px;
+    height: 0.1%;
+    background-color: rgba(226, 226, 226, 1);
+    display: grid;
+
   }
 
-.modalInputs {
-  margin-bottom: 80px;
-}
-
-
-    div.cardHogar:not(:last-child)::after {
-      content: '';
-      position: absolute;
-      top: 225px;
-      right: -65px!important;
-      width: 300px!important;
-      height: 0.1%;
-      background-color: rgba(226, 226, 226, 1);
-      display: grid;
+  .cardsHogar-separator::before {
+    position: absolute;
+    width: 0.111px;
+    content: "";
+    border-left: 0.1px solid rgba(226, 226, 226, 1);
+    height: 80%;
+    box-sizing: border-box;
   }
-
-
+  
+  .h3CardHogar {
+    color: rgba(51, 105, 255, 1);
+    font-weight: 800;
+    line-height: 18.15px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: inter;
+  }
+  
+  .pCardHogar {
+    font-size: 12px;
+    margin: 15px 0;
+    color: rgba(141, 139, 142, 1);
+    font-family: inter;
+    font-weight: 400;
+    inline-size: 100%;
+  }
+  
+  .pCardHogar__price {
+    font-size: 1em;
+    margin: 15px 0;
+    color: rgba(51, 105, 255, 1);
+    font-family: inter;
+  }
+  
+  .buttonCardHogar {
+    background-color: #0070f3;
+    font-family: inter;
+    color: white;
+    width: 50.25%;
+    margin-top: 20px;
+    border: none;
+    height: 39px;
+    border-radius: 6px;
+    padding: 12px, 18px, 12px, 18px;
+    cursor: pointer;
+  }
+  
+  .cardHogar button:hover {
+    background-color: #005bb5;
+  }
+  
+  .divModalHogar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(247, 247, 247, 0.123);
+    padding: 30px 4px 30px 4px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 9;
+  }
+  
+  .divModalHogar h2 {
+    color: #0070f3;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: inter;
+  }
+  
+  .divModalHogar p {
+    font-family: inter;
+    color: rgba(51, 105, 255, 1);
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    font-weight: 700;
+  }
+  
+  .divModalHogar span {
+    font-family: inter;
+    color: rgba(51, 105, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
   .divModalHogar .xButton {
     position: absolute;
-    top: 10px;
-    left: 0px;
+    top: -5px;
+    right: -5px;
     background-color: #ff5f5f;
     color: #ffffff;
     border: none;
@@ -876,131 +932,619 @@ div.cardHogar:not(:last-child)::after {
     height: 30px;
     font-size: 18px;
     cursor: pointer;
-}
-
-.modalInputs button {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 41px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.divModalHogar .plan-details {
-  flex: 1;
-  width: 69vw;
-}
   }
-
-
-  @media only screen and (min-width: 100px) and (max-width: 360px) {
-
-
-    .divModalHogar {
-      display: grid;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(247, 247, 247, 0.123);
-        padding: 120px 0px 20px 40px;
-        border-radius: 20px;
-        max-width: 247px;
-        position: relative;
-        margin: 60px -5px;
-        z-index: 9;
-        height: 680px;
+  
+  .divModalHogar .plan-details {
+    width: 100%;
+    text-align: left;
   }
-
+  
   .divModalHogar .plan-details p {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
-    padding: 8px 0;
-    width: 95%;
-}
-
-
-.divModalHogar .inputs-section {
-  font-family: inter;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
-  padding-left: 0px;
-  padding-bottom: 20px;
-}
-
-.ReactModal__Overlay--after-open {
-  background-color: rgba(104, 104, 104, 0.9) !important;
-  padding: 0px 20px 0px 20px;
-  z-index: 1 !important;
-  width: 100vw;
-}
-
-
-.whatsapp-link {
-  display: flex;
-  align-items: center;
-  color: #25d366;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: 20px;
-  margin: 0 auto 0 15px;
-}
-
+    padding: 10px 0;
+  }
+  
+  .divModalHogar .inputs-section {
+    font-family: inter;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .modalInputs {
+    margin-bottom: 105px;
+  }
+  
+  .modalInputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modalInputs input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .modalInputs button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 41px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .modalInputs button:hover {
+    background-color: #005bb5;
+  }
+  
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    color: #25d366;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
   .whatsapp-link img {
-    width: 10%;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
   }
-
-.modalInputs {
-  margin-bottom: 80px;
+  
+  /* .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  } */
+  
+  .plan-descripcion  {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(141, 139, 142, 1);
+    margin-top: -5px;
+    margin-bottom: 30px;
+    inline-size: 90%;
+  }
 }
 
 
-    div.cardHogar:not(:last-child)::after {
-      content: '';
-      position: absolute;
-      top: 239px!important;
-      right: -55px!important;
-      width: 265px;
-      height: 0.1%;
-      background-color: rgba(226, 226, 226, 1);
-      display: grid;
+
+@media (min-width: 361px) and (max-width: 390px) {
+
+  .modal {
+    background-color: white;
+    border-radius: 22px;
+    z-index: 10;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .imgHogar {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .imgHogar.active {
+    filter: grayscale(0%);
+  }
+  
+  .imgHogar.inactive {
+    filter: grayscale(100%);
+  }
+  
+  .ReactModal__Overlay--after-open {
+    background-color: rgba(104, 104, 104, 0.9) !important;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .divModalHogar h3 {
+    color: #8D8B8E;
+    font-family: inter;
+    font-size: 12px;
+    position: absolute;
+    top: 75px;
+  }
+  
+  .cardsHogar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f7fa;
+    border-radius: 22px;
+    box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  div.cardHogar {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: relative;
+  }
+  
+  div.cardHogar:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 237px;
+    right: -54px;
+    width: 265px;
+    height: 0.1%;
+    background-color: rgba(226, 226, 226, 1);
+    display: grid;
+
   }
 
-
+  .cardsHogar-separator::before {
+    position: absolute;
+    width: 0.111px;
+    content: "";
+    border-left: 0.1px solid rgba(226, 226, 226, 1);
+    height: 80%;
+    box-sizing: border-box;
+  }
+  
+  .h3CardHogar {
+    color: rgba(51, 105, 255, 1);
+    font-weight: 800;
+    line-height: 18.15px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: inter;
+  }
+  
+  .pCardHogar {
+    font-size: 12px;
+    margin: 15px 0;
+    color: rgba(141, 139, 142, 1);
+    font-family: inter;
+    font-weight: 400;
+    inline-size: 100%;
+  }
+  
+  .pCardHogar__price {
+    font-size: 1em;
+    margin: 15px 0;
+    color: rgba(51, 105, 255, 1);
+    font-family: inter;
+  }
+  
+  .buttonCardHogar {
+    background-color: #0070f3;
+    font-family: inter;
+    color: white;
+    width: 50.25%;
+    margin-top: 20px;
+    border: none;
+    height: 39px;
+    border-radius: 6px;
+    padding: 12px, 18px, 12px, 18px;
+    cursor: pointer;
+  }
+  
+  .cardHogar button:hover {
+    background-color: #005bb5;
+  }
+  
+  .divModalHogar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(247, 247, 247, 0.123);
+    padding: 30px 4px 30px 4px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 9;
+  }
+  
+  .divModalHogar h2 {
+    color: #0070f3;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: inter;
+  }
+  
+  .divModalHogar p {
+    font-family: inter;
+    color: rgba(51, 105, 255, 1);
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    font-weight: 700;
+  }
+  
+  .divModalHogar span {
+    font-family: inter;
+    color: rgba(51, 105, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
   .divModalHogar .xButton {
     position: absolute;
-    top: 12px;
-    left: 15px;
+    top: -5px;
+    right: -5px;
     background-color: #ff5f5f;
     color: #ffffff;
     border: none;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     font-size: 18px;
     cursor: pointer;
-}
-
-.modalInputs button {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px 41px;
-  font-size: 12px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-.divModalHogar .plan-details {
-  flex: 1;
-  width: 69vw;
-}
   }
+  
+  .divModalHogar .plan-details {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .divModalHogar .plan-details p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .divModalHogar .inputs-section {
+    font-family: inter;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .modalInputs {
+    margin-bottom: 105px;
+  }
+  
+  .modalInputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modalInputs input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .modalInputs button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 41px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .modalInputs button:hover {
+    background-color: #005bb5;
+  }
+  
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    color: #25d366;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .whatsapp-link img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  } */
+  
+  .plan-descripcion  {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(141, 139, 142, 1);
+    margin-top: -5px;
+    margin-bottom: 30px;
+    inline-size: 90%;
+  }
+
+}
+
+
+
+
+@media (min-width: 0px) and (max-width: 360px) {
+
+  .modal {
+    background-color: white;
+    border-radius: 22px;
+    z-index: 10;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .imgHogar {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .imgHogar.active {
+    filter: grayscale(0%);
+  }
+  
+  .imgHogar.inactive {
+    filter: grayscale(100%);
+  }
+  
+  .ReactModal__Overlay--after-open {
+    background-color: rgba(104, 104, 104, 0.9) !important;
+    z-index: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .divModalHogar h3 {
+    color: #8D8B8E;
+    font-family: inter;
+    font-size: 12px;
+    position: absolute;
+    top: 75px;
+  }
+  
+  .cardsHogar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f7fa;
+    border-radius: 22px;
+    box-shadow: 2px 3px 16px 7px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  div.cardHogar {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    position: relative;
+  }
+  
+  div.cardHogar:not(:last-child)::after {
+    content: '';
+        position: absolute;
+        top: 238px;
+        right: -57px;
+        width: 265px;
+        height: 0.1%;
+        background-color: rgba(226, 226, 226, 1);
+        display: grid;
+  }
+
+  .cardsHogar-separator::before {
+    position: absolute;
+    width: 0.111px;
+    content: "";
+    border-left: 0.1px solid rgba(226, 226, 226, 1);
+    height: 80%;
+    box-sizing: border-box;
+  }
+  
+  .h3CardHogar {
+    color: rgba(51, 105, 255, 1);
+    font-weight: 800;
+    line-height: 18.15px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: inter;
+  }
+  
+  .pCardHogar {
+    font-size: 12px;
+    margin: 15px 0;
+    color: rgba(141, 139, 142, 1);
+    font-family: inter;
+    font-weight: 400;
+    inline-size: 100%;
+  }
+  
+  .pCardHogar__price {
+    font-size: 1em;
+    margin: 15px 0;
+    color: rgba(51, 105, 255, 1);
+    font-family: inter;
+  }
+  
+  .buttonCardHogar {
+    background-color: #0070f3;
+    font-family: inter;
+    color: white;
+    width: 50.25%;
+    margin-top: 20px;
+    border: none;
+    height: 39px;
+    border-radius: 6px;
+    padding: 12px, 18px, 12px, 18px;
+    cursor: pointer;
+  }
+  
+  .cardHogar button:hover {
+    background-color: #005bb5;
+  }
+  
+  .divModalHogar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(247, 247, 247, 0.123);
+    padding: 30px 4px 30px 4px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 9;
+  }
+  
+  .divModalHogar h2 {
+    color: #0070f3;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: inter;
+  }
+  
+  .divModalHogar p {
+    font-family: inter;
+    color: rgba(51, 105, 255, 1);
+    margin-bottom: 2px;
+    font-size: 13.5px;
+    font-weight: 700;
+  }
+  
+  .divModalHogar span {
+    font-family: inter;
+    color: rgba(51, 105, 255, 1);
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .divModalHogar .xButton {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff5f5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .divModalHogar .plan-details {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .divModalHogar .plan-details p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .divModalHogar .inputs-section {
+    font-family: inter;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .modalInputs {
+    margin-bottom: 105px;
+  }
+  
+  .modalInputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .modalInputs input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .modalInputs button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 41px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .modalInputs button:hover {
+    background-color: #005bb5;
+  }
+  
+  .whatsapp-link {
+    display: flex;
+    align-items: center;
+    color: #25d366;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .whatsapp-link img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  } */
+  
+  .plan-descripcion  {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(141, 139, 142, 1);
+    margin-top: -5px;
+    margin-bottom: 30px;
+    inline-size: 90%;
+  }
+
+}

@@ -11,7 +11,7 @@ export const AccidentesPersonales = () => {
     <>
    {/* //depende de los estilos de motoPage. */}
 
-   <div className="semisphere-container-acc-per">
+  
       <div className="semisphere-acc-per"></div>
       <div className="content-acc-per"></div>
 <HeaderAccidentesPersonales/>
@@ -38,7 +38,7 @@ src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux
 <div id="carrousel">
 <Carrousel Name="Accidentes Personales"/>
 </div>
-</div>
+
 </>
   )
 }

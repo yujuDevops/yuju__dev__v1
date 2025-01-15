@@ -129,10 +129,10 @@ const Navbar = () => {
                 </Link> */}
             </div>
             <div className="navbar-social">
-                <a href="#">
+                <a href="https://www.instagram.com/segurosyuju?igsh=djkyZWxkZ3pvcXJn" target='_blank' rel='noreferrer'>
                     <img src={instagram} alt="instagram" />
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/share/1BtqRdRJeQ/" target='_blank' rel='noreferrer'>
                     <img src={facebook} alt="facebook" />
                 </a>
             </div>

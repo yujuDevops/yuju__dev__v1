@@ -62,6 +62,7 @@
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
+    z-index: 12!important;
   }
   
   .buttonMotosHeader a {
@@ -69,6 +70,26 @@
     font-family: 'Inter';
     text-decoration: none;
     color: #3369FF;
+    z-index: 12;
+  }
+
+  .buttonMotosHeader {
+    display: flex;
+    position: relative;
+    top: 60px;
+    padding: 6px 75px 6px 75px;
+    border-radius: 6px;
+    border: 0.2px transparent;
+    background-color: #33FFCC;
+    z-index: 12;
+  }
+  
+  .buttonMotosHeader a {
+    font-size: 12px;
+    font-family: 'Inter';
+    text-decoration: none;
+    color: #3369FF;
+    z-index: 12;
   }
   
   /* ////////notebook////////// */

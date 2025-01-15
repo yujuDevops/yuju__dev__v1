@@ -53,21 +53,46 @@
     width: 100%;
   }
   
-  .buttonConsolaHeader {
+  .buttonPadreMotoBanner {
     display: flex;
-    position: relative;
-    top: 60px;
-    padding: 6px 75px 6px 75px;
+    gap: 20px;
+  }
+  
+  .buttonconsolaHeader {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 6px 45px 6px 45px;
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
   }
   
-  .buttonConsolaHeader a {
+  .separador {
+    margin-top: 25px;
+    margin-bottom: -20px;
+    font-size: 20px; /* Ajusta el tamaño según necesites */
+    color: #ffffff; /* Cambia esto según el color que necesites */
+    display: flex;
+    align-items:self-end;
+    justify-content: center;
+  }
+  
+  
+  .header-consola a {
+    text-decoration: none;
+    }
+    
+  .buttonconsolaHeader  {
     font-size: 12px;
     font-family: 'Inter';
     text-decoration: none;
     color: #3369FF;
+    cursor: pointer;
+  }
+  
+  .separador-container-consola {
+    display: none;
   }
   
   /* ////////notebook////////// */
@@ -351,22 +376,249 @@
       display: block;
     }
   
-    .buttonConsolaHeader {
-        display: flex;
-          position: relative;
-          top: 30px;
-          padding: 8px 30px 8px 30px;
-          border-radius: 8px;
-          border: 0.2px transparent;
-          background-color: #33FFCC;
+    .buttonPadreMotoBanner {
+      display: grid;
+      gap: 0px;
+      margin-top: 5px;
+      margin-bottom: -80px;
+  }
+    
+    .buttonconsolaHeader {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: -20px;
+      padding: 8px 15px 8px 15px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
+    }
+    
+    .separador {
+      margin-top: 25px;
+      margin-bottom: -20px;
+      font-size: 20px; /* Ajusta el tamaño según necesites */
+      color: #ffffff; /* Cambia esto según el color que necesites */
+      display: flex;
+      align-items:self-end;
+      justify-content: center;
+    }
+    
+    
+    .header-consola a {
+      text-decoration: none;
       }
+      
+    .buttonconsolaHeader  {
+      font-size: 12px;
+      font-family: 'Inter';
+      text-decoration: none;
+      color: #3369FF;
+      cursor: pointer;
+    }
   
-      .buttonConsolaHeader a {
-        font-size: 8px;
-        font-family: 'Inter';
-        text-decoration: none;
-        color: #3369FF;
-    }  
+    .separador {
+      display: none;
+    }
+  
+    /* SEPARADOR DE BOTONES PARA CELULAR  */
+  
+    .separador-container-consola {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espacio entre las líneas y el texto */
+      width: 37vw;
+      position: relative;
+      top: 19px;
+    }
+    
+    .linea {
+      flex: 1; /* Hace que las líneas ocupen todo el espacio posible */
+      height: 1px;
+      background-color: #ffffff; /* Cambia el color según el diseño */
+      font-weight: 900;
+    }
+    
+    .separador-celular-consola {
+      font-size: 16px; /* Tamaño del texto */
+      color: #ffffffab; /* Cambia el color según el diseño */
+      font-weight: 400;
+      position: relative;
+      top: 3px;
+    } 
+  }
+
+
+
+  @media only screen and (min-width: 401px) and (max-width: 490px) {
+
+
+  
+    .header-consola img{
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      z-index: -1;
+     margin-top: -300px!important;
+    }
+  
+  
+    .container-consola{
+      top: 30px;
+      width: 90%;
+     
+    }
+  
+    .container-consola{
+      position: relative;
+      z-index: 1;
+      top: 50px!important;
+      left:4%
+    }
+  
+    .h1-consola {
+    z-index: 1;
+    color: white;
+    font-size: 45px;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 900!important;
+    padding: 12px;
+    top: 40px;
+    } 
+    
+    .h2-consola{
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 700!important;
+    font-size: 12px!important;
+    display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      overflow: hidden;
+      width: 80%; /* Ancho específico */
+    }
+   
+    
+    .h3-consola{
+      margin-top:10px;
+      color: white;
+      font-family: inter;
+      font-weight: 400;
+      font-size: 8px!important;
+    }
+  
+  
+  .h1-consola{
+   
+    margin-left: 0.1%;
+    font-weight: 500;
+    font-size: 100%!important;
+    padding: 4PX;
+  }
+  
+  .h2-consola{
+    font-weight: 500;
+    font-size: 80%;
+  }
+  
+  
+   
+  .h3-consola{
+    font-size: 60%;
+  }
+  
+    .header-consola .imgPorDefectoMotos{
+      display: none;
+    }
+    
+    .header-consola .imgRemplazoMotos{
+      display: none;
+    }
+  
+    .header-consola .imgFotoCelular{
+      display: block;
+    }
+  
+    .buttonPadreMotoBanner {
+      display: grid;
+      gap: 0px;
+      margin-top: 5px;
+      margin-bottom: -80px;
+  }
+    
+  .buttonPadreMotoBanner {
+    display: grid;
+    gap: 0px;
+    margin-top: 5px;
+    margin-bottom: -80px;
+}
+  
+  .buttonconsolaHeader {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 8px 15px 8px 15px;
+    border-radius: 6px;
+    border: 0.2px transparent;
+    background-color: #33FFCC;
+  }
+  
+  .separador {
+    margin-top: 25px;
+    margin-bottom: -20px;
+    font-size: 20px; /* Ajusta el tamaño según necesites */
+    color: #ffffff; /* Cambia esto según el color que necesites */
+    display: flex;
+    align-items:self-end;
+    justify-content: center;
+  }
+  
+  
+  .header-consola a {
+    text-decoration: none;
+    }
+    
+  .buttonconsolaHeader  {
+    font-size: 12px;
+    font-family: 'Inter';
+    text-decoration: none;
+    color: #3369FF;
+    cursor: pointer;
+  }
+
+  .separador {
+    display: none;
+  }
+
+  /* SEPARADOR DE BOTONES PARA CELULAR  */
+
+  .separador-container-consola {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre las líneas y el texto */
+    width: 34vw;
+    position: relative;
+    top: 19px;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  .linea {
+    flex: 1; /* Hace que las líneas ocupen todo el espacio posible */
+    height: 1px;
+    background-color: #ffffff; /* Cambia el color según el diseño */
+    font-weight: 900;
+  }
+  
+  .separador-celular-consola {
+    font-size: 16px; /* Tamaño del texto */
+    color: #ffffff; /* Cambia el color según el diseño */
+    font-weight: 400;
+    position: relative;
+    top: 3px;
+  }
+
   }
 
   
@@ -460,22 +712,75 @@
       display: block;
     }
   
-    .buttonConsolaHeader {
-        display: flex;
-          position: relative;
-          top: 30px;
-          padding: 8px 30px 8px 30px;
-          border-radius: 8px;
-          border: 0.2px transparent;
-          background-color: #33FFCC;
-      }
-  
-      .buttonConsolaHeader a {
-        font-size: 8px;
-        font-family: 'Inter';
-        text-decoration: none;
-        color: #3369FF;
+    .buttonPadreMotoBanner {
+      display: grid;
+      gap: 0px;
+      margin-top: 5px;
+      margin-bottom: -80px;
+  }
+    
+    .buttonconsolaHeader {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: -20px;
+      padding: 8px 15px 8px 15px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
     }
+    
+    .separador {
+      margin-top: 25px;
+      margin-bottom: -20px;
+      font-size: 20px; /* Ajusta el tamaño según necesites */
+      color: #ffffff; /* Cambia esto según el color que necesites */
+      display: flex;
+      align-items:self-end;
+      justify-content: center;
+    }
+    
+    
+    .header-consola a {
+      text-decoration: none;
+      }
+      
+    .buttonconsolaHeader  {
+      font-size: 12px;
+      font-family: 'Inter';
+      text-decoration: none;
+      color: #3369FF;
+      cursor: pointer;
+    }
+  
+    .separador {
+      display: none;
+    }
+  
+    /* SEPARADOR DE BOTONES PARA CELULAR  */
+  
+    .separador-container-consola {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espacio entre las líneas y el texto */
+      width: 142.5px;
+      position: relative;
+      top: 19px;
+    }
+    
+    .linea {
+      flex: 1; /* Hace que las líneas ocupen todo el espacio posible */
+      height: 1px;
+      background-color: #ffffff; /* Cambia el color según el diseño */
+      font-weight: 900;
+    }
+    
+    .separador-celular-consola {
+      font-size: 16px; /* Tamaño del texto */
+      color: #ffffffab; /* Cambia el color según el diseño */
+      font-weight: 400;
+      position: relative;
+      top: 3px;
+    } 
   
   }
 
@@ -570,22 +875,75 @@
         display: block;
       }
     
-      .buttonConsolaHeader {
-          display: flex;
-            position: relative;
-            top: 30px;
-            padding: 8px 30px 8px 30px;
-            border-radius: 8px;
-            border: 0.2px transparent;
-            background-color: #33FFCC;
-        }
-    
-        .buttonConsolaHeader a {
-          font-size: 8px;
-          font-family: 'Inter';
-          text-decoration: none;
-          color: #3369FF;
+      .buttonPadreMotoBanner {
+        display: grid;
+        gap: 0px;
+        margin-top: 5px;
+        margin-bottom: -80px;
+    }
+      
+      .buttonconsolaHeader {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        padding: 8px 15px 8px 15px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
       }
+      
+      .separador {
+        margin-top: 25px;
+        margin-bottom: -20px;
+        font-size: 20px; /* Ajusta el tamaño según necesites */
+        color: #ffffff; /* Cambia esto según el color que necesites */
+        display: flex;
+        align-items:self-end;
+        justify-content: center;
+      }
+      
+      
+      .header-consola a {
+        text-decoration: none;
+        }
+        
+      .buttonconsolaHeader  {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+        cursor: pointer;
+      }
+    
+      .separador {
+        display: none;
+      }
+    
+      /* SEPARADOR DE BOTONES PARA CELULAR  */
+    
+      .separador-container-consola {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Espacio entre las líneas y el texto */
+        width: 40vw;
+        position: relative;
+        top: 19px;
+      }
+      
+      .linea {
+        flex: 1; /* Hace que las líneas ocupen todo el espacio posible */
+        height: 1px;
+        background-color: #ffffff; /* Cambia el color según el diseño */
+        font-weight: 900;
+      }
+      
+      .separador-celular-consola {
+        font-size: 16px; /* Tamaño del texto */
+        color: #ffffffab; /* Cambia el color según el diseño */
+        font-weight: 400;
+        position: relative;
+        top: 3px;
+      } 
     
 
   }

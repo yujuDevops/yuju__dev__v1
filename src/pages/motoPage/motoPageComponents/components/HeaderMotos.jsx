@@ -31,9 +31,9 @@ export const HeaderMotos = () => {
             </a>
             <span className="separador">°</span>
 
-            <div class="separador-container">
+            <div class="separador-container-motos">
             <div class="linea"></div>
-            <span class="separador-celular">°</span>
+            <span class="separador-celular-motos">°</span>
             <div class="linea"></div>
             </div>
 
