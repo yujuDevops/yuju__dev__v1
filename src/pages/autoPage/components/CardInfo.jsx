@@ -4,6 +4,8 @@ import { dataCardAutos } from "../data/dataCardAutos"
 
 
 export const CardInfo = () => {
+
+
   return (
 <>
 <h2 className="h2-cardInfo-auto">Asegurarte es fácil, Yuju!</h2>

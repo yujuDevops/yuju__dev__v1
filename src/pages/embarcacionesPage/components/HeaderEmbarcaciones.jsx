@@ -1,3 +1,4 @@
+import { MensajeWspEmbarcaciones } from "../data/MensajeWspEmbarcaciones";
 import"./headerEmbarcaciones.css";
 
 const sendMessage = () => {

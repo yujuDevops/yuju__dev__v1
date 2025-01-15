@@ -1,3 +1,4 @@
+import { MensajeWspNotebook } from "../data/MensajeWspNotebook";
 import "./baneerNotebook.css";
 
 export const BannerNotebook = () => {
@@ -15,9 +16,8 @@ export const BannerNotebook = () => {
       </span>
      </h2>
      <div className="buttonNotebookBanner">
-  <a href="
-https://wa.me/5491156307246">
-  <button>Escribinos</button>
+  <a >
+  <button onClick={()=> MensajeWspNotebook("seguro de notebook")}>Escribinos</button>
   </a>
 </div>
           </div>

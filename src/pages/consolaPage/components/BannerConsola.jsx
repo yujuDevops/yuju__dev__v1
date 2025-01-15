@@ -1,3 +1,4 @@
+import { MensajeWspConsola } from "../data/MensajeWspConsola";
 import "./bannerConsola.css";
 
 import React from 'react'
@@ -18,9 +19,8 @@ export const BannerConsola = () => {
   
    </h2>
 <div className="buttonNotebookBanner">
-  <a href="
-https://wa.me/5491156307246">
-  <button>Escribinos</button>
+  <a>
+  <button onClick={()=> MensajeWspConsola("seguro de consola")}>Escribinos</button>
   </a>
 </div>
     </div>

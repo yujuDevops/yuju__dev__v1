@@ -1,4 +1,4 @@
-import { cardsDataAccidentesPersonales } from "../data"
+import { cardsDataAccidentesPersonales, MensajeWsp } from "../data"
 import "./cardsAccidentesPersonales.css"
 
 export const CardsAccidentesPersonales = () => {
@@ -11,7 +11,7 @@ export const CardsAccidentesPersonales = () => {
            <img src={card.imageUrl} alt={card.title} className="card-image" />
           <h3>{card.title}</h3>
           <p>{card.description}</p>
-          <button onClick={()=> window.location.href="https://wa.me/1156307246" }> Contratar</button>
+          <button onClick={()=> MensajeWsp(card.title) }> Contratar</button>
         </div>
       ))}
     </div>

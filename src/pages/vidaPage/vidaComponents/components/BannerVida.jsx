@@ -1,3 +1,4 @@
+import { MensajeWspVida } from "../../data"
 
 
 export const BannerVida = () => {
@@ -15,9 +16,8 @@ export const BannerVida = () => {
     
     </h2>
     <div className="buttonMotoBanner">
-  <a href="
-https://wa.me/5491156307246">
-  <button>Escribinos</button>
+  <a>
+  <button onClick={()=> MensajeWspVida("seguro de vida")}>Escribinos</button>
   </a>
 </div>
     <div className="vidBanner">

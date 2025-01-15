@@ -1,5 +1,5 @@
 import "./viajeroPage.css";
-import Carrousel from '../../components/carrousel/Carrousel'
+import {Carrousel} from '../../components/carrousel/Carrousel'
 import { CotizaAhora } from '../../components/cotizaAhora/CotizaAhora'
 import { AcordeonViajero, BannerViajero, BeneficiosViajero, DataViajeros, HeaderViajero } from './components'
 import { ImgEmpresasViajero } from './components/ImgEmpresasViajero'

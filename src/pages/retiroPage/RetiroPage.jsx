@@ -1,4 +1,4 @@
-import Carrousel from "../../components/carrousel/Carrousel"
+import {Carrousel} from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { BannerRetiro,SimuladorRetiro, HeaderRetiro, PrimerParrafoRetiro, SegundoParrafoRetiro, ImgEmpresasRetiro, AcordeonRetiro } from "./components"
 import "./retiroPage.css";

@@ -1,3 +1,4 @@
+import { MensajeWspNotebook } from "../data/MensajeWspNotebook";
 import "./headerNotebook.css";
 
 
@@ -19,6 +20,7 @@ export const HeaderNotebook = () => {
     <h1 className='h1-notebook'>SEGURO DE NOTEBOOK</h1>
     <h2 className='h2-notebook'>Asegurá tu notebook desde donde estés. Encontrá el plan que más se adapte a vos.</h2>
     <h3 className='h3-notebook'>Disfrutá haciendo, aprendiendo y creando. Tenemos el mejor seguro para tu notebook, <br/>para que la disfrutes con tranquilidad. Contratalo hoy, 100% online.</h3>
+<<<<<<< HEAD
     <div className="buttonPadreMotoBanner">
             <a  target="_blank" rel="noopener noreferrer" onClick={sendMessage}>
               <button className='buttonNotebookHeader'>Hablá con un asesor</button>
@@ -36,6 +38,13 @@ export const HeaderNotebook = () => {
             </a>
           </div>
         </div>
+=======
+    <button className='buttonVidaHeader'><a href="
+https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
+    </div>
+
+    {/* onClick={()=> MensajeWspNotebook("seguro de embarcación")} */}
+>>>>>>> 6215e318ef0fd360507684437f1f32738e5bac5e
   
     </header>
   )

@@ -1,3 +1,4 @@
+import { MensajeWsp } from "../data"
 import "./headerAccidentesPersonales.css"
 
 export const HeaderAccidentesPersonales = () => {
@@ -11,8 +12,7 @@ export const HeaderAccidentesPersonales = () => {
     <h1 className='h1-accidentespersonales'>SEGURO DE ACCIDENTES PERSONALES</h1>
     <h2 className='h2-accidentespersonales'>Para los que trabajan de forma independiente, la mejor <br/> protección.</h2>
     <h3 className='h3-accidentespersonales'>Contratá el seguro de accidentes personales por el tiempo que quieras. <br/>Te asesoramos para que elijas la opción que más te convenga.</h3>
-    <button className='buttonMotosHeader'><a href="
-https://wa.me/5491156307246">Cotizá</a></button>
+    <button className='buttonMotosHeader' onClick={()=> MensajeWsp("seguro accidentes personales") }><a>Cotizá</a></button>
     </div>
   
     </header>

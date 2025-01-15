@@ -1,3 +1,4 @@
+import { MensajeWspTablet } from "../data/MensajeWspTablet"
 import "./headerTablet.css"
 
 export const HeaderTablet = () => {
@@ -11,8 +12,7 @@ export const HeaderTablet = () => {
     <h1 className='h1-tablet'>SEGURO DE TABLET</h1>
     <h2 className='h2-tablet'>Asegurá tu tablet desde donde estés al mejor precio.</h2>
     <h3 className='h3-tablet'>Llevá tu tablet con vos. Con el seguro de Yuju podés estar tranquilo. <br />Conocé nuestros planes y contratalo hoy 100% online.</h3>
-    <button className='buttonTabletHeader'><a href="
-https://wa.me/5491156307246" target="_blank">Cotizá</a></button>
+    <button className='buttonTabletHeader' onClick={()=> MensajeWspTablet("seguro de tablet")}><a  target="_blank">Cotizá</a></button>
     </div>
   
     </header>
