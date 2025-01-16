@@ -1,3 +1,4 @@
+import { MensajeWspSalud } from "../data";
 import "./bannerVida.css";
 
 export const BannerVida = () => {
@@ -15,8 +16,8 @@ export const BannerVida = () => {
     
     </h2>
     <div className="buttonSaludBanner">
-  <a href="">
-  <button>Te asesoramos</button>
+  <a >
+  <button onClick={()=> MensajeWspSalud("seguro de salud")}>Te asesoramos</button>
   </a>
 </div>
     <div className="vidBanner">

@@ -1,3 +1,5 @@
+
+import { MensajeWspSalud } from "../data";
 import "./headerSalud.css";
 
 export const HeaderSalud = () => {
@@ -11,7 +13,7 @@ export const HeaderSalud = () => {
     <h1 className='h1-motos'>SEGURO DE SALUD</h1>
     <h2 className='h2-motos'>Cuidá tu salud y la de tu familia con confianza y calidad.</h2>
     <h3 className='h3-motos'>Invertí en tu bienestar y el de los que amás. Contratá una cobertura que te <br/> acompañe en los momentos cruciales y disfrutá la vida con serenidad.</h3>
-    <button className='buttonSaludHeader'><a href="#salud">Cotizá</a></button>
+    <button className='buttonSaludHeader' onClick={ ()=> MensajeWspSalud("seguro de salud")}><a href="#salud">Cotizá</a></button>
     </div>
     </header>
   )
