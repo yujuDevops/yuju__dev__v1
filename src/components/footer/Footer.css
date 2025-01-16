@@ -231,7 +231,7 @@ height: auto;
 }
 
 .footer-links {
-display: flex;
+display: grid;
 gap: 10px;
 }
 

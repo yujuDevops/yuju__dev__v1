@@ -11,7 +11,7 @@ export const DataCardTablet = () => {
         return(
             <div className='CardInfoCards__1' key={data.numero}>
           <img src={data.imagen} alt="" />
-            <h3 className="h3CardInfo" >{data.numero}</h3>
+            <h3 className="h3CardInfo" >{data.numero}.</h3>
             <p className="pCardInfo-bici">
               {data.isStrongFirst ? (
                 <>

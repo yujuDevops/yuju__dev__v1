@@ -26,13 +26,9 @@ const PlanModal = ({ isOpen, onRequestClose, planDetails }) => (
       </div>
       <div className="divider"></div>
       <div className="inputs-section">
-        <a href="https://wa.me/5491156307246" className="whatsapp-link">
-          <img
-            src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732423863/whatsapp-img_bzvj0d.png"
-            alt="WhatsApp"
-          />
-          Hablar con un asesor
-        </a>
+      <a href="https://wa.me/5491156307246" target="_blank" rel="noopener noreferrer">
+      <button className='buttonModalPack'>¡Habla con un asesor!</button>
+      </a>
       </div>
     </div>
   </Modal>
