@@ -1,3 +1,4 @@
+import { MensajeWspViajero } from "../data"
 
 export const BannerViajero = () => {
   return (
@@ -15,7 +16,7 @@ export const BannerViajero = () => {
    </h2>
    <div className="buttonMotoBanner">
   <a href="https://wa.me/5491156307246">
-  <button>Escribinos</button>
+  <button  onClick={()=> MensajeWspViajero("asistencia al viajero")}>Escribinos</button>
   </a>
   </div>
         </div>
