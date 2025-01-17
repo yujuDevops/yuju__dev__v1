@@ -1,5 +1,13 @@
 import "./bannerRetiro.css";
 
+const sendMessage = (title) => {
+  const message = `Hola, quisiera información sobre el seguro de retiro.`;
+    const phoneNumber = "5491156307246"; // Número de WhatsApp
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
+  };
+
+
 export const BannerRetiro = () => {
     return (
         <div >
@@ -14,11 +22,11 @@ export const BannerRetiro = () => {
         </span>
        </h2>
         <div className="buttonRetiroBanner">
-        <a href="
-        https://wa.me/5491156307246">
+        <a target="_blank" rel="noopener noreferrer" onClick={sendMessage}>
         <button>Te asesoramos</button>
         </a>
         </div>
             </div>
+
       )
 }

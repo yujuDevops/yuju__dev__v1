@@ -23,6 +23,9 @@
     left:4%
   }
   
+  .header-auto a {
+    text-decoration: none;
+  }
   
   .h1-auto {
   z-index: 1;
@@ -60,14 +63,13 @@
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
-}
-
-.buttonAutoHeader a {
     font-size: 12px;
     font-family: 'Inter';
-    text-decoration: none;
-    color: #3369FF;
+    color: rgba(51, 105, 255, 1);
+    cursor: pointer;
 }
+
+
 
 
   /* //////////Notebook///////// */
@@ -138,7 +140,7 @@
         display: flex;
         position: relative;
         top: 70px;
-        padding: 6px 75px 6px 75px;
+        padding: 8px 30px 8px 30px;
         border-radius: 6px;
         border: 0.2px transparent;
         background-color: #33FFCC;

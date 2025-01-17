@@ -33,51 +33,11 @@ export const Carrousel = ({ Name }) => {
     slidesToScroll: 6,
     initialSlide: 0,
     responsive: [
-      {
-        breakpoint: 1500,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 2,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          dots: true,
-        },
-      },
+      { breakpoint: 1500, settings: { slidesToShow: 4, slidesToScroll: 4, infinite: true, dots: true } },
+      { breakpoint: 1400, settings: { slidesToShow: 4, slidesToScroll: 4, infinite: true, dots: true } },
+      { breakpoint: 1200, settings: { slidesToShow: 4, slidesToScroll: 4, infinite: true, dots: true } },
+      { breakpoint: 900, settings: { slidesToShow: 3, slidesToScroll: 3, initialSlide: 2, dots: true } },
+      { breakpoint: 600, settings: { slidesToShow: 2, slidesToScroll: 2, initialSlide: 2, dots: true } },
     ],
   };
 
@@ -86,16 +46,24 @@ export const Carrousel = ({ Name }) => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Función para forzar la recarga después de la navegación
+  const handleCardClick = (event) => {
+    event.preventDefault(); // Evita la navegación inmediata para ejecutar la recarga
+    const href = event.currentTarget.getAttribute("href");
+    
+    setTimeout(() => {
+      window.location.href = href;
+    }, 100); // Pequeña espera para una navegación más fluida
+  };
+
   return (
     <>
       <Slider {...settings} className="lazy-card">
         {seguros.map((e) => {
-         
           if (e.titulo === Name) {
-            return null; 
+            return null;
           }
 
-         
           return (
             <div className="ContenedorPadreCard" key={e.titulo || e.id}>
               <div className="card">
@@ -103,7 +71,7 @@ export const Carrousel = ({ Name }) => {
                   <h2>{e.titulo}</h2>
                   <img src={e.foto} alt={e.titulo} className="card-image" />
                 </div>
-                <Link to={e.href} className="card-button">
+                <Link to={e.href} className="card-button" onClick={handleCardClick}>
                   <button>{e.boton}</button>
                 </Link>
               </div>
@@ -114,4 +82,3 @@ export const Carrousel = ({ Name }) => {
     </>
   );
 };
-

@@ -4,35 +4,39 @@ import "./cardHogar.css";
 
 Modal.setAppElement("#root");
 
-const PlanModal = ({ isOpen, onRequestClose, planDetails }) => (
-  <Modal
-    className="modal"
-    isOpen={isOpen}
-    onRequestClose={onRequestClose}
-    contentLabel="Plan Details"
-  >
-    <div className="divModalHogar">
-      <button className="xButton" onClick={onRequestClose}>×</button>
-      <div className="plan-details">
-        <h2>{planDetails.title}</h2>
-        <div className="plan-descripcion">
-        Incluye las coberturas básicas e imprescindibles para proteger tu patrimonio, ideal para inquilinos.
+const PlanModal = ({ isOpen, onRequestClose, planDetails }) => {
+  const whatsappMessage = `Quiero contratar el plan ${planDetails.title}.`;
+
+  return (
+    <Modal
+      className="modal"
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      contentLabel="Plan Details"
+    >
+      <div className="divModalHogar">
+        <button className="xButton" onClick={onRequestClose}>×</button>
+        <div className="plan-details">
+          <h2>{planDetails.title}</h2>
+          <div className="plan-descripcion">
+            Incluye las coberturas básicas e imprescindibles para proteger tu patrimonio, ideal para inquilinos.
+          </div>
+          {Object.entries(planDetails.coverages).map(([key, value]) => (
+            <p key={key}>
+              {key}: <span>${value}</span>
+            </p>
+          ))}
         </div>
-        {Object.entries(planDetails.coverages).map(([key, value]) => (
-          <p key={key}>
-            {key}: <span>${value}</span>
-          </p>
-        ))}
+        <div className="divider"></div>
+        <div className="inputs-section">
+          <a href={`https://wa.me/5491156307246?text=${encodeURIComponent(whatsappMessage)}`} target="_blank" rel="noopener noreferrer">
+            <button className='buttonModalPack'>¡Habla con un asesor!</button>
+          </a>
+        </div>
       </div>
-      <div className="divider"></div>
-      <div className="inputs-section">
-      <a href="https://wa.me/5491156307246" target="_blank" rel="noopener noreferrer">
-      <button className='buttonModalPack'>¡Habla con un asesor!</button>
-      </a>
-      </div>
-    </div>
-  </Modal>
-);
+    </Modal>
+  );
+};
 
 export const CardHogar = () => {
   const [selectedPlan, setSelectedPlan] = useState(null);

@@ -1,5 +1,13 @@
 import "./bannerHogarPage.css"
 
+const sendMessage = () => {
+  const message = `Hola, quisiera información sobre el seguro de hogar.
+`;
+  const phoneNumber = "5491156307246"; // Número de WhatsApp
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.location.href = url;
+};
+
 export const BannerHogarPage = () => {
   return (
     <div className="bannerContratarPadre" >
@@ -15,8 +23,7 @@ export const BannerHogarPage = () => {
 
 </h2>
 <div className="buttonbiciBanner">
-  <a href="
-https://wa.me/5491156307246">
+  <a onClick={sendMessage}>
   <button>Escribinos</button>
   </a>
 </div>

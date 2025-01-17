@@ -64,6 +64,10 @@
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
+    font-size: 12px;
+    font-family: 'Inter';
+    color: rgba(51, 105, 255, 1);
+    cursor: pointer;
   }
   
   .buttonVidaHeader a {

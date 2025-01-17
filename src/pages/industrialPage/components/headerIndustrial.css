@@ -52,15 +52,22 @@
     font-weight: 400;
   }
   
+  .header-industria a {
+    text-decoration: none;
+  }
+
   .buttonIndustriaHeader {
     display: flex;
     position: relative;
-    top: 60px;
+    top: 70px;
     padding: 6px 75px 6px 75px;
     border-radius: 6px;
     border: 0.2px transparent;
     background-color: #33FFCC;
-    margin-bottom: 400px;
+    font-size: 12px;
+    font-family: 'Inter';
+    color: rgba(51, 105, 255, 1);
+    cursor: pointer;
   }
   
   .buttonIndustriaHeader a {

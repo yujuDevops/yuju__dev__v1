@@ -3,7 +3,7 @@ import { dataCoberturasAuto } from '../data';
 
 export const CoberturasAuto = () => {
   const sendMessage = (title) => {
-    const message = `Hola, quiero contratar un seguro de auto. ${title} (COBERTURA) 
+    const message = `Hola, quiero contratar un seguro de auto. ${title}  
   🔶Marca: 
   🔶Versión: 
   🔶Año: 
