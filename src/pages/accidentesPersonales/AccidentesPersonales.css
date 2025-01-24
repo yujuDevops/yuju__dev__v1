@@ -1,7 +1,3 @@
-:root {
-  z-index: -1;
-  position: relative;
-}
 
 .semisphere-acc-per {
   position: absolute;
@@ -13,7 +9,7 @@
   border-bottom-right-radius: 345px;
   transform: translate(-65%, -48%);
   pointer-events: none; /* Permite clics a través de la semiesfera */
-  z-index: -1!important; /* Aseguramos que esté detrás de los botones y contenido */
+  z-index: -100; /* Aseguramos que esté detrás de los botones y contenido */
 }
 
 .content-acc-per {

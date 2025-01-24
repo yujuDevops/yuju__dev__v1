@@ -1,11 +1,9 @@
 import './Header.css';
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-import { useNavigate } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
 export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtitle, tercerTitulo }) => {
-    const navigate = useNavigate();
     const selectRef = useRef(null);
 
     // Opciones del selector
@@ -30,7 +28,7 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
 
     const handleSelectChange = (selectedOption) => {
         if (selectedOption) {
-            navigate(selectedOption.value);
+            window.location.href = selectedOption.value; // 🔥 Recarga la página completamente
         }
     };
 
@@ -59,7 +57,7 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
     return (
         <div className="header" style={{ backgroundImage: `url(${imageSrc})`}}>
             <div className="background-image-mobile" style={{ backgroundImage: `url(${imageSrcMobile})` }}></div>
-            <div className="background-image-tablet" >
+            <div className="background-image-tablet">
                 <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733592886/me_podrias_dar_una_imagen_de_3000x3500_ummdgp.jpg" alt="imagen tablet" />
             </div>
 

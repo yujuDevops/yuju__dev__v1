@@ -12,7 +12,9 @@ export const HeaderAccidentesPersonales = () => {
     <h1 className='h1-accidentespersonales'>SEGURO DE ACCIDENTES PERSONALES</h1>
     <h2 className='h2-accidentespersonales'>Para los que trabajan de forma independiente, la mejor <br/> protección.</h2>
     <h3 className='h3-accidentespersonales'>Contratá el seguro de accidentes personales por el tiempo que quieras. <br/>Te asesoramos para que elijas la opción que más te convenga.</h3>
-    <button className='buttonMotosHeader' onClick={()=> MensajeWsp("seguro accidentes personales") }><a>Cotizá</a></button>
+    <a  target="_blank" rel="noopener noreferrer" onClick={()=> MensajeWsp("seguro accidentes personales") }>
+        <button className='buttonSaludHeader'>Cotizá</button>
+        </a>
     </div>
   
     </header>

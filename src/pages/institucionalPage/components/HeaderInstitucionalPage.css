@@ -43,6 +43,7 @@
   font-family: inter;
   font-weight: 700;
   inline-size: 45%;
+  max-inline-size: max-content;
   }
   
   .h3-institucional{
@@ -247,6 +248,7 @@
      padding: 4PX;
      inline-size: min-content;
      width: 54%;
+     max-inline-size: max-content;
 }
   
   .h2-institucional{
@@ -312,6 +314,7 @@
     font-weight: 900!important;
     padding: 12px;
     top: 40px;
+    max-inline-size: max-content;
     } 
     
     .h2-institucional{
@@ -344,6 +347,7 @@
         padding: 4PX;
         inline-size: min-content;
         width: 60%;
+        max-inline-size: max-content;
   }
   
   .h2-institucional{
@@ -409,6 +413,7 @@
     font-weight: 900!important;
     padding: 12px;
     top: 40px;
+    max-inline-size: max-content;
     } 
     
     .h2-institucional{
@@ -431,6 +436,7 @@
       font-weight: 400;
       font-size: 8px!important;
       width: 65%;
+      max-inline-size: max-content;
     }
   
   
@@ -503,6 +509,7 @@
     font-weight: 900!important;
     padding: 12px;
     top: 40px;
+    max-inline-size: max-content;
     } 
     
     .h2-institucional{
@@ -535,6 +542,7 @@
         padding: 4PX;
         inline-size: min-content;
         width: 60%;
+        max-inline-size: max-content;
   }
   
   .h2-institucional{
