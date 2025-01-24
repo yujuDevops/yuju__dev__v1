@@ -1,14 +1,9 @@
+import { MensajeWspBici } from "../data";
 import "./elementoCard.css";
 
 export const ElementoCard = ({title,features,buttonText,image}) => {
 
-  const sendMessage = (title) => {
-    const message = `Hola, quisiera información sobre el seguro de bicicletas.
-  `;
-      const phoneNumber = "5491156307246"; // Número de WhatsApp
-      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.location.href = url;
-    };
+
 
   return (
     <>
@@ -28,7 +23,9 @@ export const ElementoCard = ({title,features,buttonText,image}) => {
           </li>
         ))}
       </ul>
-      <button onClick={ ()=> sendMessage(features.title)} className="card-button-motos-wf2">{buttonText}</button>
+      <button onClick={() => MensajeWspBici(title)} className="card-button-motos-wf2">
+    {buttonText}
+</button>
     </div>
   </>
   )
