@@ -14,8 +14,8 @@ export const HeaderViajero = () => {
     <h2 className='h2-viejero'>Creá tu propia historia. Viajá con la seguridad de que estás protegido con Yuju.</h2>
     <h3 className='h3-viejero'>Tenemos el plan que se adapta a vos y a tu tipo de viaje, con la cobertura <br/> más amplia y personalizada</h3>
   
-    <a  target="_blank" rel="noopener noreferrer" onClick={()=> MensajeWspViajero("asistencia al viajero")}>
-    <button className='buttonSaludHeader'>Cotizá</button>
+    <a  target="_blank" rel="noopener noreferrer">
+    <button  onClick={()=> MensajeWspViajero("asistencia al viajero")} className='buttonSaludHeader'>Cotizá</button>
     </a>
 
     

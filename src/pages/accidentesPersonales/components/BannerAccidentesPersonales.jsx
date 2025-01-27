@@ -14,7 +14,7 @@ export const BannerAccidentesPersonales = () => {
     </h2>
     <div className="buttonMotoBanner-ap">
       <a>
-      <button onClick={()=> MensajeWsp("accidentes personales")}>Te asesoramos</button>
+      <button onClick={()=> MensajeWsp("accidentes personales")}>Escribinos</button>
       </a>
     </div>
         </div>

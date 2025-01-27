@@ -3,7 +3,12 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonEmbarcaciones, BannerEmbarcaciones, CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones, ImgEmpresasEmbarcaciones } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
+=======
+import { MensajeWspEmbarcaciones } from "./data/MensajeWspEmbarcaciones"
+
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const Embarcaciones = () => {
   const { precio, error } = usePrecios('embarcacion');
@@ -26,6 +31,7 @@ export const Embarcaciones = () => {
 precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730742865/embarcaciones_uxaogz.png"
+ MensajeWsp={MensajeWspEmbarcaciones}
 />
 
 <CardEmbarcaciones/>

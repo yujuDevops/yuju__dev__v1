@@ -1,9 +1,14 @@
 import "./IndustrialPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo } from "./components"
+import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo} from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
+=======
+import { MensajeWspIndustria } from "./data"
+
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const IndustrialPage = () => {
   const { precio, error } = usePrecios('industria');
@@ -26,6 +31,7 @@ export const IndustrialPage = () => {
 precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730211831/SICEI_z9umiy.png"
+ MensajeWsp={MensajeWspIndustria}
 />
 <IndustrialInfo/>
 

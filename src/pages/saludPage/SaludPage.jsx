@@ -3,8 +3,12 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonSalud, BannerVida, CoberturaSalud, HeaderSalud, ImgEmpresaSalud } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
 
+=======
+import { MensajeWspSalud } from "./data"
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const SaludPage = () => {
   const { precio, error } = usePrecios('salud');
@@ -27,6 +31,7 @@ export const SaludPage = () => {
   precio={precioCotiza}
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux.png"
+  MensajeWsp={MensajeWspSalud}
   />
 
   {/*  CoberturaSalud tiene si css personalizado falta mejorarlo  */}

@@ -4,7 +4,12 @@ import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { BannerCelulares, CardSeguroCelular, HeaderCelulares, ImgEmpresasCelulares, TodoRiesgoCelular } from "./components"
 import { AcordeonCelulares } from "./components/AcordeonCelulares"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
+=======
+import { MensajeWspCelular } from "./data";
+
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const CelularPage = () => {
   const { precio, error } = usePrecios('celular');
@@ -28,6 +33,7 @@ export const CelularPage = () => {
 precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1731331114/Celular_1_1_dgdlcm.png"
+ MensajeWsp={MensajeWspCelular}
 />
 <TodoRiesgoCelular/>
 <CardSeguroCelular/>

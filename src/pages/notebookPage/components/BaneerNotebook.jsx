@@ -16,9 +16,9 @@ export const BannerNotebook = () => {
       </span>
      </h2>
      <div className="buttonNotebookBanner">
-  <a >
-  <button onClick={()=> MensajeWspNotebook("seguro de notebook")}>Escribinos</button>
-  </a>
+     <a>
+    <button onClick={()=> MensajeWspNotebook()}>Escribinos</button>
+    </a>
 </div>
           </div>
     )

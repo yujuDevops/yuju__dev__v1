@@ -4,7 +4,11 @@ import { CotizaAhora } from '../../components/cotizaAhora/CotizaAhora'
 import { AcordeonViajero, BannerViajero, BeneficiosViajero, DataViajeros, HeaderViajero } from './components'
 import { ImgEmpresasViajero } from './components/ImgEmpresasViajero'
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
+=======
+import { MensajeWspViajero } from "./data";
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const ViajeroPage = () => {
   const { precio, error } = usePrecios('asisviajero');
@@ -24,6 +28,7 @@ export const ViajeroPage = () => {
   precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733315355/Avion_g0ahuo.png"
+ MensajeWsp={MensajeWspViajero}
  />
  <BeneficiosViajero/>
   <BannerSeguros/>

@@ -3,7 +3,12 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonNotebook, BannerNotebook, DataNotebook, HeaderNotebook, ImgEmpresasNotebook, InfoNotebook } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
+=======
+import { MensajeWspNotebook } from "./data";
+
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const NotebookPage = () => {
   const { precio, error } = usePrecios('notebook');
@@ -25,6 +30,7 @@ export const NotebookPage = () => {
 precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1731509662/Notebook_1_1_r1tzil.png"
+ MensajeWsp={MensajeWspNotebook}
  />
 <InfoNotebook/>
 <DataNotebook/>

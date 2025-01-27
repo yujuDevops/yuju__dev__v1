@@ -1,13 +1,8 @@
 
+import { MensajeWspBici } from '../data';
 import './headerBici.css';
 
-const sendMessage = () => {
-  const message = `Hola, quisiera información sobre el seguro de bicicletas.
-`;
-  const phoneNumber = "5491156307246"; // Número de WhatsApp
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  window.location.href = url;
-};
+
 
 export const HeaderBici = () => {
   return (
@@ -23,8 +18,8 @@ export const HeaderBici = () => {
    <h3 className='h3-bici'>Te ofrecemos un seguro ágil que cuida de vos y tu bici.<br/> Elegí tu cobertura y sumá kilómetros sin preocupaciones.</h3>
     
    <div className="buttonPadreMotoBanner">
-            <a  target="_blank" rel="noopener noreferrer" onClick={sendMessage}>
-              <button className='buttonBiciHeader'>Hablá con un asesor</button>
+            <a  target="_blank" rel="noopener noreferrer" >
+              <button onClick={()=> {MensajeWspBici()}} className='buttonBiciHeader'>Hablá con un asesor</button>
             </a>
             <span className="separador">°</span>
 

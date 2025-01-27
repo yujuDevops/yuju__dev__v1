@@ -17,10 +17,10 @@ export const BannerTablet = () => {
   
    </h2>
    <div className="buttonNotebookBanner">
-  <a>
-  <button onClick={()=> MensajeWspTablet("seguro de tablet") }>Escribinos</button>
-  </a>
-</div>
+   <a>
+    <button onClick={()=> MensajeWspTablet()}>Escribinos</button>
+    </a>  
+    </div>
         </div>
   )
 }

@@ -3,7 +3,12 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonBici, BannerBici, CardsBici, DataBiciCard, HeaderBici, ImgBiciEmpresas } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+<<<<<<< HEAD
 import usePrecios from '../../components/hooks/usePrecios';
+=======
+import { MensajeWspBici } from "./data"
+
+>>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const BiciPage = () => {
   const { precio, error } = usePrecios('bici');
@@ -26,6 +31,7 @@ export const BiciPage = () => {
   precio={precioCotiza}
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1724953992/Bici_sdsltk.png"
+  MensajeWsp={MensajeWspBici}
  />
  </div>
  {/* esta ordenado en cascada amigo, los css estan creados en su mayoria pero no le puse nada estan para que vos lo retoques menos el de

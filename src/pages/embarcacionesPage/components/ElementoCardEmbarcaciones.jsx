@@ -21,7 +21,7 @@ export const ElementoCardEmbarcaciones = ({title,features,buttonText}) => {
           </li>
         ))}
       </ul>
-      <button onClick={()=> MensajeWspEmbarcaciones("seguro de embarcación") } className="card-button-embarcacion-wf2">{buttonText}</button>
+      <button onClick={()=> MensajeWspEmbarcaciones(title) } className="card-button-embarcacion-wf2">{buttonText}</button>
     </div>
   </>
   )
