@@ -3,6 +3,7 @@ import {Carrousel} from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonTablet, BannerTablet, DataCardTablet, HeaderTablet, ImgTablet, InfoTablet } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
+import { MensajeWspTablet } from "./data";
 
 
 export const TabletPage = () => {
@@ -17,6 +18,7 @@ export const TabletPage = () => {
  precio="Desde $700/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1732548011/Tablet_dsbljz.png"
+ MensajeWsp={MensajeWspTablet}
  />
  <InfoTablet/>
  <DataCardTablet/>  

@@ -4,7 +4,7 @@ const sendMessage = (title) => {
   const message = `Hola, quisiera información sobre el seguro de industria.`;
     const phoneNumber = "5491156307246"; // Número de WhatsApp
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.location.href = url;
+    window.open(url, '_blank', 'noopener,noreferrer,width=600,height=800');
   };
 
 
@@ -19,8 +19,8 @@ export const HeaderIndustrial = () => {
   <h1 className='h1-industria'>SEGURO INTEGRAL DE COMERCIO <br/>E INDUSTRIA</h1>
   <h2 className='h2-industria'>Respaldo integral para tu actividad comercial.</h2>
   <h3 className='h3-industria'>Protegé tu negocio con coberturas a medida. Elegí entre nuestros planes <br/>flexibles para comercios de todo tipo y concentrate en hacer crecer tu empresa.</h3>
-  <a  target="_blank" rel="noopener noreferrer" onClick={sendMessage}>
-    <button className='buttonIndustriaHeader'>Cotizá</button>
+  <a  target="_blank" rel="noopener noreferrer" >
+    <button className='buttonIndustriaHeader' onClick={() => {sendMessage()}}>Cotizá</button>
     </a>
   </div>
 

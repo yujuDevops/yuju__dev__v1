@@ -18,7 +18,7 @@ export const BannerHogarPage = () => {
 </h2>
 <div className="buttonbiciBanner">
   <a >
-  <button onClick={() => {mensajeWspHogar()}}>Escribinos</button>
+  <button onClick={() => mensajeWspHogar()}>Escribinos</button>
   </a>
 </div>
 

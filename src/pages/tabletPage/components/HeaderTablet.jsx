@@ -15,8 +15,8 @@ export const HeaderTablet = () => {
     
 
     <div className="buttonPadreMotoBanner">
-            <a  target="_blank" rel="noopener noreferrer" onClick={MensajeWspTablet}>
-              <button className='buttontabletHeader'>Hablá con un asesor</button>
+            <a  target="_blank" rel="noopener noreferrer" >
+              <button className='buttontabletHeader' onClick={() => {MensajeWspTablet()}}>Hablá con un asesor</button>
             </a>
             <span className="separador">°</span>
 
