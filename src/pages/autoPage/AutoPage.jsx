@@ -6,7 +6,10 @@ import { CardInfo } from "./components/CardInfo"
 import { BannerContratar } from "../autoPage/components/BannerContratar"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 
+
 export const AutoPage = () => {
+
+
   return (
 <>
 <HeaderAuto/>
@@ -14,7 +17,7 @@ export const AutoPage = () => {
 
  <CotizaAhora
   titulo="Seguro de autos"
-  precio="Desde $8.673/mes"
+  precio={`Desde $8.764/mes`}
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735570892/Auto_ilustracion_kcgsoh.svg"
  />
@@ -25,7 +28,7 @@ export const AutoPage = () => {
 <ImgEmpresasAuto/>
 
 <AcordeonAuto/>
-<Carrousel Name="Auto"/>
+<Carrousel Name="Autos"/>
 </>
   )
 }

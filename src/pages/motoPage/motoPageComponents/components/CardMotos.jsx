@@ -1,9 +1,12 @@
+import { useState } from "react"; // Importar useState para manejar el estado
 import { dataMotos } from "../../data/dataMotos";
 import "./cardMotos.css";
 
 export const CardMotos = () => {
+  const [precioMoto, setPrecioMoto] = useState(null); // Estado para el precio de la moto
+
   const sendMessage = (title) => {
-  const message = `Hola, estoy interesado en contratar el seguro de motos: ${title} (COBERTURA) 
+    const message = `Hola, estoy interesado en contratar el seguro de motos: ${title} (COBERTURA) 
 🔶Marca: 
 🔶Versión: 
 🔶Año: 
@@ -12,6 +15,11 @@ export const CardMotos = () => {
     const phoneNumber = "5491156307246"; // Número de WhatsApp
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = url;
+  };
+
+  const handlePriceUpdate = (price) => {
+    setPrecioMoto(price); // Actualiza el precio de la moto cuando se hace clic en el botón
+    console.log("Precio actualizado:", price); // Muestra el precio actualizado en la consola
   };
 
   return (
@@ -25,16 +33,17 @@ export const CardMotos = () => {
               {parrafo.parrafos.map((texto, index) => (
                 <li
                   key={index}
-                  className={`liCardMotos ${
-                    texto.includes(".") ? "yes" : "no"
-                  }`}
+                  className={`liCardMotos ${texto.includes(".") ? "yes" : "no"}`}
                 >
                   {texto}
                 </li>
               ))}
             </ul>
             <button
-              onClick={() => sendMessage(parrafo.titulo)}
+              onClick={() => {
+                handlePriceUpdate(parrafo.precio); // Actualiza el precio de la moto
+                sendMessage(parrafo.titulo); // Envia el mensaje por WhatsApp
+              }}
               className="buttonCardMotos"
             >
               Contratar
@@ -46,6 +55,9 @@ export const CardMotos = () => {
         *Las coberturas que te ofrecemos dependen de la compañía que elijas.
         Consultá las condiciones específicas de cada una antes de contratarla.
       </h4>
+
+      {/* Mostrar el precio actual */}
+      {precioMoto && <h4>Precio seleccionado para el seguro de moto: ${precioMoto}</h4>}
     </>
   );
 };
