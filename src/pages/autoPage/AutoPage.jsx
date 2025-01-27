@@ -5,6 +5,7 @@ import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { CardInfo } from "./components/CardInfo"
 import { BannerContratar } from "../autoPage/components/BannerContratar"
 import { Carrousel } from "../../components/carrousel/Carrousel"
+import { MensajeWspAuto } from "./data"
 
 
 export const AutoPage = () => {
@@ -20,6 +21,7 @@ export const AutoPage = () => {
   precio={`Desde $8.764/mes`}
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735570892/Auto_ilustracion_kcgsoh.svg"
+  MensajeWsp={MensajeWspAuto}
  />
 
 <CoberturasAuto/>
