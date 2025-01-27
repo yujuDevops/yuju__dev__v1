@@ -4,6 +4,7 @@ import { CotizaAhora } from '../../components/cotizaAhora/CotizaAhora'
 import { AcordeonViajero, BannerViajero, BeneficiosViajero, DataViajeros, HeaderViajero } from './components'
 import { ImgEmpresasViajero } from './components/ImgEmpresasViajero'
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
+import { MensajeWspViajero } from "./data";
 
 export const ViajeroPage = () => {
   return (
@@ -15,6 +16,7 @@ export const ViajeroPage = () => {
  precio="Desde $33.200/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1733315355/Avion_g0ahuo.png"
+ MensajeWsp={MensajeWspViajero}
  />
  <BeneficiosViajero/>
   <BannerSeguros/>

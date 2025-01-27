@@ -1,5 +1,5 @@
 export const MensajeWspAuto = (title = "") => {
-    const message = `Hola, quiero contratar un seguro de auto
+    const message = `Hola, quiero contratar un seguro de auto ${title}
   🔶Marca: 
   🔶Versión: 
   🔶Año: 

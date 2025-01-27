@@ -3,6 +3,7 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonEmbarcaciones, BannerEmbarcaciones, CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones, ImgEmpresasEmbarcaciones } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+import { MensajeWspEmbarcaciones } from "./data/MensajeWspEmbarcaciones"
 
 
 export const Embarcaciones = () => {
@@ -18,6 +19,7 @@ export const Embarcaciones = () => {
  precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730742865/embarcaciones_uxaogz.png"
+ MensajeWsp={MensajeWspEmbarcaciones}
 />
 
 <CardEmbarcaciones/>
