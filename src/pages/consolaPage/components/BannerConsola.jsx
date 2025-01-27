@@ -20,7 +20,7 @@ export const BannerConsola = () => {
    </h2>
 <div className="buttonNotebookBanner">
   <a>
-  <button onClick={()=> MensajeWspConsola("seguro de consola")}>Escribinos</button>
+  <button onClick={()=> MensajeWspConsola()}>Escribinos</button>
   </a>
 </div>
     </div>
