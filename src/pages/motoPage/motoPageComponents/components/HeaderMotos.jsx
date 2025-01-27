@@ -1,16 +1,6 @@
+import { MensajeWspMoto } from "../../data";
 import "../components/HeaderMotos.css";
 
-const sendMessage = () => {
-  const message = `Hola, estoy interesado en contratar un seguro de moto. 
-🔶Marca: 
-🔶Versión: 
-🔶Año: 
-🔶Localidad: 
-`;
-  const phoneNumber = "5491156307246"; // Número de WhatsApp
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  window.location.href = url;
-};
 
 export const HeaderMotos = () => {
   return (
@@ -26,8 +16,8 @@ export const HeaderMotos = () => {
           <h3 className='h3-motos'>En Yuju te ofrecemos protección que va a tu ritmo. Asegurá tu moto de <br/> forma fácil, rápida y a un precio justo.</h3>
           
           <div className="buttonPadreMotoBanner">
-            <a  target="_blank" rel="noopener noreferrer" onClick={sendMessage}>
-              <button className='buttonMotoHeader'>Hablá con un asesor</button>
+            <a  target="_blank" rel="noopener noreferrer" >
+              <button className='buttonMotoHeader' onClick={() => MensajeWspMoto()}>Hablá con un asesor</button>
             </a>
             <span className="separador">°</span>
 

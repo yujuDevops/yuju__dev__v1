@@ -4,6 +4,7 @@ import { HeaderMotos,CardMotos,CardInfo,BannerContratar,ImgEmpresas,AcordeonMoto
 import fotoMoto from "../../assets/image/Moto.png"
 import { Carrousel } from "../../components/carrousel/Carrousel";
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
+import { MensajeWspMoto } from "./data";
 
 
 
@@ -21,6 +22,7 @@ export const MotoPage = () => {
  precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src={fotoMoto}
+ MensajeWsp={MensajeWspMoto}
 />
 
 

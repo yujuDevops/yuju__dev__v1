@@ -252,7 +252,9 @@
     
     .cardHogar h3 {
         margin-top: 0;
+        min-inline-size: max-content;
     }
+
     .imgHogar {
         margin-left: 4%;
         filter: grayscale(100%);
@@ -289,7 +291,7 @@
 }
 
 
-@media only screen and (min-width: 100px) and (max-width: 420px) {
+@media only screen and (min-width: 361px) and (max-width: 420px) {
 
     .tituloHogar h1 {
         font-weight: 700;
@@ -301,4 +303,19 @@
         margin: -85px 0px -90px 21px;
     }
 
+    .cardHogar h3 {
+        margin-top: 0;
+        min-inline-size: max-content;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 100px) and (max-width: 360px) {
+
+    .cardHogar h3 {
+        margin-top: 0;
+        min-inline-size: max-content;
+    }
 }
