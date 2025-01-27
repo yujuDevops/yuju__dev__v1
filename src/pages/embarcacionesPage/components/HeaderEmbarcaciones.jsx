@@ -1,14 +1,6 @@
 import { MensajeWspEmbarcaciones } from "../data/MensajeWspEmbarcaciones";
 import"./headerEmbarcaciones.css";
 
-const sendMessage = () => {
-  const message = `Hola, me interesa conocer más sobre el seguro de embarcaciones.
-`;
-  const phoneNumber = "5491156307246"; // Número de WhatsApp
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  window.location.href = url;
-};
-
 export const HeaderEmbarcaciones = () => {
   return (
     <header className='header-motos'>
@@ -21,8 +13,8 @@ export const HeaderEmbarcaciones = () => {
     <h2 className='h2-motos'>Navegá sin límites. Cotizá y contratá online.</h2>
     <h3 className='h3-motos'>El mejor seguro náutico, para que puedas disfrutar de tu pasión por el<br/> agua con seguridad y tranquilidad. Podés contratarlo de forma rápida y<br/> sencilla desde tu celular.</h3>
     <div className="buttonPadreMotoBanner">
-            <a  target="_blank" rel="noopener noreferrer" onClick={sendMessage} >
-              <button className='buttonMotoHeader'>Hablá con un asesor</button>
+            <a  target="_blank" rel="noopener noreferrer"  >
+              <button onClick={()=> {MensajeWspEmbarcaciones()}} className='buttonMotoHeader'>Hablá con un asesor</button>
             </a>
             <span className="separador">°</span>
 
