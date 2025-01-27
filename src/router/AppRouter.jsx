@@ -20,7 +20,7 @@ const AppRouter = () => {
                 <Route path="/bici" element={<BiciPage />} />
                 <Route path="/celular" element={<CelularPage />} />
                 <Route path="/hogar" element={<HogarPage />} />
-                <Route path="/industria" element={< IndustrialPage/>} />
+                <Route path="/comercio" element={< IndustrialPage/>} />
                 <Route path="/institucional" element={<InstitucionalPage />} />
                 <Route path="/consola" element={<ConsolaPage />} />
                 <Route path="/tablet" element={< TabletPage/>} />

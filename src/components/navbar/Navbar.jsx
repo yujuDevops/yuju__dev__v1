@@ -93,8 +93,8 @@ const Navbar = () => {
                             </div>
                             <div className="dropdown-separator"></div>
                             <div className="dropdown-column">
-                                <Link to="/industria" onClick={handlePageChange}>
-                                    Industria
+                                <Link to="/comercio" onClick={handlePageChange}>
+                                    Comercio
                                 </Link>
                                 <Link to="/embarcaciones" onClick={handlePageChange}>
                                     Embarcaciones

@@ -15,7 +15,7 @@ export const BannerViajero = () => {
   
    </h2>
    <div className="buttonMotoBanner">
-  <a href="https://wa.me/5491156307246">
+  <a >
   <button  onClick={()=> MensajeWspViajero("asistencia al viajero")}>Escribinos</button>
   </a>
   </div>
