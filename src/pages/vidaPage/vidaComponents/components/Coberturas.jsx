@@ -1,13 +1,7 @@
 import './Coberturas.css';
+import { MensajeWspVida } from '../../data';
 
 export const Coberturas = () => {
-
-  const sendMessage = (title) => {
-    const message = `Hola, quisiera información sobre el seguro de ${title}.`;
-      const phoneNumber = "5491156307246"; // Número de WhatsApp
-      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-      window.location.href = url;
-    };
 
 
   return (
@@ -26,7 +20,7 @@ export const Coberturas = () => {
             El seguro de vida te cubre por fallecimiento por cualquier causa, ya sea por enfermedad o por accidente. 
             Así podés cuidar a tu familia y garantizar su estabilidad económica y su estilo de vida, si vos ya no estás.
           </p>
-          <button onClick={()=>sendMessage("vida")} className="cobertura-button">Contratar</button>
+          <button onClick={()=> MensajeWspVida()} className="cobertura-button">Contratar</button>
         </div>
       </div>
     </div>

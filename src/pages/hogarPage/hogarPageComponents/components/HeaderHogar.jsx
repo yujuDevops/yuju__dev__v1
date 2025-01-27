@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./headerHogar.css";
+import { mensajeWspHogar } from "../../data/mensajeWspHogar";
 
 export const HeaderHogar = () => {
   useEffect(() => {
@@ -44,17 +45,8 @@ export const HeaderHogar = () => {
           tranquilo.
         </h3>
 
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => {
-            window.location.href = `https://wa.me/5491156307246?text=${encodeURIComponent(
-              "Hola, quisiera información sobre el seguro de Hogar."
-            )}`;
-            setTimeout(() => window.location.reload(), 1000);
-          }}
-        >
-          <button className="buttonHogarHeader">Cotizá</button>
+        <a target="_blank" rel="noopener noreferrer">
+          <button className="buttonHogarHeader" onClick={() => mensajeWspHogar()}>Cotizá</button>
         </a>
       </div>
     </header>
