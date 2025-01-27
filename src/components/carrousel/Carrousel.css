@@ -2,11 +2,8 @@
     width: 280px!important;
 }
 
-
-
-
 .slick-track {
-width: 5056px;
+    width: 5056px;
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
 }
@@ -59,8 +56,6 @@ width: 5056px;
     color: #3369FF;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-
 }
 
 @media (min-width: 1701px) and (max-width: 1800px) { 
@@ -151,7 +146,7 @@ width: 5056px;
       }
       
       /* Estado visible */
-      .lazy-card.is-visible {
+      .lazy-card .is-visible {
         opacity: 1;
         transform: translateY(0); /* Tarjetas vuelven a su posición */
       }

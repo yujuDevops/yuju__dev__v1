@@ -31,7 +31,7 @@ const PlanModal = ({ isOpen, onRequestClose, planDetails }) => {
         </div>
         <div className="divider"></div>
         <div className="inputs-section">
-            <button className='buttonModalPack' onClick={() => {WhatsApMsjCardHogar(planDetails.title)}}>¡Habla con un asesor!</button>
+            <button className='buttonModalPack' onClick={() => {WhatsApMsjCardHogar(planDetails.envioWsp)}}>¡Habla con un asesor!</button>
         </div>
       </div>
     </Modal>
@@ -56,6 +56,7 @@ export const CardHogar = () => {
   const imagen1Plans = [
     {
       title: "Plan Pack 1000",
+      envioWsp:"Seguro Hogar plan Pack 1000 de Rio Uruguay seguros",
       price: "$2.850",
       subtitle: "Incluye las coberturas básicas e imprescindibles para proteger tu patrimonio, ideal para inquilinos.",
       coverages: {
@@ -70,6 +71,7 @@ export const CardHogar = () => {
     },
     {
       title: "Plan Pack 3000",
+      envioWsp:"Seguro Hogar plan Pack 3000 de Rio Uruguay seguros",
       price: "$7.260",
       subtitle: "Amplía la protección de tu patrimonio y le adiciona cobertura a tus bienes en la vía pública.",
       coverages: {
@@ -84,6 +86,7 @@ export const CardHogar = () => {
     },
     {
       title: "Plan Pack 7000",
+      envioWsp:"Seguro Hogar plan Pack 7000 de Rio Uruguay seguros",
       price: "$17.553",
       subtitle: "Brinda una cobertura adecuada para proteger el patrimonio de los hogares más equipados.",
       coverages: {
@@ -101,6 +104,7 @@ export const CardHogar = () => {
   const imagen2Plans = [
     {
       title: "Hogar Base",
+      envioWsp:"Seguro Hogar Base San Cristobal",
       price: "$2.850",
       subtitle: "Incluye las coberturas básicas e imprescindibles para proteger tu patrimonio, ideal para inquilinos.",
       coverages: {
@@ -117,6 +121,7 @@ export const CardHogar = () => {
     },
     {
       title: "Hogar Plus",
+      envioWsp:"Seguro Hogar Plus San Cristobal",
       price: "$7.000",
       subtitle: "Amplía la protección de tu patrimonio y le adiciona cobertura a tus bienes en la vía pública.",
       coverages: {
@@ -135,6 +140,7 @@ export const CardHogar = () => {
     },
     {
       title: "Hogar Premium",
+      envioWsp:"Seguro Hogar Premium San Cristobal",
       price: "$15.000",
       subtitle: "Brinda una cobertura adecuada para proteger el patrimonio de los hogares más equipados.",
       coverages: {
