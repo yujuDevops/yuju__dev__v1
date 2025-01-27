@@ -3,9 +3,16 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonEmbarcaciones, BannerEmbarcaciones, CardEmbarcaciones, DataEmbarcaciones, HeaderEmbarcaciones, ImgEmpresasEmbarcaciones } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
-
+import usePrecios from '../../components/hooks/usePrecios';
 
 export const Embarcaciones = () => {
+  const { precio, error } = usePrecios('embarcacion');
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando...";
   return (
 
     <>
@@ -15,7 +22,8 @@ export const Embarcaciones = () => {
    <HeaderEmbarcaciones/>
    <CotizaAhora 
  titulo="Seguro de embarcaciones"
- precio="Desde $4.000/mes"
+//  precio="Desde $4.000/mes"
+precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730742865/embarcaciones_uxaogz.png"
 />

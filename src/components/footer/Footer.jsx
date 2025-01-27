@@ -53,7 +53,7 @@ export const Footer = () => {
           <p>Departamento de Orientación y Asistencia al Asegurado</p>
         </div>
         <div className="footer-middle-item footer-middle-item-two">
-          <a href="tel:08006668400">0800-666-8400</a>
+          <a href="https://wa.me/08006668400">0800-666-8400</a>
         </div>
         <div className="footer-middle-item footer-middle-item-two">
           <a target='_blank' href="https://www.argentina.gob.ar/ssn"><link rel="stylesheet" href="" />www.argentina.gob.ar/ssn</a>
@@ -82,7 +82,7 @@ export const Footer = () => {
             <br />
             <br />
             Suplente: <strong>Guillermo Jose Joannas</strong><br />
-            Teléfono: <a href="tel:+543442461715"><strong>+54 9 3442 46-1715</strong></a>
+            Teléfono: <a href="https://wa.me/543442461715"><strong>+54 9 3442 46-1715</strong></a>
           </p>
         </div>
         </div>

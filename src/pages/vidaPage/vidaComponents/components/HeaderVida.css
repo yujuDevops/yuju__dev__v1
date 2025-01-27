@@ -70,16 +70,57 @@
     cursor: pointer;
   }
   
-  .buttonVidaHeader a {
-    font-size: 12px;
-    font-family: 'Inter';
-    text-decoration: none;
-    color: #3369FF;
-  }
+
 
   
   @media 
-  (min-width: 1200px) and (max-width: 1600px) {
+  (min-width: 1501px) and (max-width: 1700px) {
+
+    .container-vida{
+      top: 50px;
+      width: 70%;
+      margin-bottom: 370px;
+    }
+
+    .h2-vida h2{
+      font-size: 100%!important;
+      font-weight: 800;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      width: 734px;
+      font-size: 24px;
+  }
+
+    .h3-vida{
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+  
+    .buttonVidaHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonVidaHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+  
+  }
+
+  @media 
+  (min-width: 1401px) and (max-width: 1500px) {
+
 
     .container-vida{
       top: 50px;
@@ -119,16 +160,64 @@
         text-decoration: none;
         color: #3369FF;
       }
-  
+
+
   }
-  
-  /* ///////////////Notebook////////////*/
-  
-  @media (min-width: 601px) and (max-width: 900px) {
+
+
+  @media 
+  (min-width: 1200px) and (max-width: 1400px) {
 
     .container-vida{
       top: 50px;
       width: 70%;
+      margin-bottom: -30px;
+    }
+
+    .h2-vida h2{
+      font-size: 100%!important;
+      font-weight: 800;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      width: 734px;
+      font-size: 24px;
+  }
+
+    .h3-vida{
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+  
+    .buttonVidaHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonVidaHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+
+  }
+
+
+
+  @media (min-width: 901px) and (max-width: 1199px) {
+
+    .container-vida{
+      top: 50px;
+      width: 70%;
+      margin-bottom: -220px;
     }
 
     .h2-vida {
@@ -172,6 +261,70 @@
       
       .header-vida .imgRemplazoMotos{
         display: flex;
+      }
+      .header-vida .imgFotoCelular{
+        display: none;
+      }
+
+  }
+
+
+
+
+  
+  /* ///////////////Notebook////////////*/
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+
+    .container-vida{
+      top: 30px;
+      width: 70%;
+      margin-bottom: -100px;
+    }
+
+    .h2-vida {
+      margin-top: 10px;
+      color: white;
+      font-family: inter;
+      font-weight: 700 !important;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 14px;
+  }
+
+    .h3-vida{
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  
+    .buttonVidaHeader {
+        display: flex;
+        position: relative;
+        top: 70px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+      
+      .buttonVidaHeader a {
+        font-size: 12px;
+        font-family: 'Inter';
+        text-decoration: none;
+        color: #3369FF;
+      }
+  
+      .header-vida .imgPorDefectoMotos{
+        display: none;
+      }
+      
+      .header-vida .imgRemplazoMotos{
+        display: flex;
+        height: 28vh;
+  
       }
       .header-vida .imgFotoCelular{
         display: none;

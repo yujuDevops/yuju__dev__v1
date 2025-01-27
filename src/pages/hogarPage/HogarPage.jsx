@@ -3,9 +3,17 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonHogar,PlanesHogar,ImgHogar,HeaderHogar,BannerHogarPage } from "./hogarPageComponents"
 import  BannerSeguros  from "../../components/bannerSeguros/BannerSeguros"
-
+import usePrecios from '../../components/hooks/usePrecios';
 
 export const HogarPage = () => {
+  const { precio, error } = usePrecios('hogar');
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando...";
+
   return (
     <>
     <div className="semisphere-container-hogar">
@@ -15,7 +23,8 @@ export const HogarPage = () => {
     <HeaderHogar/>
     <CotizaAhora 
  titulo="Seguro de hogar"
- precio="Desde $4.000/mes"
+//  precio="Desde $4.000/mes"
+precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1722606893/Hogar_t9ylef.png"
  />

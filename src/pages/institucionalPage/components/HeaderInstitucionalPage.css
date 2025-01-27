@@ -23,6 +23,10 @@
     left:4%
   }
   
+  .header-instituciona a {
+    text-decoration: none;
+    cursor: none;
+  }
   
   .h1-institucional {
   z-index: 1;

@@ -17,7 +17,7 @@
   .containerHogar{
     position: relative;
     top: 120px;
-    left:4%
+    left:4%;
   }
   
   .h1Hogar {
@@ -79,8 +79,145 @@
 
   
   @media 
-  (min-width: 1200px) and (max-width: 1600px) {
+  (min-width: 1601px) and (max-width: 1700px) {
 
+    .headerHogar .imgFotoCelular{
+      display: none;
+    }
+  
+    
+    .containerHogar{
+      top: 70px;
+      margin-bottom: 440px;
+    }
+  
+    .h2Hogar{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3Hogar{
+  
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+
+    .buttonHogarHeader{
+      display: flex;
+      position: relative;
+      top: 70px;
+      padding: 6px 75px 6px 75px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
+      margin-bottom: 330px;
+    }
+    
+    .buttonHogarHeader a {
+      font-size: 12px;
+      font-family: 'Inter';
+      text-decoration: none;
+      color: #3369FF;
+    }
+
+  }
+
+
+  @media 
+  (min-width: 1501px) and (max-width: 1600px) {
+
+    .headerHogar .imgFotoCelular{
+      display: none;
+    }
+  
+    
+    .containerHogar{
+      top: 70px;
+      margin-bottom: 400px;
+    }
+  
+    .h2Hogar{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3Hogar{
+  
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+
+    .buttonHogarHeader{
+      display: flex;
+      position: relative;
+      top: 70px;
+      padding: 6px 75px 6px 75px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
+      margin-bottom: 330px;
+    }
+    
+    .buttonHogarHeader a {
+      font-size: 12px;
+      font-family: 'Inter';
+      text-decoration: none;
+      color: #3369FF;
+    }
+
+  }
+
+
+  @media 
+  (min-width: 1401px) and (max-width: 1500px) {
+    .headerHogar .imgFotoCelular{
+      display: none;
+    }
+  
+    
+    .containerHogar{
+      top: 70px;
+      margin-bottom: 360px;
+    }
+  
+    .h2Hogar{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3Hogar{
+  
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+
+    .buttonHogarHeader{
+      display: flex;
+      position: relative;
+      top: 70px;
+      padding: 6px 75px 6px 75px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
+      margin-bottom: 330px;
+    }
+    
+    .buttonHogarHeader a {
+      font-size: 12px;
+      font-family: 'Inter';
+      text-decoration: none;
+      color: #3369FF;
+    }
+  }
+
+  @media 
+  (min-width: 1200px) and (max-width: 1400px) {
     .headerHogar .imgFotoCelular{
       display: none;
     }
@@ -120,7 +257,85 @@
       text-decoration: none;
       color: #3369FF;
     }
+  }
 
+
+  @media 
+  (min-width: 901px) and (max-width: 1199px) {
+
+    .headerHogar .imgFotoCelular{
+      display: none;
+     
+    }
+  
+    .headerHogar .imgRemplazoMotos{
+      display: flex;
+    }
+
+    .containerHogar{
+      top: 70px;
+      width: 70%;
+      margin-bottom: -70px;
+    }
+  
+    .h2Hogar{
+      font-weight: 700;
+      font-size: 130%;
+    }
+  
+    .h3Hogar{
+  
+      margin-bottom: -40px;
+      font-size: 100%;
+      font-weight: 400;
+      
+    }
+
+    .buttonHogarHeader{
+      display: flex;
+      position: relative;
+      top: 70px;
+      padding: 6px 75px 6px 75px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
+      margin-bottom: 0px;
+    }
+    
+    .buttonHogarHeader a {
+      font-size: 12px;
+      font-family: 'Inter';
+      text-decoration: none;
+      color: #3369FF;
+    }
+
+    .h1TituloHogar {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 17.42;
+      font-family: inter;
+      color: #3369FF;
+      margin-left: 44px;
+      margin-bottom: -220px;
+      margin-top: -95px;
+  }
+
+  .containerHogar h2 {
+    margin-top: 10px;
+    color: white;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.containerHogar h3 {
+  margin-top: 10px;
+  color: white;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 12px;
+  inline-size: 500px;
+}
   }
 
 

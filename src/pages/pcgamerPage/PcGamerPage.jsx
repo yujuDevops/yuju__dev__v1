@@ -3,9 +3,16 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonPcGamer, BannerPcGamer, DataCardPcgamer, HeaderPcGamer, ImgEmpresasPcGamer, InfoPcGamer } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
-
+import usePrecios from '../../components/hooks/usePrecios';
 
 export const PcGamerPage = () => {
+  const { precio, error } = usePrecios('pcgamer');
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando...";
   return (
 <>
 <div className="semisphere-container-pcgamer">
@@ -14,7 +21,8 @@ export const PcGamerPage = () => {
 <HeaderPcGamer/>
 <CotizaAhora 
  titulo="Seguro de PC gamer"
- precio="Desde $1.060/mes"
+//  precio="Desde $1.060/mes"
+precio={precioCotiza}
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1732028885/PC_gamer_dtmula.png"
  />

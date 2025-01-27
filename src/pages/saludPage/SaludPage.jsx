@@ -3,8 +3,17 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonSalud, BannerVida, CoberturaSalud, HeaderSalud, ImgEmpresaSalud } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+import usePrecios from '../../components/hooks/usePrecios';
+
 
 export const SaludPage = () => {
+  const { precio, error } = usePrecios('salud');
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
+
+  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando...";
   return (
   <>
   {/* HeaderSalud tiene los css de biciPage; */}
@@ -14,7 +23,8 @@ export const SaludPage = () => {
   <HeaderSalud/>  
   <CotizaAhora
   titulo="Seguro de salud"
-  precio="Desde $645/mes"
+  // precio="Desde $645/mes"
+  precio={precioCotiza}
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux.png"
   />
