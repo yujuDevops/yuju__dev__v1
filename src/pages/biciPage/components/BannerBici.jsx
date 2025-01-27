@@ -17,7 +17,7 @@ export const BannerBici = () => {
 </h2>
 <div className="buttonbiciBanner">
   <a >
-  <button onClick={()=> MensajeWspBici("seguro de bicicletas")}>Escribinos</button>
+  <button onClick={()=> MensajeWspBici()}>Escribinos</button>
   </a>
 </div>
         </div>
