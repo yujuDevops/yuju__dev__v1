@@ -3,6 +3,7 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonSalud, BannerVida, CoberturaSalud, HeaderSalud, ImgEmpresaSalud } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+import { MensajeWspSalud } from "./data"
 
 export const SaludPage = () => {
   return (
@@ -17,6 +18,7 @@ export const SaludPage = () => {
   precio="Desde $645/mes"
   button="¡Cotizá ahora!"
   src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1728479986/Vida_1_bpqlux.png"
+  MensajeWsp={MensajeWspSalud}
   />
 
   {/*  CoberturaSalud tiene si css personalizado falta mejorarlo  */}
