@@ -1,3 +1,4 @@
+import { MensajeWspPcGamer } from "../data";
 import "./bannerPcGamer.css";
 
 export const BannerPcGamer = () => {
@@ -17,10 +18,9 @@ export const BannerPcGamer = () => {
       
        </h2>
        <div className="buttonNotebookBanner">
-  <a href="
-https://wa.me/5491156307246">
-  <button>Escribinos</button>
-  </a>
+       <a>
+      <button onClick={()=> MensajeWspPcGamer()}>Escribinos</button>
+      </a>
 </div>
             </div>
       )

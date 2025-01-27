@@ -1,3 +1,4 @@
+import { MensajeWspCelular } from "../data";
 import "./bannerCelulares.css";
 
 export const BannerCelulares = () => {
@@ -7,17 +8,16 @@ export const BannerCelulares = () => {
 <img className="imgBannerMotosTablet" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732293710/Banner-CTA-NOTEBOOK_l1xj8j.svg" alt="" />
 <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732294859/Banner-contacto-celular_rge8dd.svg" alt="" />
         
-        <h2 className="h2Banner">Tu celular lo tiene todo <span className="spanBanner"> 
+        <h2 className="h2Banner-celu">Tu celular lo tiene todo <span className="spanBanner"> 
         Yuju te brinda el seguro de celular más     <br/>
         completo y accesible. ¿Querés saber más?
         <br/>
       </span>
        </h2>
-       <div className="buttonMotoBanner">
-        <a href="
-https://wa.me/5491156307246">
-        <button>Escribinos</button>
-        </a>
+       <div className="buttonCelularBanner">
+       <a>
+      <button onClick={()=> MensajeWspCelular()}>Escribinos</button>
+      </a>
         </div>
         </div>
       )

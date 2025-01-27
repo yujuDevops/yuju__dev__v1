@@ -1,8 +1,10 @@
 import "./IndustrialPage.css"
 import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
-import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo } from "./components"
+import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo} from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
+import { MensajeWspIndustria } from "./data"
+
 
 export const IndustrialPage = () => {
   return (
@@ -17,6 +19,7 @@ export const IndustrialPage = () => {
  precio="Desde $4.000/mes"
  button="¡Cotizá ahora!"
  src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1730211831/SICEI_z9umiy.png"
+ MensajeWsp={MensajeWspIndustria}
 />
 <IndustrialInfo/>
 
