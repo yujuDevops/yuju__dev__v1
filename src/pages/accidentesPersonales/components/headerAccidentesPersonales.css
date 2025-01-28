@@ -69,10 +69,91 @@
   }
   
 
+
+  @media(min-width: 1401px) and (max-width: 1600px) {
+    .container-accidentespersonales{
+      top: 20px;
+    }
+
+    .header-accidentespersonales .imgPorDefectoMotos{
+        display: flex;
+        
+      }
+      
+      .header-accidentespersonales .imgRemplazoMotos{
+        display: none;
+      }
+
+      .header-accidentespersonales .imgFotoCelular{
+        display: none;
+      }
+      
+      .header-accidentespersonales img{
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+
+      .container-accidentespersonales {
+        position: relative;
+        z-index: 1;
+        top: 70px;
+        left: 4%;
+        margin-bottom: 380px;
+    }
+      
+      
+      .h1-accidentespersonales {
+        z-index: 1;
+        color: white;
+        font-size: 29px;
+        margin-left: -10px;
+        font-family: inter;
+        background-color: rgba(51, 255, 204, 0.5);
+        inline-size: fit-content;
+        font-weight: 900;
+        padding: 10px;
+        top: 40px;
+      } 
+      
+  
+    .h2-accidentespersonales{
+        font-weight: 700;
+        font-size: 110%;
+        /* inline-size: 111%; */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+       -webkit-line-clamp: 3; /* Número de líneas visibles */
+        line-clamp: 3; /* Agrega también la versión estándar */
+        width: 482px;
+    }
+  
+    .h3-accidentespersonales{
+      margin-bottom: -40px;
+      font-size: 80%;
+      font-weight: 400;
+    }
+        
+    .buttonSaludHeader {
+      display: flex;
+      position: relative;
+      top: 60px;
+      padding: 6px 75px 6px 75px;
+      border-radius: 6px;
+      border: 0.2px transparent;
+      background-color: #33FFCC;
+    }
+
+    }
+
+
   
   /* ////////notebook////////// */
   
-@media(min-width: 1200px) and (max-width: 1600px) {
+@media(min-width: 1201px) and (max-width: 1400px) {
     .container-accidentespersonales{
       top: 20px;
     }
@@ -151,6 +232,90 @@
     }
 
 
+
+
+    @media(min-width: 901px) and (max-width: 1200px) {
+      .container-accidentespersonales{
+        top: 20px;
+      }
+  
+      .header-accidentespersonales .imgPorDefectoMotos{
+          display: flex;
+          height: 35vh;
+        }
+        
+        .header-accidentespersonales .imgRemplazoMotos{
+          display: none;
+        }
+  
+        .header-accidentespersonales .imgFotoCelular{
+          display: none;
+        }
+        
+        .header-accidentespersonales img{
+          position: absolute;
+          display: flex;
+          overflow: hidden;
+          z-index: -1;
+        }
+  
+  
+        .container-accidentespersonales {
+          position: relative;
+          z-index: 1;
+          top: 70px;
+          left: 4%;
+          margin-bottom: -200px;
+      }
+        
+        
+        .h1-accidentespersonales {
+          z-index: 1;
+          color: white;
+          font-size: 29px;
+          margin-left: -10px;
+          font-family: inter;
+          background-color: rgba(51, 255, 204, 0.5);
+          inline-size: fit-content;
+          font-weight: 900;
+          padding: 10px;
+          top: 40px;
+        } 
+        
+    
+      .h2-accidentespersonales{
+          font-weight: 700;
+          font-size: 110%;
+          /* inline-size: 111%; */
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+         -webkit-line-clamp: 3; /* Número de líneas visibles */
+          line-clamp: 3; /* Agrega también la versión estándar */
+          width: 482px;
+      }
+    
+      .h3-accidentespersonales{
+        margin-bottom: -40px;
+        font-size: 80%;
+        font-weight: 400;
+      }
+          
+      .buttonSaludHeader {
+        display: flex;
+        position: relative;
+        top: 60px;
+        padding: 6px 75px 6px 75px;
+        border-radius: 6px;
+        border: 0.2px transparent;
+        background-color: #33FFCC;
+      }
+  
+      }
+
+
+
+
     @media(min-width: 601px) and (max-width: 900px) {
 
       .header-accidentespersonales .imgPorDefectoMotos{
@@ -159,7 +324,8 @@
         
         .header-accidentespersonales .imgRemplazoMotos{
           display: flex;
-        z-index: -1;
+          z-index: -1;
+          height: 30vh;
         }
       
         .header-accidentespersonales .imgFotoCelular{
@@ -169,7 +335,7 @@
         .container-accidentespersonales{
           top: 30px;
           width: 90%;
-         
+          margin-bottom: -50px;
         }
       
         .container-accidentespersonales{

@@ -102,6 +102,7 @@
     .container-tablet{
       top: 50px;
       z-index: 1;
+      margin-bottom: 380px;
     }
   
     .h2-tablet{
@@ -137,13 +138,58 @@
     }
   
   
+
+
+    @media 
+    (min-width: 1301px) and (max-width: 1400px) {
+    
+      .container-tablet{
+        top: 50px;
+        z-index: 1;
+        margin-bottom: 350px;
+      }
+    
+      .h2-tablet{
+        font-weight: 700;
+        font-size: 130%;
+      }
+    
+      .h3-tablet{
+        margin-bottom: -40px;
+        font-size: 90%;
+        font-weight: 400!important;
+        font-family: inter;
+      }
+          
+        
+        .buttonTabletHeader {
+          display: flex;
+          position: relative;
+          top: 60px;
+          padding: 6px 75px 6px 75px;
+          border-radius: 6px;
+          border: 0.2px transparent;
+          background-color: #33FFCC;
+          margin-bottom: 310px;
+        }
+        
+        .buttonTabletHeader a {
+          font-size: 12px;
+          font-family: 'Inter';
+          text-decoration: none;
+          color: #3369FF;
+        }
+      }
+
+
   
     @media 
-  (min-width: 1200px) and (max-width: 1400px) {
+  (min-width: 1201px) and (max-width: 1300px) {
   
     .container-tablet{
       top: 50px;
       z-index: 1;
+      margin-bottom: 300px;
     }
   
     .h2-tablet{
@@ -177,6 +223,47 @@
         color: #3369FF;
       }
     }
+
+
+    @media 
+    (min-width: 961px) and (max-width: 1200px) {
+    
+      .container-tablet{
+        top: 50px;
+        z-index: 1;
+      }
+    
+      .h2-tablet{
+        font-weight: 700;
+        font-size: 130%;
+      }
+    
+      .h3-tablet{
+        margin-bottom: -40px;
+        font-size: 90%;
+        font-weight: 400!important;
+        font-family: inter;
+      }
+          
+        
+        .buttonTabletHeader {
+          display: flex;
+          position: relative;
+          top: 60px;
+          padding: 6px 75px 6px 75px;
+          border-radius: 6px;
+          border: 0.2px transparent;
+          background-color: #33FFCC;
+          margin-bottom: 310px;
+        }
+        
+        .buttonTabletHeader a {
+          font-size: 12px;
+          font-family: 'Inter';
+          text-decoration: none;
+          color: #3369FF;
+        }
+      }
   
   
   

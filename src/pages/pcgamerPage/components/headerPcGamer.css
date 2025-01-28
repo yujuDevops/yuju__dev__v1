@@ -102,6 +102,7 @@
   
     .container-pcgamers{
       top: 50px;
+      margin-bottom: 380px;
     }
   
     .h2-pcgamers{
@@ -141,6 +142,7 @@
     
       .container-pcgamers{
         top: 50px;
+        margin-bottom: -80px;
       }
     
       .h2-pcgamers{
@@ -174,6 +176,46 @@
         }
       }
     
+
+
+      @media 
+      (min-width: 961px) and (max-width: 1201px) {
+      
+        .container-pcgamers{
+          top: 50px;
+          margin-bottom: -280px;
+        }
+      
+        .h2-pcgamers{
+          font-weight: 700;
+          font-size: 130%;
+        }
+      
+        .h3-pcgamers{
+          margin-bottom: -40px;
+          font-size: 100%;
+          font-weight: 400!important;
+          font-family: inter;
+        }
+            
+          
+          .buttonpcgamersHeader {
+            display: flex;
+            position: relative;
+            top: 60px;
+            padding: 6px 75px 6px 75px;
+            border-radius: 6px;
+            border: 0.2px transparent;
+            background-color: #33FFCC;
+          }
+          
+          .buttonpcgamersHeader a {
+            font-size: 12px;
+            font-family: 'Inter';
+            text-decoration: none;
+            color: #3369FF;
+          }
+        }
   
   
   

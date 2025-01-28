@@ -53,7 +53,7 @@ export const Footer = () => {
           <p>Departamento de Orientación y Asistencia al Asegurado</p>
         </div>
         <div className="footer-middle-item footer-middle-item-two">
-          <a href="">0800-666-8400</a>
+          <a >0800-666-8400</a>
         </div>
         <div className="footer-middle-item footer-middle-item-two">
           <a  href="https://www.argentina.gob.ar/ssn" target="_blank" rel="noopener noreferrer"><link rel="stylesheet" href="" />www.argentina.gob.ar/ssn</a>
