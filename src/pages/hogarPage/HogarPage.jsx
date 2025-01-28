@@ -3,12 +3,9 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonHogar,PlanesHogar,ImgHogar,HeaderHogar,BannerHogarPage } from "./hogarPageComponents"
 import  BannerSeguros  from "../../components/bannerSeguros/BannerSeguros"
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-=======
 import { mensajeWspHogar } from "./data/mensajeWspHogar"
+import usePrecios from "../../components/hooks/usePrecios"
 
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const HogarPage = () => {
   const { precio, error } = usePrecios('hogar');

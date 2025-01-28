@@ -3,12 +3,8 @@ import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { BannerRetiro,SimuladorRetiro, HeaderRetiro, PrimerParrafoRetiro, SegundoParrafoRetiro, ImgEmpresasRetiro, AcordeonRetiro } from "./components"
 import "./retiroPage.css";
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-=======
 import { MensajeWspRetiro } from "./data";
-
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
+import usePrecios from "../../components/hooks/usePrecios"
 
 
 

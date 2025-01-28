@@ -3,12 +3,9 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonIndustrila, BannerIndustrial, HeaderIndustrial, ImgEmpresasIndustrial, IndustrialInfo} from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-=======
+import usePrecios from "../../components/hooks/usePrecios"
 import { MensajeWspIndustria } from "./data"
 
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const IndustrialPage = () => {
   const { precio, error } = usePrecios('industria');

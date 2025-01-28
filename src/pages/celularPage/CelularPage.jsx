@@ -4,12 +4,9 @@ import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { BannerCelulares, CardSeguroCelular, HeaderCelulares, ImgEmpresasCelulares, TodoRiesgoCelular } from "./components"
 import { AcordeonCelulares } from "./components/AcordeonCelulares"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros";
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-=======
+import usePrecios from "../../components/hooks/usePrecios"
 import { MensajeWspCelular } from "./data";
 
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
 
 export const CelularPage = () => {
   const { precio, error } = usePrecios('celular');

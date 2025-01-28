@@ -5,12 +5,8 @@ import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonAccidentesPersonales, BannerAccidentesPersonales, CoberturasAccidentesPersonales, HeaderAccidentesPersonales, ImgEmpresasAccidentesPersonales } from "./components"
 import { CardsAccidentesPersonales } from "./components/CardsAccidentesPersonales"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-=======
-import { MensajeWspAp } from "./data/MensajeWspAp"
-
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
+import { MensajeWspAp } from "./data/MensajeWspAp";
+import usePrecios from "../../components/hooks/usePrecios"
 
 export const AccidentesPersonales = () => {
   const { precio, error } = usePrecios('ap');

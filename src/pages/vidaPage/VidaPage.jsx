@@ -3,12 +3,8 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import {  Coberturas ,CoberturasAdicionales,HeaderVida,BannerVida, AseguradorasVida,  AcordeonVida} from "./vidaComponents/components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-=======
 import { MensajeWspVida } from "./data"
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
-
+import usePrecios from "../../components/hooks/usePrecios"
 
 export const VidaPage = () => {
   const { precio, error } = usePrecios('vida');

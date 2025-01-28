@@ -3,12 +3,8 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { AcordeonSalud, BannerVida, CoberturaSalud, HeaderSalud, ImgEmpresaSalud } from "./components"
 import BannerSeguros from "../../components/bannerSeguros/BannerSeguros"
-<<<<<<< HEAD
-import usePrecios from '../../components/hooks/usePrecios';
-
-=======
 import { MensajeWspSalud } from "./data"
->>>>>>> 7a899d52a36afbc7823ccf4c6c7d3b25da62e3a3
+import usePrecios from "../../components/hooks/usePrecios"
 
 export const SaludPage = () => {
   const { precio, error } = usePrecios('salud');
