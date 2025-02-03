@@ -49,9 +49,9 @@ export const dataImagMotos = [
         titulo: "Integrity",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1723477322/INTEGRITY_nlrpmd.png"
     },
-    // {
-    //     id: 11,
-    //     titulo: "Zurich",
-    //     foto:"https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840352/Zurich_y6ccjo.png"
-    // }
+    {
+        id: 11,
+        titulo: "El Norte",
+        foto:"https://res.cloudinary.com/dewcgbpvp/image/upload/v1738581577/el_norte_color_uldnz6.png"
+    }
 ]

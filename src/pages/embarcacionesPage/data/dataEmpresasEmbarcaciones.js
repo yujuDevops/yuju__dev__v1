@@ -21,5 +21,11 @@ export const dataEmpresasEmbarcaciones = [
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840232/MAPFRE_umlkiw.png"
     },
   
+    {
+        id: 5,
+        titulo: "El Norte",
+        foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1738581577/el_norte_color_uldnz6.png"
+    },
+  
    
 ]

@@ -102,6 +102,8 @@ export const HomePage = ({ pageId }) => {
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988251/OMINT_kh1gb7.png" alt="Imagen 13" className="grid-image" />
       {/* <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988564/Zurich_yiy98n.png" alt="Imagen 14" className="grid-image" /> */}
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988253/SANPATRICIO-color-2_ta1ozc.png" alt="Imagen 15" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1738581577/el_norte_color_uldnz6.png" alt="Imagen 15" className="grid-image" />
+      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1738581577/ike_color_kuvv4f.png" alt="Imagen 15" className="grid-image" />
     </div>
       </section>
 </div>
