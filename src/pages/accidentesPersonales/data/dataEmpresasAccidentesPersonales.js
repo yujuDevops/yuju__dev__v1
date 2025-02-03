@@ -65,6 +65,6 @@ export const dataEmpresasAccidentesPersonales = [
     {
         id: 13,
         titulo: "El Norte",
-        foto: "https://res.cloudinary.com/dewcgbpvp/image/upload/v1738581577/el_norte_color_uldnz6.png"
+        foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840348/SANPATRICIO-color-2_a88xyo.png"
     },
 ]
