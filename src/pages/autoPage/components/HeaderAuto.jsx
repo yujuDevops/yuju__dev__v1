@@ -20,7 +20,7 @@ export const HeaderAuto = () => {
 
     <div className="buttonPadreAutoBanner">
             <a  target="_blank" rel="noopener noreferrer" >
-              <button className='buttonMotoHeader' onClick={() => MensajeWspAuto()}>Hablá con un asesor</button>
+              <button className='buttonAutoHeader' onClick={() => MensajeWspAuto()}>Hablá con un asesor</button>
             </a>
             <span className="separador">°</span>
 
@@ -30,7 +30,7 @@ export const HeaderAuto = () => {
             <div class="linea"></div>
             </div>
 
-            <a href="https://motos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer">
+            <a href="http://autos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer">
               <button className='buttonAutoHeader'>Cotizá por tu cuenta</button>
             </a>
           </div>
