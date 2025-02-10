@@ -29,9 +29,9 @@ const EmailInput = () => {
     }
 
     // Configuración de EmailJS
-    const serviceID = 'service_t474l2s'; 
-    const templateID = 'template_4ezast9'; 
-    const userID = '9sEVU5bP2sI0FNqcI'; 
+    const serviceID = 'service_a3ys3p8'; 
+    const templateID = 'template_bqe3uwd'; 
+    const userID = '1rV-BhIcyHGXQ-njX'; 
 
     // Datos que se enviarán en la plantilla
     const templateParams = {
