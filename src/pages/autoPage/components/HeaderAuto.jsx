@@ -16,11 +16,25 @@ export const HeaderAuto = () => {
     <h2 className='h2-auto'>Cotizá, compará y ahorrá en tu seguro de auto.</h2>
     <h3 className='h3-auto'>
     Tenemos las mejores coberturas pensadas para vos, para que puedas<br/> encontrar la que más se adapte a tu necesidad y a tu bolsillo.</h3>
-    <a  target="_blank" rel="noopener noreferrer" >
-    <button onClick={()=> MensajeWspAuto()} className='buttonAutoHeader'>Cotizá</button>
-    </a>
-    </div>
-  
+
+
+    <div className="buttonPadreAutoBanner">
+            <a  target="_blank" rel="noopener noreferrer" >
+              <button className='buttonMotoHeader' onClick={() => MensajeWspAuto()}>Hablá con un asesor</button>
+            </a>
+            <span className="separador">°</span>
+
+            <div class="separador-container-Autos">
+            <div class="linea"></div>
+            <span class="separador-celular-Autos">°</span>
+            <div class="linea"></div>
+            </div>
+
+            <a href="https://motos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer">
+              <button className='buttonAutoHeader'>Cotizá por tu cuenta</button>
+            </a>
+          </div>
+        </div>
     </header>
   )
 }

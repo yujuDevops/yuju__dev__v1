@@ -29,7 +29,7 @@ const EmailInput = () => {
     }
 
     // Configuración de EmailJS
-    const serviceID = 'service_a3ys3p8'; 
+    const serviceID = 'service_mrdg31l'; 
     const templateID = 'template_bqe3uwd'; 
     const userID = '1rV-BhIcyHGXQ-njX'; 
 
