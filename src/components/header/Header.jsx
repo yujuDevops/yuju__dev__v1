@@ -28,11 +28,11 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
 
     const handleSelectChange = (selectedOption) => {
         if (selectedOption) {
-            window.location.href = selectedOption.value; // 🔥 Recarga la página completamente
+            window.location.href = selectedOption.value; 
         }
     };
 
-    // Ajustar el desplazamiento cuando aparece el teclado
+    
     useEffect(() => {
         const adjustForKeyboard = () => {
             if (selectRef.current) {
@@ -69,7 +69,7 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
                     className="header-select"
                     options={options}
                     placeholder="Elegí el seguro"
-                    maxMenuHeight={160} // Limitar altura del menú
+                    maxMenuHeight={160} // Altura máxima del menú
                     onChange={handleSelectChange}
                     ref={selectRef} // Asignar la referencia
                     isSearchable={false} // Deshabilita el teclado
