@@ -1,12 +1,23 @@
-import './Header.css';
-import PropTypes from 'prop-types';
+import { useEffect, useRef, useState } from 'react';
 import Select from 'react-select';
-import { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
+import './Header.css';
 
 export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtitle, tercerTitulo }) => {
     const selectRef = useRef(null);
+    const [isSearchable, setIsSearchable] = useState(true); // Por defecto en móvil y tablet
 
-    // Opciones del selector
+    useEffect(() => {
+        const updateSearchable = () => {
+            setIsSearchable(window.innerWidth > 1024); // Activa búsqueda en pantallas menores a 1024px
+        };
+
+        updateSearchable(); // Llamada inicial
+        window.addEventListener('resize', updateSearchable);
+
+        return () => window.removeEventListener('resize', updateSearchable);
+    }, []);
+
     const options = [
         { value: '/auto', label: 'Seguro de Auto' },
         { value: '/moto', label: 'Seguro de Moto' },
@@ -28,34 +39,12 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
 
     const handleSelectChange = (selectedOption) => {
         if (selectedOption) {
-            window.location.href = selectedOption.value; 
+            window.location.href = selectedOption.value;
         }
     };
 
-    
-    useEffect(() => {
-        const adjustForKeyboard = () => {
-            if (selectRef.current) {
-                const viewportHeight = window.visualViewport?.height || window.innerHeight;
-                const rect = selectRef.current.getBoundingClientRect();
-                if (rect.bottom > viewportHeight) {
-                    window.scrollBy({
-                        top: rect.bottom - viewportHeight + 80, 
-                        behavior: 'scroll'
-                    });
-                }
-            }
-        };
-
-        window.addEventListener('resize', adjustForKeyboard);
-
-        return () => {
-            window.removeEventListener('resize', adjustForKeyboard);
-        };
-    }, []);
-
     return (
-        <div className="header" style={{ backgroundImage: `url(${imageSrc})`}}>
+        <div className="header" style={{ backgroundImage: `url(${imageSrc})` }}>
             <div className="background-image-mobile" style={{ backgroundImage: `url(${imageSrcMobile})` }}></div>
             <div className="background-image-tablet">
                 <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733592886/me_podrias_dar_una_imagen_de_3000x3500_ummdgp.jpg" alt="imagen tablet" />
@@ -69,10 +58,10 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
                     className="header-select"
                     options={options}
                     placeholder="Elegí el seguro"
-                    maxMenuHeight={160} // Altura máxima del menú
+                    maxMenuHeight={160}
                     onChange={handleSelectChange}
-                    ref={selectRef} // Asignar la referencia
-                    isSearchable={false} // Deshabilita el teclado
+                    ref={selectRef}
+                    isSearchable={isSearchable} // Se adapta al tamaño de pantalla
                 />
             </div>
         </div>
