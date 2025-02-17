@@ -47,7 +47,7 @@ export const Header = ({ imageSrcMobile, imageTabletSrc, imageSrc, title, subtit
         <div className="header" style={{ backgroundImage: `url(${imageSrc})` }}>
             <div className="background-image-mobile" style={{ backgroundImage: `url(${imageSrcMobile})` }}></div>
             <div className="background-image-tablet">
-                <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733592886/me_podrias_dar_una_imagen_de_3000x3500_ummdgp.jpg" alt="imagen tablet" />
+                {/* <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1733592886/me_podrias_dar_una_imagen_de_3000x3500_ummdgp.jpg" alt="imagen tablet" /> */}
             </div>
 
             <div className="header-content">
