@@ -2,20 +2,22 @@
 <html lang="es">
   <head>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVHN31Y8S"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('set', 'linker', {'domains': [
-        'https://yuju.com.ar',
-        'https://www.yuju.com.ar/',
-        'https://yujuweb.netlify.app/' 
-        ]}); 
-      gtag('js', new Date());
-      gtag('config', 'G-2WVHN31Y8S');
-    </script>
-    <!-- Google Analytics -->
+   <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2WVHN31Y8S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-2WVHN31Y8S', {
+    'linker': {
+      'domains': ['yuju.com.ar', 'www.yuju.com.ar', 'yujuweb.netlify.app'],
+      'accept_incoming': true
+    }
+  });
+</script>
+<!-- Google Analytics -->
 
 
 

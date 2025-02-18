@@ -14,7 +14,7 @@ export const HogarPage = () => {
     return <div>Error: {error}</div>;
   }
 
-  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando...";
+  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando..";
 
   return (
     <>
