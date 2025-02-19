@@ -55,16 +55,10 @@ export const dataEmpresasAccidentesPersonales = [
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840324/LIBRA_npopkj.png"
     },
     
-  
     {
         id: 12,
         titulo: "San Patricio Seguros",
         foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840348/SANPATRICIO-color-2_a88xyo.png"
     },
 
-    {
-        id: 13,
-        titulo: "El Norte",
-        foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1721840348/SANPATRICIO-color-2_a88xyo.png"
-    },
 ]
