@@ -5,7 +5,6 @@ import { Carrousel } from '../../components/carrousel/Carrousel';
 import TestimonialCards from './componentsHome/TestimonialCards';
 import EmailInput from './componentsHome/EmailInput';
 import CardComponent from './componentsHome/CardComponent';
-import FormComponent from "./componentsHome/FormComponent";
 import "./HomePage.css";
 import CardMobile from './componentsHome/CardMobile';
 
