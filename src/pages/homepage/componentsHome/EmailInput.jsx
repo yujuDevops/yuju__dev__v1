@@ -1,15 +1,52 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Alert, Snackbar } from '@mui/material';
+// import { Alert, Snackbar } from '@mui/material';
 import './EmailInput.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Swal from "sweetalert2";
+
+// Alerta de éxito SweetAlert
+const sendEmail = ()=> {
+  Swal.fire({
+    title: "¡Gracias por completar el formulario! 😊",
+    text: "Te vamos a enviar un correo electrónico y nuestro equipo se va a contactar a la brevedad.  ",
+    icon: "success",
+    confirmButtonText: "Volver",
+    customClass: {
+      popup: "custom-popup",
+      title: "custom-title",
+      htmlContainer: "custom-text",
+      confirmButton: "custom-button"
+    },
+  });
+}
+
+
+
+//error al enviar el formulario
+const sendError = () => {
+  Swal.fire({
+      title: "Error al enviar el formulario",
+      text: "Por favor, intente nuevamente.",
+      icon: "error",
+      confirmButtonText: "Volver",
+      customClass: {
+        popup: "custom-popup",
+        title: "custom-title",
+        htmlContainer: "custom-text",
+        confirmButton: "custom-button"
+      },
+    });
+  }
+
+
 
 const EmailInput = () => {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
-  const [openErrorAlert, setOpenErrorAlert] = useState(false);
-  const [openSuccessAlert, setOpenSuccessAlert] = useState(false);
+  // const [success, setSuccess] = useState('');
+  // const [openErrorAlert, setOpenErrorAlert] = useState(false);
+  // const [openSuccessAlert, setOpenSuccessAlert] = useState(false);
 
   const handleChange = (event) => {
     setEmail(event.target.value);
@@ -23,7 +60,7 @@ const EmailInput = () => {
 
     if (!email.includes('@')) {
       setError('Debes utilizar "@" en este campo');
-      setOpenErrorAlert(true);
+      // setOpenErrorAlert(true);
       clearForm();
       return;
     }
@@ -31,7 +68,7 @@ const EmailInput = () => {
     // Configuración de EmailJS
     const serviceID = 'service_6pimupe'; 
     const templateID = 'template_bqe3uwd'; 
-    const userID = '1rV-BhIcyHGXQ-njX'; 
+    const userID = '1rV-BhIcyHGXQ-njX';
 
     // Datos que se enviarán en la plantilla
     const templateParams = {
@@ -43,27 +80,29 @@ const EmailInput = () => {
       .send(serviceID, templateID, templateParams, userID)
       .then(
         () => {
-          setSuccess('¡Yuju! ¡Newsletter enviado con éxito!');
+          // setSuccess('¡Yuju! ¡Newsletter enviado con éxito!');
           setError('');
-          setOpenSuccessAlert(true);
+          // setOpenSuccessAlert(true);
           clearForm();
+          sendEmail();
         },
         (err) => {
           setError('Hubo un error al enviar el correo. Inténtalo más tarde.');
-          setSuccess('');
-          setOpenErrorAlert(true);
+          // setSuccess('');
+          // setOpenErrorAlert(true);
+          sendError();
           console.error('Error al enviar email:', err);
         }
       );
   };
 
-  const handleCloseError = () => {
-    setOpenErrorAlert(false);
-  };
+  // const handleCloseError = () => {
+  //   setOpenErrorAlert(false);
+  // };
 
-  const handleCloseSuccess = () => {
-    setOpenSuccessAlert(false);
-  };
+  // const handleCloseSuccess = () => {
+  //   setOpenSuccessAlert(false);
+  // };
 
   const clearForm = () => {
     setEmail('');
@@ -86,7 +125,7 @@ const EmailInput = () => {
       </button>
 
       {/* Snackbar para errores */}
-      <Snackbar
+      {/* <Snackbar
         open={openErrorAlert}
         autoHideDuration={5000}
         onClose={handleCloseError}
@@ -95,10 +134,10 @@ const EmailInput = () => {
         <Alert onClose={handleCloseError} severity="error" variant="filled">
           {error}
         </Alert>
-      </Snackbar>
+      </Snackbar> */}
 
       {/* Snackbar para éxitos */}
-      <Snackbar
+      {/* <Snackbar
         open={openSuccessAlert}
         autoHideDuration={5000}
         onClose={handleCloseSuccess}
@@ -107,7 +146,7 @@ const EmailInput = () => {
         <Alert onClose={handleCloseSuccess} severity="success" variant="filled">
           {success}
         </Alert>
-      </Snackbar>
+      </Snackbar> */}
     </form>
   );
 };
