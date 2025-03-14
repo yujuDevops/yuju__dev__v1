@@ -4,7 +4,7 @@
   padding: 40px 20px;
   background-color: #fFfFfF; 
   overflow: hidden;
-  height: 840px;
+  height: 790px;
 }
 
 .lazy-card {
@@ -21,7 +21,7 @@
 
 .semisphere {
   position: absolute;
-  top: 323px;
+  top: 243px;
   left: 1px;
   width: 818px;
   height: 597px;
@@ -262,12 +262,12 @@ text-align: center;
     padding: 40px 20px;
     background-color: #fFfFfF; /* Fondo gris claro */
     overflow:hidden;
-    height: 680px;
+    height: 650px;
   }
   
   .semisphere {
     position: absolute;
-    top: 323px;
+    top: 243px;
     left: 1px;
     width: 818px;
     height: 597px;
@@ -525,7 +525,7 @@ padding: 20px;
     .containerMarca h3 {
       font-family: inter;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 800;
       color: #3369FF;
       margin-bottom: 15px;
     }
@@ -563,7 +563,7 @@ padding: 20px;
       padding: 40px 20px;
       background-color: #fFfFfF;
       overflow: hidden;
-      height: 580px;
+      height: 570px;
   }
 
   }
@@ -822,7 +822,7 @@ padding: 20px;
       padding: 40px 20px;
       background-color: #fFfFfF; 
       overflow: hidden;
-      height: 790px;
+      height: 830px;
     }
 
     .h2__comp{
@@ -1034,7 +1034,7 @@ padding: 20px;
         padding: 40px 20px;
         background-color: #fFfFfF;
         overflow: hidden;
-        height: 795px;
+        height: 840px;
     }
 
 
@@ -1129,7 +1129,7 @@ padding: 20px;
         padding: 40px 20px;
         background-color: #fFfFfF;
         overflow: hidden;
-        height: 765px;
+        height: 800px;
     }
 
 

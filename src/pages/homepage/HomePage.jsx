@@ -45,11 +45,16 @@ export const HomePage = ({ pageId }) => {
           />
         )}
       </div>
+      <Carrousel/>
       <main>
       <div className="semisphere-container">
       <div className="semisphere"></div>
       <div className="content">
         {/* Aquí van los componentes que quieres mostrar encima */}
+
+
+       
+
 
           {/* COMIENZAN LAS CARDS*/}
       
@@ -109,7 +114,7 @@ export const HomePage = ({ pageId }) => {
       </main>
 
 
-      <Carrousel/>
+   
 
 
 
