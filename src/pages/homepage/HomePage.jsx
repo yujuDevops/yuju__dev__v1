@@ -53,12 +53,9 @@ export const HomePage = ({ pageId }) => {
         {/* Aquí van los componentes que quieres mostrar encima */}
 
 
-       
-
-
           {/* COMIENZAN LAS CARDS*/}
       
-        <h2 className='h2__comp lazy-card'>¿Cómo funciona?</h2>
+        {/* <h2 className='h2__comp lazy-card'>¿Cómo funciona?</h2>
         <div className='containerCard__1 lazy-card'>
         <div className='cards__1'>
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-1-azul_iroyga.svg" alt="" />
@@ -81,7 +78,7 @@ export const HomePage = ({ pageId }) => {
         <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722987979/Home-comofunciona-4-verde_bgt8ug.svg" alt="" className='hover-image' />
         <p>Yuju! Ya estás asegurado</p>
         </div>
-        </div>
+        </div> */}
 
         {/* TERMINAN LAS CARDS */}
 
