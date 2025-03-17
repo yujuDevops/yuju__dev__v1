@@ -5,6 +5,9 @@ import './EmailInput.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Swal from "sweetalert2";
 
+
+
+
 // Alerta de éxito SweetAlert
 const sendEmail = ()=> {
   Swal.fire({
@@ -39,6 +42,12 @@ const sendError = () => {
     });
   }
 
+// Sereales de Email JS
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+  
+
 
 
 const EmailInput = () => {
@@ -65,10 +74,7 @@ const EmailInput = () => {
       return;
     }
 
-    // Configuración de EmailJS
-    const serviceID = 'service_6pimupe'; 
-    const templateID = 'template_bqe3uwd'; 
-    const userID = '1rV-BhIcyHGXQ-njX';
+    
 
     // Datos que se enviarán en la plantilla
     const templateParams = {
