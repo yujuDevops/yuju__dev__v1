@@ -15,7 +15,7 @@ export const ModalComponent = ({ isOpen, onClose }) => {
   const handleChange = (e) => {
     const { name, value } = e.target
 
-    // Validar que "Año" solo acepte números y tenga máximo 4 dígitos
+    // Validar que "Año" solo acepte números y tenga máximo 4 dígi
     if (name === "año" && !/^\d{0,4}$/.test(value)) {
       return
     }
