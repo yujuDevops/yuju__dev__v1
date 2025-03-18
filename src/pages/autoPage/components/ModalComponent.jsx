@@ -2,13 +2,15 @@
 import { useState } from "react"
 import "./modalStyles.css"
 
+const initialState = {
+  marca: "",
+  año: "",
+  version: "",
+  localidad: "",
+}
+
 export const ModalComponent = ({ isOpen, onClose }) => {
-  const [formData, setFormData] = useState({
-    marca: "",
-    año: "",
-    version: "",
-    localidad: "",
-  })
+  const [formData, setFormData] = useState(initialState)
 
   const [error, setError] = useState("")
 
@@ -21,7 +23,7 @@ export const ModalComponent = ({ isOpen, onClose }) => {
     }
 
     setFormData({ ...formData, [name]: value })
-
+  
     // Limpiar el mensaje de error cuando el usuario comienza a corregir
     if (error) {
       setError("")
@@ -61,7 +63,15 @@ export const ModalComponent = ({ isOpen, onClose }) => {
       const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`
 
       window.open(url, "_blank")
+
+      setFormData(initialState)
+
+      onClose()
+
+
     }, 300)
+
+ 
   }
 
   if (!isOpen) return null
