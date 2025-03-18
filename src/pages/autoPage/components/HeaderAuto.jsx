@@ -33,12 +33,11 @@ export const HeaderAuto = () => {
         </h3>
 
         <div className="buttonPadreAutoBanner">
+        <a  target="_blank" rel="noopener noreferrer" >
           <button
-            className="buttonAutoHeader"
-            onClick={() => setIsModalOpen(true)}
-          >
-            Pedí Tu Cotización
-          </button>
+            className="buttonAutoHeader buttonAutoHeader-asesor"
+            onClick={() => setIsModalOpen(true)}>Pedí tu cotización</button>
+          </a>
           <span className="separador">°</span>
 
           <div className="separador-container-Autos">
