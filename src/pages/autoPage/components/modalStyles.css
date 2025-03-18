@@ -1,0 +1,559 @@
+/* Modal base styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #ff0000;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.close-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Main content area */
+.modal-content {
+  padding: 32px;
+  flex: 1;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3369ff;
+  font-family: inter;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.separator {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+/* Form elements */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: inter;
+  color: #8d8b8e;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3369ff;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.error-container {
+  background-color: #fee2e2;
+  border: 1px solid #CC4636;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.error-message-xew {
+  color: #CC4636;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inter;
+}
+
+.submit-button-ggbw {
+  background-color: #3369ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 180px;
+  font-family: inter;
+}
+
+.submit-button-ggbw:hover {
+  background-color: #1d4ed8;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #8d8b8e;
+  margin-top: 16px;
+  font-family: inter;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Right sidebar */
+.vertical-divider {
+  width: 1px;
+  background-color: #e5e7eb;
+  margin: 0 8px;
+}
+
+.sidebar {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+}
+
+.whatsapp-contact {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #3369ff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.whatsapp-contact span {
+  font-family: inter;
+  font-size: 0.9rem;
+  color: #3369ff;
+  font-weight: 500;
+}
+
+.whatsapp-contact img {
+  width: 30px;
+  height: 30px;
+  margin-left: -35px;
+  margin-top: -5px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+/* Modal base styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #ff0000;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.close-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Main content area */
+.modal-content {
+  padding: 32px;
+  flex: 1;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3369ff;
+  font-family: inter;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.separator {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+/* Form elements */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: inter;
+  color: #8d8b8e;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3369ff;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.error-container {
+  background-color: #fee2e2;
+  border: 1px solid #CC4636;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.error-message-xew {
+  color: #CC4636;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inter;
+}
+
+.submit-button-ggbw {
+  background-color: #3369ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 180px;
+  font-family: inter;
+}
+
+.submit-button-ggbw:hover {
+  background-color: #1d4ed8;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #8d8b8e;
+  margin-top: 16px;
+  font-family: inter;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Right sidebar */
+.vertical-divider {
+  width: 1px;
+  background-color: #e5e7eb;
+  margin: 0 8px;
+}
+
+.sidebar {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+}
+
+.whatsapp-contact {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #3369ff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.whatsapp-contact span {
+  font-family: inter;
+  font-size: 0.9rem;
+  color: #3369ff;
+  font-weight: 500;
+}
+
+.whatsapp-contact img {
+  width: 30px;
+  height: 30px;
+  margin-left: -35px;
+  margin-top: -5px;
+}
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  /* Modal base styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 365px;
+  position: relative;
+  display: grid;
+  overflow: hidden;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #ff0000;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.close-button:hover {
+  background-color: #f5f5f5;
+}
+
+/* Main content area */
+.modal-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.modal-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3369ff;
+  font-family: inter;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.separator {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+/* Form elements */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: inter;
+  color: #8d8b8e;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3369ff;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.error-container {
+  background-color: #fee2e2;
+  border: 1px solid #CC4636;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.error-message-xew {
+  color: #CC4636;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inter;
+}
+
+.submit-button-ggbw {
+  background-color: #3369ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 180px;
+  font-family: inter;
+}
+
+.submit-button-ggbw:hover {
+  background-color: #1d4ed8;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #8d8b8e;
+  margin-top: 16px;
+  font-family: inter;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Right sidebar */
+.vertical-divider {
+  width: 1px;
+  background-color: #e5e7eb;
+  margin: 0 8px;
+}
+
+.sidebar {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+.whatsapp-contact {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #3369ff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.whatsapp-contact span {
+  font-family: inter;
+  font-size: 0.9rem;
+  color: #3369ff;
+  font-weight: 500;
+}
+
+.whatsapp-contact img {
+  width: 30px;
+  height: 30px;
+  margin-left: -35px;
+  margin-top: -5px!important;
+}
+
+}
