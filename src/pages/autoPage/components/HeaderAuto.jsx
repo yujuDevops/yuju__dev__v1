@@ -53,7 +53,7 @@ export const HeaderAuto = () => {
       </div>
 
       {/* MODAL */}
-      <ModalComponent isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <ModalComponent isOpen={isModalOpen} vehiculo={"Auto"} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 };

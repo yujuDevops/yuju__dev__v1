@@ -9,7 +9,7 @@ const initialState = {
   localidad: "",
 }
 
-export const ModalComponent = ({ isOpen, onClose }) => {
+export const ModalComponent = ({ isOpen, onClose,vehiculo }) => {
   const [formData, setFormData] = useState(initialState)
 
   const [error, setError] = useState("")
@@ -53,7 +53,7 @@ export const ModalComponent = ({ isOpen, onClose }) => {
 
     // Opcional: Puedes agregar un pequeño retraso para que el usuario vea que el formulario fue validado correctamente
     setTimeout(() => {
-      const mensaje = `Hola, quiero cotizar un seguro para mi auto:
+      const mensaje = `Hola, quiero cotizar un seguro para mi ${vehiculo} 🚗🔒:
 - Marca: ${marca}
 - Año: ${año}
 - Versión: ${version}

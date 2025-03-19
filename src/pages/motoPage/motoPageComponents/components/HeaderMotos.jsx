@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { ModalComponent } from "../../../autoPage/components";
 import { MensajeWspMoto } from "../../data";
 import "../components/HeaderMotos.css";
 
 
 export const HeaderMotos = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <header className='header-motos'>
@@ -17,7 +21,7 @@ export const HeaderMotos = () => {
           
           <div className="buttonPadreMotoBanner">
             <a  target="_blank" rel="noopener noreferrer" >
-              <button className='buttonMotoHeader' onClick={() => MensajeWspMoto()}>Hablá con un asesor</button>
+              <button className='buttonMotoHeader' onClick={ ()=> setIsModalOpen(true)  }>Hablá con un asesor</button>
             </a>
             <span className="separador">°</span>
 
@@ -32,6 +36,10 @@ export const HeaderMotos = () => {
             </a>
           </div>
         </div>
+
+
+        {/* MODAL */}
+              <ModalComponent isOpen={isModalOpen} vehiculo={"Moto"} onClose={() => setIsModalOpen(false)} />
       </header>
     </>
   );
