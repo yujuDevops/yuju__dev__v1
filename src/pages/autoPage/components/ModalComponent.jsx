@@ -140,7 +140,7 @@ export const ModalComponent = ({ isOpen, onClose,vehiculo }) => {
           <p className="info-text">
             Si querés una cotización necesitamos que completes tus datos. O si no contactate con nuestros asesores
             haciendo{" "}
-            <a href="https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+auto" target="_blank" className="link">
+            <a href={`https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+${encodeURIComponent(vehiculo)}`} target="_blank" className="link">
               clic acá
             </a>
           </p>
@@ -150,7 +150,8 @@ export const ModalComponent = ({ isOpen, onClose,vehiculo }) => {
 
         <div className="sidebar">
           <div className="whatsapp-contact">
-            <a href="https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+auto" target="_blank" rel="noreferrer">
+            <a  href={`https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+${encodeURIComponent(vehiculo)}`}
+             target="_blank" rel="noreferrer">
             <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732423863/whatsapp-img_bzvj0d.png" alt="" />
             <span>Hablar con un asesor</span>
             </a>
