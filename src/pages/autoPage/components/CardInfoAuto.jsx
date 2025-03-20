@@ -1,6 +1,6 @@
-import { useState } from "react"; // Importar useState para manejar el estado
+
 import { dataInfoCardAuto } from "../data/dataInfoCardAuto"; // Importar data de la tarjeta de información de auto
-import { MensajeWspAuto } from "../data/MensajeWspAuto";
+
 
 export const CardInfoAuto = () => {
   const sendMessage = (title) => {

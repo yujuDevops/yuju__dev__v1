@@ -8,6 +8,7 @@ import { Carrousel } from "../../components/carrousel/Carrousel"
 import { MensajeWspAuto } from "./data"
 import usePrecios from "../../components/hooks/usePrecios"
 import { CardInfoAuto } from "./components/CardInfoAuto"
+import { DataCardPorqueYuju } from "./components/DataCardPorqueYuju"
 
 export const AutoPage = () => {
 
@@ -33,6 +34,7 @@ export const AutoPage = () => {
       {/* <CoberturasAuto /> */}
       <CardInfo />
       <BannerContratar />
+      <DataCardPorqueYuju />
       <ImgEmpresasAuto />
       <AcordeonAuto />
       <Carrousel Name="Auto" />
