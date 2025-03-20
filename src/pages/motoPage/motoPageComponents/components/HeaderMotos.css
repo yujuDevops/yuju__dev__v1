@@ -530,7 +530,7 @@ inline-size: 45%;
     display: flex;
     overflow: hidden;
     z-index: -1;
-   margin-top: -300px!important;
+   margin-top: -300px;
   }
 
 
@@ -697,7 +697,7 @@ inline-size: 45%;
     display: flex;
     overflow: hidden;
     z-index: -1;
-   margin-top: -265px!important;
+   margin-top: -265px;
   }
 
 
@@ -864,7 +864,7 @@ inline-size: 45%;
     display: flex;
     overflow: hidden;
     z-index: -1;
-   margin-top: -265px!important;
+   margin-top: -265px;
   }
 
 
@@ -1031,7 +1031,7 @@ inline-size: 45%;
     display: flex;
     overflow: hidden;
     z-index: -1;
-   margin-top: -225px!important;
+   margin-top: -225px;
   }
 
 
@@ -1056,7 +1056,7 @@ inline-size: 45%;
   font-family: inter;
   background-color: rgba(51, 255, 204, 0.5);
   inline-size: fit-content;
-  font-weight: 900!important;
+  font-weight: 900;
   padding: 12px;
   top: 40px;
   } 
@@ -1189,7 +1189,7 @@ inline-size: 45%;
     width: 30px;
     height: 30px;
     margin-left: -35px;
-    margin-top: -5px!important;
+    margin-top: -5px;
   }
 
 
