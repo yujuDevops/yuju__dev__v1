@@ -9,7 +9,7 @@ const initialState = {
   localidad: "",
 }
 
-export const ModalComponent = ({ isOpen, onClose }) => {
+export const ModalComponent = ({ isOpen, onClose,vehiculo }) => {
   const [formData, setFormData] = useState(initialState)
 
   const [error, setError] = useState("")
@@ -53,7 +53,7 @@ export const ModalComponent = ({ isOpen, onClose }) => {
 
     // Opcional: Puedes agregar un pequeño retraso para que el usuario vea que el formulario fue validado correctamente
     setTimeout(() => {
-      const mensaje = `Hola, quiero cotizar un seguro para mi auto:
+      const mensaje = `Hola, quiero cotizar un seguro para mi ${vehiculo} 🚗🔒:
 - Marca: ${marca}
 - Año: ${año}
 - Versión: ${version}
@@ -140,7 +140,7 @@ export const ModalComponent = ({ isOpen, onClose }) => {
           <p className="info-text">
             Si querés una cotización necesitamos que completes tus datos. O si no contactate con nuestros asesores
             haciendo{" "}
-            <a href="https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+auto" target="_blank" className="link">
+            <a href={`https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+${encodeURIComponent(vehiculo)}`} target="_blank" className="link">
               clic acá
             </a>
           </p>
@@ -150,7 +150,8 @@ export const ModalComponent = ({ isOpen, onClose }) => {
 
         <div className="sidebar">
           <div className="whatsapp-contact">
-            <a href="https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+auto" target="_blank" rel="noreferrer">
+            <a  href={`https://api.whatsapp.com/send/?phone=5491156307246&text=Hola%2C+quiero+cotizar+un+seguro+para+mi+${encodeURIComponent(vehiculo)}`}
+             target="_blank" rel="noreferrer">
             <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1732423863/whatsapp-img_bzvj0d.png" alt="" />
             <span>Hablar con un asesor</span>
             </a>
