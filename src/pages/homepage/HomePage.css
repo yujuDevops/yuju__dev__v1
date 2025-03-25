@@ -604,7 +604,7 @@ padding: 20px;
     .semisphere-container {
       position: relative;
       width: 100%;
-      padding: 40px 20px;
+      padding: 10px 20px 40px;
       background-color: #fFfFfF; 
       overflow: hidden;
       height: 600px;
@@ -823,7 +823,7 @@ padding: 20px;
     .semisphere-container {
       position: relative;
       width: 100%;
-      padding: 40px 20px;
+      padding: 20px 20px 40px;
       background-color: #fFfFfF; 
       overflow: hidden;
       height: 520px;
@@ -1037,7 +1037,7 @@ padding: 20px;
       .semisphere-container {
         position: relative;
         width: 100%;
-        padding: 40px 20px;
+        padding: 30px 20px 40px;
         background-color: #fFfFfF;
         overflow: hidden;
         height: 510px;
@@ -1138,12 +1138,20 @@ padding: 20px;
       .semisphere-container {
         position: relative;
         width: 100%;
-        padding: 40px 20px;
+        padding: 30px 20px 40px;
         background-color: #fFfFfF;
         overflow: hidden;
         height: 500px;
+        margin-top: -35px;
     }
 
+    .containerMarca p {
+      font-family: inter;
+      font-size: 12px;
+      font-weight: 400;
+      color: #8D8B8E;
+      inline-size: 300px;
+  }
 
       .h2__comp{
         font-size: 16px;
@@ -1246,6 +1254,7 @@ padding: 20px;
         background-color: #fFfFfF;
         overflow: hidden;
         height: 500px;
+        margin-top: -35px;
     }
 
 

@@ -1,20 +1,59 @@
 .header {
-      background-size: cover;
-      background-position: top;
-      background-repeat: no-repeat;
-      padding: 10px;
-      color: rgb(255, 255, 255);
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-      margin-bottom: 40px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 80px;
+  overflow: hidden; /* Añadido para contener el carrusel */
+  margin-top: -60px;
 }
 
+/* Estilos para el carrusel con efecto de deslizamiento */
+.carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  transform: translateX(100%); /* Inicialmente fuera de la vista a la derecha */
+  transition: transform 0.8s ease-in-out;
+  visibility: hidden;
+}
+
+.carousel-slide.active {
+  transform: translateX(0); /* Posición visible */
+  visibility: visible;
+  z-index: 2;
+}
+
+.carousel-slide.previous {
+  transform: translateX(-100%); /* Sale hacia la izquierda */
+  visibility: visible;
+  z-index: 1;
+}
 
 .header-content {
   position: absolute;
-  top: 110px;
+  top: 250px;
   left: 50px;
+  z-index: 3; /* Mayor que el carrusel para estar por encima */
 }
 
 .header h1 {
@@ -45,17 +84,17 @@
 .header-select {
   padding: 0px;
   font-size: 12px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
   margin-top: 60px;
   width: 25vw;
   border-radius: 12px;
   cursor: pointer;
-  color: #8D8B8E;
+  color: #8d8b8e;
   position: relative;
 }
 
-.css-26l3qy-menu { 
+.css-26l3qy-menu {
   max-height: 60px; /* Limitar la altura máxima del menú */
   overflow-y: auto; /* Activar el scroll */
 }
@@ -67,9 +106,8 @@
   padding: 12px;
 }
 
-
 .header-select select:focus {
-  color: #8D8B8E;
+  color: #8d8b8e;
 }
 
 .css-hlgwow {
@@ -88,1001 +126,404 @@
   -webkit-overflow-scrolling: touch;
   position: relative;
   overflow: hidden;
-  padding: 12px 8px!important;
+  padding: 12px 8px !important;
   box-sizing: border-box;
-  border-radius: 12px!important;
+  border-radius: 12px !important;
 }
 
-.background-image-tablet { 
+.background-image-mobile {
   display: none;
 }
 
-@media (min-width: 1601px) and (max-width: 1800px) { 
+.background-image-tablet {
+  display: none;
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1280px) {
 
   .header {
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    height: 860px;
-    margin-bottom: 30px;
-  }
-
-  .header-content {
-    position: absolute;
-    top: 110px;
-    left: 50px;
-  }
-
-  .header h1 {
-    font-size: 35px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    font-family: inter;
-    inline-size: 45.4rem;
-    line-height: 42.49px;
-  }
-
-  .header h2 {
-    font-size: 35px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 400;
-    padding: 10px;
-  }
-
-  .header h3 {
-    font-size: 35px;
-    font-family: inter;
-    font-weight: 400;
-  }
-
-  .header-select {
-    padding: 0px;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
-    margin-top: 60px;
-    width: 21.5vw;
-    border-radius: 22px!important;
-    cursor: pointer;
-    color: #8D8B8E;
-    position: relative;
-  }
-
-  .css-26l3qy-menu { 
-    max-height: 60px; /* Limitar la altura máxima del menú */
-    overflow-y: auto; /* Activar el scroll */
-}
-
-  .header-select select {
-    width: 100%;
-    max-height: 150px; /* Limita la altura máxima del desplegable */
-    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
-  }
-
-
-  .header-select select:focus {
-    color: #8D8B8E;
-  }
-
-
-  .css-hlgwow {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    overflow: hidden;
-    padding: 12px 8px!important;
-    box-sizing: border-box;
-    border-radius: 12px!important;
-  }
-
-
-}
-
-
-
-
-
-@media (min-width: 1601px) and (max-width: 1700px) {
-
-  .header {
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    height: 860px;
-    margin-bottom: 30px;
-  }
-
-  .header-content {
-    position: absolute;
-    top: 110px;
-    left: 50px;
-  }
-
-  .header h1 {
-    font-size: 35px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    font-family: inter;
-    inline-size: 45.4rem;
-    line-height: 42.49px;
-  }
-
-  .header h2 {
-    font-size: 35px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 400;
-    padding: 10px;
-  }
-
-  .header h3 {
-    font-size: 35px;
-    font-family: inter;
-    font-weight: 400;
-  }
-
-  .header-select {
-    padding: 0px;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
-    margin-top: 60px;
-    width: 28vw;
-    border-radius: 12px;
-    cursor: pointer;
-    color: #8D8B8E;
-    position: relative;
-  }
-
-  .css-26l3qy-menu { 
-    max-height: 60px; /* Limitar la altura máxima del menú */
-    overflow-y: auto; /* Activar el scroll */
-}
-
-  .header-select select {
-    width: 100%;
-    max-height: 150px; /* Limita la altura máxima del desplegable */
-    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
-  }
-
-
-  .header-select select:focus {
-    color: #8D8B8E;
-  }
-
-
-  .css-hlgwow {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    overflow: hidden;
-    padding: 12px 8px!important;
-    box-sizing: border-box;
-    border-radius: 12px!important;
-  }
-
-}
-
-
-
-
-
-@media (min-width: 1401px) and (max-width: 1600px) {
-
-
-  .header {
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    position: relative;
-    height: 750px;
-    margin-bottom: 80px;
-  }
-
-  .header-content {
-    position: absolute;
-    top: 110px;
-    left: 50px;
-  }
-
-  .header h1 {
-    font-size: 35px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    font-family: inter;
-    inline-size: 45.4rem;
-    line-height: 42.49px;
-  }
-
-  .header h2 {
-    font-size: 35px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 400;
-    padding: 10px;
-  }
-
-  .header h3 {
-    font-size: 35px;
-    font-family: inter;
-    font-weight: 400;
-  }
-
-  .header-select {
-    padding: 0px;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
-    margin-top: 60px;
-    width: 28vw;
-    border-radius: 12px;
-    cursor: pointer;
-    color: #8D8B8E;
-    position: relative;
-  }
-
-  .css-26l3qy-menu { 
-    max-height: 60px; /* Limitar la altura máxima del menú */
-    overflow-y: auto; /* Activar el scroll */
-}
-
-  .header-select select {
-    width: 100%;
-    max-height: 150px; /* Limita la altura máxima del desplegable */
-    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
-  }
-
-
-  .header-select select:focus {
-    color: #8D8B8E;
-  }
-
-
-  .css-hlgwow {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    overflow: hidden;
-    padding: 12px 8px!important;
-    box-sizing: border-box;
-    border-radius: 12px!important;
-  }
-
-}
-
-
-
-
-
-
-@media (min-width: 1280px) and (max-width: 1400px) {
-
-
-  .header {
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: bottom right!important;
     background-repeat: no-repeat;
     padding: 10px;
     color: rgb(255, 255, 255);
     position: relative;
-
-  }
-  
-
-  .header-content {
-    position: absolute;
-    top: 90px;
-    left: 50px;
-  }
-
-  .header h1 {
-    font-size: 35px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    font-family: inter;
-    inline-size: 45.4rem;
-    line-height: 42.49px;
-  }
-
-  .header h2 {
-    font-size: 35px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 400;
-    padding: 10px;
-  }
-
-  .header h3 {
-    font-size: 35px;
-    font-family: inter;
-    font-weight: 400;
-  }
-
-  .header-select {
-    padding: 0px;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
-    margin-top: 60px;
-    width: 28vw;
-    border-radius: 12px;
-    cursor: pointer;
-    color: #8D8B8E;
-    position: relative;
-  }
-
-  .css-26l3qy-menu { 
-    max-height: 60px; /* Limitar la altura máxima del menú */
-    overflow-y: auto; /* Activar el scroll */
-}
-
-  .header-select select {
-    width: 100%;
-    max-height: 150px; /* Limita la altura máxima del desplegable */
-    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
-  }
-
-
-  .header-select select:focus {
-    color: #8D8B8E;
-  }
-
-
-  .css-hlgwow {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    overflow: hidden;
-    padding: 12px 8px!important;
-    box-sizing: border-box;
-    border-radius: 12px!important;
-  }
-
-}
-
-
-
-
-
-
-
-
-@media (min-width: 801px) and (max-width: 900px) {
-
-
-  .header {
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1735425874/Header-inicio-tablet_ck3lsx.jpg) !important;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    position: relative;
+    height: 100vh;
     width: 100vw;
-    height: 45vh;
+    margin-bottom: 80px;
+    overflow: hidden; /* Añadido para contener el carrusel */
+    margin-top: -60px;
   }
   
-  .header-content {
+  /* Estilos para el carrusel con efecto de deslizamiento */
+  .carousel-container {
     position: absolute;
-    top: 25px;
-    left: 50px;
-  }
-  
-  .header h1 {
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    font-family: inter;
-    inline-size: 17.4rem;
-    line-height: 31.49px;
-}
-  
-  
-  .header h2 {
-    font-size: 22px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 400;
-    padding: 10px;
-  }
-  
-  .header h3 {
-    font-size: 18px;
-    font-family: inter;
-    font-weight: 400;
-  }
-
-  .header-select {
-    padding: 0px;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
-    margin-top: 60px;
-    width: 28vw;
-    border-radius: 12px;
-    cursor: pointer;
-    color: #8D8B8E;
-    position: relative;
-  }
-
-  .css-26l3qy-menu { 
-    max-height: 60px; /* Limitar la altura máxima del menú */
-    overflow-y: auto; /* Activar el scroll */
-}
-
-  .header-select select {
+    top: 0;
+    left: 0;
     width: 100%;
-    max-height: 150px; /* Limita la altura máxima del desplegable */
-    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
-  }
-
-
-  .header-select select:focus {
-    color: #8D8B8E;
-  }
-
-
-  .css-hlgwow {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
+    height: 100%;
+    z-index: -1;
     overflow: hidden;
-    padding: 12px 8px!important;
-    box-sizing: border-box;
-    border-radius: 12px!important;
   }
-
-}
-
-
-
-
-@media (min-width: 601px) and (max-width: 800px) {
-
-  .header {
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1733757642/Header-inicio-nuevo-1_zlnjpv.jpg);
-    height:33vh ;
-  }
-
-  .header-content {
+  
+  .carousel-slide {
     position: absolute;
-    top: 25px;
-    left: 50px;
-  }
-  
-  .header h1 {
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 5px;
-    font-family: inter;
-    inline-size: 17.4rem;
-    line-height: 31.49px;
-}
-  
-  
-  .header h2 {
-    font-size: 22px;
-    margin-left: -10px;
-    font-family: inter;
-    background-color: rgba(51, 255, 204, 0.5);
-    inline-size: fit-content;
-    font-weight: 400;
-    padding: 10px;
-  }
-  
-  .header h3 {
-    font-size: 18px;
-    font-family: inter;
-    font-weight: 400;
-  }
-
-  .header-select {
-    padding: 0px;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
-    margin-top: 60px;
-    width: 28vw;
-    border-radius: 12px;
-    cursor: pointer;
-    color: #8D8B8E;
-    position: relative;
-  }
-
-  .css-26l3qy-menu { 
-    max-height: 60px; /* Limitar la altura máxima del menú */
-    overflow-y: auto; /* Activar el scroll */
-}
-
-  .header-select select {
+    top: 0;
+    left: 0;
     width: 100%;
-    max-height: 150px; /* Limita la altura máxima del desplegable */
-    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
-  }
-
-
-  .header-select select:focus {
-    color: #8D8B8E;
-  }
-
-
-  .css-hlgwow {
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: grid;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    overflow: hidden;
-    padding: 12px 8px!important;
-    box-sizing: border-box;
-    border-radius: 12px!important;
-  }
-
-}
-
-
-  @media only screen and (max-width: 600px) {
-    .header{
-    background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
+    height: 100%;
     background-size: cover;
-    background-position: right;
-    padding: 20px;
-    color: white;
-    position: relative;
-    height: 90vh!important;
-    margin-top: -20px;
+    background-position: bottom right!important;
     background-repeat: no-repeat;
-    }
-    
-    .header-content {
-      position: absolute;
-      top: 90px;
-      left: 30px;
-    }
-    
-    .header h1 {
-      font-size: 20px;
-        font-weight: 900;
-        margin-bottom: 0px;
-        font-family: inter;
-        inline-size: 16.4rem;
-        line-height: 30.49px;
-    }
-    
-    .header h2 {
-      font-size: 20px;
-      margin-left: -10px;
-      font-family: inter;
-      background-color: rgba(51, 255, 204, 0.5);
-      inline-size: fit-content;
-      font-weight: 400;
-      padding: 10px;
-    }
-    
-    .header h3 {
-      font-size: 20px;
-      font-family: inter;
-      font-weight: 400;
-    }
-  
-    .header-select {
-        font-size: 12px;
-        font-family: 'Inter';
-        font-weight: 500;
-        margin-top: 41px;
-        width: 55vw;
-        border-radius: 12px;
-        cursor: pointer;
-        color: #8D8B8E;
-  
-    }
-
-    .header-select select:focus{
-      color: #8D8B8E;
-    }
-  
-    .css-hlgwow {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      display: grid;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      -webkit-box-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-overflow-scrolling: touch;
-      position: relative;
-      overflow: hidden;
-      padding: 12px 8px!important;
-      box-sizing: border-box;
-      border-radius: 12px!important;
-    }
- 
-  }
-
-
-  @media only screen and (min-width: 421px) and (max-width: 600px) {
-    
-    .header{
-      background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
-      background-size: cover;
-      background-position: right;
-      padding: 20px;
-      color: white;
-      position: relative;
-      height: 90vh!important;
-      margin-top: -20px;
-      background-repeat: no-repeat;
-      }
-    
-    .card-father-mobile {
-      position: relative;
-      border: 1px solid rgba(51, 105, 255, 1);
-      border-radius: 10px;
-      padding: 16px;
-      margin: 20px 0;
-      display: flex;
-      align-items: center;
-      background-color: white;
-      flex-direction: row;
-      margin: 25px 30px;
-    }
-    
-    /* Imagen dentro de la card */
-    .card-icon-mobile {
-      width: 20vw;
-      position: relative;
-      top: -17px;
-      right: 10px;
-    }
-    
-    /* Contenido dentro de la card */
-    .card-content-mobile {
-      flex: 1;
-    }
-    
-    .card-title-mobile {
-      font-size: 14px;
-          margin: 0;
-          color: rgba(51, 105, 255, 1);
-          position: absolute;
-          left: 1.6rem;
-          bottom: 17px;
-          font-family: inter;
-      }
-  
-    
-    
-    .card-text-mobile {
-      font-size: 12px;
-      color: rgba(141, 139, 142, 1);
-      font-family: inter;
-      font-weight: 400;
-    }
-  
-    .card__title__mobile__obj {
-      font-size: 14px;
-      margin: 0;
-      color: rgba(51, 105, 255, 1);
-      position: absolute;
-      left: 22px!important;
-      bottom: 17px;
-      font-family: inter;
-    
-    }
-    
-    /* Sombra de la card que sobresale por debajo y a la derecha */
-    .card-shadow-mobile {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      width: 100%;
-      height: 100%;
-      border: 1px solid rgba(51, 105, 255, 1);
-      border-radius: 10px;
-      z-index: -1;
-    }
-    
+    transform: translateX(100%); /* Inicialmente fuera de la vista a la derecha */
+    transition: transform 0.8s ease-in-out;
+    visibility: hidden;
   }
   
-    @media only screen and (min-width: 361px) and (max-width: 420px) {
-
-      .header{
-        background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
-        background-size: cover;
-        background-position: right;
-        padding: 20px;
-        color: white;
-        position: relative;
-        height: 90vh!important;
-        margin-top: -20px;
-        background-repeat: no-repeat;
-        }
-     
-     
-      .card-father-mobile {
-        position: relative;
-        border: 1px solid rgba(51, 105, 255, 1);
-        border-radius: 10px;
-        padding: 16px;
-        margin: 20px 0;
-        display: flex;
-        align-items: center;
-        background-color: white;
-        flex-direction: row;
-        margin: 25px 30px;
-      }
-      
-      /* Imagen dentro de la card */
-      .card-icon-mobile {
-        width: 20vw;
-        position: relative;
-        top: -17px;
-        right: 10px;
-      }
-      
-      /* Contenido dentro de la card */
-      .card-content-mobile {
-        flex: 1;
-      }
-      
-      .card-title-mobile {
-        font-size: 14px;
-            margin: 0;
-            color: rgba(51, 105, 255, 1);
-            position: absolute;
-            left: 1.6rem;
-            bottom: 17px;
-            font-family: inter;
-        }
-    
-      
-      
-      .card-text-mobile {
-        font-size: 12px;
-        color: rgba(141, 139, 142, 1);
-        font-family: inter;
-        font-weight: 400;
-      }
-    
-      .card__title__mobile__obj {
-        font-size: 14px;
-        margin: 0;
-        color: rgba(51, 105, 255, 1);
-        position: absolute;
-        left: 22px!important;
-        bottom: 17px;
-        font-family: inter;
-      
-      }
-      
-      /* Sombra de la card que sobresale por debajo y a la derecha */
-      .card-shadow-mobile {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 100%;
-        height: 100%;
-        border: 1px solid rgba(51, 105, 255, 1);
-        border-radius: 10px;
-        z-index: -1;
-      }
-    }
-      
-     
-    @media only screen and (min-width: 0px) and (max-width: 360px) {
-
-      .header{
-        background-image: url(https://res.cloudinary.com/dewcgbpvp/image/upload/v1734115975/Header-inicio-celular_qjb3s7.webp)!important;
-        background-size: cover;
-        background-position: right;
-        padding: 20px;
-        color: white;
-        position: relative;
-        height: 90vh!important;
-        margin-top: -20px;
-        background-repeat: no-repeat;
-        }
-     
-     
-      .card-father-mobile {
-        position: relative;
-        border: 1px solid rgba(51, 105, 255, 1);
-        border-radius: 10px;
-        padding: 16px;
-        margin: 20px 0;
-        display: flex;
-        align-items: center;
-        background-color: white;
-        flex-direction: row;
-        margin: 25px 30px;
-      }
-      
-      /* Imagen dentro de la card */
-      .card-icon-mobile {
-        width: 20vw;
-        position: relative;
-        top: -17px;
-        right: 10px;
-      }
-      
-      .header-select {
-        font-size: 12px;
-        font-family: 'Inter';
-        font-weight: 500;
-        margin-top: 41px;
-        width: 60vw;
-        border-radius: 12px;
-        cursor: pointer;
-        color: #8D8B8E;
+  .carousel-slide.active {
+    transform: translateX(0); /* Posición visible */
+    visibility: visible;
+    z-index: 2;
+  }
   
-    }
+  .carousel-slide.previous {
+    transform: translateX(-100%); /* Sale hacia la izquierda */
+    visibility: visible;
+    z-index: 1;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 160px;
+    left: 50px;
+    z-index: 3; /* Mayor que el carrusel para estar por encima */
+  }
+  
+  .header h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-family: inter;
+    inline-size: 45.4rem;
+    line-height: 42.49px;
+  }
+  
+  .header h2 {
+    font-size: 2.2rem;
+    margin-left: -10px;
+    font-family: inter;
+    background-color: rgba(51, 255, 204, 0.5);
+    inline-size: fit-content;
+    font-weight: 400;
+    padding: 10px;
+  }
+  
+  .header h3 {
+    font-size: 2.0rem;
+    font-family: inter;
+    font-weight: 400;
+  }
+  
+  .header-select {
+    padding: 0px;
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 500;
+    margin-top: 60px;
+    width: 25vw;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #8d8b8e;
+    position: relative;
+  }
+  
+  .css-26l3qy-menu {
+    max-height: 60px; /* Limitar la altura máxima del menú */
+    overflow-y: auto; /* Activar el scroll */
+  }
+  
+  .header-select select {
+    width: 100%;
+    max-height: 150px; /* Limita la altura máxima del desplegable */
+    overflow-y: auto; /* Habilita el scroll vertical si es necesario */
+    padding: 12px;
+  }
+  
+  .header-select select:focus {
+    color: #8d8b8e;
+  }
+  
+  .css-hlgwow {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: grid;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 8px !important;
+    box-sizing: border-box;
+    border-radius: 12px !important;
+  }
+  
+  .background-image-mobile {
+    display: none;
+  }
+  
+  .background-image-tablet {
+    display: none;
+  }
+  
 
 
-    .css-hlgwow {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      display: grid;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      -webkit-box-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-overflow-scrolling: touch;
-      position: relative;
-      overflow: hidden;
-      padding: 10px 8px!important;
-      box-sizing: border-box;
-      border-radius: 12px!important;
-    }
-    
-      .header-content {
-        position: absolute;
-        top: 45px;
-        left: 30px;
-      }
+}
 
 
-      /* Contenido dentro de la card */
-      .card-content-mobile {
-        flex: 1;
-      }
-      
-      .card-title-mobile {
-        font-size: 14px;
-            margin: 0;
-            color: rgba(51, 105, 255, 1);
-            position: absolute;
-            left: 1.6rem;
-            bottom: 17px;
-            font-family: inter;
-        }
-    
-      
-      
-      .card-text-mobile {
-        font-size: 12px;
-        color: rgba(141, 139, 142, 1);
-        font-family: inter;
-        font-weight: 400;
-      }
-    
-      .card__title__mobile__obj {
-        font-size: 14px;
-        margin: 0;
-        color: rgba(51, 105, 255, 1);
-        position: absolute;
-        left: 22px!important;
-        bottom: 17px;
-        font-family: inter;
-      
-      }
-      
-      /* Sombra de la card que sobresale por debajo y a la derecha */
-      .card-shadow-mobile {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 100%;
-        height: 100%;
-        border: 1px solid rgba(51, 105, 255, 1);
-        border-radius: 10px;
-        z-index: -1;
-      }
-    }
-      
+
+
+
+/* Estilos específicos para tablet */
+@media (min-width: 770px) and (max-width: 1024px) {
+  .header, .header-tablet {
+    height: calc(45vh - 10px); /* Ajustado para considerar la altura del navbar */
+    margin-top: -1px; /* Eliminar el margen negativo que podría causar problemas */
+    overflow: hidden;
+
+  }
+  
+  .carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important; /* Forzar cover para llenar el espacio */
+    background-position: right bottom !important; /* Mostrar la parte superior de la imagen */
+    background-repeat: no-repeat;
+  }
+  
+  /* Ajustes para el contenido del header */
+  .header-content {
+    position: absolute;
+    top: 20px; /* Ajustar según sea necesario */
+    left: 30px;
+    z-index: 3;
+    width: 80%; /* Limitar el ancho del contenido */
+  }
+  
+  /* Ajustes para los títulos */
+  .header h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    inline-size: auto; /* Permitir que se ajuste naturalmente */
+    max-width: 60%;
+  }
+  
+  .header h2 {
+    font-size: 1.8rem;
+    margin-left: 0;
+    inline-size: max-content;
+  }
+  
+  .header h3 {
+    font-size: 1.6rem;
+  }
+  
+  /* Ajuste para el selector */
+  .header-select {
+    width: 40%; /* Ancho más apropiado para tablet */
+    max-width: 320px;
+    margin-top: 40px;
+  }
+}
+
+
+
+/* Media queries para diseño responsive */
+@media (max-width: 768px) {
+  .header {
+    background-position: top;
+    height: calc(100vh - 94px); /* Ajustado para considerar la altura del navbar */
+    margin-bottom: 0px;
+    /* margin-top: -170px; */
+  }
+
+  .carousel-slide {
+    background-position: center;
+  }
+
+  .header-content {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    padding: 0;
+    width: calc(100% - 40px);
+  }
+
+  .header h1 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    max-width: 280px;
+    line-height: 1.2;
+    inline-size: 180rem;
+  }
+
+  .highlight-container {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .header h2 {
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    background-color: rgba(51, 255, 204, 0.7);
+    display: inline-block;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .header h3 {
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .select-container {
+    width: 85%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+
+  .header-select {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #8d8b8e;
+    width: 68%;
+    max-width: 300px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    border-radius: 12px;
+    background-color: white;
+    color: #8d8b8e;
+  }
+
+  .header-select__control {
+    border-radius: 12px !important;
+    padding: 4px 8px !important;
+    box-shadow: none !important;
+    border: none !important;
+    min-height: 45px !important;
+  }
+
+  .header-select__menu {
+    border-radius: 12px !important;
+    margin-top: 8px !important;
+  }
+
+  .header-select__option {
+    padding: 10px 12px !important;
+    font-size: 14px !important;
+  }
+
+  /* Overlay de "SEGURO MOTO" */
+  .seguro-moto-overlay {
+    position: absolute;
+    bottom: 35%;
+    right: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    text-align: right;
+    line-height: 0.9;
+    z-index: 4;
+    opacity: 0.8;
+  }
+
+  .seguro-text {
+    font-size: 3.5rem;
+    color: white;
+  }
+
+  .moto-text {
+    font-size: 4.5rem;
+    color: white;
+  }
+
+  /* Sección "¿Cómo funciona?" */
+  .how-it-works {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 5;
+  }
+
+  .how-it-works h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+  }
+
+  .steps-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+  }
+
+  .step-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0066ff;
+    margin-bottom: 5px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .step-text {
+    font-size: 0.8rem;
+    color: #666;
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+  }
+}
