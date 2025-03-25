@@ -11,8 +11,8 @@ import Swal from "sweetalert2";
 // Alerta de éxito SweetAlert
 const sendEmail = ()=> {
   Swal.fire({
-    title: "¡Gracias por completar el formulario! 😊",
-    text: "Te vamos a enviar un correo electrónico y nuestro equipo se va a contactar a la brevedad.  ",
+    title: "¡Yuju! El newsletter fue enviado con éxito 😊",
+    text: "📢 Si no recibiste el mail, no olvides revisar tu casilla de Promociones o Spam.",
     icon: "success",
     confirmButtonText: "Volver",
     customClass: {
