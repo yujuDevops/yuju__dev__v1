@@ -17,7 +17,7 @@ export const dataCardPorqueYuju = [
       numero: 3,
       tituloStrong: "Tu primera póliza con descuento:",
       tituloNormal: "Queremos darte la bienvenida como te lo merecés. Por eso, al contratar tu primer seguro con Yuju, accedés a un descuento especial en tu cobertura.",
-      isStrongFirst: false,
+      isStrongFirst: true,
       imagen: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1742479723/etiqueta_2_hbfpin.png",
     },
     {
