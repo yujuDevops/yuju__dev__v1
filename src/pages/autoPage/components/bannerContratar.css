@@ -328,6 +328,17 @@ div .imgBannerMotosTablet{
     div .imgBannerContratar{
         display: none;
     }
+
+    .h2BannerAuto{
+        position: relative;
+        top: 80px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 13px;
+        left: 3%;
+      
+        inline-size: 236px;
+    }
     
     div .imgBannerMotosCelular{
         position: absolute;
