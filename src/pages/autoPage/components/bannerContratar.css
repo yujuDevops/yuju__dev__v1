@@ -31,9 +31,23 @@ div .imgBannerMotosTablet{
     left: 4%;
     color: #31EEC3;
 }
-.spanBanner {
 
-    font-weight: 300; 
+.h2BannerAuto{
+    position: relative;
+    top: 125px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 35px;
+    left: 4%;
+    color: #ffffff;
+}
+.spanBanner-auto {
+    color:#31EEC3;
+    font-weight: 700; 
+    font-size: 55%;
+    font-family: Inter;
+     
+   
 }
 
 .buttonMotoBanner button{
@@ -67,6 +81,7 @@ div .imgBannerMotosTablet{
         left: 4%;
         color: #31EEC3;
     }
+ 
 
     .vidBanner{
         top: 90px;
@@ -313,6 +328,17 @@ div .imgBannerMotosTablet{
     div .imgBannerContratar{
         display: none;
     }
+
+    .h2BannerAuto{
+        position: relative;
+        top: 80px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 13px;
+        left: 3%;
+      
+        inline-size: 236px;
+    }
     
     div .imgBannerMotosCelular{
         position: absolute;
@@ -383,6 +409,17 @@ div .imgBannerMotosTablet{
         display: none;
 
     }
+
+    .h2BannerAuto{
+        position: relative;
+        top: 80px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 13px;
+        left: 3%;
+      
+        inline-size: 236px;
+    }
     .h2Banner{
         position: relative;
         top: 80px;
@@ -393,7 +430,9 @@ div .imgBannerMotosTablet{
         color: #31EEC3;
         inline-size: 236px;
     }
-
+    .spanBanner-auto{
+        font-size: 7px;
+    }
 
         .vidBanner{
            position: relative;
@@ -441,6 +480,17 @@ div .imgBannerMotosTablet{
         display: none;
 
     }
+
+    .h2BannerAuto{
+        position: relative;
+        top: 80px;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 12px;
+        left: 3%;
+        color: #ffffff;
+        inline-size: 236px;
+    }
     .h2Banner{
         position: relative;
         top: 72px;
@@ -450,6 +500,10 @@ div .imgBannerMotosTablet{
         left: 3%;
         color: #31EEC3;
         inline-size: 236px;
+    }
+    
+    .spanBanner-auto{
+        font-size: 7px;
     }
 
 

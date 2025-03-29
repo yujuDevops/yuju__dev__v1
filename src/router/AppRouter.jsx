@@ -24,7 +24,7 @@ const AppRouter = () => {
                 <Route path="/institucional" element={<InstitucionalPage />} />
                 <Route path="/consola" element={<ConsolaPage />} />
                 <Route path="/tablet" element={< TabletPage/>} />
-                <Route path="/contacto" element={<ContactPage/>} />
+                {/* <Route path="/contacto" element={<ContactPage/>} /> */}
                 <Route path="/vida" element={<VidaPage/>} />
                 <Route path="/salud" element={<SaludPage/>} />
                 <Route path="/pcgamer" element={<PcGamerPage/>} />
