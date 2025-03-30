@@ -200,16 +200,16 @@ div .imgBannerMotosTablet{
 
 @media (min-width: 601px) and (max-width: 960px) {
 
-    .h2Banner{
+    .h2BannerAuto {
         position: relative;
-        top: 102px;
+        top: 97px;
         font-family: Inter;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 24px;
         left: 4%;
-        color: #31EEC3;
-        width: 90%;
+        color: #ffffff;
     }
+    
     .vidBanner{
         top: 90px;
         margin-bottom: -100px;

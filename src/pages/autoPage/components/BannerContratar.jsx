@@ -8,7 +8,7 @@ export const BannerContratar = () => {
 <img className="imgBannerMotosTablet" src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1743086349/Banner-CTA-tablet_o2gkex.jpg" alt="" />
 <img className="imgBannerMotosCelular" src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1743083815/Banner-contacto2_k9ogmz.jpg" alt="" />
 
-<h2 className="h2BannerAuto">¡.30% OFF en tu seguro de auto! <span className="spanBanner-auto"><br/>Solo por tiempo limitado. Consultá ahora con un asesor.</span>   
+<h2 className="h2BannerAuto">¡30% OFF en tu seguro de auto! <span className="spanBanner-auto"><br/>Solo por tiempo limitado. Consultá ahora con un asesor.</span>   
 
 
 </h2>
