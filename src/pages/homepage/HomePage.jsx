@@ -100,7 +100,7 @@ export const HomePage = ({ pageId }) => {
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988248/HDI_iadq0b.png" alt="Imagen 10" className="grid-image" />
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988249/LIBRA_dg0lfz.png" alt="Imagen 11" className="grid-image" />
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988251/PARANA-color-2_wgtwqb.png" alt="Imagen 12" className="grid-image" />
-      <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988251/OMINT_kh1gb7.png" alt="Imagen 13" className="grid-image" />
+      <img src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1743002180/2eadefff8a169e247c59cb2c2d28fd6b_mt7ir9.png" alt="Imagen 13" className="grid-image" />
       {/* <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988564/Zurich_yiy98n.png" alt="Imagen 14" className="grid-image" /> */}
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1722988253/SANPATRICIO-color-2_ta1ozc.png" alt="Imagen 15" className="grid-image" />
       <img src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1738581577/el_norte_color_uldnz6.png" alt="Imagen 15" className="grid-image" />
