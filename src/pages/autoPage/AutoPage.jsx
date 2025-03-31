@@ -1,6 +1,6 @@
 
 import "./AutoPage.css"
-import { AcordeonAuto,HeaderAuto, ImgEmpresasAuto } from "./components"
+import { AcordeonAuto,HeaderAuto, ImgEmpresasAuto, TestimonialCardAuto } from "./components"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { CardInfo } from "./components/CardInfo"
 import { BannerContratar } from "../autoPage/components/BannerContratar"
@@ -35,6 +35,7 @@ export const AutoPage = () => {
       <CardInfo />
       <BannerContratar />
       <DataCardPorqueYuju />
+      <TestimonialCardAuto/>
       <ImgEmpresasAuto />
       <AcordeonAuto />
       <Carrousel Name="Auto" />

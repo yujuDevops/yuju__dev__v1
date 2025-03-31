@@ -1,0 +1,35 @@
+.testimoniosCardAuto {
+    margin-top: 30%;
+    margin-bottom: -20%;
+    padding: 3%;
+}
+.h2AutosTestimonios{
+    color: #3369FF;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .card__test {
+   
+        MIN-HEIGHT: 300PX;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .testimoniosCardAuto {
+        margin-top: 60%;
+        margin-bottom: -45%;
+        padding: 3%;
+    }
+    .h2AutosTestimonios{
+        color: #3369FF;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
