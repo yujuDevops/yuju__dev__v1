@@ -32,7 +32,8 @@ const ScrollToTopButton = () => {
       onClick={scrollToTop}
       className={`scroll-to-top ${isVisible ? "visible" : "hidden"}`}
     >
-      <FaIcons.FaAngleUp size={26} />
+      {/* <FaIcons.FaAngleUp size={26} /> */}
+      <p className="pButonn-bts">Volver arriba</p>
     </button>
   );
 };

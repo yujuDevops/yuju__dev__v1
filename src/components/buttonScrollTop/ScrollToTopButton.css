@@ -1,57 +1,77 @@
 .scroll-to-top {
-    position: fixed;
-    bottom: 40px; /* Separado del margen inferior */
-    right: 40px;  /* Separado del margen derecho */
-    width: 55px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #31EEC3;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Más lento */
-    z-index: 1000;
+  position: fixed;
+  bottom: 40px;
+  right: 18px;
+  width: auto;
+  height: auto;
+  padding: 10px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #31eec3;
+  color: #6366f1; /* Color morado para el texto */
+  border: none;
+  border-radius: 50px; /* Forma de píldora */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #2ad1a9; /* Un tono ligeramente más oscuro al hacer hover */
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.scroll-to-top.clicked {
+  background-color: #31eec3;
+}
+
+.pButonn-bts {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 0;
+  color: #6366f1; /* Color morado para el texto */
+}
+
+@media (max-width: 768px) {
+  .pButonn-bts {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    margin: 0;
+    color: #6366f1; /* Color morado para el texto */
   }
-  
-  .scroll-to-top:hover {
-    background-color: #374151;
-  }
-  
-  .scroll-to-top.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .scroll-to-top.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    pointer-events: none;
-    transition: opacity 1s ease-in, transform 1s ease-in; /* Se oculta más lento */
-  }
-  
+
   .scroll-to-top {
     position: fixed;
-    bottom: 40px; /* Separado del margen inferior */
-    right: 40px;  /* Separado del margen derecho */
-    width: 55px;
-    height: 55px;
+    bottom: 40px;
+    right: 16px;
+    width: auto;
+    height: auto;
+    padding: 10px 14px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #31EEC3;
-    color: white;
+    background-color: #31eec3;
+    color: #6366f1;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Más lento */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     z-index: 1000;
-  }
-  .scroll-to-top.clicked {
-    background-color: #31EEC3; /* Cambia esto al color original del botón */
-    /* Otros estilos para el estado clicado */
-  }
+}
+}

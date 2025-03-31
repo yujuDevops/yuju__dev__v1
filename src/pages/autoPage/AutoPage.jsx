@@ -1,6 +1,8 @@
+"use client"
 
+import { useState, useEffect } from "react"
 import "./AutoPage.css"
-import { AcordeonAuto,HeaderAuto, ImgEmpresasAuto } from "./components"
+import { AcordeonAuto, HeaderAuto, ImgEmpresasAuto } from "./components"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { CardInfo } from "./components/CardInfo"
 import { BannerContratar } from "../autoPage/components/BannerContratar"
@@ -9,16 +11,42 @@ import { MensajeWspAuto } from "./data"
 import usePrecios from "../../components/hooks/usePrecios"
 import { CardInfoAuto } from "./components/CardInfoAuto"
 import { DataCardPorqueYuju } from "./components/DataCardPorqueYuju"
+import DiscountModal from "../../components/modalAuto/DiscountModal"
 
 export const AutoPage = () => {
+  const [showModal, setShowModal] = useState(false)
+  const { precio, error } = usePrecios("auto")
 
-  const { precio, error } = usePrecios('auto');
+  useEffect(() => {
+    // Debug log to check if the useEffect is running
+    console.log("AutoPage useEffect running")
 
-  if (error) {
-    return <div>Error: {error}</div>;
+    // Show modal after 3 seconds delay, regardless of localStorage
+    const timer = setTimeout(() => {
+      console.log("Setting showModal to true after 3 seconds")
+      setShowModal(true)
+    }, 3000) // 3 seconds delay
+
+    // Clean up the timer if the component unmounts
+    return () => {
+      console.log("Cleaning up timer")
+      clearTimeout(timer)
+    }
+  }, []) // Empty dependency array means this runs once on mount
+
+  const handleCloseModal = () => {
+    console.log("Modal close button clicked")
+    setShowModal(false)
   }
 
-  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando...";
+  if (error) {
+    return <div>Error: {error}</div>
+  }
+
+  const precioCotiza = precio !== null ? `Desde $${precio}/mes` : "Cargando..."
+
+  // Debug log to check the current state of showModal
+  console.log("Current showModal state:", showModal)
 
   return (
     <>
@@ -30,7 +58,7 @@ export const AutoPage = () => {
         src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735570892/Auto_ilustracion_kcgsoh.svg"
         MensajeWsp={MensajeWspAuto}
       />
-      <CardInfoAuto/>
+      <CardInfoAuto />
       {/* <CoberturasAuto /> */}
       <CardInfo />
       <BannerContratar />
@@ -38,9 +66,12 @@ export const AutoPage = () => {
       <ImgEmpresasAuto />
       <AcordeonAuto />
       <Carrousel Name="Auto" />
-    </>
-  );
-};
 
+      {/* Discount Modal */}
+      <DiscountModal isOpen={showModal} onClose={handleCloseModal} />
+    </>
+  )
+}
 
 export default AutoPage
+
