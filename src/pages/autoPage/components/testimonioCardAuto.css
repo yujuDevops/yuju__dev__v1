@@ -1,7 +1,12 @@
+
+
+
+
+
 .testimoniosCardAuto {
-    margin-top: 30%;
+    margin-top: 20%;
     margin-bottom: -20%;
-    padding: 3%;
+    padding: 2%;
 }
 .h2AutosTestimonios{
     color: #3369FF;
@@ -11,10 +16,21 @@
 }
 
 
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+    .testimoniosCardAuto {
+        margin-top: 25%;
+        margin-bottom: -20%;
+        padding: 1%;
+    }
+}
+
+
+
 @media (min-width: 601px) and (max-width: 900px) {
     .card__test {
    
-        MIN-HEIGHT: 300PX;
+        MIN-HEIGHT: 400PX;
     }
 }
 
@@ -23,13 +39,32 @@
     .testimoniosCardAuto {
         margin-top: 60%;
         margin-bottom: -45%;
-        padding: 3%;
+        padding: 0%;
     }
     .h2AutosTestimonios{
         color: #3369FF;
         font-family: Inter;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 10px;
     }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+    h2.h2AutosTestimonios{
+        font-size: 12px !important;
+        margin-left: -10px;
+
+       
+    }
+
+div.testimoniosCardAuto{
+        
+        padding: 0%;
+    }
+
+
+        .cards_test_container {
+            width: 108%;
+            margin-left: -14px;}
 }
 

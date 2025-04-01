@@ -41,7 +41,7 @@ lazyCards.forEach((card) => observer.observe(card));
 export const TestimonialCardAuto = () => {
   return (
     <div className="testimoniosCardAuto">
-    <div claName="testimonial-cards lazy-card">
+    <div className="testimonial-cards lazy-card">
       <h2 className="h2AutosTestimonios">Opiniones de nuestros clientes</h2>
       <div className="cards_test_container">
         {testimonials.map((testimonial, index) => (
