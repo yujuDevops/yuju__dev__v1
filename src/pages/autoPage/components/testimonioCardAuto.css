@@ -6,13 +6,18 @@
 .testimoniosCardAuto {
     margin-top: 20%;
     margin-bottom: -20%;
-    padding: 2%;
+    padding: 1.5%;
 }
 .h2AutosTestimonios{
     color: #3369FF;
     font-family: Inter;
     font-weight: 700;
     font-size: 16px;
+    margin-top: -10px;
+}
+
+h2.h2AutosTestimonios{
+    margin-bottom: 10px;
 }
 
 
@@ -21,7 +26,7 @@
     .testimoniosCardAuto {
         margin-top: 25%;
         margin-bottom: -20%;
-        padding: 1%;
+        padding: 0.5%;
     }
 }
 
@@ -53,8 +58,6 @@
     h2.h2AutosTestimonios{
         font-size: 12px !important;
         margin-left: -10px;
-
-       
     }
 
 div.testimoniosCardAuto{
