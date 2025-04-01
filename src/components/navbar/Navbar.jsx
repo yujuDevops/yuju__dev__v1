@@ -11,13 +11,28 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false); // Estado del menú móvil
     const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Estado del dropdown
     const dropdownRef = useRef(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1024); // Detectar si es móvil
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
+        if (isMobile) {
+            setIsDropdownOpen(!isDropdownOpen);
+        }
+    };
+
+    const handleMouseEnter = () => {
+        if (!isMobile) {
+            setIsDropdownOpen(true);
+        }
+    };
+
+    const handleMouseLeave = () => {
+        if (!isMobile) {
+            setIsDropdownOpen(false);
+        }
     };
 
     const closeDropdown = () => {
@@ -28,6 +43,18 @@ const Navbar = () => {
         setIsOpen(false); // Cerrar el menú móvil al cambiar de página
         closeDropdown(); // Cerrar el dropdown al cambiar de página
     };
+
+    // Detectar cambios en el tamaño de la ventana
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 1024);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -46,15 +73,20 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-logo">
                 <Link to="/home" onClick={handlePageChange}>
-                    <img src={logo} alt="Yuju Logo" className="logo-desktop" />
-                    <img src={logoMobile} alt="Yuju Logo" className="logo-mobile" />
+                    <img src={logo || "/placeholder.svg"} alt="Yuju Logo" className="logo-desktop" />
+                    <img src={logoMobile || "/placeholder.svg"} alt="Yuju Logo" className="logo-mobile" />
                 </Link>
             </div>
             <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
                 <Link to="/home" onClick={handlePageChange}>
                     Home
                 </Link>
-                <div className="dropdown" ref={dropdownRef}>
+                <div 
+                    className="dropdown" 
+                    ref={dropdownRef}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
                     <button className="dropbtn" onClick={toggleDropdown}>
                         Seguros
                         <i
@@ -130,10 +162,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-social">
                 <a href="https://www.instagram.com/segurosyuju?igsh=djkyZWxkZ3pvcXJn" target='_blank' rel='noreferrer'>
-                    <img src={instagram} alt="instagram" />
+                    <img src={instagram || "/placeholder.svg"} alt="instagram" />
                 </a>
                 <a href="https://www.facebook.com/share/1BtqRdRJeQ/" target='_blank' rel='noreferrer'>
-                    <img src={facebook} alt="facebook" />
+                    <img src={facebook || "/placeholder.svg"} alt="facebook" />
                 </a>
             </div>
             <button className="hamburger" onClick={toggleMenu}>
