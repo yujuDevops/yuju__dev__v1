@@ -36,7 +36,7 @@ export const HeaderAuto = () => {
         <a  target="_blank" rel="noopener noreferrer" >
           <button
             className="buttonAutoHeader buttonAutoHeader-asesor"
-            onClick={() => setIsModalOpen(true)}>Pedí tu cotización</button>
+            onClick={() => setIsModalOpen(true)}>Cotizá online</button>
           </a>
           <span className="separador">°</span>
 
@@ -46,9 +46,19 @@ export const HeaderAuto = () => {
             <div className="linea"></div>
           </div>
 
-          <a href="http://autos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer">
-            <button className="buttonAutoHeader">Cotizá por tu cuenta</button>
-          </a>
+
+<a href="http://autos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer"
+className="AncorAutoHeader"
+>
+  <button className="buttonAutoHeader">
+    <img
+      src="https://res.cloudinary.com/dkk8nbi3b/image/upload/v1743685915/logowhatsapp_tfteuy.svg"
+      className="img-whatsapp"
+    ></img>
+    Pedí tu cotización
+  </button>
+</a>
+
         </div>
       </div>
 
