@@ -47,7 +47,7 @@ export const HeaderAuto = () => {
             <div className="linea"></div>
           </div>
 
-          <a  target="_blank" rel="noopener noreferrer" >
+         <a  target="_blank" rel="noopener noreferrer" >
           <button
             className="buttonAutoHeader buttonAutoHeader-asesor"
             onClick={() => setIsModalOpen(true)}>Pedí tu cotización</button>
