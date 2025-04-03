@@ -1,3 +1,4 @@
+
 .header {
   background-size: cover;
   background-position: top;
@@ -47,6 +48,43 @@
   transform: translateX(-100%); /* Sale hacia la izquierda */
   visibility: visible;
   z-index: 1;
+}
+
+/* Mantener y mejorar los estilos de los dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-dots.visible {
+  opacity: 1;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-dot.active {
+  background-color: white;
+  transform: scale(1.2);
+}
+
+.carousel-dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .header-content {
@@ -139,13 +177,10 @@
   display: none;
 }
 
-
-
 @media (min-width: 1000px) and (max-width: 1280px) {
-
   .header {
     background-size: cover;
-    background-position: bottom right!important;
+    background-position: bottom right !important;
     background-repeat: no-repeat;
     padding: 10px;
     color: rgb(255, 255, 255);
@@ -156,7 +191,7 @@
     overflow: hidden; /* Añadido para contener el carrusel */
     margin-top: -60px;
   }
-  
+
   /* Estilos para el carrusel con efecto de deslizamiento */
   .carousel-container {
     position: absolute;
@@ -167,7 +202,7 @@
     z-index: -1;
     overflow: hidden;
   }
-  
+
   .carousel-slide {
     position: absolute;
     top: 0;
@@ -175,32 +210,32 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: bottom right!important;
+    background-position: bottom right !important;
     background-repeat: no-repeat;
     transform: translateX(100%); /* Inicialmente fuera de la vista a la derecha */
     transition: transform 0.8s ease-in-out;
     visibility: hidden;
   }
-  
+
   .carousel-slide.active {
     transform: translateX(0); /* Posición visible */
     visibility: visible;
     z-index: 2;
   }
-  
+
   .carousel-slide.previous {
     transform: translateX(-100%); /* Sale hacia la izquierda */
     visibility: visible;
     z-index: 1;
   }
-  
+
   .header-content {
     position: absolute;
     top: 160px;
     left: 50px;
     z-index: 3; /* Mayor que el carrusel para estar por encima */
   }
-  
+
   .header h1 {
     font-size: 2.4rem;
     font-weight: 900;
@@ -209,7 +244,7 @@
     inline-size: 45.4rem;
     line-height: 42.49px;
   }
-  
+
   .header h2 {
     font-size: 2.2rem;
     margin-left: -10px;
@@ -219,13 +254,13 @@
     font-weight: 400;
     padding: 10px;
   }
-  
+
   .header h3 {
     font-size: 2.0rem;
     font-family: inter;
     font-weight: 400;
   }
-  
+
   .header-select {
     padding: 0px;
     font-size: 12px;
@@ -238,23 +273,23 @@
     color: #8d8b8e;
     position: relative;
   }
-  
+
   .css-26l3qy-menu {
     max-height: 60px; /* Limitar la altura máxima del menú */
     overflow-y: auto; /* Activar el scroll */
   }
-  
+
   .header-select select {
     width: 100%;
     max-height: 150px; /* Limita la altura máxima del desplegable */
     overflow-y: auto; /* Habilita el scroll vertical si es necesario */
     padding: 12px;
   }
-  
+
   .header-select select:focus {
     color: #8d8b8e;
   }
-  
+
   .css-hlgwow {
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -275,32 +310,25 @@
     box-sizing: border-box;
     border-radius: 12px !important;
   }
-  
+
   .background-image-mobile {
     display: none;
   }
-  
+
   .background-image-tablet {
     display: none;
   }
-  
-
-
 }
-
-
-
-
 
 /* Estilos específicos para tablet */
 @media (min-width: 770px) and (max-width: 1024px) {
-  .header, .header-tablet {
+  .header,
+  .header-tablet {
     height: calc(45vh - 10px); /* Ajustado para considerar la altura del navbar */
     margin-top: -1px; /* Eliminar el margen negativo que podría causar problemas */
     overflow: hidden;
-
   }
-  
+
   .carousel-container {
     position: absolute;
     top: 0;
@@ -309,7 +337,7 @@
     height: 100%;
     z-index: -1;
   }
-  
+
   .carousel-slide {
     position: absolute;
     top: 0;
@@ -320,7 +348,7 @@
     background-position: right bottom !important; /* Mostrar la parte superior de la imagen */
     background-repeat: no-repeat;
   }
-  
+
   /* Ajustes para el contenido del header */
   .header-content {
     position: absolute;
@@ -329,7 +357,7 @@
     z-index: 3;
     width: 80%; /* Limitar el ancho del contenido */
   }
-  
+
   /* Ajustes para los títulos */
   .header h1 {
     font-size: 1.6rem;
@@ -337,26 +365,34 @@
     inline-size: auto; /* Permitir que se ajuste naturalmente */
     max-width: 60%;
   }
-  
+
   .header h2 {
     font-size: 1.8rem;
     margin-left: 0;
     inline-size: max-content;
   }
-  
+
   .header h3 {
     font-size: 1.6rem;
   }
-  
+
   /* Ajuste para el selector */
   .header-select {
     width: 40%; /* Ancho más apropiado para tablet */
     max-width: 320px;
     margin-top: 40px;
   }
+
+  /* Ajustes para los dots en tablet */
+  .carousel-dots {
+    bottom: 15px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+  }
 }
-
-
 
 /* Media queries para diseño responsive */
 @media (max-width: 768px) {
@@ -364,7 +400,7 @@
     background-position: top;
     height: calc(100vh - 94px); /* Ajustado para considerar la altura del navbar */
     margin-bottom: 0px;
-    /* margin-top: -170px; */
+    margin-top: 0; /* Restaurar el margen superior a 0 para evitar problemas con el navbar */
   }
 
   .carousel-slide {
@@ -526,4 +562,30 @@
     font-family: "Inter", sans-serif;
     line-height: 1.2;
   }
+
+  /* Ajustes para los dots en móvil */
+  .carousel-dots {
+    bottom: 30px;
+    opacity: 1; /* Siempre visible en móvil */
+  }
+
+  .carousel-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+  }
 }
+
+/* Asegurar que los dots sean siempre visibles en todos los dispositivos */
+.carousel-dots {
+  opacity: 1 !important;
+}
+
+/* Estilos específicos para el swipe en móvil */
+@media (max-width: 768px) {
+  .header {
+    touch-action: pan-y; /* Permitir scroll vertical pero capturar gestos horizontales */
+    -webkit-overflow-scrolling: touch; /* Mejorar el rendimiento del scroll en iOS */
+  }
+}
+

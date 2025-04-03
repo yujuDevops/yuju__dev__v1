@@ -33,11 +33,12 @@ export const HeaderAuto = () => {
         </h3>
 
         <div className="buttonPadreAutoBanner">
-        <a  target="_blank" rel="noopener noreferrer" >
-          <button
-            className="buttonAutoHeader buttonAutoHeader-asesor"
-            onClick={() => setIsModalOpen(true)}>Pedí tu cotización</button>
+
+        <a href="http://autos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer">
+            <button className="buttonAutoHeader">Cotizá por tu cuenta</button>
           </a>
+
+        
           <span className="separador">°</span>
 
           <div className="separador-container-Autos">
@@ -46,9 +47,12 @@ export const HeaderAuto = () => {
             <div className="linea"></div>
           </div>
 
-          <a href="http://autos.rus.com.ar/9254" target="_blank" rel="noopener noreferrer">
-            <button className="buttonAutoHeader">Cotizá por tu cuenta</button>
+          <a  target="_blank" rel="noopener noreferrer" >
+          <button
+            className="buttonAutoHeader buttonAutoHeader-asesor"
+            onClick={() => setIsModalOpen(true)}>Pedí tu cotización</button>
           </a>
+
         </div>
       </div>
 

@@ -11,7 +11,7 @@
 font-family: Inter;
 font-weight: 800;
 font-size: 16px;
-margin-top: 40px;
+margin-top: 400px;
 margin-bottom: 0px;
 margin-left: 50px;
 color: #3369FF;
@@ -83,6 +83,16 @@ color: #3369FF;
         max-height: 260px;
     }
 
+    .h2-cardInfo-auto{
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 16px;
+        margin-top: 380px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+        color: #3369FF;
+        }
+
 
 }
 
@@ -112,6 +122,17 @@ color: #3369FF;
         text-align: center;
         max-height: 260px;
     }
+
+
+    .h2-cardInfo-auto{
+        font-family: Inter;
+        font-weight: 800;
+        font-size: 16px;
+        margin-top: 370px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+        color: #3369FF;
+        }
     }
 
 
@@ -129,7 +150,7 @@ color: #3369FF;
         font-family: Inter;
         font-weight: 800;
         font-size: 16px;
-        margin-top: 40px;
+        margin-top: 370px;
         margin-bottom: 0px;
         margin-left: 50px;
         color: #3369FF;
@@ -175,7 +196,7 @@ color: #3369FF;
                 font-family: Inter;
                 font-weight: 800;
                 font-size: 16px;
-                margin-top: 40px;
+                margin-top: 250px;
                 margin-bottom: 0px;
                 margin-left: 38px;
                 color: #3369FF;
@@ -291,7 +312,7 @@ color: #3369FF;
         .h2-cardInfo-auto {
             font-size: 12px;
             margin-bottom: 20px;
-            margin-top: 40px;
+            margin-top: 210px;
             margin-left: 15px;
 
         }
@@ -355,7 +376,7 @@ color: #3369FF;
         .h2-cardInfo-auto {
             font-size: 12px;
             margin-bottom: 20px;
-            margin-top: 40px;
+            margin-top:  210px;
             margin-left: 15px;
         }
     
@@ -418,7 +439,7 @@ color: #3369FF;
         .h2-cardInfo-auto {
             font-size: 12px;
             margin-bottom: 20px;
-            margin-top: 40px;
+            margin-top:  220px;
             margin-left: 15px;
         }
     
@@ -480,7 +501,7 @@ color: #3369FF;
         .h2-cardInfo-auto {
             font-size: 12px;
             margin-bottom: 20px;
-            margin-top: 40px;
+            margin-top:  220px;
             margin-left: 15px;
         }
     

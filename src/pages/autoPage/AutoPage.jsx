@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import "./AutoPage.css"
-import { AcordeonAuto,HeaderAuto, ImgEmpresasAuto, TestimonialCardAuto } from "./components"
+import { AcordeonAuto,CoberturasAuto,HeaderAuto, ImgEmpresasAuto, TestimonialCardAuto } from "./components"
 import { CotizaAhora } from "../../components/cotizaAhora/CotizaAhora"
 import { CardInfo } from "./components/CardInfo"
 import { BannerContratar } from "../autoPage/components/BannerContratar"
@@ -58,8 +58,8 @@ export const AutoPage = () => {
         src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735570892/Auto_ilustracion_kcgsoh.svg"
         MensajeWsp={MensajeWspAuto}
       />
-      <CardInfoAuto />
-      {/* <CoberturasAuto /> */}
+       <CoberturasAuto /> 
+      {/* <CardInfoAuto /> */}
       <CardInfo />
       <BannerContratar />
       <DataCardPorqueYuju />

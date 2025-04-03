@@ -25,7 +25,7 @@ h2.h2AutosTestimonios{
 
     .testimoniosCardAuto {
         margin-top: 25%;
-        margin-bottom: -20%;
+        margin-bottom: -24%;
         padding: 0.5%;
     }
 }
@@ -34,8 +34,7 @@ h2.h2AutosTestimonios{
 
 @media (min-width: 601px) and (max-width: 900px) {
     .card__test {
-   
-        MIN-HEIGHT: 400PX;
+        min-height: -webkit-fill-available;
     }
 }
 
@@ -44,7 +43,7 @@ h2.h2AutosTestimonios{
     .testimoniosCardAuto {
         margin-top: 60%;
         margin-bottom: -45%;
-        padding: 0%;
+        
     }
     .h2AutosTestimonios{
         color: #3369FF;

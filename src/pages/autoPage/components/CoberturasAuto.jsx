@@ -11,7 +11,11 @@ export const CoberturasAuto = () => {
               <div key={index} className="card-coberturas-auto">
                 <h3 className='h3-coberturas-auto'>{cobertura.title}</h3>
                 <p className='p-coberturas-auto'>{cobertura.description}</p>
-                <button onClick={() =>MensajeWspAuto(cobertura.title) } >Contratar</button>
+                <button 
+                onClick={() => window.open("https://autos.rus.com.ar/cotizador/infoPatente/", "_blank")}
+              >
+                Contratar
+              </button>
               </div>
             ))}
           </div>
