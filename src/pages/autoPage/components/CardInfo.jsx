@@ -8,7 +8,7 @@ export const CardInfo = () => {
 
   return (
 <>
-<h2 className="h2-cardInfo-auto">Asegurarte es fácil, Yuju!</h2>
+<h2 className="h2-cardInfo-auto">Contratá tu seguro desde donde estés con Yuju</h2>
 <div className='CardInfoContainerCard__1-auto'>
 {dataCardAutos.map((data)=> {
 // creacion de componente para las card
