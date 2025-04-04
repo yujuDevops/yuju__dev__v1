@@ -14,7 +14,7 @@ export const CoberturasAuto = () => {
                 <button 
                 onClick={() => window.open("https://autos.rus.com.ar/cotizador/infoPatente/", "_blank")}
               >
-                Contratar
+                Cotizar ahora
               </button>
               </div>
             ))}
