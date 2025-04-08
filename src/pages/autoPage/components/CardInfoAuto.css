@@ -1,534 +1,553 @@
-.CardInfoContainerCard__1-auto{
+/* Container for all cards */
+.CardInfoContainerCard__1-auto {
     display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  padding: 20px;
-  margin-left: -50px;
-}
-
-.h2-cardInfo-auto{
-font-family: Inter;
-font-weight: 800;
-font-size: 16px;
-margin-top: 400px;
-margin-bottom: 0px;
-margin-left: 50px;
-color: #3369FF;
-}
-
-.CardInfoCards__1-auto {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #8d8b8e40;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    margin-left: -50px;
+  }
+  
+  /* Title styling */
+  .h2-cardInfo-auto {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 400px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    color: #3369ff;
+  }
+  
+  /* Style for the anchor tags */
+  .CardInfoContainerCard__1-auto a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
     width: 142%;
     max-width: 400px;
+  }
+  
+  /* Individual card styling */
+  .CardInfoCards__1-auto {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(141, 139, 142, 0.25);
+    width: 100%; /* Changed from 142% to 100% since the width is now on the anchor */
     padding: 20px 45px;
     text-align: center;
     max-height: 260px;
     z-index: 1;
-}
-
-.CardInfoContainerCard__1-auto img{
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Image wrapper to control positioning */
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80px; /* Set a fixed height that works for your images */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Default blue image */
+  .default-image-rwe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
-    object-fit: cover;
-}
-
-.h3CardInfo-auto{
-    color: #8D8B8E;
+    max-height: 100px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* Hover green image (hidden by default) */
+  .hover-image-wre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-height: 100px;
+    object-fit: contain;
+    display: none;
+  }
+  
+  /* Card number styling */
+  .h3CardInfo-auto {
+    color: #8d8b8e;
     font-family: Inter;
     font-size: 12px;
     font-weight: 800;
-}
-
-.pCardInfo-auto{
-    color: #8D8B8E;
+    margin: 10px 0;
+  }
+  
+  /* Card text styling */
+  .pCardInfo-auto {
+    color: #8d8b8e;
     font-family: Inter;
     font-size: 12px;
     font-weight: 400;
-}
-
-.cards__1-auto  {
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 400;
-    color:#3369FF;
-    font: bold;
-}
-
-@media (min-width: 1601px) and (max-width: 1800px) {
-
-    .CardInfoContainerCard__1-auto{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        gap: 20px;
-        padding: 20px 0px 0px 60px;
-        margin-left: 9px;
+    margin: 0;
+    min-height: 36px; /* Minimum height to prevent layout shifts */
+  }
+  
+  /* Hover effects - now applied to the anchor tag */
+  .CardInfoContainerCard__1-auto a:hover .CardInfoCards__1-auto {
+    background-color: #3369ff;
+  }
+  
+  .CardInfoContainerCard__1-auto a:hover .h3CardInfo-auto,
+  .CardInfoContainerCard__1-auto a:hover .pCardInfo-auto,
+  .CardInfoContainerCard__1-auto a:hover .pCardInfo-auto strong {
+    color: white;
+  }
+  
+  .CardInfoContainerCard__1-auto a:hover .default-image-rwe {
+    display: none;
+  }
+  
+  .CardInfoContainerCard__1-auto a:hover .hover-image-wre {
+    display: block;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 1601px) and (max-width: 1800px) {
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 20px;
+      padding: 20px 0px 0px 60px;
+      margin-left: 9px;
     }
-    
-    .CardInfoContainerCard__1-auto img{
-        width: 35%;
-        object-fit: cover;
+  
+    /* Update anchor width for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      max-width: 280px;
     }
-
+  
     .CardInfoCards__1-auto {
-        background-color: white;
-        border-radius: 12px;
-        box-shadow: 0 0 10px #8d8b8e40;
-        width: 142%;
-        max-width: 280px;
-        padding: 20px 2px;
-        text-align: center;
-        max-height: 260px;
+      padding: 20px 2px;
     }
-
-    .h2-cardInfo-auto{
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 16px;
-        margin-top: 380px;
-        margin-bottom: 0px;
-        margin-left: 50px;
-        color: #3369FF;
-        }
-
-
-}
-
-
-
-@media (min-width: 1401px) and (max-width: 1600px) {
-    .CardInfoContainerCard__1-auto{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: start;
-        gap: 20px;
-        padding: 20px 0px 0px 60px;
+  
+    .h2-cardInfo-auto {
+      margin-top: 380px;
     }
-    
-    .CardInfoContainerCard__1-auto img{
-        width: 35%;
-        object-fit: cover;
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      width: 35%;
     }
-
+  }
+  
+  @media (min-width: 1401px) and (max-width: 1600px) {
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      gap: 20px;
+      padding: 20px 0px 0px 60px;
+    }
+  
+    /* Update anchor width for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      max-width: 280px;
+    }
+  
     .CardInfoCards__1-auto {
-        background-color: white;
-        border-radius: 12px;
-        box-shadow: 0 0 10px #8d8b8e40;
-        width: 142%;
-        max-width: 280px;
-        padding: 20px 2px;
-        text-align: center;
-        max-height: 260px;
+      padding: 20px 2px;
     }
-
-
-    .h2-cardInfo-auto{
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 16px;
-        margin-top: 370px;
-        margin-bottom: 0px;
-        margin-left: 50px;
-        color: #3369FF;
-        }
+  
+    .h2-cardInfo-auto {
+      margin-top: 370px;
     }
-
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-    .CardInfoContainerCard__1-auto{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        margin-left: 9px;
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      width: 35%;
     }
-    
-    .h2-cardInfo-auto{
-        font-family: Inter;
-        font-weight: 800;
-        font-size: 16px;
-        margin-top: 370px;
-        margin-bottom: 0px;
-        margin-left: 50px;
-        color: #3369FF;
-        }
-        
-
-    .CardInfoContainerCard__1-auto img{
-        width: 35%;
-        object-fit: cover;
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      margin-left: 9px;
     }
-
+  
+    /* Update anchor width for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      max-width: 280px;
+    }
+  
     .CardInfoCards__1-auto {
-        background-color: white;
-        border-radius: 12px;
-        box-shadow: 0 0 10px #8d8b8e40;
-        width: 142%;
-        max-width: 280px;
-        padding: 20px 2px;
-        text-align: center;
-        max-height: 260px;
+      padding: 20px 2px;
     }
+  
+    .h2-cardInfo-auto {
+      margin-top: 370px;
     }
-
-    @media (min-width: 881px) and (max-width: 1199px) {
-
-        .CardInfoContainerCard__1-auto{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 23px;
-            padding: 20px;
-            z-index: 1;
-            margin-left: 0px;
-            }
-            
-            .CardInfoContainerCard__1-auto img{
-                width: 70%;
-                object-fit: cover;
-            }
-        
-
-            .h2-cardInfo-auto{
-                font-family: Inter;
-                font-weight: 800;
-                font-size: 16px;
-                margin-top: 250px;
-                margin-bottom: 0px;
-                margin-left: 38px;
-                color: #3369FF;
-                }
-                
-
-
-            .CardInfoCards__1-auto {
-                background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 0 10px #8d8b8e40;
-            width: 142%;
-            max-width: 185px;
-            padding: 19px 20px;
-            text-align: center;
-            max-height: 238px;
-        
-            }
-    
-
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      width: 35%;
     }
-
-
-    @media (min-width: 601px) and (max-width: 880px) {
-
-        .CardInfoContainerCard__1-auto{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 20px;
-        }
-        
-        .CardInfoContainerCard__1-auto img{
-            width: 70%;
-            object-fit: none;
-        }
-    
-        .CardInfoCards__1-auto {
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 0 10px #8d8b8e40;
-            width: 142%;
-            max-width: 181px;
-            padding: 19px 18px;
-            text-align: center;
-            max-height: 238px;
-        }
-
+  }
+  
+  @media (min-width: 881px) and (max-width: 1199px) {
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 23px;
+      padding: 20px;
+      z-index: 1;
+      margin-left: 0px;
     }
-
-@media 
-(min-width: 400px) and (max-width: 600px) {
-    .CardInfoContainerCard__1-auto{
-        gap: 30px;
-        width: 100%;
-        margin-left: -4%;
-      
+  
+    /* Update anchor width for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      max-width: 185px;
     }
-    .CardInfoContainerCard__1-auto img{
-        height: 50%;
+  
+    .CardInfoCards__1-auto {
+      padding: 19px 20px;
+      max-height: 185px;
     }
-
-    .CardInfoCards__1-auto{
-        width: 30%;
+  
+    .h2-cardInfo-auto {
+      margin-top: 250px;
+      margin-left: 38px;
     }
-
-    .pCardInfo-auto{
-        color: #8D8B8E;
-        font-family: Inter;
-        font-size: 70%;
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      width: 70%;
     }
-    
-    .h3CardInfo-auto{
-    font-size: 90%;    
+  }
+  
+  @media (min-width: 601px) and (max-width: 880px) {
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
     }
-
-    .cards__1-auto  {
-        font-size: 10px;
-        max-width: 150px;   
+  
+    /* Update anchor width for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      max-width: 181px;
     }
-
-}
-
-
-
-    @media only screen and (max-width: 600px) {
-
-        body {
-            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
-        }
-    
-        /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1-auto {
-            display: flex;
-            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
-            gap: 0px;       /* Espacio entre las cards */
-            width: 100%;
-            justify-content: center; /* Centra las cards */
-            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
-            margin: 0 auto;
-        }
-    
-        /* Cada card individual */
-        .CardInfoCards__1-auto {
-            flex: 1 40%;
-            margin: 10px;
-            box-sizing: border-box; 
-            padding: 11px 30px;
-        }
-    
-        /* Ajustar el título dentro de las cards */
-        .h2-cardInfo-auto {
-            font-size: 12px;
-            margin-bottom: 20px;
-            margin-top: 210px;
-            margin-left: 15px;
-
-        }
-    
-        /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1-auto img {
-            height: auto;
-            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
-            object-fit: cover; /* Mantener la proporción de la imagen */
-        }
-    
-        /* Ajuste del párrafo en las cards */
-        .pCardInfo-auto {
-            color: #8D8B8E;
-            font-family: Inter;
-            font-size: 8px;
-            text-align:inherit;
-        }
-    
-        /* Ajuste del subtítulo */
-        .h3CardInfo-auto {
-            font-size: 12px;
-            text-align: center;
-        }
-    
-        /* Ajuste general de las cards */
-        .cards__1-auto {
-            font-size: 8px;
-            max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
-        }
+  
+    .CardInfoCards__1-auto {
+      padding: 19px 18px;
+      max-height: 238px;
     }
-
-
-
-    @media only screen and (min-width: 426px) and (max-width: 500px) {
-
-        body {
-            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
-        }
-    
-        /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1-auto {
-            display: flex;
-            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
-            gap: 0px;       /* Espacio entre las cards */
-            width: 100%;
-            justify-content: center; /* Centra las cards */
-            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
-            margin: 0 auto;
-        }
-    
-        /* Cada card individual */
-        .CardInfoCards__1-auto {
-            flex: 1 40%;
-            margin: 10px;
-            box-sizing: border-box; 
-            padding: 11px 30px;
-        }
-    
-        /* Ajustar el título dentro de las cards */
-        .h2-cardInfo-auto {
-            font-size: 12px;
-            margin-bottom: 20px;
-            margin-top:  210px;
-            margin-left: 15px;
-        }
-    
-        /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1-auto img {
-            height: auto;
-            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
-            object-fit: cover; /* Mantener la proporción de la imagen */
-        }
-    
-        /* Ajuste del párrafo en las cards */
-        .pCardInfo-auto {
-            color: #8D8B8E;
-            font-family: Inter;
-            font-size: 8px;
-            text-align:inherit;
-        }
-    
-        /* Ajuste del subtítulo */
-        .h3CardInfo-auto {
-            font-size: 12px;
-            text-align: center;
-        }
-    
-        /* Ajuste general de las cards */
-        .cards__1-auto {
-            font-size: 8px;
-            max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
-        }
-
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      width: 70%;
+      object-fit: none;
     }
-
-    @media only screen and (min-width: 391px) and (max-width: 425px) {
-
-
-        body {
-            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
-        }
-    
-        /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1-auto {
-            display: flex;
-            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
-            gap: 0px;       /* Espacio entre las cards */
-            width: 100%;
-            justify-content: center; /* Centra las cards */
-            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
-            margin: 0 auto;
-        }
-    
-        /* Cada card individual */
-        .CardInfoCards__1-auto {
-            flex: 1 40%;
-            margin: 10px;
-            box-sizing: border-box; 
-            padding: 11px 30px;
-        }
-    
-        /* Ajustar el título dentro de las cards */
-        .h2-cardInfo-auto {
-            font-size: 12px;
-            margin-bottom: 20px;
-            margin-top:  220px;
-            margin-left: 15px;
-        }
-    
-        /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1-auto img {
-            height: auto;
-            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
-            object-fit: cover; /* Mantener la proporción de la imagen */
-        }
-    
-        /* Ajuste del párrafo en las cards */
-        .pCardInfo-auto {
-            color: #8D8B8E;
-            font-family: Inter;
-            font-size: 8px;
-            text-align:inherit;
-        }
-    
-        /* Ajuste del subtítulo */
-        .h3CardInfo-auto {
-            font-size: 12px;
-            text-align: center;
-        }
-    
-        /* Ajuste general de las cards */
-        .cards__1-auto {
-            font-size: 8px;
-            max-width: 100%; /* Asegurar que las cards ocupen el ancho completo en pantallas pequeñas */
-        }
+  }
+  
+  @media (min-width: 400px) and (max-width: 600px) {
+    .CardInfoContainerCard__1-auto {
+      gap: 30px;
+      width: 100%;
+      margin-left: -4%;
     }
-
-    @media only screen and (min-width: 100px) and (max-width: 390px) {
-
-
-        body {
-            overflow-x: hidden; /* Deshabilitar el scroll horizontal en pantallas pequeñas */
-        }
-    
-        /* Contenedor principal de las cards con Flexbox */
-        .CardInfoContainerCard__1-auto {
-            display: flex;
-            flex-wrap: wrap; /* Permite que las cards se ajusten a múltiples filas */
-            gap: 0px;       /* Espacio entre las cards */
-            width: 100%;
-            justify-content: center; /* Centra las cards */
-            padding: 0 3px; /* Agregar un padding para dar espacio en los bordes */
-            margin: 0 auto;
-        }
-    
-        /* Cada card individual */
-        .CardInfoCards__1-auto {
-            flex: 1 40%;
-            margin: 10px;
-            box-sizing: border-box; 
-            padding: 11px 22px;
-        }
-    
-        /* Ajustar el título dentro de las cards */
-        .h2-cardInfo-auto {
-            font-size: 12px;
-            margin-bottom: 20px;
-            margin-top:  220px;
-            margin-left: 15px;
-        }
-    
-        /* Imagen dentro de las cards */
-        .CardInfoContainerCard__1-auto img {
-            height: auto;
-            max-width: 55%; /* Asegurar que la imagen sea responsiva y no se desborde */
-            object-fit: cover; /* Mantener la proporción de la imagen */
-        }
-    
-        /* Ajuste del párrafo en las cards */
-        .pCardInfo-auto {
-            color: #8D8B8E;
-            font-family: Inter;
-            font-size: 8px;
-            text-align:inherit;
-        }
-    
-        /* Ajuste del subtítulo */
-        .h3CardInfo-auto{
-            font-size: 12px;
-            text-align: center;
-        }
-    
-        /* Ajuste general de las cards */
-        .cards__1-auto {
-            font-size: 8px;
-            max-width: 100%; 
-        }
+  
+    /* Update anchor width for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      width: 30%;
     }
+  
+    .pCardInfo-auto {
+      font-size: 70%;
+    }
+  
+    .h3CardInfo-auto {
+      font-size: 90%;
+    }
+  
+    .cards__1-auto {
+      font-size: 10px;
+      max-width: 150px;
+    }
+  
+    .image-wrapper {
+      height: 45px;
+    }
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      height: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      width: 100%;
+      justify-content: center;
+      padding: 0 3px;
+      margin: 0 auto;
+    }
+  
+    /* Update anchor styles for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      flex: 1 40%;
+      margin: 10px;
+      max-width: none;
+      width: auto;
+    }
+  
+    .CardInfoCards__1-auto {
+      box-sizing: border-box;
+      padding: 11px 30px;
+      flex: none;
+      margin: 0;
+    }
+  
+    .h2-cardInfo-auto {
+      font-size: 12px;
+      margin-bottom: 20px;
+      margin-top: 210px;
+      margin-left: 15px;
+    }
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      max-width: 55%;
+    }
+  
+    .pCardInfo-auto {
+      font-size: 8px;
+      text-align: inherit;
+    }
+  
+    .h3CardInfo-auto {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .cards__1-auto {
+      font-size: 8px;
+      max-width: 100%;
+    }
+  
+    .image-wrapper {
+      height: 45px;
+    }
+  }
+  
+  @media only screen and (min-width: 426px) and (max-width: 500px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      width: 100%;
+      justify-content: center;
+      padding: 0 3px;
+      margin: 0 auto;
+    }
+  
+    /* Update anchor styles for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      flex: 1 40%;
+      margin: 10px;
+      max-width: none;
+      width: auto;
+    }
+  
+    .CardInfoCards__1-auto {
+      box-sizing: border-box;
+      padding: 11px 30px;
+      flex: none;
+      margin: 0;
+    }
+  
+    .h2-cardInfo-auto {
+      font-size: 12px;
+      margin-bottom: 20px;
+      margin-top: 210px;
+      margin-left: 15px;
+    }
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      max-width: 55%;
+    }
+  
+    .pCardInfo-auto {
+      font-size: 8px;
+      text-align: inherit;
+    }
+  
+    .h3CardInfo-auto {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .cards__1-auto {
+      font-size: 8px;
+      max-width: 100%;
+    }
+  
+    .image-wrapper {
+      height: 45px;
+    }
+  }
+  
+  @media only screen and (min-width: 391px) and (max-width: 425px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      width: 100%;
+      justify-content: center;
+      padding: 0 3px;
+      margin: 0 auto;
+    }
+  
+    /* Update anchor styles for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      flex: 1 40%;
+      margin: 10px;
+      max-width: none;
+      width: auto;
+    }
+  
+    .CardInfoCards__1-auto {
+      box-sizing: border-box;
+      padding: 11px 30px;
+      flex: none;
+      margin: 0;
+    }
+  
+    .h2-cardInfo-auto {
+      font-size: 12px;
+      margin-bottom: 20px;
+      margin-top: 220px;
+      margin-left: 15px;
+    }
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      max-width: 55%;
+    }
+  
+    .pCardInfo-auto {
+      font-size: 8px;
+      text-align: inherit;
+    }
+  
+    .h3CardInfo-auto {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .cards__1-auto {
+      font-size: 8px;
+      max-width: 100%;
+    }
+  
+    .image-wrapper {
+      height: 45px;
+    }
+  }
+  
+  @media only screen and (min-width: 100px) and (max-width: 390px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .CardInfoContainerCard__1-auto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0px;
+      width: 100%;
+      justify-content: center;
+      padding: 0 3px;
+      margin: 0 auto;
+    }
+  
+    /* Update anchor styles for this breakpoint */
+    .CardInfoContainerCard__1-auto a {
+      flex: 1 40%;
+      margin: 10px;
+      max-width: none;
+      width: auto;
+    }
+  
+    .CardInfoCards__1-auto {
+      box-sizing: border-box;
+      padding: 11px 22px;
+      flex: none;
+      margin: 0;
+    }
+  
+    .h2-cardInfo-auto {
+      font-size: 12px;
+      margin-bottom: 20px;
+      margin-top: 220px;
+      margin-left: 15px;
+    }
+  
+    /* Update image size */
+    .default-image-rwe,
+    .hover-image-wre {
+      max-width: 55%;
+    }
+  
+    .pCardInfo-auto {
+      font-size: 8px;
+      text-align: inherit;
+    }
+  
+    .h3CardInfo-auto {
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .cards__1-auto {
+      font-size: 8px;
+      max-width: 100%;
+    }
+  
+    .image-wrapper {
+      height: 45px;
+    }
+  }
+  
