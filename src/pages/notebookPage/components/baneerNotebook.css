@@ -56,6 +56,11 @@ div .imgBannerMotosTablet{
 }
 
 
+.buttonNotebookBanner button:hover {
+    background-color: #ffff;
+    transition: 0.2ms;
+}
+
 
 @media 
 (min-width: 1401px) and (max-width: 1600px) {

@@ -55,6 +55,11 @@ div .imgBannerMotosTablet{
     color: #3369FF;
 }
 
+.buttonSaludBanner button:hover {
+    background-color: #ffff;
+    transition: 0.2ms;
+}
+
 
 @media (min-width: 1401px) and (max-width: 1500px) {
 
