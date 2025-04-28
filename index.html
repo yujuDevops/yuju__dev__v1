@@ -35,6 +35,24 @@
     <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"dd650d20681c31eabc0302ea34a217e0"})});</script>
     <!-- Metricool -->
 
+    
+<!-- Event snippet for Whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-16761336554/U4QgCP-vw-4ZEOrltrg-',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+  
 
 
     <!-- Meta Pixel Code -->
