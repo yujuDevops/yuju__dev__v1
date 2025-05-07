@@ -12,7 +12,7 @@ export const dataEmpresasViajero = [
     {
         id: 3,
         titulo: "Omint",
-        foto: "https://res.cloudinary.com/dkk8nbi3b/image/upload/v1743002180/2eadefff8a169e247c59cb2c2d28fd6b_mt7ir9.png"
+        foto: "https://res.cloudinary.com/dgx3mbzfr/image/upload/v1746626118/Omint_color_oas7gv.png"
     },
 
  

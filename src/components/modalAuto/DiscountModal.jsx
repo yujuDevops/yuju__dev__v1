@@ -1,4 +1,3 @@
-"use client"
 
 import { useState, useEffect } from "react"
 import "./DiscountModal.css"
@@ -39,8 +38,11 @@ const DiscountModal = () => {
   if (!isOpen) return null
 
   return (
-    <div className="auto_modal_overlay_x7z">
-      <div className={`auto_discount_modal_j9k ${isMobile ? "auto_mobile_y2q" : "auto_desktop_p5r"}`}>
+    <div className="auto_modal_overlay_x7z" onClick={closeModal}>
+      <div
+        className={`auto_discount_modal_j9k ${isMobile ? "auto_mobile_y2q" : "auto_desktop_p5r"}`}
+        onClick={(e) => e.stopPropagation()} // Evita que el clic dentro del modal cierre el overlay
+      >
         <button className="auto_close_button_m3v" onClick={closeModal}>
           <span>×</span>
         </button>
