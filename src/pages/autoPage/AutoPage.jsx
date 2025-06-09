@@ -11,7 +11,7 @@ import { MensajeWspAuto } from "./data"
 import usePrecios from "../../components/hooks/usePrecios"
 import { CardInfoAuto } from "./components/CardInfoAuto"
 import { DataCardPorqueYuju } from "./components/DataCardPorqueYuju"
-import DiscountModal from "../../components/modalAuto/DiscountModal"
+// import DiscountModal from "../../components/modalAuto/DiscountModal"
 
 export const AutoPage = () => {
   const [showModal, setShowModal] = useState(false)
@@ -34,10 +34,10 @@ export const AutoPage = () => {
     }
   }, []) // Empty dependency array means this runs once on mount
 
-  const handleCloseModal = () => {
-    console.log("Modal close button clicked")
-    setShowModal(false)
-  }
+  // const handleCloseModal = () => {
+  //   console.log("Modal close button clicked")
+  //   setShowModal(false)
+  // }
 
   if (error) {
     return <div>Error: {error}</div>
@@ -69,7 +69,7 @@ export const AutoPage = () => {
       <Carrousel Name="Auto" />
 
       {/* Discount Modal */}
-      <DiscountModal isOpen={showModal} onClose={handleCloseModal} />
+         {/* <DiscountModal isOpen={showModal} onClose={handleCloseModal} />*/}
     </>
   )
 }
