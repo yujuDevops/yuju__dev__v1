@@ -62,7 +62,7 @@ const AppRouter = () => {
       <Navbar />
       <Routes>
         <Route path="/viajero" element={<ViajeroPage pageId="viajero" />} />
-        <Route path="/home" element={<HomePage pageId="home" />} />
+        <Route path="/" element={<HomePage pageId="home" />} />
         <Route path="/auto" element={<AutoPage />} />
         <Route path="/notebook" element={<NotebookPage />} />
         <Route path="/embarcaciones" element={<Embarcaciones />} />
@@ -80,7 +80,7 @@ const AppRouter = () => {
         <Route path="/pcgamer" element={<PcGamerPage />} />
         <Route path="/accidentespersonales" element={<AccidentesPersonales />} />
         <Route path="/retiro" element={<RetiroPage />} />
-        <Route path="/*" element={<Navigate to={"/home"} />} />
+        <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
       <Footer />
     </>
