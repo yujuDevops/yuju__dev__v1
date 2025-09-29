@@ -2,7 +2,7 @@ import { useState } from "react"
 import StepOne from "./multicotizador/components/selects/step-one"
 import StepTwo from "./multicotizador/components/selects/step-two"
 import StepThree from "./multicotizador/components/selects/step-three"   // ⬅️ nuevo
-import "./cotizacionAuto.css"
+import "./CotizacionAuto.css"
 
 export default function CotizacionAuto() {
   const [currentStep, setCurrentStep] = useState(1)
