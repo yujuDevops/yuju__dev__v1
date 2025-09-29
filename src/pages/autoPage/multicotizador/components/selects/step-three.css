@@ -1,0 +1,227 @@
+.zxcvbn-overlay-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.qwerty-modal-container {
+  background: white;
+  border-radius: 16px;
+  width: 90vw;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Close Button */
+.asdfgh-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #64748b;
+  cursor: pointer;
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+.asdfgh-close-button:hover {
+  background: #f1f5f9;
+}
+
+/* Content Wrapper */
+.poiuyt-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mnbvcx-left-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lkjhgf-main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3369FF;
+  margin-bottom: 0.2rem;
+  font-family: inter, sans-serif;
+}
+
+.zxcvbn-subtitle-text {
+  font-size: 12px;
+  color: #8D8B8E;
+  margin-bottom: 2rem;
+  font-family: inter, sans-serif;
+  font-weight: 600;
+}
+
+.qwerty-description-text {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+/* Productos (Cards) */
+.asdfgh-products-section h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #3369FF;
+  margin-bottom: 1rem;
+  font-family: inter, sans-serif;
+}
+
+.poiuyt-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 1rem;
+}
+
+/* Card */
+.mnbvcx-product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+  text-align: left; /* títulos alineados a la izquierda */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  padding-top: 100px; /* espacio reservado para la imagen */
+}
+.mnbvcx-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Imagen arriba a la derecha */
+.lkjhgf-icon-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;   /* ajustable según tamaño deseado */
+  height: auto;
+  border-top-right-radius: 16px; /* borde redondeado */
+  overflow: hidden;
+}
+.lkjhgf-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Título */
+.mnbvcx-product-card span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3369FF;
+  font-family: inter;
+  position: relative;
+  top: -75px;
+}
+
+/* Botón */
+.zxcvbn-action-button {
+  background: #3369FF;
+  color: white;
+  border: none;
+  padding: 6px 30px;
+  font-family: inter;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  align-self: flex-start; /* botón alineado a la izquierda */
+}
+.zxcvbn-action-button:hover {
+  background: #2654cc;
+  transform: scale(1.05);
+}
+
+/* Right Section */
+.qwerty-right-section {
+  border-radius: 0 16px 16px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.asdfgh-branding-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.poiuyt-logo-image {
+  position: absolute;
+  bottom: 23px;
+  right: 161px;
+  max-width: 200px;
+  height: auto;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.mnbvcx-character-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 250px;
+  height: auto;
+  z-index: 2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .poiuyt-content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .qwerty-right-section {
+    border-radius: 0 0 16px 16px;
+    min-height: 200px;
+  }
+
+  .poiuyt-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .poiuyt-logo-image {
+    max-width: 120px;
+    bottom: 80px;
+    right: 10px;
+  }
+
+  .mnbvcx-character-image {
+    max-width: 150px;
+  }
+}

@@ -1,0 +1,461 @@
+/* Updated all class names to use unique "zephyr-" prefix to avoid style conflicts */
+
+/* Modal Backdrop */
+.zephyr-overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Redesigned modal card to match reference image layout */
+.zephyr-dialog-container {
+  background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Updated header to match RUS blue gradient design */
+.zephyr-header-section {
+  color: white;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  min-height: 80px;
+}
+
+.zephyr-brand-logo {
+  position: relative;
+  max-width: 260px;
+  height: auto;
+  object-fit: contain;
+}
+
+.zephyr-header-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.3;
+}
+
+.zephyr-dismiss-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #8D8B8E;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 3.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.zephyr-dismiss-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Redesigned content area to match two-column layout from reference */
+.zephyr-content-area {
+     padding: 30px 20px 73px 67px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 170px;
+    flex: 1;
+    background: #ffffff;
+    position: relative;
+}
+
+.zephyr-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.zephyr-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+}
+
+/* Styled API title section */
+.zephyr-api-title {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Inter';
+    color: #3369FF;
+    margin: 0 0 16px 0;
+}
+
+/* Coverage information styling to match reference */
+.zephyr-coverage-info {
+  flex: 1;
+}
+
+.zephyr-coverage-label {
+   font-size: 14px;
+    font-weight: 700;
+    color: #8D8B8E;
+    margin: 0 0 16px 0;
+    font-family: 'Inter';
+}
+
+.zephyr-coverage-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.zephyr-coverage-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.zephyr-coverage-point {
+   font-size: 12px;
+    font-weight: 400;
+    color: #8D8B8E;
+    margin: 0 0 5px 0;
+    font-family: 'Inter';
+}
+
+.zephyr-more-link {
+  font-size: 12px;
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Vehicle details styling */
+.zephyr-vehicle-details {
+  margin-bottom: 16px;
+}
+
+.zephyr-vehicle-name {
+  font-size: 14px;
+    font-weight: 700;
+    color: #ACACAC;
+    margin: 0 0 4px 0;
+    font-family: 'Inter';
+}
+
+.zephyr-date-stamp {
+  font-size: 14px;
+    font-weight: 500;
+    color: #ACACAC;
+    margin: 0 0 4px 0;
+    font-family: 'Inter';
+}
+
+/* Pricing section to match reference design */
+.zephyr-pricing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+}
+
+.zephyr-price-amount {
+  font-size: 1.3em;
+    font-weight: 700;
+    color: #3369FF;
+    font-family: 'Inter';
+}
+
+.zephyr-payment-query {
+  width: 100%;
+}
+
+.zephyr-payment-label {
+   font-size: 14px;
+    font-weight: 700;
+    color: #8D8B8E;
+    margin: 0 0 4px 0;
+    font-family: 'Inter';
+}
+
+.zephyr-radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.zephyr-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inter;
+  font-weight: 500;
+  color: #8D8B8E;
+  margin-top: 10px;
+}
+
+.zephyr-radio-option input[type="radio"] {
+  cursor: pointer;
+  accent-color: #3369FF;
+  margin: 0;
+}
+
+/* Contract button styling to match reference */
+.zephyr-contract-btn {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.zephyr-contract-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15);
+}
+
+.zephyr-contract-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Car image positioned in bottom right corner as requested */
+.zephyr-car-visual {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 441px;
+    height: 335px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.zephyr-car-graphic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom right;
+}
+
+/* Phone form section styling */
+.zephyr-phone-form-section {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.zephyr-modal-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8D8B8E;
+  margin-bottom: 6px;
+  font-family: 'Inter';
+}
+
+.zephyr-modal-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 12px;
+}
+
+.zephyr-modal-input:focus {
+  outline: none;
+  border-color: #3369FF;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.zephyr-modal-input::placeholder {
+  color: #9ca3af;
+}
+
+.zephyr-modal-error {
+  color: #dc2626;
+  font-size: 12px;
+  margin-bottom: 12px;
+  padding: 6px 8px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 4px;
+}
+
+.zephyr-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.zephyr-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  flex: 1;
+}
+
+.zephyr-btn-secondary {
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.zephyr-btn-secondary:hover:not(:disabled) {
+  background: #e5e7eb;
+}
+
+.zephyr-btn-primary {
+  background: #3369FF;
+  color: white;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-family: inter;
+  font-weight: 600;
+}
+
+.zephyr-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+}
+
+.zephyr-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 1400px) {
+  /* Redesigned modal card to match reference image layout */
+  .zephyr-dialog-container {
+    background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      width: 90vw;
+      max-height: 90vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+  }
+
+
+
+  .zephyr-car-visual {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 360px;
+    height: 290px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .zephyr-overlay-backdrop {
+    padding: 16px;
+  }
+
+  .zephyr-dialog-container {
+    max-width: 100%;
+  }
+
+  .zephyr-header-section {
+    padding: 16px 20px;
+    min-height: 60px;
+  }
+
+  .zephyr-brand-logo {
+    max-width: 120px;
+  }
+
+  .zephyr-content-area {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .zephyr-coverage-list {
+    grid-template-columns: 1fr;
+  }
+
+  .zephyr-car-visual {
+    width: 200px;
+    height: 120px;
+  }
+
+  .zephyr-phone-form-section {
+    margin-top: 12px;
+  }
+
+  .zephyr-modal-input {
+    padding: 8px 10px;
+  }
+
+  .zephyr-car-visual img {
+    display: none;
+  }
+}
+
+/* Loading animation for disabled states */
+@keyframes zephyr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.zephyr-contract-btn:disabled::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: zephyr-spin 1s linear infinite;
+  margin-left: 8px;
+}

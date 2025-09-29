@@ -1,0 +1,116 @@
+/* Modelo Select Styles */
+.mdl-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.mdl-select-container.mdl-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.mdl-select-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.60rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mdl-select-header:hover:not(.mdl-error) {
+  border-color: #d1d5db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mdl-select-header.mdl-error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 1px #ef4444;
+}
+
+.mdl-select-header .mdl-placeholder {
+    color: #ACACAC;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.mdl-select-header .mdl-has-value {
+  color: #ACACAC;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.mdl-select-header svg {
+  color: #ACACAC;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.mdl-select-header[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.mdl-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 4px;
+}
+
+.mdl-select-item {
+  padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 12px;
+    color: #ACACAC;
+    font-family: 'Inter';
+}
+
+.mdl-select-item:last-child {
+  border-bottom: none;
+}
+
+.mdl-select-item:hover { 
+   background-color: #3369FF;
+  color: #ffffff
+}
+
+.mdl-select-item:active {
+  background-color: #f3f4f6;
+}
+
+.mdl-loading-item,
+.mdl-info-item {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  font-style: italic;
+}
+
+.mdl-info-item {
+  color: #f59e0b;
+}
+
+/* Disabled state */
+.mdl-disabled .mdl-select-header {
+  background-color: #f9fafb;
+  cursor: not-allowed;
+}
+
+.mdl-disabled .mdl-select-header:hover {
+  border-color: #e5e7eb;
+  box-shadow: none;
+}

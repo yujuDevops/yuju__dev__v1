@@ -1,0 +1,78 @@
+/* Updated all CSS class names from asxts- to wfrwr- prefix */
+/* Select Styles for Anio Select Component */
+.wfrwr-select-container {
+  position: relative;
+  width: 100%;
+}
+
+.wfrwr-select-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.60rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+
+
+.wfrwr-select-header.wfrwr-error {
+  border-color: #ef4444;
+}
+
+.wfrwr-placeholder {
+  color: #ACACAC;
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.wfrwr-has-value {
+  color: #ACACAC;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Inter';
+}
+
+.wfrwr-select-header svg {
+  color:#ACACAC;
+}
+
+.wfrwr-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  margin-top: 0.25rem;
+  max-height: 15rem;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.wfrwr-select-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 12px;
+    color: #ACACAC;
+    font-family: 'Inter';
+}
+
+.wfrwr-select-item:hover {
+   background-color: #3369FF;
+  color: #ffffff
+}
+
+.wfrwr-loading-item,
+.wfrwr-info-item {
+  padding: 0.75rem 1rem;
+  color: #64748b;
+  text-align: center;
+}

@@ -1,0 +1,231 @@
+/* Código Postal Input Component Styles */
+.cpx-container {
+  width: 100%;
+}
+
+.cp-form-group {
+  margin-bottom: 1rem;
+}
+
+.cp-form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #3369FF;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.cp-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.60rem 1rem;
+  transition: border-color 0.2s;
+  background-color: white;
+  margin-top: -0.18rem;
+}
+
+
+.cp-input-wrapper.cp-error {
+  border-color: #dc2626;
+}
+
+/* Estilo del input */
+.cp-input-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: 'Inter';
+  font-weight: 500;
+  color: #ACACAC;
+  background: transparent; /* ✅ fondo transparente */
+}
+
+/* Placeholder */
+.cp-input-wrapper input::placeholder {
+  color: #ACACAC;
+  font-size: 12px;
+  font-family: 'Inter';
+  font-weight: 500;
+  opacity: 1; /* Asegura que no se ponga más claro en algunos navegadores */
+}
+
+/* Autofill en Chrome / Edge / Safari */
+.cp-input-wrapper input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* ✅ elimina fondo azul */
+  -webkit-text-fill-color: #ACACAC !important; /* ✅ color del texto */
+  font-size: 12px !important;
+  font-family: 'Inter' !important;
+  font-weight: 500 !important;
+  transition: background-color 9999s ease-in-out 0s; /* hack para que no vuelva el amarillo */
+}
+
+/* Para Firefox */
+.cp-input-wrapper input:autofill {
+  box-shadow: 0 0 0px 1000px transparent inset !important;
+  -moz-text-fill-color: #ACACAC !important;
+}
+
+.cp-search-icon {
+  color: #acacac;
+  margin-right: 0.5rem;
+}
+
+.cp-localidad-result {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #33FFCC;
+  font-weight: 500;
+}
+
+.cp-localidad-loading,
+.cp-localidad-info {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.cp-error-message {
+  color: #dc2626;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Modal styles específicos para el componente */
+.cp-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(140%) blur(2px);
+}
+
+.cp-modal-card {
+  width: min(92vw, 520px);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 18px;
+}
+
+.cp-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cp-modal-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cp-modal-close {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font-size: 18px;
+  line-height: 1;
+  color: #6b7280;
+  padding: 4px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cp-modal-close:hover {
+  background: #f3f4f6;
+}
+
+.cp-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cp-modal-label {
+  font-size: 14px;
+  color: #ACACAC;
+}
+
+.cp-modal-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+
+.cp-modal-hint {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.cp-modal-error {
+  font-size: 14px;
+  color: #b91c1c;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.cp-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.cp-btn {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cp-btn-primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+
+.cp-btn-secondary {
+  background: #fff;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.cp-btn-secondary:hover {
+  background: #f9fafb;
+}
+
+.cp-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .cp-modal-card {
+    width: min(95vw, 520px);
+    padding: 16px;
+  }
+
+  .cp-input-wrapper {
+    padding: 0.625rem 0.875rem;
+  }
+}
