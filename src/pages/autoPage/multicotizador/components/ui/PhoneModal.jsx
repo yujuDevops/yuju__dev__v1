@@ -1,5 +1,5 @@
 "use client"
-import "./PhoneModal.css"
+import "./phoneModal.css"
 import { useState } from "react"
 
 const COVERAGE_BY_TYPE = {
