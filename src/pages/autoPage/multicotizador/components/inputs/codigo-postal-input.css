@@ -1,19 +1,20 @@
 /* Código Postal Input Component Styles */
 .cpx-container {
   width: 100%;
+  position: relative;
 }
 
 .cp-form-group {
-  margin-bottom: 1rem;
+  margin-bottom: -2rem;
 }
 
 .cp-form-group label {
-    display: block;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #3369FF;
-    font-size: 16px;
-    font-family: 'Inter';
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #3369ff;
+  font-size: 16px;
+  font-family: "Inter";
 }
 
 .cp-input-wrapper {
@@ -27,7 +28,6 @@
   margin-top: -0.18rem;
 }
 
-
 .cp-input-wrapper.cp-error {
   border-color: #dc2626;
 }
@@ -38,17 +38,17 @@
   border: none;
   outline: none;
   font-size: 12px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
-  color: #ACACAC;
+  color: #acacac;
   background: transparent; /* ✅ fondo transparente */
 }
 
 /* Placeholder */
 .cp-input-wrapper input::placeholder {
-  color: #ACACAC;
+  color: #acacac;
   font-size: 12px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 500;
   opacity: 1; /* Asegura que no se ponga más claro en algunos navegadores */
 }
@@ -56,17 +56,16 @@
 /* Autofill en Chrome / Edge / Safari */
 .cp-input-wrapper input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* ✅ elimina fondo azul */
-  -webkit-text-fill-color: #ACACAC !important; /* ✅ color del texto */
+  -webkit-text-fill-color: #acacac !important; /* ✅ color del texto */
   font-size: 12px !important;
-  font-family: 'Inter' !important;
+  font-family: "Inter" !important;
   font-weight: 500 !important;
   transition: background-color 9999s ease-in-out 0s; /* hack para que no vuelva el amarillo */
 }
 
 /* Para Firefox */
 .cp-input-wrapper input:autofill {
-  box-shadow: 0 0 0px 1000px transparent inset !important;
-  -moz-text-fill-color: #ACACAC !important;
+  box-shadow: 0 0 0px 1000px #ffffff inset !important;
 }
 
 .cp-search-icon {
@@ -77,7 +76,7 @@
 .cp-localidad-result {
   margin-top: 0.5rem;
   font-size: 0.875rem;
-  color: #33FFCC;
+  color: #33ffcc;
   font-weight: 500;
 }
 
@@ -93,6 +92,61 @@
   font-size: 0.75rem;
   margin-top: 0.25rem;
   font-weight: 500;
+}
+
+/* Dropdown styles for search results */
+.cp-dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-top: 0.25rem;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 50;
+}
+
+.cp-dropdown-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.cp-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.cp-dropdown-item:hover {
+  background-color: #f9fafb;
+}
+
+.cp-dropdown-code {
+  font-weight: 600;
+  color: #3369ff;
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+.cp-dropdown-location {
+  font-size: 12px;
+  color: #6b7280;
+  font-family: "Inter";
+}
+
+.cp-dropdown-more {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  font-style: italic;
+  background-color: #f9fafb;
 }
 
 /* Modal styles específicos para el componente */
@@ -153,7 +207,7 @@
 
 .cp-modal-label {
   font-size: 14px;
-  color: #ACACAC;
+  color: #acacac;
 }
 
 .cp-modal-input {
@@ -164,7 +218,6 @@
   font-size: 14px;
   outline: none;
 }
-
 
 .cp-modal-hint {
   font-size: 12px;
@@ -202,7 +255,6 @@
   color: #fff;
 }
 
-
 .cp-btn-secondary {
   background: #fff;
   color: #374151;
@@ -227,5 +279,9 @@
 
   .cp-input-wrapper {
     padding: 0.625rem 0.875rem;
+  }
+
+  .cp-dropdown {
+    max-height: 250px;
   }
 }

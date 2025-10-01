@@ -193,7 +193,7 @@ ${payWithCard ? "Pago con tarjeta de crédito" : "Pago sin tarjeta de crédito"}
             {vehicleInfo && (
               <div className="zephyr-vehicle-details">
                 <h4 className="zephyr-vehicle-name">
-                  {vehicleInfo.marca} - {vehicleInfo.modelo} {vehicleInfo.anio}
+                  {vehicleInfo.marca} - {vehicleInfo.modelo} {vehicleInfo.anio} 
                 </h4>
                 <div className="zephyr-date-stamp">{getCurrentDate()}</div>
               </div>

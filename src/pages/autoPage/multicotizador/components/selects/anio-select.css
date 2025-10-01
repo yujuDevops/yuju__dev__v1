@@ -41,6 +41,10 @@
   color:#ACACAC;
 }
 
+.wfrwr-select-header[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
 .wfrwr-select-dropdown {
   position: absolute;
   top: 100%;

@@ -1,6 +1,4 @@
-"use client"
 
-// components/selects/step-two-extravagant.jsx
 import "./step-two.css"
 import { useMemo, useState, useEffect, useCallback } from "react"
 import PhoneModal from "../ui/PhoneModal"
@@ -10,7 +8,9 @@ const COMPANY_DISCOUNTS = {
     rc: 0.7, // 30% de descuento
   },
   "san cristóbal": {}, // precio original
-  experta: {}, // precio original
+  experta: {
+    terceros: 0.85, // 15% de descuento
+  }, // precio original
   "mercantil andina": {}, // precio original
   integrity: {
     terceros: 0.55, // 45% de descuento
@@ -28,10 +28,10 @@ const applyCompanyDiscount = (price, companyName, coverageType) => {
 const fmtARS = (n, companyName, coverageType = null) => {
   if (typeof n !== "number" || !isFinite(n)) return "-"
 
-  // Apply company discount first (if coverage type is provided)
+  // Aplicar primero el descuento de la empresa (si se proporciona el tipo de cobertura) Esta OK
   const discountedPrice = coverageType ? applyCompanyDiscount(n, companyName, coverageType) : n
 
-  // Then apply monthly calculation for specific companies
+  // Aplicamos calculos anuales a las compañias ----SI FUNCIONA CORRECTAMENTE
   const finalPrice =
     companyName?.toLowerCase() === "san cristóbal" || companyName?.toLowerCase() === "integrity"
       ? discountedPrice / 12
@@ -113,10 +113,10 @@ function getCoverageTypeLabel(type) {
 const getMonthlyPrice = (price, companyName, coverageType = null) => {
   if (typeof price !== "number" || !isFinite(price)) return 0
 
-  // Apply company discount first (if coverage type is provided)
+  // Aplicar primero el descuento de la empresa (si se proporciona el tipo de cobertura)
   const discountedPrice = coverageType ? applyCompanyDiscount(price, companyName, coverageType) : price
 
-  // Then apply monthly calculation for specific companies
+  // Aplicamos calculos anuales a las compañias
   return companyName?.toLowerCase() === "san cristóbal" || companyName?.toLowerCase() === "integrity"
     ? discountedPrice / 12
     : discountedPrice
@@ -149,13 +149,15 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
   const [expandedSections, setExpandedSections] = useState({
     rc: false,
     terceros: false,
-    tercerosCompleto: true, // Default expanded
+    tercerosCompleto: true, // abierto por defecto
     todoRiesgo: false,
   })
 
   const marcaTxt = formData.marcaNombre || formData.marca
   const modeloTxt = formData.modeloNombre || formData.modelo
   const versionTxt = formData.version || ""
+  const nombreUsuario = formData.nombre || "Nombre"
+  const sumaAsegurada = formData.sumaAsegurada
 
   useEffect(() => {
     const t = setInterval(() => {
@@ -177,7 +179,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
       const companyName = (c.aseguradora || "").toLowerCase()
       const plans = [...(c.planes || [])]
         .filter((p) => typeof p.precio === "number" && isFinite(p.precio))
-        .sort((a, b) => a.precio - b.precio) // Sort by original price first
+        .sort((a, b) => a.precio - b.precio) // orden ascendente por precio
 
       if (plans.length > 0) {
         apiResults.set(companyName, { plans, meta: c.meta })
@@ -258,7 +260,6 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
 
   const openPhoneModal = useCallback((insurer, plan, coverageType = null) => {
     if (!plan || !insurer) {
-      console.error("[v0] openPhoneModal called with invalid parameters:", { insurer, plan, coverageType })
       return
     }
 
@@ -272,13 +273,13 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
 
     const planWithPricing = {
       ...plan,
-      precio: finalPrice, // Final price (with discount AND monthly calculation)
+      precio: finalPrice, // Precio final (con descuento y cálculo mensual)
       precioOriginal:
         insurer?.toLowerCase() === "san cristóbal" || insurer?.toLowerCase() === "integrity"
           ? originalPrice / 12
-          : originalPrice, // Original price (with monthly calculation but no discount)
-      hasDiscount: hasDiscount, // Whether to show original price crossed out
-      coverageType: coverageType, // Store coverage type for reference
+          : originalPrice, // Precio original (con cálculo mensual pero sin descuento)
+      hasDiscount: hasDiscount, // Se debe mostrar el precio original tachado
+      coverageType: coverageType, //Tipo de cobertura de la empresa como referencia
     }
 
     setSelected({
@@ -315,6 +316,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
         aseguradora: selected.insurer,
         plan: selected.plan?.nombre || "Plan no especificado",
         telefono: phone,
+        sumaAsegurada: sumaAsegurada,
       }
 
       const res = await fetch("https://api-yuju.com.ar/api/cotizaciones", {
@@ -338,6 +340,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
         plan: payload.plan,
         precio: selected.plan?.precio ?? null,
         telefono: phone,
+        sumaAsegurada: sumaAsegurada,
       })
     } catch (err) {
       setLeadError(err?.message || "Error al guardar la cotización")
@@ -379,7 +382,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
   const [companyCarouselStates, setCompanyCarouselStates] = useState({})
 
   useEffect(() => {
-    // Initialize carousel states for each company
+    // Inizializando carrousel
     const initialStates = {}
     mobileCompaniesByCompany.forEach((company) => {
       initialStates[company.name] = 0
@@ -428,7 +431,6 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
       todoRiesgo: [],
     }
 
-    // Collect all plans from all companies for each coverage type
     companies.forEach((company) => {
       Object.keys(gridData).forEach((coverageType) => {
         const plans = company.plansByType?.[coverageType] || []
@@ -437,8 +439,8 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
             company: company.name,
             logo: company.logo,
             plan: plan,
-            price: plan.precio, // Keep original price for API calls
-            coverageType: coverageType, // Store coverage type for discount calculation
+            price: plan.precio,
+            coverageType: coverageType,
           })
         })
       })
@@ -455,26 +457,69 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
 
   return (
     <div className="st2-quantum-insurance-nexus-container">
-      <div className="st2-extraordinary-promo-banner-deluxe">  
-        <div className="st2-spectacular-promo-special-offer">
-          <span className="st2-brilliant-promo-name-text">¡Nombre te tenemos un descuento especial!</span>
-          <img
-            src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1756660249/Capa_1_2_nbmsa6.png"
-            alt="fire"
-            className="st2-blazing-fire-icon"
-          />
+      <div className="st2-extraordinary-promo-banner-deluxe st2-desktop-only">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div className="st2-majestic-promo-main-text">
+            {marcaTxt} - {modeloTxt} {formData.anio} {versionTxt} 
+          </div>
+          {sumaAsegurada && (
+            <div className="st2-majestic-promo-main-text" style={{ fontSize: "16px", fontWeight: "600" }}>
+              Suma Asegurada:{" "}
+              {new Intl.NumberFormat("es-AR", {
+                style: "currency",
+                currency: "ARS",
+                maximumFractionDigits: 0,
+              }).format(sumaAsegurada)}
+            </div>
+          )}
         </div>
-        <div className="st2-temporal-promo-validity-section">
-          <span className="st2-mystical-promo-validity-text">Descuentos válidos por las próximas 24 horas</span>
-          <img
-            src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1756660249/Capa_1_1_djihti.png"
-            alt="clock"
-            className="st2-chronos-clock-icon"
-          />
+
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: "8px" }}>
+          <div className="st2-spectacular-promo-special-offer">
+            <span className="st2-brilliant-promo-name-text">¡{nombreUsuario} te tenemos un descuento especial!</span>
+            <img
+              src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1756660249/Capa_1_2_nbmsa6.png"
+              alt="fire"
+              className="st2-blazing-fire-icon"
+            />
+          </div>
+
+          <div className="st2-quantum-separator-ksvx-232"></div>
+
+          <div className="st2-temporal-promo-validity-section">
+            <span className="st2-mystical-promo-validity-text">Válido por las próximas 24 horas</span>
+            <img
+              src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1756660249/Capa_1_1_djihti.png"
+              alt="clock"
+              className="st2-chronos-clock-icon"
+            />
+          </div>
+
+          <div className="st2-quantum-separator-ksvx-232"></div>
+
+          <div className="st2-galactic-timer-section">
+            <span className="st2-quantum-timer-display">{formatTime(timeLeft)}</span>
+          </div>
         </div>
-        <div className="st2-galactic-timer-section">
-          <span className="st2-quantum-timer-display">{formatTime(timeLeft)}</span>
+      </div>
+
+      <div className="st2-extraordinary-promo-banner-deluxe st2-mobile-only">
+        <div className="st2-majestic-promo-main-text">
+          {marcaTxt} - {modeloTxt} - {formData.anio}
         </div>
+        {sumaAsegurada && (
+          <div
+            className="st2-majestic-promo-main-text"
+            style={{ fontSize: "14px", fontWeight: "600", marginTop: "4px" }}
+          >
+            Suma Asegurada:{" "}
+            {new Intl.NumberFormat("es-AR", {
+              style: "currency",
+              currency: "ARS",
+              maximumFractionDigits: 0,
+            }).format(sumaAsegurada)}
+          </div>
+        )}
       </div>
 
       <div className="st2-supreme-mobile-coverage-selector">
@@ -624,7 +669,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
 
             return (
               <div key={companyData.name} className="st2-extraordinary-mobile-company-section">
-                {/* Company Logo - Separate from card */}
+                {/*Logotipo de la empresa - Separado de la tarjeta*/}
                 <div className="st2-majestic-mobile-company-logo-header">
                   <img
                     src={companyData.logo || "/placeholder.svg"}
@@ -633,7 +678,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
                   />
                 </div>
 
-                {/* Company's Individual Carousel */}
+                {/* Carrusel individual de la empresa */}
                 <div className="st2-galactic-mobile-carousel-container">
                   <div
                     className="st2-stellar-mobile-carousel-track"
@@ -681,7 +726,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
                                       marginTop: "8px",
                                       textAlign: "center",
                                       alignSelf: "flex-start",
-                                      position: "absolute",  
+                                      position: "absolute",
                                       top: "15px",
                                       right: "30px",
                                     }}
@@ -727,7 +772,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
                   </div>
                 </div>
 
-                {/* Individual Navigation Dots for this company */}
+                {/* Puntos de navegación individuales para esta empresa */}
                 <div className="st2-supreme-mobile-carousel-navigation">
                   <div className="st2-celestial-carousel-dots">
                     {companyData.plans.map((_, index) => (
@@ -740,7 +785,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
                   </div>
                 </div>
 
-                {/* Individual Navigation Arrows for this company */}
+                {/* Flechas de navegación individuales para esta empresa */}
                 {companyData.plans.length > 1 && (
                   <div className="st2-majestic-mobile-carousel-arrows">
                     <button
@@ -779,8 +824,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
         waNumber="541156307246"
         waMessage={
           selected
-            ? 
-              `Hola! Consulta por cotización.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nVehículo: ${marcaTxt} ${modeloTxt} ${formData.anio}${versionTxt ? " " + versionTxt : ""}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nAseguradora: ${selected.insurer || "No especificada"}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nPlan: ${selected.plan?.nombre || "Plan no especificado"}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nPrecio: ${fmtARS(selected.plan?.precio || 0, selected.insurer, selected.coverageType)}/mes`
+            ? `Hola! Consulta por cotización.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nVehículo: ${marcaTxt} ${modeloTxt} ${formData.anio}${versionTxt ? " " + versionTxt : ""}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nAseguradora: ${selected.insurer || "No especificada"}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nPlan: ${selected.plan?.nombre || "Plan no especificado"}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\nPrecio: ${fmtARS(selected.plan?.precio || 0, selected.insurer, selected.coverageType)}/mes`
             : "Hola! Me interesa una cotización."
         }
         selectedPlan={selected?.plan}

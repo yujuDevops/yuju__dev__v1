@@ -55,13 +55,7 @@ export const AutoPage = () => {
       {/*<HeaderAuto />*/}
       <HeaderCotizador />
       <CotizacionAuto />
-      <CotizaAhoraAuto
-        titulo="Seguro de autos"
-        precio={precioCotiza}
-        button="¡Cotizá ahora!"
-        src="https://res.cloudinary.com/dewcgbpvp/image/upload/v1735570892/Auto_ilustracion_kcgsoh.svg"
-        MensajeWsp={MensajeWspAuto}
-      />
+      
       <CoberturasAuto />
       {/* <CardInfoAuto /> */}
       <CardInfo />
