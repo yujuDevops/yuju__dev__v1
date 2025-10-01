@@ -3,8 +3,8 @@ import { useState, useEffect, useRef } from "react"
 import { Search } from "lucide-react"
 import "./codigo-postal-input.css"
 
-const APP_ID = "VB3rRW34TNrY6pT9HzvhuPIIoPHz7RCEIQA9EgUh"
-const MASTER_KEY = "YHjqD6iSbUDSScCgOfisygZCdFno9UiHWYpO77VB"
+const APP_ID = import.meta.env.VITE_PARSE_APP_ID
+const MASTER_KEY = import.meta.env.VITE_PARSE_MASTER_KEY
 
 export default function CodigoPostalInput({ value = "", localidad = "", onChange, hasError = false }) {
   const [inputValue, setInputValue] = useState(value || "")
