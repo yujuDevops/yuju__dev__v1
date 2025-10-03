@@ -93,11 +93,12 @@
   color: #374151;
   background-color: white;
   transition: all 0.2s ease;
+  text-transform: uppercase; /* Added uppercase transform to search input */
 }
 
 .mrc-search-input:focus {
   outline: none;
-  border-color: #3369FF;
+  border-color: #3369ff;
   box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.1);
 }
 
@@ -119,7 +120,7 @@
   border-bottom: 1px solid #f0f0f0;
   font-family: "Inter";
   font-weight: 600;
-  text-transform: capitalize;
+  text-transform: uppercase; /* Changed from lowercase to uppercase */
   color: #acacac;
   letter-spacing: 0.5px;
 }
@@ -139,6 +140,35 @@
   font-size: 14px;
   color: #6b7280;
   text-align: center;
+}
+
+/* Updated spinner styles with more specific animation and added display block */
+.mrc-spinner {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #3369ff;
+  border-radius: 50%;
+  animation: mrc-spin-animation 0.8s linear infinite;
+  margin: 0 auto;
+}
+
+/* Renamed keyframes to avoid conflicts with Tailwind */
+@keyframes mrc-spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mrc-spinner {
+    animation: mrc-spin-animation 0.8s linear infinite;
+    animation-iteration-count: infinite;
+  }
 }
 
 /* Responsive adjustments */

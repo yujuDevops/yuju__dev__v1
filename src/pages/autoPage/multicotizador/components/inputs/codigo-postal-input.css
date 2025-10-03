@@ -44,6 +44,17 @@
   background: transparent; /* ✅ fondo transparente */
 }
 
+
+.mrc-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: "Inter";
+  font-weight: 500;
+  color: #acacac;
+}
+
 /* Placeholder */
 .cp-input-wrapper input::placeholder {
   color: #acacac;
@@ -83,8 +94,10 @@
 .cp-localidad-loading,
 .cp-localidad-info {
   margin-top: 0.5rem;
-  font-size: 0.875rem;
-  color: #6b7280;
+  font-size: 0.75rem;
+  color: #ACACAC;
+  font-weight: 500;
+  font-family: "Inter";
 }
 
 .cp-error-message {

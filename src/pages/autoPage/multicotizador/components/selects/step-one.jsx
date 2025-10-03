@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import MarcaSelect from "./marca-select"
 import ModeloSelect from "./modelo-select"
@@ -5,7 +7,7 @@ import AnioSelect from "./anio-select"
 import CodigoPostalInput from "../inputs/codigo-postal-input"
 import "./step-one.css"
 
-export default function StepOne({ formData, onFormChange, onNextStep }) {
+export default function StepOne({ formData, onFormChange, onNextStep, onStartLoading, onLoadingError }) {
   const [errors, setErrors] = useState({
     marca: false,
     modelo: false,
@@ -24,7 +26,6 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
     return `${dd}-${mm}-${yyyy}`
   }
 
-  // Si no vino codia por año, intento derivarlo del mapa (preferimos as_codia=true)
   const resolveFromMap = (anioStr) => {
     const map = formData.codiaByYear || {}
     const anio = Number(anioStr ?? formData.anio)
@@ -92,6 +93,8 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
 
     try {
       setSubmitting(true)
+      onStartLoading()
+
       const resp = await fetch("https://api-yuju.com.ar/api/cotizar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -106,6 +109,7 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
     } catch (err) {
       console.error("Error en /api/cotizar", err)
       setSubmitError(err?.message || "Ocurrió un error al cotizar.")
+      onLoadingError()
     } finally {
       setSubmitting(false)
     }
@@ -128,7 +132,6 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
               value={formData.marca}
               onChange={(value) => {
                 onFormChange("marca", value)
-                // reset en cascada
                 onFormChange("modelo", "")
                 onFormChange("modeloNombre", "")
                 onFormChange("anio", "")
@@ -145,7 +148,7 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
             {errors.marca && <span className="asxts-error-message">Este campo es requerido</span>}
           </div>
 
-          {/* AÑO (antes que modelo) */}
+          {/* AÑO */}
           <div className="asxts-form-group">
             <label htmlFor="anio" className="asxts-form-label">
               ¿De qué año es?
@@ -156,7 +159,6 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
               codiaByYear={formData.codiaByYear}
               onChange={(anio, codia, version) => {
                 onFormChange("anio", anio)
-                // al cambiar año, reinicio modelo
                 onFormChange("modelo", "")
                 onFormChange("modeloNombre", "")
                 setErrors((e) => ({ ...e, anio: false, modelo: false }))
@@ -177,12 +179,10 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
               className={`asxts-select ${errors.anio ? "asxts-select-error" : ""}`}
             />
             {errors.anio && <span className="asxts-error-message">Este campo es requerido</span>}
-            {errors.codInfoAuto && (
-              <span className="asxts-error-message"></span>
-            )}
+            {errors.codInfoAuto && <span className="asxts-error-message"></span>}
           </div>
 
-          {/* MODELO (depende de marca + año) */}
+          {/* MODELO */}
           <div className="asxts-form-group">
             <label htmlFor="modelo" className="asxts-form-label">
               ¿Qué modelo es?
@@ -190,7 +190,7 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
             <ModeloSelect
               value={formData.modelo}
               marca={formData.marca}
-              priceYear={formData.anio} // 
+              priceYear={formData.anio}
               onChange={(value, label, extra) => {
                 onFormChange("modelo", value)
                 if (label) onFormChange("modeloNombre", label)
@@ -209,7 +209,7 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
                 setErrors((e) => ({ ...e, modelo: false }))
               }}
               hasError={errors.modelo}
-              disabled={!formData.marca || !formData.anio} 
+              disabled={!formData.marca || !formData.anio}
               className={`asxts-select ${errors.modelo ? "asxts-select-error" : ""}`}
             />
             {errors.modelo && <span className="asxts-error-message">Este campo es requerido</span>}
@@ -228,7 +228,7 @@ export default function StepOne({ formData, onFormChange, onNextStep }) {
               hasError={errors.codigoPostal}
               className={`asxts-input ${errors.codigoPostal ? "asxts-input-error" : ""}`}
             />
-            {errors.codigoPostal && <span className="asxts-error-message">Este campo es requerido</span>}
+            {errors.codigoPostal && <span className="asxts-error-message"></span>}
           </div>
         </div>
 

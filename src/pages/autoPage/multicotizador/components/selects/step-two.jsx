@@ -1,3 +1,4 @@
+"use client"
 
 import "./step-two.css"
 import { useMemo, useState, useEffect, useCallback } from "react"
@@ -455,12 +456,17 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
     return gridData
   }, [companies])
 
+  const handleVolverACotizar = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+    onPrevStep()
+  }
+
   return (
     <div className="st2-quantum-insurance-nexus-container">
       <div className="st2-extraordinary-promo-banner-deluxe st2-desktop-only">
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div className="st2-majestic-promo-main-text">
-            {marcaTxt} - {modeloTxt} {formData.anio} {versionTxt} 
+            {marcaTxt} - {modeloTxt} {formData.anio} {versionTxt}
           </div>
           {sumaAsegurada && (
             <div className="st2-majestic-promo-main-text" style={{ fontSize: "16px", fontWeight: "600" }}>
@@ -809,7 +815,7 @@ export default function StepTwo({ formData, results, onPrevStep, onNextStep3 }) 
       </div>
 
       <div className="st2-extraordinary-button-container-deluxe">
-        <button onClick={onPrevStep} className="st2-magnificent-btn-volver">
+        <button onClick={handleVolverACotizar} className="st2-magnificent-btn-volver">
           Volver a cotizar
         </button>
       </div>

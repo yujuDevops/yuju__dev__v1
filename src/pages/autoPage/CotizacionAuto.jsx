@@ -1,13 +1,16 @@
+"use client"
+
 import { useState } from "react"
 import StepOne from "./multicotizador/components/selects/step-one"
 import StepTwo from "./multicotizador/components/selects/step-two"
-import StepThree from "./multicotizador/components/selects/step-three"   // ⬅️ nuevo
+import StepThree from "./multicotizador/components/selects/step-three"
+import LoadingScreen from "./multicotizador/components/ui/loadingScreen"
 import "./CotizacionAuto.css"
 
 export default function CotizacionAuto() {
   const [currentStep, setCurrentStep] = useState(1)
+  const [isLoading, setIsLoading] = useState(false)
 
-  // form enriquecido para evitar IDs en DB/WhatsApp
   const [formData, setFormData] = useState({
     marca: "",
     modelo: "",
@@ -18,73 +21,65 @@ export default function CotizacionAuto() {
     tieneGNC: false,
     esOKM: false,
     esComercial: false,
-    // nombres "bonitos"
     marcaNombre: "",
     modeloNombre: "",
   })
 
-  // respuesta real de /api/cotizar (step 2)
   const [results, setResults] = useState(null)
-
-  // resumen para Step 3
   const [resumenStep3, setResumenStep3] = useState(null)
 
-  // Step 1 → Step 2
   const handleNextStep = (data) => {
     setResults(data)
+    setIsLoading(false)
     setCurrentStep(2)
   }
 
-  // Step 2 → Step 1
-  const handlePrevStep = () => {
-    setCurrentStep(1)
-    // si querés: setResults(null)
+  const handleStartLoading = () => {
+    setIsLoading(true)
   }
 
-  // Step 2 → Step 3 (después de guardar)
+  const handleLoadingError = () => {
+    setIsLoading(false)
+  }
+
+  const handlePrevStep = () => {
+    setCurrentStep(1)
+  }
+
   const handleNextStep3 = (resumen) => {
-    setResumenStep3(resumen)  // { marca, modelo_version, anio, aseguradora, plan, precio?, telefono? }
+    setResumenStep3(resumen)
     setCurrentStep(3)
   }
 
-  // Step 3 → Step 1 (nueva cotización)
   const handleNuevaCotizacion = () => {
     setCurrentStep(1)
-    // opcional: resetear todo
-    // setFormData({ ...estado inicial... })
-    // setResults(null)
-    // setResumenStep3(null)
+    setIsLoading(false)
   }
 
   const handleFormChange = (name, value) => {
-    setFormData(prev => ({ ...prev, [name]: value }))
+    setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
   return (
     <div className="cotizacion-container">
+      {isLoading && <LoadingScreen />}
 
-      {currentStep === 1 && (
+      {currentStep === 1 && !isLoading && (
         <StepOne
           formData={formData}
           onFormChange={handleFormChange}
           onNextStep={handleNextStep}
+          onStartLoading={handleStartLoading}
+          onLoadingError={handleLoadingError}
         />
       )}
 
       {currentStep === 2 && results && (
-        <StepTwo
-          formData={formData}
-          results={results}
-          onPrevStep={handlePrevStep}
-          onNextStep3={handleNextStep3}   // ⬅️ paso el hook para ir al Step 3
-        />
+        <StepTwo formData={formData} results={results} onPrevStep={handlePrevStep} onNextStep3={handleNextStep3} />
       )}
 
       {currentStep === 3 && resumenStep3 && (
-        <StepThree
-          resumen={resumenStep3}
-          onNuevaCotizacion={handleNuevaCotizacion}
-        />
+        <StepThree resumen={resumenStep3} onNuevaCotizacion={handleNuevaCotizacion} />
       )}
     </div>
   )

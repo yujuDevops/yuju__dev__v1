@@ -1,4 +1,4 @@
-/* RESETAMOS VALORES A NUESTRO GUSTO EN EL ROOT */
+/* RESETAMOS VALORES A NUESTRO EN EL ROOT */
 
 * {margin: 0; padding: 0;}
 *, * ::before, *::after {box-sizing: border-box;}
@@ -13,9 +13,6 @@ img, video, svg {height: auto; max-width: 100%;}
 
 @media (prefers-reduced-motion:reduce) {
   *, *::before, *::after{
-    animation: 0.01ms !important;
-    animation-iteration-count: 1 !important; 
-    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
     transition: none !important;
   }

@@ -73,12 +73,13 @@
 }
 
 .st2-majestic-promo-main-text {
-  font-size: 14px;
-  color: #1f2937;
-  font-weight: 500;
-  text-align: left;
-  padding: 8px 0;
-  border-bottom: 1px solid #e5e7eb;
+    font-size: 18px;
+    color: #ACACAC;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-align: left;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .st2-spectacular-promo-special-offer {

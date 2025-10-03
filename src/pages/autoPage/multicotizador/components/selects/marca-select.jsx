@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect, useRef } from "react"
 import { ChevronDown, Search } from "lucide-react"
 import "./marca-select.css"
@@ -52,7 +50,9 @@ export default function MarcaSelect({ value, onChange, onLabelChange, hasError =
         role="button"
         aria-expanded={isOpen}
       >
-        <span className={value ? "mrc-has-value" : "mrc-placeholder"}>{selectedName || "Seleccioná la marca"}</span>
+        <span className={value ? "mrc-has-value" : "mrc-placeholder"}>
+          {selectedName ? selectedName.toUpperCase() : "Seleccioná la marca"}
+        </span>
         <ChevronDown size={20} />
       </div>
 
@@ -73,7 +73,14 @@ export default function MarcaSelect({ value, onChange, onLabelChange, hasError =
 
           <div className="mrc-select-list">
             {isLoading ? (
-              <div className="mrc-loading-item">Cargando...</div>
+              <div className="mrc-loading-item">
+                <div
+                  className="mrc-spinner"
+                  style={{
+                    animation: "mrc-spin-animation 0.8s linear infinite",
+                  }}
+                ></div>
+              </div>
             ) : filteredMarcas.length === 0 ? (
               <div className="mrc-info-item">
                 {searchTerm ? "No se encontraron marcas" : "No hay marcas disponibles"}

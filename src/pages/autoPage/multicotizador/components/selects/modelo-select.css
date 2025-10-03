@@ -32,20 +32,20 @@
 }
 
 .mdl-select-header .mdl-placeholder {
-    color: #ACACAC;
-    font-size: 12px;
-    font-family: 'Inter';
-    font-weight: 500;
+  color: #acacac;
+  font-size: 12px;
+  font-family: "Inter";
+  font-weight: 500;
 }
 
 .mdl-select-header .mdl-has-value {
-  color: #ACACAC;
+  color: #acacac;
   font-size: 12px;
   font-weight: 500;
 }
 
 .mdl-select-header svg {
-  color: #ACACAC;
+  color: #acacac;
   transition: transform 0.2s ease;
   flex-shrink: 0;
 }
@@ -71,20 +71,20 @@
 
 .mdl-select-item {
   padding: 12px 16px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    font-size: 12px;
-    color: #ACACAC;
-    font-family: 'Inter';
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 12px;
+  color: #acacac;
+  font-family: "Inter";
 }
 
 .mdl-select-item:last-child {
   border-bottom: none;
 }
 
-.mdl-select-item:hover { 
-   background-color: #3369FF;
-  color: #ffffff
+.mdl-select-item:hover {
+  background-color: #3369ff;
+  color: #ffffff;
 }
 
 .mdl-select-item:active {
@@ -98,11 +98,32 @@
   color: #6b7280;
   text-align: center;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .mdl-info-item {
   color: #f59e0b;
 }
+
+/* Added spinner styles for loading state */
+.mdl-spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #3369FF;
+  border-radius: 50%;
+  animation: mdl-spin 0.8s linear infinite;
+}
+
+@keyframes mdl-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* </CHANGE> */
 
 /* Disabled state */
 .mdl-disabled .mdl-select-header {

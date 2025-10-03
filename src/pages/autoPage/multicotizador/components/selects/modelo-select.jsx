@@ -1,3 +1,4 @@
+"use client"
 
 import { useState, useEffect, useRef } from "react"
 import { ChevronDown } from "lucide-react"
@@ -91,7 +92,10 @@ export default function ModeloSelect({ value, onChange, marca, priceYear, hasErr
       {isOpen && (
         <div className="mdl-select-dropdown">
           {isLoading ? (
-            <div className="mdl-loading-item">Cargando...</div>
+            <div className="mdl-loading-item">
+              <div className="mdl-spinner"></div>
+              <span></span>
+            </div>
           ) : error ? (
             <div className="mdl-info-item">⚠️ {error}</div>
           ) : modelos.length === 0 ? (
